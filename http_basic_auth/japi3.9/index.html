@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JAPI Version 3.9 Update :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/http_basic_auth/japi3.9/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">QENTA Online Guides</a></li>
+    <li><a href="./">JAPI Version 3.9 Update</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">JAPI Version 3.9 Update</h1>
+<div class="sect1">
+<h2 id="JapiVersion39Update"><a class="anchor" href="#JapiVersion39Update"></a>JAPI Version 3.9 Update</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following step-by-step instructions intend to provide the necessary information to guide you through the migration process.</p>
+</div>
+<div class="sect2">
+<h3 id="Japi39Restrictions"><a class="anchor" href="#Japi39Restrictions"></a>JAPI 3.9 restrictions</h3>
+<div class="paragraph">
+<p>To keep up with the latest technology and developments and to ensure the successful implementation of new features and payment methods in your online shop, we strongly recommend updating to the current JAPI version 4.8, as this version will be further developed.</p>
+</div>
+<div class="paragraph">
+<p>If you have an older implementation, upgrading to JAPI version 3.9 might be an alternative. However, JAPI version 3.9 will also support Basic Auth but will not be supported in future, bug fixes will not be provided anymore and eventually usage may not be possible. We therefore strongly recommend to update to JAPI version 4.8 as soon as possible.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Download"><a class="anchor" href="#Download"></a>Download</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/_attachments/http_basic_auth/japi-3.9.0-package.zip">JAPI 3.9</a></p>
+</li>
+<li>
+<p><a href="/_attachments/http_basic_auth/truststore-package.zip">truststore-package.zip</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="UpdateGuideForJapiVersion3xTo39"><a class="anchor" href="#UpdateGuideForJapiVersion3xTo39"></a>Update Guide for JAPI version 3.x to 3.9</h3>
+<div class="sect3">
+<h4 id="Requirements"><a class="anchor" href="#Requirements"></a>Requirements</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Java version 1.6 or higher.<br>
+We recommend to install Java 1.8.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Changes"><a class="anchor" href="#Changes"></a>Changes</h4>
+<div class="sect4">
+<h5 id="Endpoint"><a class="anchor" href="#Endpoint"></a>Endpoint</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">settings.setHostURL(new URL("https://checkout.wirecard.com/enterprise");</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Authentication"><a class="anchor" href="#Authentication"></a>Authentication</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">settings.setBasicAuthUsername("&lt;keystore filename without path and extension&gt;");
+settings.setBasicAuthPassword("&lt;keystore password&gt;");</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Truststore"><a class="anchor" href="#Truststore"></a>Truststore</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">settings.setTruststoreFile(new File("wce-trust.jks"));
+settings.setTruststorePassword("&lt;truststore password&gt;");</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="RemovingUsageOfClassesAndMembers"><a class="anchor" href="#RemovingUsageOfClassesAndMembers"></a>Removing usage of classes and members</h4>
+<div class="paragraph">
+<p>The following classes and class members are no longer included and their usage must be removed:</p>
+</div>
+<div class="sect4">
+<h5 id="ClassesAndMembersToRemove"><a class="anchor" href="#ClassesAndMembersToRemove"></a>Classes and members to remove</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Classes:
+    com.qenta.japi.QTillBezahlenAtInitiation
+    com.qenta.japi.QTillBillItEasyInitiation
+    com.qenta.japi.QTillDirectPayInitiation
+    com.qenta.japi.QTillLegacyInitiation
+    com.qenta.japi.QTillLegacyInstance
+    com.qenta.japi.QTillMIAInitiation
+    com.qenta.japi.QTillNetpayInitiation
+    com.qenta.japi.QTillPOPInitiation
+    com.qenta.japi.QTillSETWalletInitiation
+
+Members:
+    com.qenta.japi.QTill3DSecureInitiation
+    Fields:
+        ACQUIRER_BIN
+        IS_PCN_TRANSACTION
+        MERCHANTDATA
+        MER_ID
+        Q3D_ENROLLMENT_URL
+        Q3D_VALIDATION_URL
+        TREMINALID
+        VERSION
+    Methods:
+        byte[] getWakeUpMessage()
+        void setAcquirerBin(int)
+        void setIsPseudoCardTransaction(boolean)
+        void setMerchantID(int)
+        void setQ3DEnrollmentUrl(java.lang.String)
+        void setQ3DValidationUrl(java.lang.String)
+        void setRecurringAllowed(boolean)
+        void setSaleDetailExtensions(com.qenta.japi.extensions.QTillSaleDetailExtensions)
+        void setTerminalExtensions(com.qenta.japi.extensions.QTillTerminalExtensions)
+        void setVersion(java.lang.String)
+
+    com.qenta.japi.QTillAccount
+    Methods:
+        com.qenta.japi.QTillAccount compuTop()
+
+    com.qenta.japi.QTillClick2PayInitiation
+    Fields:
+        FAILUREURL
+        LANGUAGE
+        SUCCESSURL
+        TYPE_FRONTEND
+    Methods:
+        byte[] getWakeUpMessage()
+
+    com.qenta.japi.QTillConstants
+    Fields:
+        LOGLEVEL_DEBUG
+        LOGLEVLE_DEVNOTES
+        LOGLEVEL_ERROR
+        LOGLEVEL_FATAL
+        LOGLEVEL_INFO
+        LOGLEVEL_WARNING
+        REFUNDREFERSAL
+
+    com.qenta.japi.QTillCredit
+    Methods:
+        java.lang.String getReferenceNumber()
+
+    com.qenta.japi.QTillELVInitiation
+    Fields:
+        MINI_TX_URL
+        RECURRING_ALLOWED
+    Methods:
+        void setMiniTXUrl(java.lang.String)
+        void setRecurringAllowed()
+        void setRecurringAllowed(int)
+        void setRecurringAllowed(boolean)
+
+    com.qenta.japi.QTillEPSInitiation
+    Methods:
+        byte[] getWakeUpMessage()
+        void setUseEPSv1(java.lang.String)
+        void setUseEPSv1(boolean)
+
+    com.qenta.japi.QTillInstance
+    Methods:
+        int approve(int, com.qenta.japi.QTillAmount, com.qenta.japi.QTillAmount)
+        void setAccountNumber(java.lang.String)
+        void setMiniTXSHost(java.lang.String)
+
+    com.qenta.japi.QTillMerchantInitiation
+    Methods:
+        void setAVSExtensions(com.qenta.japi.extensions.QTillAVSExtensions)
+        void setSaleDetailExtensions(com.qenta.japi.extensions.QTillSaleDetailExtensions)
+        void setTerminalExtensions(com.qenta.japi.extensions.QTillTerminalExtensions)
+
+    com.qenta.japi.QTillPayment
+    Methods:
+        java.lang.String getPaCAVV()
+        java.lang.String getPaMerchantData()
+        java.lang.String getPaTCode()
+        java.lang.String getPaXID()
+        java.lang.String getReferenceNumber()
+
+    com.qenta.japi.QTillPaysafecardInitiation
+    Methods:
+        byte[] getWakeUpMessage()
+
+    com.qenta.japi.QTillQuickInitiation
+    Fields:
+        MINI_TX_URL
+    Methods:
+        byte[] getWakeUpMessage()
+        void setMiniTXUrl(java.lang.String)
+
+    com.qenta.japi.QTillSettings
+    Methods:
+        void closeLogWriter()</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OptionalButRecommendedAdaptations"><a class="anchor" href="#OptionalButRecommendedAdaptations"></a>Optional but recommended adaptations</h4>
+<div class="paragraph">
+<p><strong>Updating deprecated initiation constructors</strong></p>
+</div>
+<div class="paragraph">
+<p>Update deprecated constructors, which use the order description parameter, with the usage of QTillOrderReference, see example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Deprecated Usage</strong></p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&gt;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>`+QTillInstance qtill; // instantiate your qtill instance here
+int orderNumber = qtill.createOrder();
+LOG.info("orderNumber: {}", orderNumber);</p>
+</div>
+<div class="paragraph">
+<p>URL returnUrl = new URL(RETURN_URL);
+URL serviceUrl = new URL(SERVICE_URL);
+BigInteger pan = new BigInteger(DEMO_VBV);
+Date expiry = Utilities.getExpirationDate(EXPIRATION_MONTH_1, EXPIRATION_YEAR_2019);
+QTill3DSecureInitiation threeDSecure = new QTill3DSecureInitiation(
+    returnUrl, serviceUrl, USER_AGENT,
+    ACCEPT_HEADERS, pan, expiry, "Order description"
+);
+threeDSecure.setRecurringAllowed(true);</p>
+</div>
+<div class="paragraph">
+<p>int paymentNumber = 0;
+boolean splitPaymentAllowed = false;
+QTillAmount amount = new QTillAmount("1.23", new QTillCurrency("EUR"));
+QTillAmount approveAmount = new QTillAmount("1.23", new QTillCurrency("EUR"));
+QTillAmount depositAmount = new QTillAmount("1.23", new QTillCurrency("EUR"));
+qtill.initiatePayment(
+    orderNumber, paymentNumber, splitPaymentAllowed,
+    amount, approveAmount, depositAmount, threeDSecure
+);</p>
+</div>
+<div class="paragraph">
+<p>QTillPayment payment = qtill.verifyPayment(orderNumber);
+LOG.info("paymentState: {}", payment.getPaymentState());</p>
+</div>
+<div class="paragraph">
+<p>LOG.info("cavv: {}", payment.getPaCAVV());
+LOG.info("merchantData: {}", payment.getPaMerchantData());
+LOG.info("tCode: {}", payment.getPaTCode());
+LOG.info("xid: {}", payment.getPaXID());
++`</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommended Usage</strong></p>
+</div>
+<div class="paragraph">
+<p>`+QTillInstance qtill; // instantiate your qtill instance here
+int orderNumber = qtill.createOrder();
+LOG.info("orderNumber: {}", orderNumber);</p>
+</div>
+<div class="paragraph">
+<p>URL returnUrl = new URL(RETURN_URL);
+URL serviceUrl = new URL(SERVICE_URL);
+BigInteger pan = new BigInteger(DEMO_VBV);
+QTillExpirationDate expiry = new QTillExpirationDate(EXPIRATION_MONTH_1, EXPIRATION_YEAR_2019);
+QTill3DSecureInitiation threeDSecure = new QTill3DSecureInitiation(
+    returnUrl, serviceUrl, USER_AGENT, ACCEPT_HEADERS, pan, expiry
+);</p>
+</div>
+<div class="paragraph">
+<p>QTillOrderReference orderReference = new QTillOrderReference(orderNumber, "Order description");
+QTillAmount amount = new QTillAmount("1.23", new QTillCurrency("EUR"));
+qtill.initiatePayment(orderReference, amount, threeDSecure);</p>
+</div>
+<div class="paragraph">
+<p>QTillPayment payment = qtill.verifyPayment(orderNumber);
+LOG.info("paymentState: {}", payment.getPaymentState());
++`</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>Updating deprecated query order interfaces</strong></p>
+</div>
+<div class="paragraph">
+<p>Update deprecated query order interfaces, which use a Hashtable to store filter criteria, with the usage of QTillOrderFilter, see example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Deprecated Usage</strong></p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&gt;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>`+Hashtable filter = new Hashtable();
+filter.put(QTillConstants.OPTION_QUERYFOR, "VIEWING");</p>
+</div>
+<div class="paragraph">
+<p>QTillInstance qtill; // instantiate your qtill instance here
+QTillQuery query = qtill.getQuery();
+QTillObjectEnumeration orders = query.queryOrders(filter);
+assertThat(orders.getObjectsTotal(), greaterThan(0));</p>
+</div>
+<div class="paragraph">
+<p>QTillOrder order = (QTillOrder)orders.nextElement();
+LOG.info("brand {}", order.getBrand());
++`</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommended Usage</strong></p>
+</div>
+<div class="paragraph">
+<p>`+QTillOrderFilter filter = new QTillOrderFilter();
+filter.setQueryFor(QTillConstants.VIEWING);</p>
+</div>
+<div class="paragraph">
+<p>QTillInstance qtill; // instantiate your qtill instance here
+QTillObjectEnumeration orders = qtill.queryOrders(filter);
+assertThat(orders.getObjectsTotal(), greaterThan(0));</p>
+</div>
+<div class="paragraph">
+<p>QTillOrder order = (QTillOrder)orders.nextElement();
+LOG.info("brand {}", order.getBrandObject());
++`</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>Updating deprecated transferFund interfaces</strong></p>
+</div>
+<div class="paragraph">
+<p>Update deprecated usage of transferFund, which uses the order description parameter, with the usage of QTillOrderReference, see example:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>Deprecated Usage</strong></p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>&gt;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>`+QTillInstance qtill; // instantiate your qtill instance here
+int orderNumber = qtill.createOrder();
+LOG.info("orderNumber: {}", orderNumber);</p>
+</div>
+<div class="paragraph">
+<p>BigInteger pan = new BigInteger(DEMO_VBV);
+Date expiry = Utilities.getExpirationDate(EXPIRATION_MONTH_1, EXPIRATION_YEAR_2019);
+QTillCreditcardFundTransferData fundTransferData = new QTillCreditcardFundTransferData();
+fundTransferData.setPan(pan);
+fundTransferData.setExpiry(expiry);</p>
+</div>
+<div class="paragraph">
+<p>QTillAmount amount = new QTillAmount("1.23", new QTillCurrency("EUR"));
+qtill.transferFund(orderNumber, orderNumber, amount, "Order Description", fundTransferData);
++`</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommended Usage</strong></p>
+</div>
+<div class="paragraph">
+<p>`+QTillInstance qtill; // instantiate your qtill instance here
+int orderNumber = qtill.createOrder();
+LOG.info("orderNumber: {}", orderNumber);</p>
+</div>
+<div class="paragraph">
+<p>BigInteger pan = new BigInteger(DEMO_VBV);
+Date expiry = Utilities.getExpirationDate(EXPIRATION_MONTH_1, EXPIRATION_YEAR_2019);
+QTillCreditcardFundTransferData fundTransferData = new QTillCreditcardFundTransferData();
+fundTransferData.setPan(pan);
+fundTransferData.setExpiry(expiry);</p>
+</div>
+<div class="paragraph">
+<p>QTillOrderReference orderReference = new QTillOrderReference(orderNumber, "Order Description");
+QTillAmount amount = new QTillAmount("1.23", new QTillCurrency("EUR"));
+qtill.transferFund(orderReference, amount, fundTransferData);
++`</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="TechnicalChangelog"><a class="anchor" href="#TechnicalChangelog"></a>Technical changelog</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.9.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add set basic auth username method to QTillSettings object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add set basic auth password method to QTillSettings object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QTillSettings now supports just one payment host URL (QTILL_HOST_URL1 and QTILL_HOST_URL2 are replaced with QTILL_HOST_URL).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Include some deprecated methods<br>
+* newInstance(String paySvrHost, int paySvrPort, String paySvrEncryption, String merchantKey)<br>
+* newInstance(String paySvrHost, int paySvrPort, String paySvrEncryption, String merchantKey, String password)<br>
+* initiatePayment(int orderNumber, boolean splitAllowed, QTillAmount amount, QTillAmount approveAmount, QTillAmount depositAmount, QTillInitiation initiation)<br>
+* initiatePayment(int orderNumber, int paymentNumber, boolean splitAllowed, QTillAmount amount, QTillAmount approveAmount, QTillAmount depositAmount, QTillInitiation initiation)<br>
+* transferFund(int orderNumber,int creditNumber,QTillAmount amount,java.lang.String orderDescription,QTillFundTransferData fundTranferData).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.8.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add QTill3DSecureInitiation(successURL, serviceURL, userAgent, acceptHeaders, oldOrderNumber) to support recurring.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.7.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofortueberweisung as new payment method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.6.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interface for risk data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remove QTillMIAInitiation because not possible anymore.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal as new payment method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deprecate QTillQuery.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.4.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Giropay as new payment method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.3.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iDEAL as new payment method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remove Legacy Instance.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.2.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New query interface. See QTillQuery for details.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add support for OrderReference. See QTillOrderReference for details.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.0.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Change creation of QTillInstance. See QTillSettings for details.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Click <a href="../migration_guide/" class="page">here</a> to return to the "HTTP Basic Auth - Merchant Migration Guide" general start page.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/online-guides/main/http_basic_auth/japi3.9/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

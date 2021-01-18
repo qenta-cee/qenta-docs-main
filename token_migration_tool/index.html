@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Token Migration Tool :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/token_migration_tool/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../">QENTA Online Guides</a></li>
+    <li><a href="./">Token Migration Tool</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Token Migration Tool</h1>
+<div class="sect1">
+<h2 id="TokenMigrationTool"><a class="anchor" href="#TokenMigrationTool"></a>Token Migration Tool</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="Introduction"><a class="anchor" href="#Introduction"></a>Introduction</h3>
+<div class="paragraph">
+<p>The Token Migration Tool (ToMi) enables merchants to continue processing recurring payments after migration to the Wirecard REST API. With ToMi, you just need to provide the order number which is currently used to reference a recurring transaction. ToMi uses this order number and returns the <code>transactionId</code> for SEPA and the <code>tokenId</code> for Credit Card transactions. For Credit Card transactions, the <code>transactionId</code> may be returned in addition to the <code>tokenId</code>, depending on the processing system the order number is found in. Both <code>transactionId</code> and <code>tokenId</code> allow you to continue processing recurring transactions for that order without interruptions.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="SupportedPaymentMethods"><a class="anchor" href="#SupportedPaymentMethods"></a>Supported Payment Methods</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Credit Card</p>
+</li>
+<li>
+<p>SEPA Direct Debit</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="UserAccess"><a class="anchor" href="#UserAccess"></a>User Access</h3>
+<div class="paragraph">
+<p>Access is secured with basic access authentication.<br>
+You have to request access to the Token Migration Tool by contacting <a href="../support/" class="page">merchant support</a>.<br>
+Merchant support provides you with username and password.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="SingleOrderProcessing"><a class="anchor" href="#SingleOrderProcessing"></a>Single Order Processing</h3>
+<div class="sect3">
+<h4 id="Endpoint"><a class="anchor" href="#Endpoint"></a>Endpoint</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Environment</th>
+<th class="tableblock halign-left valign-top">URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Production</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://checkout.wirecard.com/migration-transaction" class="bare">https://checkout.wirecard.com/migration-transaction</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Request"><a class="anchor" href="#Request"></a>Request</h4>
+<div class="sect4">
+<h5 id="Header"><a class="anchor" href="#Header"></a>Header</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>POST /migration-transaction</p>
+</li>
+<li>
+<p>Host: checkout.wirecard.com</p>
+</li>
+<li>
+<p>Content-Type: application/json</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="JsonSchema"><a class="anchor" href="#JsonSchema"></a>JSON Schema</h5>
+<div class="literalblock">
+<div class="content">
+<pre>{
+    "required": [
+        "orderNumber",
+        "paymentMethod"
+    ],
+    "properties": {
+      "orderNumber": {
+          "type": "integer",
+      },
+      "paymentMethod": {
+          "type": "string",
+      }
+    }
+}</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="SampleRequests"><a class="anchor" href="#SampleRequests"></a>Sample Requests</h5>
+<div class="sect5">
+<h6 id="SampleRequestForCreditCard"><a class="anchor" href="#SampleRequestForCreditCard"></a>Sample Request for Credit Card</h6>
+<div class="literalblock">
+<div class="content">
+<pre>{
+  "orderNumber": "123456",
+  "paymentMethod" : "creditcard"
+}</pre>
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="SampleRequestForSepa"><a class="anchor" href="#SampleRequestForSepa"></a>Sample Request for SEPA</h6>
+<div class="literalblock">
+<div class="content">
+<pre>{
+  "orderNumber": "654321",
+  "paymentMethod" : "sepa"
+}</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Response"><a class="anchor" href="#Response"></a>Response Header</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Content-Type: application/json</p>
+</li>
+<li>
+<p>Possible status codes: 201 | 400 | 404 | 500</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="ResponseJsonSchema"><a class="anchor" href="#ResponseJsonSchema"></a>Response JSON Schema</h5>
+<div class="sect5">
+<h6 id="ResponseSuccessResponse"><a class="anchor" href="#ResponseSuccessResponse"></a>Success Response</h6>
+<div class="literalblock">
+<div class="content">
+<pre>{
+    "properties": {
+        "orderNumber": {
+            "type": "integer"
+        },
+        "merchantAccountId": {
+            "type": "string"
+        },
+        "transactionId": {
+            "type": "string"
+        },
+        "tokenId": {
+            "type": "string"
+        },
+        "transactionServer": {
+            "type": "string"
+        }
+    }
+}</pre>
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="ErrorResponse"><a class="anchor" href="#ErrorResponse"></a>Error Response</h6>
+<div class="literalblock">
+<div class="content">
+<pre>{
+    "properties": {
+        "status": {
+            "type": "integer"
+        },
+        "message": {
+            "type": "string"
+        }
+    }
+}</pre>
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="SampleResponses"><a class="anchor" href="#SampleResponses"></a>Sample Responses</h6>
+<div class="paragraph">
+<p>Here you find possible responses for success and failure.</p>
+</div>
+<div class="paragraph">
+<p><em>Success Example 201 Credit Card</em><br>
+For payment method <code>creditcard</code>, there is the additional response field <code>tokenId</code>.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{
+  "orderNumber": "123456",
+  "merchantAccountId": "62652b50-01d5-11e9-b568-0800200c9a66",
+  "transactionId": "5d7fadd8-37d5-4578-a815-dcac8626121c",
+  "tokenId": "4351742214741003",
+  "transactionServer": "api-wdcee.wirecard.com"
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>Success Example 201 SEPA</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{
+  "orderNumber": "654321",
+  "merchantAccountId": "62652b50-01d5-11e9-b568-0800200c9a66",
+  "transactionId": "5d7fadd8-37d5-4578-a815-dcac8626121c",
+  "transactionServer": "api-wdcee.wirecard.com"
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>Error Example 404</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{
+  "status": 404,
+  "message": "Order not found."
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>Error Example 400</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{
+  "status": 400,
+  "message": "OrderNumber '0' is too small."
+}</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="BatchProcessing"><a class="anchor" href="#BatchProcessing"></a>Batch Processing</h3>
+<div class="paragraph">
+<p>You can process multiple orders at once by uploading a CSV file containing the respective order data.</p>
+</div>
+<div class="sect3">
+<h4 id="CsvFileFormatRequirements"><a class="anchor" href="#CsvFileFormatRequirements"></a>CSV File Format Requirements</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>File extension:*.csv* (* = any filename, e.g. tomi_example.csv)</p>
+</li>
+<li>
+<p>The CSV file must contain a header row naming the label of each column (OrderNumber, PaymentMethod).</p>
+</li>
+<li>
+<p>The header row is followed by data rows for each order to be processed.</p>
+</li>
+<li>
+<p>All entries of a row must be separated by a comma.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="SampleCsvFile"><a class="anchor" href="#SampleCsvFile"></a>Sample CSV file</h5>
+<div class="literalblock">
+<div class="content">
+<pre>OrderNumber,PaymentMethod
+13926123,creditcard
+2569588,creditcard
+4504686,creditcard
+382313,creditcard
+9380547,sepa</pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<code>PaymentMethod</code> only allows the values <code>creditcard</code> or <code>sepa</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="MigrationEndpoint"><a class="anchor" href="#MigrationEndpoint"></a>Endpoint</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Environment</th>
+<th class="tableblock halign-left valign-top">URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Production</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://checkout.wirecard.com/migration-batch-transaction" class="bare">https://checkout.wirecard.com/migration-batch-transaction</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Workflow"><a class="anchor" href="#Workflow"></a>Workflow</h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+As each step has a functional dependency on the preceding one, make sure to follow the given order.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To process multiple orders at once,</p>
+</div>
+<div class="paragraph">
+<p><strong>1. Upload the CSV file.</strong></p>
+</div>
+<div class="sect4">
+<h5 id="SampleRequest"><a class="anchor" href="#SampleRequest"></a>Sample Request</h5>
+<div class="sect5">
+<h6 id="MigrationRequestHeader"><a class="anchor" href="#MigrationRequestHeader"></a>Header</h6>
+<div class="ulist">
+<ul>
+<li>
+<p>POST /migration-batch-transaction/file-upload</p>
+</li>
+<li>
+<p>Host: checkout.wirecard.com</p>
+</li>
+<li>
+<p>Content-Type: multipart/form-data</p>
+</li>
+<li>
+<p>cache-control: no-cache</p>
+</li>
+<li>
+<p>file=@tomi_example.csv</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="SampleResponse"><a class="anchor" href="#SampleResponse"></a>Sample Response</h5>
+<div class="literalblock">
+<div class="content">
+<pre>{
+    "File process started, process id:7"
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>2. Process the CSV file.</strong></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="MigrationSampleRequest"><a class="anchor" href="#MigrationSampleRequest"></a>Sample Request</h5>
+<div class="sect5">
+<h6 id="MigrationSampleRequestHeader"><a class="anchor" href="#MigrationSampleRequestHeader"></a>Header</h6>
+<div class="ulist">
+<ul>
+<li>
+<p>GET /migration-batch-transaction/file/7</p>
+</li>
+<li>
+<p>Host: checkout.wirecard.com</p>
+</li>
+<li>
+<p>cache-control: no-cache</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Make sure the file path ends with the value returned for <code>process id</code> in the response of step 1. Follow the example above: <code>/migration-batch-transaction/file/7</code>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="MigrationSampleResponse"><a class="anchor" href="#MigrationSampleResponse"></a>Sample Response</h5>
+<div class="literalblock">
+<div class="content">
+<pre>{
+    "fileId": 7,
+    "fileName": "tomi_example.csv",
+    "status": "Completed",
+    "startTime": "2019-10-14T16:07:21",
+    "endTime": "2019-10-14T16:07:22",
+    "totalRecordsToProcess": 2,
+    "errorsCount": 0,
+    "completedCount": 2,
+    "recordsProcessed": 2
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Possible <code>status</code> values are:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Status</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>InProgress</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processing of the file / individual orders is not yet complete.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Completed</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All orders listed in the file were succesfully processed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CompletedWithErrors</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processing of the file / individual orders was completed with errors.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Error</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A major error occured, processing failed to start.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Processing cannot be interrupted until all orders listed in the CSV file have been successfully processed.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>3. View Results.</strong></p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Only request results once <code>"status": "Completed"</code> is returned in the response of step 2. Sending a request earlier leads to incomplete results.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="MigrationSampleRequest2"><a class="anchor" href="#MigrationSampleRequest2"></a>Sample Request</h5>
+<div class="sect5">
+<h6 id="MigrationSampleHeader2"><a class="anchor" href="#MigrationSampleHeader2"></a>Header</h6>
+<div class="ulist">
+<ul>
+<li>
+<p>GET /migration-batch-transaction/file/7/records</p>
+</li>
+<li>
+<p>Host: checkout.wirecard.com</p>
+</li>
+<li>
+<p>cache-control: no-cache</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="MigrationSampleResponse2"><a class="anchor" href="#MigrationSampleResponse2"></a>Sample Response</h5>
+<div class="literalblock">
+<div class="content">
+<pre>[
+    {
+        "id": 16,
+        "migrationTransactionFileId": 7,
+        "status": "Completed",
+        "message": "Migration successfully completed.",
+        "orderNumber": "03976124",
+        "paymentMethod": "creditcard",
+        "merchantAccountId": "6b116488-cfff-4d2f-a345-0d8ede7bd496",
+        "transactionId": "d4bc4b14-e598-478f-a542-4abc62c6ffb8",
+        "tokenId": "1957638834868024",
+        "rowNumber": 1
+    }
+,
+    {
+        "id": 19,
+        "migrationTransactionFileId": 7,
+        "status": "Completed",
+        "message": "Migration successfully completed.",
+        "orderNumber": "0769528",
+        "paymentMethod": "creditcard",
+        "merchantAccountId": "6b116488-cfff-4d2f-a345-0d8ede7bd496",
+        "tokenId": "5954438830678018",
+        "rowNumber": 2
+    }
+]</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ErrorHandling"><a class="anchor" href="#ErrorHandling"></a>Error Handling</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Error Message</th>
+<th class="tableblock halign-left valign-top">Status Code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Remedy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provided Payment Method is not valid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This happens if the <code>paymentMethod</code> in the request has a value other than <code>creditcard</code> or <code>sepa</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verify that the payment method is set to <code>creditcard</code> or <code>sepa</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entity not found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Possible reason: The merchant configuration is not valid, e.g. there are many configurations for the same <code>merchant_account</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact <a href="../support/" class="page">merchant support</a> for further questions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order with number '&lt;x&gt;' could not be found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This error occurs for a <code>creditcard</code> or <code>sepa</code> request when the order does not exist in the database.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provide a valid order number in the request.<br>
+<strong>The error is most likely caused by an outdated order number. Check the order creation date. An order number is valid for 400 days.</strong><br>
+Contact <a href="../support/" class="page">merchant support</a> for further questions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Internal server error</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Possible reason: HTTP method is not <code>POST</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Change HTTP method to <code>POST</code>. Do not use <code>GET</code>, <code>PUT</code>, &#8230;&#8203;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../.." data-page-path="/online-guides/main/token_migration_tool/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

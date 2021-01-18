@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>API Reference :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/rest_api/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../">QENTA Online Guides</a></li>
+    <li><a href="./">API Reference</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">API Reference</h1>
+<div class="sect1">
+<h2 id="ApiReference"><a class="anchor" href="#ApiReference"></a>API Reference</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Wirecard CEE REST API uses a standard <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> interface. Requests and responses are sent in JSON data format and the <a href="https://oauth.net/2/">OAuth 2.0 standard</a> is used for authentication and authorization.</p>
+</div>
+<div class="sect2">
+<h3 id="Json"><a class="anchor" href="#Json"></a>JSON</h3>
+<div class="paragraph">
+<p>The data format used in the following cases is the open standard JSON which uses <strong>human readable text to transmit data objects</strong> and largely replaces XML.</p>
+</div>
+<div class="paragraph">
+<p>For most programming languages there are <strong>ready-to-use implementations</strong> as the list on <a href="https://www.json.org/">www.json.org</a> shows.</p>
+</div>
+<div class="paragraph">
+<p>In general, a JSON object may look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">{
+  "name1": "value1",
+  "subObject1": {
+    "subName1": "subValue1"
+  },
+  "orderedArray1": [
+    {"arrayName1": "arrayValue1" },
+    {"arrayName2": "arrayValue2" }
+  ]
+  "number1": 1
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Authorization"><a class="anchor" href="#Authorization"></a>Authorization</h3>
+<div class="paragraph">
+<p>For <strong>all requests</strong> to our server you need to provide an authorization token. Since the <a href="https://oauth.net/2/">OAuth 2.0 standard</a> is an <strong>open protocol</strong> it is already implemented in most programming languages. You can find a list on <a href="https://oauth.net/2/">oauth.net</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="AuthorizationProcess"><a class="anchor" href="#AuthorizationProcess"></a>Authorization Process</h4>
+<div class="paragraph">
+<p>By sending a <strong>valid authorization request an access token</strong> will be returned. This token allows you to access resources on our server.</p>
+</div>
+<div class="paragraph">
+<p>An example request (HTTP header and body, separated by a line break) could be:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>POST https://checkout.wirecard.com/oauth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic RDIwMDQxMTpteXNlY3JldHBhc3N3b3Jk
+
+grant_type=client_credentials</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following table <strong>explains each line</strong> more detailed. You can copy most of the lines except for the <code>Authorization</code>, which contains the credentials assigned to you by Wirecard.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Line</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>POST https://checkout.wirecard.com/oauth/token HTTP/1.1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required request method is <code>POST</code>. Resource for authentication is <code>/oauth/token</code>.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Content-Type: application/x-www-form-urlencoded</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>Content-Type</code> as defined in the OAuth2.0 standard.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Authorization: Basic RDIwMDAwMTpteXNlY3JldHBhc3N3b3Jk</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Basic</code> authorization via <a href="https://www.wikipedia.org/wiki/Base64">Base64</a> encoded credentials in the form<br>
+<code>&lt;merchantId&gt;:&lt;clientSecret&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>merchantId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant ID assigned to you by Wirecard.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>clientSecret</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Client secret assigned to you by Wirecard. Please note that <code>clientSecret</code> is <strong>NOT</strong> the request parameter called <code>secret</code> which is used for parameter verification against other Wirecard interfaces.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>grant_type=client_credentials</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The grant type Wirecard uses for authorization.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The JSON object in the <strong>response body</strong> would be:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Response</th>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>+{
+  "access_token": "e378debf-60a3-4323-aa37-0124e3aa9ced",
+  "token_type": "Bearer",
+  "expires_in": 1800,
+  "scope": "masterpass"
+}
++</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>access_token</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object encapsulating the security identity.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>token_type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type <code>Bearer</code> is used to get access to the associated resources.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>expires_in</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time in seconds until the token expires.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>scope</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the resources you have access to.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The <code>access_token</code> <strong>allows you to access the resources</strong> on <code>https://checkout.wirecard.com/</code>. You have to provide the <code>token_type</code> and the <code>access_token</code> in the header field &#8220;Authorization&#8221;. This access token is valid as long as specified in the property <code>expires_in</code> which is also sent in the server response.</p>
+</div>
+<div class="paragraph">
+<p>A <strong>follow-up request header</strong> example would be:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>GET https://checkout.wirecard.com/masterpass/merchants HTTP/1.1
+Authorization: Bearer e378debf-60a3-4323-aa37-0124e3aa9ced</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="MasterpassShippingProfiles"><a class="anchor" href="#MasterpassShippingProfiles"></a>Masterpass Shipping Profiles</h3>
+<div class="paragraph">
+<p>You can define shipping profiles for the items you sell in your online shop. These profiles allow to define geographic restrictions which are applied to the addresses in the Masterpass wallet of your consumer. Thus only those shipping addresses are shown to your consumer you actually ship items to. Please contact our <a href="../support/" class="page">support teams</a> to create the profiles for you.</p>
+</div>
+<div class="paragraph">
+<p>During the <strong>checkout process</strong> you can retrieve the available shipping profiles as described in the following section. You can then select those that are applicable to the items your consumer has put in his shopping basket and forward the possible profiles to the Wirecard Checkout Server. The addresses which are not compatible with the shipping profiles you selected will not be available for your consumer to choose during the checkout process in the Masterpass wallet.</p>
+</div>
+<div class="sect3">
+<h4 id="RetrievingTheMasterpassShippingProfiles"><a class="anchor" href="#RetrievingTheMasterpassShippingProfiles"></a>Retrieving the Masterpass Shipping Profiles</h4>
+<div class="paragraph">
+<p>You can get the <strong>list of shipping profiles</strong> assigned to your configuration by an <strong>authorized</strong> request.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>GET /masterpass/merchants/&lt;merchantId&gt;/shipping-profiles</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The request header is for example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>GET https://checkout.wirecard.com/masterpass/merchants/D200001-masterpass/shipping-profiles HTTP/1.1
+Authorization: Bearer e378debf-60a3-4323-aa37-0124e3aa9ced</pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Response</th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8</p>
+<p class="tableblock">[{
+  "id": "Shipping profile ID",
+  "description": "Shipping profile countries"
+}]
++</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of the "shipping profile" resource. Can be used to limit Masterpass wallet requests to specific <a href="../payment_methods/masterpass/wcp/#AdditionalOptionalRequestParameter" class="page">shipping profiles</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description for this <a href="../payment_methods/masterpass/wcp/#AdditionalOptionalRequestParameter" class="page">shipping profile</a> resource. Contains a list of countries enabled in this resource.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="MasterpassShippingProfileDetails"><a class="anchor" href="#MasterpassShippingProfileDetails"></a>Masterpass Shipping Profile Details</h4>
+<div class="paragraph">
+<p>Each <strong>single shipping profile</strong> can also be obtained by an authorized GET request to its resource link.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>GET /masterpass/merchants/&lt;merchantId&gt;/shipping-profiles/&lt;shippingProfileId&gt;</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="ResponseExample"><a class="anchor" href="#ResponseExample"></a>Response example</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Response</th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8</p>
+<p class="tableblock">{
+  "id": "Shipping profile ID",
+  "description": "Shipping profile countries"
+}
++</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of the <a href="../payment_methods/masterpass/wcp/#AdditionalOptionalRequestParameter" class="page">shipping profiles</a>. Can be used by the merchants implementation to limit Masterpass wallet requests to specific shipping profiles.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description for this <a href="../payment_methods/masterpass/wcp/#AdditionalOptionalRequestParameter" class="page">shipping profile</a> resource. Contains a list of countries enabled in this resource.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ErrorMessages"><a class="anchor" href="#ErrorMessages"></a>Error messages</h4>
+<div class="paragraph">
+<p>The following error messages are possible when <strong>requesting shipping profiles</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HTTP status code</th>
+<th class="tableblock halign-left valign-top">Error message</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Could not retrieve <code>shippingProfile</code> for ID &#8216;merchantId&#8217;.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">There are no shipping profiles assigned to the provided <code>merchantId</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="MasterpassWallet"><a class="anchor" href="#MasterpassWallet"></a>Masterpass Wallet</h3>
+<div class="paragraph">
+<p>To <strong>start the checkout process</strong> a Masterpass wallet needs to be created. This wallet is used to transfer information between your shop and Masterpass. In this wallet you need to store the <strong>amount</strong> you want to bill your consumer. Since this wallet is created before your consumer can select the shipping address, this amount must <strong>exclude shipping costs</strong>. To show the shopping basket while your consumer is interacting with Masterpass you need to store the <strong>shopping basket</strong> in the wallet resource.</p>
+</div>
+<div class="paragraph">
+<p>After your consumer selected the shipping address and the credit card you can access <strong>payment details, shipping address and billing address</strong> via this wallet.</p>
+</div>
+<div class="sect3">
+<h4 id="CreatingAWallet"><a class="anchor" href="#CreatingAWallet"></a>Creating a Wallet</h4>
+<div class="paragraph">
+<p>The following request can be used to create a wallet resource.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>POST /masterpass/merchants/&lt;merchantId&gt;/wallets
+Authorization: Bearer &lt;access_token&gt;
+Content-Type: application/json;charset=UTF-8</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example of the JSON object in the request:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">POST /masterpass/merchants/D200001-masterpass/wallets HTTP/1.1
+Authorization: Bearer e378debf-60a3-4323-aa37-0124e3aa9ced
+Content-Type: application/json;charset=UTF-8
+
+{
+  "originUrl": "https://www.demoshop.at/",
+  "basket": {
+    "totalAmount": {
+      "amount": 99.79,
+      "currency": "EUR"
+    },
+    "items": [{
+      "articleNumber": "A1",
+      "name": "Item 1",
+      "description": "something",
+      "quantity": 1,
+      "unitGrossAmount": { "amount": 19.99, "currency": "EUR" },
+      "unitNetAmount": { "amount": 16.66, "currency": "EUR" },
+      "unitTaxAmount": { "amount": 3.33, "currency": "EUR" },
+      "unitTaxRate": 20,
+      "imageUrl": "https://www.demoshop.at/item01.jpg"
+    },
+    {
+      "articleNumber": "A2",
+      "name": "Item 2",
+      "description": "something else",
+      "quantity": 2,
+      "unitGrossAmount": { "amount": "39,90", "currency": "EUR" },
+      "unitNetAmount": { "amount": "33,25", "currency": "EUR" },
+      "unitTaxAmount": { "amount": "6,65", "currency": "EUR" },
+      "unitTaxRate": 20,
+      "imageUrl": null
+    }]
+  }
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Request</th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max length</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>basket</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Basket object.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>totalAmount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total amount and currency you want to bill your consumer (excluding shipping costs).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>amount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can contain up to 19 digits followed by a decimal separator and the maximum digits allowed depending on the currency, e.g. two digits for EUR. If comma is used as decimal separator, the amount must be a string, i.e. <code>"amount": 4.20</code> or <code>"amount": "4,20"</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>currency</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency in 3-letter abbreviation (<a href="https://www.iso.org/iso/home/standards/currency_codes.htm">ISO 4217</a>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quantity</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity of each item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If <code>items</code> is used.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>originUrl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL of your shop ("https://" or "https://" is required).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>items</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Array of the items your consumer ordered.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>articleNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of item in shopping basket.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">127</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item name in shopping basket.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">127</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item description in shopping basket.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quantity</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of items in shopping basket.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>imageUrl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL to an image of each item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unitGrossAmount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Price per unit of item in shopping basket with taxes (for more info see totalAmount description).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unitNetAmount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Price per unit of item in shopping basket without taxes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unitTaxAmount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax amount per unit of item in shopping basket.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unitTaxRate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Percentage of tax per unit of item in shopping basket.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If the request is successful, the <strong>same object as requested will be returned</strong> as response <strong>including the wallet ID</strong> as property <code>id</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ErrorMessagesTable2"><a class="anchor" href="#ErrorMessagesTable2"></a>Error messages</h4>
+<div class="paragraph">
+<p>The following error messages are possible when <strong>creating a wallet resource</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HTTP status code</th>
+<th class="tableblock halign-left valign-top">Error message</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bad Request.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No callback URL or function was given.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">You are not allowed to add wallets using the provided <code>merchantId</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="ReadingAWallet"><a class="anchor" href="#ReadingAWallet"></a>Reading a Wallet</h4>
+<div class="paragraph">
+<p>After your consumer <strong>finishes the interaction</strong> with Masterpass, the information your consumer provided is <strong>stored in the wallet resource</strong> you created. To <strong>retrieve the information</strong>, the following request can be used.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>GET /masterpass/merchants/&lt;merchantId&gt;/wallets/&lt;walletId&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example of the JSON object in the response:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">{
+  "id": "0aa18d3d-bffe-44dd-bdda-34161c908a45",
+  "created": "2015-11-16T16:14:29.000Z",
+  "basket": { [ ... ] },
+  "card": {
+    "transactionId": "396105201",
+    "expiryMonth": 7,
+    "expiryYear": 2020,
+    "cardHolderName": "Masterpass Card Holder",
+    "anonymousPan": "0007",
+    "hashedPan": "88faba348f46294ea23ad2ac6db2761ac73a[...]",
+    "maskedPan": "5422******0007",
+    "masterpassWalletId": "101",
+    "created": "2015-11-16T16:15:26.000Z",
+    "firstName": "Joe",
+    "lastName": "Test",
+    "country": "US",
+    "emailAddress": "joe.test@email.com",
+    "phoneNumber": "1-9871111111"
+  },
+  "shippingAddress": {
+    "city": "Buffalo Grove",
+    "country": "US",
+    "countrySubdivision": "US-IL",
+    "postalCode": "60089",
+    "addressLine1": "681 Bernard Drive",
+    "addressLine2": "",
+    "addressLine3": "",
+    "recipientName": "Aaron Aardsma",
+    "recipientPhoneNumber": "US+1-8155370618"
+  },
+  "billingAddress": {
+    "city": "Buffalo Grove",
+    "country": "US",
+    "countrySubdivision": "US-IL",
+    "postalCode": "60089",
+    "addressLine1": "681 Bernard Drive",
+    "addressLine2": "",
+    "addressLine3": ""
+  }
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">(Min-)Max. length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of the wallet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>created</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wallet creation timestamp (format: "YYYY-MM-DD&#8217;T&#8217;hh:mm:ss.sss&#8217;Z").</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>basket</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object containing the basket information. Same as above.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>card</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Card data object available for the wallet.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>transactionId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Masterpass transaction ID.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>expiryMonth</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit card expiry month.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>expiryYear</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit card expiry year.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cardHolderName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit card cardholder name.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>anonymousPan</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last 4 digits of credit card PAN. <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hashedPan</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/start/#OptionalFeaturespecificParameterForWirecardCheckoutPageAndWirecardCheckoutSeamless" class="page">Hashed credit card PAN</a> <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>.].</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>maskedPan</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Masked credit card PAN. <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>created</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment details creation timestamp (format: "YYYY-MM-DD&#8217;T&#8217;hh:mm:ss.sss&#8217;Z")</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>firstName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact data first name.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>lastName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact data last name.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>middleName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact data middle name.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gender</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact data gender (M/F).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>birthDate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact data birth-date (format: "YYYY-MM-DD").</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nationalId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact data national identification.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">150</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>country</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Two-letter country code (<a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a>) of residence.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>emailAddress</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact e-mail address.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5-512</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>phoneNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact phone number.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3-20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shippingAddress</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object containing the shipping address provided by Masterpass wallet.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>city</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address city.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>country</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address country as two-letter country code (<a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>countrySubdivision</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address country subdivision.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>postalCode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address postal code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addressLine1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address line 1.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addressLine2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address line 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addressLine3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address line 3.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>recipientName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the person specified in the shipping address.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>recipientPhoneNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Phone number of person set to receive the shipped order.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>billingAddress</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing Address object corresponding to the selected credit card.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>city</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address city.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>country</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address country as two-letter country code (<a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>countrySubdivision</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address country subdivision.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>postalCode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address postal code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addressLine1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address line 1.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addressLine2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address line 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addressLine3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address line 3.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Additionally if you <strong>only</strong> want to retrieve the <strong>card details or the billing address or shipping address</strong>, the request can be confined. If such a request is made, the response will be only the shipping address or the payment details <strong>object</strong> as described above.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Resource URI</th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Placeholder description</th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Card details</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/masterpass/merchants/&lt;merchantId&gt;/wallets/&lt;walletId&gt;/card</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;merchantId&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Client ID assigned to you by Wirecard.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/masterpass/merchants/&lt;merchantId&gt;/wallets/&lt;walletId&gt;/shipping-address</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;walletId&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wallet ID you received in response of creating a wallet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>/masterpass/merchants/&lt;merchantId&gt;/wallets/&lt;walletId&gt;/billing-address</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="ErrorMessagesTable"><a class="anchor" href="#ErrorMessagesTable"></a>Error messages</h4>
+<div class="paragraph">
+<p>The following error messages are possible when <strong>reading a wallet resource</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HTTP status code</th>
+<th class="tableblock halign-left valign-top">Error message</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant resource not found or not permissible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>merchantId</code> is invalid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Querying the requested resources is not allowed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wallet resource not found or not permissible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wallet with provided <code>walletId</code> does not exist or is not accessible.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="InitiatingThePayment"><a class="anchor" href="#InitiatingThePayment"></a>Initiating the payment</h3>
+<div class="paragraph">
+<p>If the wallet contains the expected card details, you can initiate the payment with a POST request.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>POST /masterpass/merchants/&lt;merchantId&gt;/wallets/&lt;walletId&gt;/payment</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example of the JSON object in the request:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">{
+  "orderNumber": 285703324,
+  "orderDescription": "John Doe - ID: 002302",
+  "totalAmount": {
+    "amount": 104.79,
+    "currency": "EUR"
+  },
+  "customerStatement": "Your purchase at the example store.",
+  "orderReference": "234092",
+  "notificationUrl": "https://www.demoshop.at/payment_notification.php",
+  "deposit": false,
+   "useWalletConsumerData": true
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Required</th>
+<th class="tableblock halign-left valign-top">Max. length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order number of payment.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderDescription</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique description of the consumer&#8217;s order in a human readable form.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>totalAmount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total amount and currency you want to bill your consumer (including shipping costs).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>amount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total amount (<a href="https://www.iso.org/iso/home/standards/currency_codes.htm">ISO 4217</a>) you want to bill your consumer (including shipping costs).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>currency</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency given as ISO 4270 three letter currency code, e.g. EUR.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>customerStatement</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider. Relevant information for your consumer to identify the payments made to your online shop.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">254</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderReference</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution. Convenient to correlate the order numbers of your online shop with the effected payments.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>notificationUrl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL to which a notification will be sent when the payment is processed. Only http(s) with ports 80/443 are possible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>deposit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable automated debiting of payments. default = false</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true/false</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>useWalletConsumerData</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use Masterpass wallet&#8217;s billing and shipping data in payment initiation. default = true</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true/false</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <code>amount</code> can contain up to 19 digits followed by a decimal separator and the maximum digits allowed depending on the currency, e.g. two digits for EUR. If comma is used as decimal separator, the amount must be a string, i.e. <code>"amount": 4.20</code> or <code>"amount": "4,20"</code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For a successful request the <code>orderNumber</code> and <code>"processingState":"PENDING"</code> will be returned.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">{
+  "orderNumber": 285703324,
+  "processingState": "PENDING"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong>notification URL</strong> will be requested one time only when the final payment process state is reached. This POST request contains the parameters <code>walletId</code> with the ID of the wallet and <code>state</code> with the final state of the payment, i.e. <code>SUCCESS</code> or <code>FAILURE</code>.</p>
+</div>
+<div class="sect3">
+<h4 id="ErrorMessagesTable3"><a class="anchor" href="#ErrorMessagesTable3"></a>Error messages</h4>
+<div class="paragraph">
+<p>The following error messages are possible when <strong>initiating a payment</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HTTP status code</th>
+<th class="tableblock halign-left valign-top">Error message</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value for parameter <code>orderNumber</code> is invalid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>orderNumber</code> requires a specific format.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code> already used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An <code>orderNumber</code> may only be used once.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Already processed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wallet has already been processed or is currently processing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">412</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No card data available yet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No Masterpass wallet data available yet. Consumer has not yet finished the interaction with the Masterpass wallet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">412</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment related card data timed out.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The data required for the payment was deleted due to time out.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">502</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Communication error with processing system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Impaired communication with the processing system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">502</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Could not initiate processing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The payment process could not be started.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ReceivingTheFinalTransactionResult"><a class="anchor" href="#ReceivingTheFinalTransactionResult"></a>Receiving the final transaction result</h3>
+<div class="paragraph">
+<p>To receive the final result of the payment process, you can request the following resource.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>GET /masterpass/merchants/&lt;merchantId&gt;/wallets/&lt;walletId&gt;/payment</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>processingState</code> is either still <code>PENDING</code> with the same result as above or has changed to <code>SUCCESS</code> or <code>FAILURE</code>.</p>
+</div>
+<div class="paragraph">
+<p>| <code>+{
+  "orderNumber":446758869,
+  "orderDescription": "John Doe - ID: 002302",
+  "customerStatement": "Your purchase at the example store.",
+  "amount": {
+    "currency": "EUR",
+    "amount": 4.00},
+  "approvalCode": "708491",
+  "approveAmount": {
+    "currency": "EUR",
+    "amount": 4.00
+  },
+  "depositAmount":  {
+    "currency": "EUR",
+    "amount": 0.00
+  },
+  "gatewayReferenceNumber": "C837757147074816743447",
+  "gatewayContractNumber": "70031",
+  "paymentNumber": 446758869,
+  "paymentState": "payment_approved",
+  "processingDate": "2016-08-09T13:09:27.000Z",
+  "orderReference": "234092",
+  "processingState": "SUCCESS"
+  }
++</code></p>
+</div>
+<div class="sect3">
+<h4 id="FinalTransactionResults"><a class="anchor" href="#FinalTransactionResults"></a>Final transaction results</h4>
+<div class="paragraph">
+<p>The following table contains a summary of all data that are returned if the <strong>processing state</strong> has changed to <strong><code>SUCCESS</code></strong> and states both always returned data and only optionally returned data.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">{
+  "orderNumber": 285703324,
+  "orderDescription": "John Doe - ID: 002302",
+  "customerStatement": "Your purchase at the example store.",
+  "amount": {
+      "currency": "EUR",
+      "amount": 104.79
+  },
+  "approvalCode":"708491",
+  "approveAmount": {
+    "currency": "EUR",
+    "amount": 104.79
+  },
+  "depositAmount": {
+    "currency": "EUR",
+    "amount": 0.00
+  },
+  "gatewayReferenceNumber": "C837757147074816743447",
+  "gatewayContractNumber": "70031",
+  "paymentNumber": 446758869,
+  "paymentState": "payment_approved",
+  "processingDate": "2016-08-09T13:09:27.000Z",
+  "orderReference": "234092",
+  "processingState": "SUCCESS",
+  "brand": "MasterCard SecureCode/MasterPass"
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Always</th>
+<th class="tableblock halign-left valign-top">Optional</th>
+<th class="tableblock halign-left valign-top">Max. length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order number of payment.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderDescription</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique description of the consumer&#8217;s order in a human readable form.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">''customerStatement ''</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>approvalCode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Approval code of financial service provider (may be also an empty string).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>approveAmount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Approved amount and currency.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>amount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total amount (<a href="https://www.iso.org/iso/home/standards/currency_codes.htm">ISO 4217</a>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>currency</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency given as ISO 4270 three letter currency code, e.g. EUR.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>depositAmount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deposited amount and currency.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>amount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total amount (<a href="https://www.iso.org/iso/home/standards/currency_codes.htm">ISO 4217</a>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>currency</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency given as ISO 4270 three letter currency code, e.g. EUR.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">''instrumentCountry ''</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country of the consumer which has been detected and returned by the financial service provider. Please be aware that this feature is not provided by all financial service providers.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>merchantReference</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>paymentNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of payment.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>paymentState</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Current state of payment (<code>payment_approved</code>, <code>payment_deposited</code>, <code>payment_closed</code> or <code>payment_approvalexpired</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>providerReferenceNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technical reference number of the financial service provider or acquirer.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>processingDate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date and time when order has been processed (Format:"yyyy-MM-dd&#8217;T&#8217;HH:mm:ss.SSS&#8217;Z").</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderReference</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>processingState</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Current state of payment SUCCESS, FAILURE, PENDING).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>brand</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brand of used credit card. Alphanumeric with a variable length of up to 255 characters.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gatewayReferenceNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technical reference number of the payment process.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gatewayContractNumber</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contract number of the processor or acquirer.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">255</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>avsResultCode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Result code of AVS check. Only for American Express transactions using AVS (Address Verification System).</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>avsResultMessage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Result text of AVS check. Only for American Express transactions using AVS (Address Verification System).</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>avsProviderResultCode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provider result code of AVS check. Only for American Express transactions using AVS (Address Verification System).</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>avsProviderResultMessage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provider result text of AVS check. Only for American Express transactions using AVS (Address Verification System).</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If the <strong>processing state</strong> has changed to <code>FAILURE</code>, the following data is returned:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">{
+  "orderNumber": 285703324,
+  "orderDescription": "John Doe - ID: 002302",
+  "customerStatement": "Your purchase at the example store.",
+  "errorCode": "&lt;error code&gt;",
+  "errorMessage": "&lt;error message&gt;",
+  "paysysMessage": "&lt;payment system error message&gt;",
+  "orderReference": "234092",
+  "processingState": "FAILURE"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ErrorMessagesTable4"><a class="anchor" href="#ErrorMessagesTable4"></a>Error messages</h4>
+<div class="paragraph">
+<p>The following error messages are possible when <strong>receiving the final transaction results</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HTTP status code</th>
+<th class="tableblock halign-left valign-top">Error message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value for parameter <code>orderNumber</code> is invalid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameter <code>orderNumber</code> has to be unique for this operation. Most likely, this transaction has already been processed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wallet not yet processed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unknown wallet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">410</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment not retrievable from processing system.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For status code 200 the property for the error message is <code>errorMessage</code>, otherwise it is <code>message</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. Representational State Transfer
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. Will not be returned, if <code>hashedPan</code> is enabled.
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. Only if explicitly enabled by our xref:support.adoc[support teams
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. Will not be returned, if <code>hashedPan</code> is enabled.
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. If stated
+</div>
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. If stated
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../.." data-page-path="/online-guides/main/rest_api/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wirecard Integration for Shopgate :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/shop_plugins/shopgate/start/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QENTA Online Guides</a></li>
+    <li><a href="./">Wirecard Integration for Shopgate</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Wirecard Integration for Shopgate</h1>
+<div class="sect1">
+<h2 id="WirecardIntegrationForShopgate"><a class="anchor" href="#WirecardIntegrationForShopgate"></a>Wirecard Integration for Shopgate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Shopgate enables online stores to <strong>create, maintain and optimize native apps and mobile websites</strong> for Android and iOS devices. This is accomplished by integrating Shopgate into your online shop. The Wirecard Integration for Shopgate incorporates our solutions Wirecard Checkout Page and Wirecard Checkout Seamless.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Please note that due to security measures imposed by Shopgate, you may <strong>not</strong> use the credit card numbers for demo mode using <code>customerId</code> D200001. Instead, you may use <code>customerId</code> D200411 for testing credit card numbers for <a href="../../../wcp/test_mode/#PaymentMethodSpecificTestData" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/test_mode/#PaymentMethodSpecificTestData" class="page">Wirecard Checkout Seamless</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="SupportedPaymentMethods"><a class="anchor" href="#SupportedPaymentMethods"></a>Supported payment methods</h3>
+<div class="paragraph">
+<p>The following <strong>payment methods</strong> are supported both for Wirecard Checkout Page and Wirecard Checkout Seamless:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Credit Card</p>
+</li>
+<li>
+<p>PayPal</p>
+</li>
+<li>
+<p>Sofort.</p>
+</li>
+<li>
+<p>Direct Debit</p>
+</li>
+<li>
+<p>iDEAL - Please <strong>contact Shopgate</strong> to enable this payment method for Wirecard Checkout Seamless.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you have <strong>questions</strong> or <strong>problems</strong> regarding the implementation, please <strong>contact the Shopgate support</strong>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Please note that currently any back-end operations such as deposit or refund need to be performed in the <a href="../../../pmc/start/" class="page">Wirecard Payment Center</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AddingAPaymentMethod"><a class="anchor" href="#AddingAPaymentMethod"></a>Adding a payment method</h3>
+<div class="paragraph">
+<p>To add a payment method, first navigate to the <strong>entry "Payment"</strong> in the <strong>"Settings" menu</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/shopgate/sg_-_screen1.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Then click on the select <strong>field "Please choose a payment method"</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/shopgate/sg_-_screen2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Search</strong> for the payment method by entering the name <strong>or scroll down</strong> to the section "Wirecard (Checkout Page)" or "Wirecard (Checkout Seamless)" <strong>and select</strong> the payment method you want to add.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/shopgate/sg_-_screen3.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ConfiguringAPaymentMethod"><a class="anchor" href="#ConfiguringAPaymentMethod"></a>Configuring a payment method</h3>
+<div class="paragraph">
+<p>After adding a payment method, it needs to be configured. The following parameters need to be set for each payment method in <strong>"Settings"</strong>:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/shopgate/shopgate_admin_-_payment_method_settings.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Please <strong>fill in your <code>Customer ID</code>, <code>Secret</code> and optionally your <code>Shop ID</code></strong> into the respective fields at the payment method configuration. When configuring the payment method <strong>credit card</strong> you also need to select the brands you have a <strong>contract</strong> for.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Customer ID</th>
+<th class="tableblock halign-left valign-top">Required</th>
+<th class="tableblock halign-left valign-top">Your customer ID you received from Wirecard.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secret</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Your secret you received from Wirecard.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shop ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique identifier for your shop. This parameter has to be enabled by Wirecard for your customer ID.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="CustomizationPossibilities"><a class="anchor" href="#CustomizationPossibilities"></a>Customization possibilities</h3>
+<div class="paragraph">
+<p>If <strong>Wirecard Checkout Page</strong> is the incorporated solution, it is recommended to have a look at the provided <a href="../../../wcp/customizations/" class="page">customization possibilities</a> for an optimized design.</p>
+</div>
+<div class="paragraph">
+<p>If <strong>Wirecard Checkout Seamless</strong> is the incorporated solution, the <strong>intermediate page</strong> which displays status information to your consumer during the payment process may be customized in order to better match the design of you online shop. For more information please have a look at the relevant <a href="../../../wcs/customization/" class="page">customization possibilities</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/shop_plugins/shopgate/start/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

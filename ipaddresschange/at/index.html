@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wirecard Payment Services - IP Address Change :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/ipaddresschange/at/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">QENTA Online Guides</a></li>
+    <li><a href="./">Wirecard Payment Services - IP Address Change</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Wirecard Payment Services - IP Address Change</h1>
+<div class="sect1">
+<h2 id="WirecardPaymentServicesIpAddressChange"><a class="anchor" href="#WirecardPaymentServicesIpAddressChange"></a>Wirecard Payment Services - IP Address Change</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This page contains important technical information for all merchants using Wirecard&#8217;s payment services.</p>
+</div>
+<div class="paragraph">
+<p>Please ensure that the information is forwarded promptly to the responsible IT department or the person in charge for maintaining your online shop or e-commerce system. Subsequently please find the list of affected Wirecard payment services:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wirecard Checkout Page (QPAY)</p>
+</li>
+<li>
+<p>Wirecard Checkout Seamless (QMORE)</p>
+</li>
+<li>
+<p>Wirecard Checkout Enterprise (QTILL)</p>
+</li>
+<li>
+<p>Wirecard Checkout Automated (QFILE)</p>
+</li>
+<li>
+<p>Wirecard Checkout Terminal (QCALL)</p>
+</li>
+<li>
+<p>Toolkit (Wirecard Checkout Toolkit)</p>
+</li>
+<li>
+<p>Toolkit light (Wirecard Checkout Toolkit light)</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="WhatIsGoingToChange"><a class="anchor" href="#WhatIsGoingToChange"></a>What is going to change?</h3>
+<div class="paragraph">
+<p>Due to the switch to a new data center, the Domain Name Service (DNS) records of all <a href="#WirecardServiceEndpoints">Wirecard Service Endpoints</a> are going to be updated with new IP addresses. Furthermore, <a href="#WirecardOutgoingIpAddresses">Wirecard Outgoing IP Addresses</a> will change. All changes will be made with as little downtime as possible.</p>
+</div>
+<div class="paragraph">
+<p>Wirecard will ensure that the DNS TTL settings are correct. However, due to the architecture of worldwide DNS and its caching mechanism, we expect delays of up to 48 hours until all merchant name servers are updated with new records. For this, Wirecard has implemented a proxy, which will transparently redirect all requests made to old IP addresses to the IP addresses of the new data center.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="WhenWillChangesBeImplemented"><a class="anchor" href="#WhenWillChangesBeImplemented"></a>When will changes be implemented?</h3>
+<div class="paragraph">
+<p>The current plan is to switch all Wirecard payment services between mid and end of April 2015. The phase during which Wirecard will migrate/switch all <a href="#WirecardServiceEndpoints">Wirecard Service Endpoints</a> and <a href="#WirecardOutgoingIpAddresses">Wirecard Outgoing IP Addresses</a> is subsequently called the <strong>migration phase</strong>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The <strong>migration phase</strong> took place in the week <strong>between Monday, 20th of April 2015</strong> and <strong>Thursday, 23rd of April 2015</strong>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For now, we recommend that you read <a href="#WhatWillMerchantsNeedToDo">What will merchants need to do</a> in order to prepare the actions needed on your part.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="WhatWillMerchantsNeedToDo"><a class="anchor" href="#WhatWillMerchantsNeedToDo"></a>What will merchants need to do?</h3>
+<div class="paragraph">
+<p>In order to avoid service interruptions during the data center switch Wirecard strongly recommends that you are aware of ANY changes that might be necessary on your side. As all <a href="#WirecardServiceEndpoints">Wirecard Service Endpoints</a> will be switched to new IP addresses, you need to take appropriate action to ensure communication with Wirecard systems.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If your firewall is configured to limit <strong>outgoing traffic</strong> you must ensure that requests to all <a href="#WirecardServiceEndpoints">Wirecard Service Endpoints</a> are allowed.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If your firewall is configured to limit <strong>incoming traffic</strong> you must ensure that requests from all <a href="#WirecardOutgoingIpAddresses">Wirecard Outgoing IP Addresses</a> are allowed.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If you are calling <a href="#WirecardServiceEndpoints">Wirecard Service Endpoints</a> with a <strong>hardcoded IP address</strong> rather than using DNS we strongly recommend to use DNS resolution.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+During the <a href="#WhenWillChangesBeImplemented">migration phase</a> you must ensure that both <strong>current data center</strong> and <strong>new data center</strong> IP addresses of <a href="#WirecardServiceEndpoints">Wirecard Service Endpoints</a> and <a href="#WirecardOutgoingIpAddresses">Wirecard Outgoing IP Addresses</a> are allowed in your firewall configuration.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="WirecardServiceEndpoints"><a class="anchor" href="#WirecardServiceEndpoints"></a>Wirecard Service Endpoints</h4>
+<div class="paragraph">
+<p>The following table lists all payment service endpoints with their respective URL, Port and IP addresses. For the <a href="#WhenWillChangesBeImplemented">migration phase</a> please ensure that IP addresses of both data centers are allowed.</p>
+</div>
+<div class="paragraph">
+<p>Column description:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Service</strong>: Available Wirecard applications.</p>
+</li>
+<li>
+<p><strong>Service URL</strong>: URL under which applications are available.</p>
+</li>
+<li>
+<p><strong>Service Port</strong>: Network port used by application.</p>
+</li>
+<li>
+<p><strong>Old Service IP</strong>: IP addresses of old data center.</p>
+</li>
+<li>
+<p><strong>Current Service IP</strong>: IP addresses of new data center.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Service</th>
+<th class="tableblock halign-left valign-top">Service URL</th>
+<th class="tableblock halign-left valign-top">Service Port</th>
+<th class="tableblock halign-left valign-top">Old Service IP</th>
+<th class="tableblock halign-left valign-top">Current Service IP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard Checkout Page (QPAY)<br>
+Wirecard Checkout Seamless (QMORE)<br>
+Wirecard Checkout Automated (QFILE)<br>
+Wirecard Checkout Terminal (QCALL)<br>
+Toolkit light</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://checkout.wirecard.com" class="bare">https://checkout.wirecard.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.31.23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.34</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://secure.wirecard-cee.com" class="bare">https://secure.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.31.26</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.33</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.qenta.at" class="bare">https://www.qenta.at</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.150</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.43</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.qenta.com" class="bare">https://www.qenta.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.149</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.44</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard Checkout Enterprise (QTILL)<br>
+Toolkit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtill01.wirecard-cee.com" class="bare">https://qtill01.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.149</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.35</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtill02.wirecard-cee.com" class="bare">https://qtill02.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.150</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.36</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtilldemo01.wirecard-cee.com" class="bare">https://qtilldemo01.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.149</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.37</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtilldemo02.wirecard-cee.com" class="bare">https://qtilldemo02.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.150</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.38</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtill.qenta.at" class="bare">https://qtill.qenta.at</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.150</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.35</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtill.qenta.com" class="bare">https://qtill.qenta.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.149</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.36</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="WirecardOutgoingIpAddresses"><a class="anchor" href="#WirecardOutgoingIpAddresses"></a>Wirecard Outgoing IP Addresses</h4>
+<div class="paragraph">
+<p>The following table lists all outgoing IP addresses which are used by Wirecard to deliver payment confirmation requests. For the <a href="#WhenWillChangesBeImplemented">migration phase</a> please ensure that IP addresses of both data centers are allowed.</p>
+</div>
+<div class="paragraph">
+<p>Column description:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Service</strong>: Available Wirecard applications.</p>
+</li>
+<li>
+<p><strong>Service URL</strong>: URL under which applications are available.</p>
+</li>
+<li>
+<p><strong>Old Outgoing IPs</strong>: Outgoing IP addresses of old data center.</p>
+</li>
+<li>
+<p><strong>Current Outgoing IPs</strong>: Outgoing IP addresses of new data center.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Service</th>
+<th class="tableblock halign-left valign-top">Service URL</th>
+<th class="tableblock halign-left valign-top">Old Outgoing IPs</th>
+<th class="tableblock halign-left valign-top">Current Outgoing IPs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard Checkout Page (QPAY)<br>
+Wirecard Checkout Seamless (QMORE)<br>
+Wirecard Checkout Automated (QFILE)<br>
+Wirecard Checkout Terminal (QCALL)<br>
+Wirecard Checkout Enterprise (QTILL)<br>
+Toolkit<br>
+Toolkit light</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://checkout.wirecard.com" class="bare">https://checkout.wirecard.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">193.110.30.149<br>
+193.110.30.150</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.35<br>
+185.60.56.36<br>
+195.93.244.97</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://secure.wirecard-cee.com" class="bare">https://secure.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.qenta.at" class="bare">https://www.qenta.at</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.qenta.com" class="bare">https://www.qenta.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtill01.wirecard-cee.com" class="bare">https://qtill01.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtill02.wirecard-cee.com" class="bare">https://qtill02.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtilldemo01.wirecard-cee.com" class="bare">https://qtilldemo01.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://qtilldemo02.wirecard-cee.com" class="bare">https://qtilldemo02.wirecard-cee.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ContactSupport"><a class="anchor" href="#ContactSupport"></a>Contact Support</h3>
+<div class="paragraph">
+<p>We are at your disposal from Monday through Friday, from 8:00 to 16:30 (CET).<br>
+<br>
+Wirecard CEE<br>
+Reininghausstraße 13a<br>
+8020 Graz, Austria</p>
+</div>
+<div class="paragraph">
+<p><a href="mailto:support.at@wirecard.com">support.at@wirecard.com</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Faq"><a class="anchor" href="#Faq"></a>FAQ</h3>
+<div class="paragraph">
+<p>For any further questions related to the upcoming change of Wirecard payment services we kindly ask you to contact our <a href="#ContactSupport">support team</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/online-guides/main/ipaddresschange/at/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

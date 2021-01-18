@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Masterpass Integration for Wirecard Checkout Page :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/payment_methods/masterpass/wcp/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QENTA Online Guides</a></li>
+    <li><a href="./">Masterpass Integration for Wirecard Checkout Page</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Masterpass Integration for Wirecard Checkout Page</h1>
+<div class="sect1">
+<h2 id="MasterpassIntegrationForWirecardCheckoutPage"><a class="anchor" href="#MasterpassIntegrationForWirecardCheckoutPage"></a>Masterpass Integration for Wirecard Checkout Page</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To offer Masterpass to your consumers in your online shop, using Wirecard Checkout Page, we provide the following information.</p>
+</div>
+<div class="sect2">
+<h3 id="IntegrationInformation"><a class="anchor" href="#IntegrationInformation"></a>Integration information</h3>
+<div class="paragraph">
+<p>In order to make Masterpass available to your consumers, please contact our <a href="../../../contact/" class="page">sales teams</a>. After activation and corresponding setup by our <a href="../../../support/" class="page">support teams</a>, Masterpass will appear among the card brands (see screen below) as well as on the payment method selection page.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/payment_methods/masterpass/2017-08-02_masterpass_cc_eingabe_screen_-_kopie.jpg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Additionally you can either state <code>MASTERPASS</code> as sole parameter value <code>paymentType</code> to forward the consumer directly to Masterpass, or as additional value to offer a selected number of payment methods.</p>
+</div>
+<div class="paragraph">
+<p><strong>Your consumer</strong> selects <code>Masterpass</code> within Wirecard Checkout Page and initiates the payment process just by logging into the Masterpass wallet and selecting a credit card and optionally a shipping address.</p>
+</div>
+<div class="sect3">
+<h4 id="ExpressCheckout"><a class="anchor" href="#ExpressCheckout"></a>Express checkout</h4>
+<div class="paragraph">
+<p>You can add a <code>Masterpass</code> button e.g. on the details page of an item to provide an <strong>express checkout</strong>. This button invokes Wirecard Checkout Page by using the usual <a href="../../../wcp/integration/" class="page">POST request</a> and initiates a payment for the total amount including shipping costs. After your consumer has paid, the resulting information is sent to the confirmation URL including the selected shipping address.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ShippingCostsAndShippingAddress"><a class="anchor" href="#ShippingCostsAndShippingAddress"></a>Shipping costs and shipping address</h4>
+<div class="paragraph">
+<p>For your consumers' convenience you can request the shipping address from your consumer directly during the Masterpass wallet interaction.</p>
+</div>
+<div class="paragraph">
+<p>When your consumer selected an address within Masterpass, you will receive the shipping address information in the response parameters after the payment process. Therefore you need to calculate the possible shipping costs for the address your consumer will choose when invoking Wirecard Checkout Page. In contrast, with <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> you receive the shipping address before payment initiation. There are two possibilities for the shipping costs calculation. You can either <strong>restrict the shipping address selection area</strong> and calculate the precise costs for a certain area, or request the shipping costs for <strong>world wide shipping</strong> and then only deposit the actual costs. As a third possibility, the selection of a shipping address may be disabled for particular cases.</p>
+</div>
+<div class="sect4">
+<h5 id="RestrictingTheAddresses"><a class="anchor" href="#RestrictingTheAddresses"></a>Restricting the addresses</h5>
+<div class="paragraph">
+<p>You can <strong>restrict the selection of a shipping address</strong> by setting the parameter <code>shippingProfile</code> to a predefined shipping profile, e.g. if you make restrictions for only one country or for a certain region such as D-A-CH. Your consumer can select an address in Masterpass within the shipping profile area. Thus you can calculate the shipping costs for this area.</p>
+</div>
+<div class="paragraph">
+<p>For using these shipping profiles or setting up new shipping profiles to restrict your shipping address area, contact our <a href="../../../support/" class="page">support teams</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="UnrestrictedAddresses"><a class="anchor" href="#UnrestrictedAddresses"></a>Unrestricted addresses</h5>
+<div class="paragraph">
+<p>If you do <strong>not set the <code>shippingProfile</code> parameter</strong>, the address selection is <strong>areawise unrestricted</strong>, i.e. any address from all over the world can be selected which makes shipping cost calculation impossible. However, you can request authorization from your consumer for your highest <strong>worldwide shipping costs</strong> and inform your consumer that the final costs might be lower depending on the shipping address selected. The actual amount you deposit may thus be lower than the authorized amount and includes the actual shipping costs to the address your consumer has finally selected.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="NoAddresses"><a class="anchor" href="#NoAddresses"></a>No addresses</h5>
+<div class="paragraph">
+<p>If your consumer already has submitted a shipping address in a previous step and you submit your consumer&#8217;s shipping address to Wirecard Checkout Page via the request parameters <code>consumerShipping*</code>, the possibility of a selection within Masterpass wallet will be automatically disabled. Therefore it is advisable to always include the shipping address, if known, in the request parameters for Wirecard Checkout Page in order to disable the address selection. Otherwise you might end up with two addresses, i.e. one from a previous step and one from Masterpass.</p>
+</div>
+<div class="paragraph">
+<p>For <strong>digital goods</strong> or if a shipping address is always entered in a previous step <strong>disabling</strong> the address selection may be useful. You can disable the shipping address selection in the Masterpass wallet of your consumer by setting the parameter <code>shippingProfile</code> to <code>NO_SHIPPING</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="TabularOverview"><a class="anchor" href="#TabularOverview"></a>Tabular overview</h3>
+<div class="paragraph">
+<p>The following table explains in which cases your consumer is shown an address selection within Masterpass. Whether the address selection is displayed or not depends on the request parameters <code>shippingProfile</code> and <code>consumerShipping*</code>. The parameters <code>consumerBilling*</code> are not taken into account.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consumer can<br>
+select address</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shippingProfile</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not set</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NO_SHIPPING</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Restricted</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>consumer Shipping*</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not set</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes (1)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No (2)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes (3)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No (4)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No (5)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No (6)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>consumerShippingLastName=&amp;shippingProfile=</code></p>
+</li>
+<li>
+<p><code>consumerShippingLastName=&amp;shippingProfile=NO_SHIPPING</code></p>
+</li>
+<li>
+<p><code>consumerShippingLastName=&amp;shippingProfile=SP-0001</code></p>
+</li>
+<li>
+<p><code>consumerShippingLastName=Doe&amp;shippingProfile=</code></p>
+</li>
+<li>
+<p><code>consumerShippingLastName=Doe&amp;shippingProfile=NO_SHIPPING</code></p>
+</li>
+<li>
+<p><code>consumerShippingLastName=Doe&amp;shippingProfile=SP-0001</code></p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="ShoppingBasketItems"><a class="anchor" href="#ShoppingBasketItems"></a>Shopping basket items</h4>
+<div class="paragraph">
+<p>You may opt to present to your consumer the items in the Masterpass shopping basket as images. The display of these images is carried out by sending the relevant information via the parameter #basketItem(n)ImageUrl.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="OptionalRequestParameters"><a class="anchor" href="#OptionalRequestParameters"></a>Optional request parameters</h3>
+<div class="paragraph">
+<p>To display the <strong>shopping basket information</strong> to your consumer the <a href="../../../request_parameters/#ShoppingBasketData" class="page">Shopping basket parameters</a> can be used.</p>
+</div>
+<div class="paragraph">
+<p>Please note the <strong>length restrictions</strong> that apply for this payment method and the following <strong>shopping basket parameters</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Within fingerprint</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)ArticleNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and with a variable length of up to 127 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of article n in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and with a variable length of up to 500 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product description of article n in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)ImageUrl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and with a variable length of up to 500 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL to an image of each item.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and with a variable length of up to 127 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product name of article n in shopping basket.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The request parameter <code>financialInstitution</code> can be used to define the credit card brands allowed for the current payment. Thus only the listed brands can be selected by your consumer during the interaction with the Masterpass wallet.</p>
+</div>
+<div class="paragraph">
+<p>As regards the optional request parameters <code>customerStatement</code> and <code>orderReference</code> we refer to the restrictions that are applicable for credit cards since these parameters depend on the relevant acquirers and are therefore more restricted in length and allowed characters. For more information and details visit <a href="../../creditcard/start/#OptionalRequestParameters" class="page">Optional request parameters</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AdditionalOptionalRequestParameter"><a class="anchor" href="#AdditionalOptionalRequestParameter"></a>Additional optional request parameter</h3>
+<div class="paragraph">
+<p>The following request parameter is available when selecting the payment method Masterpass.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#AdditionalOptionalRequestParameter">shippingProfile</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String of shipping profile ID, e.g. "SP-0001" including the countries Germany, Austria and Switzerland.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="DetailsParameterShippingprofile"><a class="anchor" href="#DetailsParameterShippingprofile"></a>Details parameter shippingProfile</h4>
+<div class="paragraph">
+<p>These shipping profiles apply both for Wirecard Checkout Page and Wirecard Checkout Seamless.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Shipping profile name</th>
+<th class="tableblock halign-left valign-top">Countries</th>
+<th class="tableblock halign-left valign-top">Shipping profile ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DACH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Germany, Austria, Switzerland</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SP-0001</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SLO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Slovenia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SP-0002</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WORLD (default)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All countries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SP-0003</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AUSTRIA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Austria</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SP-0004</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For using these shipping profiles or setting up new shipping profiles to restrict your shipping address area, contact our <a href="../../../support/" class="page">support teams</a>.</p>
+</div>
+<div class="paragraph">
+<p>If the parameter <code>shippingProfile</code> and the parameters relating to the consumer shipping information are not set, all addresses can be selected by your consumer. If the value for <code>shippingProfile</code> is set to <code>NO_SHIPPING</code> (for Wirecard Checkout Page), no shipping address can be selected (Wirecard Checkout Page).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AdditionalResponseParameters"><a class="anchor" href="#AdditionalResponseParameters"></a>Additional response parameters</h3>
+<div class="paragraph">
+<p>When using Masterpass, Wirecard Checkout Page will return additional parameters to your online shop.</p>
+</div>
+<div class="paragraph">
+<p>Your consumer is asked for a <strong>billing address</strong> when adding a credit card to the Masterpass wallet. This billing address information is provided when the respective card is selected by your consumer.</p>
+</div>
+<div class="paragraph">
+<p>If your consumer has selected a shipping address, the following <strong>shipping address related parameters</strong> are returned.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassBillingAddressCity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address city.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassBillingAddressCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1">(ISO 3166-1)</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassBillingAddressCountrySubdivision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address country subdivision.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassBillingAddressPostalCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address postal code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassBillingAddressAddressLine1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing address with name of street and number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassBillingAddressAddressLine2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional billing address information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassBillingAddressAddressLine3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 255.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional billing address information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassCardFirstname</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 20.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Card holder first name.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassCardLastname</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 20.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Card holder last name.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassCardEmail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length from 5 to 512.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Card holder e-mail address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressRecipientName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address recipient name.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressRecipientPhoneNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters <code>+</code> and <code>-</code> in the format e.g. DE+49-66666666.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address recipient phone number using country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1">(ISO 3166-1)</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressCity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address city.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1">(ISO 3166-1)</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressCountrySubdivision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address country subdivision.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressPostalCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address postal code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressAddressLine1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping address with name of street and number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressAddressLine2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional shipping address information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">masterpassShippingAddressAddressLine3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 255.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional shipping address information.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Data are only returned if they are provided by your consumer, e.g. <code>masterpassShippingAddressAddressLine2</code> may not be defined.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/payment_methods/masterpass/wcp/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

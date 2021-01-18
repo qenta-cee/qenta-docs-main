@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Initiating the Payment Process :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/wcs/frontend_init/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">QENTA Online Guides</a></li>
+    <li><a href="./">Initiating the Payment Process</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Initiating the Payment Process</h1>
+<div class="sect1">
+<h2 id="InitiatingThePaymentProcess"><a class="anchor" href="#InitiatingThePaymentProcess"></a>Initiating the Payment Process</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="Prerequisites"><a class="anchor" href="#Prerequisites"></a>Prerequisites</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../datastorage_init/" class="page">Initialization of QENTA Data Storage</a></p>
+</li>
+<li>
+<p><a href="../datastorage_store/" class="page">Storing sensitive payment data in QENTA Data Storage</a></p>
+</li>
+<li>
+<p>Optional as introduction to payment processes: <a href="../../start/#QentaCheckoutPage" class="page">QENTA Checkout Page</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="TimeForStartingPaymentProcess"><a class="anchor" href="#TimeForStartingPaymentProcess"></a>Time for starting payment process</h3>
+<div class="paragraph">
+<p>After initializing the data storage you are able to start the payment of all payment methods which do not need to store sensitive data in the QENTA Data Storage. If you support payments which involve the handling of sensitive data you need to store these data to the data storage before you start the payment process.</p>
+</div>
+<div class="paragraph">
+<p>Please be aware that your data storage session for a specific consumer is only valid for 30 minutes. Once this period of time has expired, you have to initialize the data storage again and you also have to store the sensitive payment data of your consumer again.</p>
+</div>
+<div class="paragraph">
+<p>Please be aware that the data storage is also invalidated when the initiation of the payment process was successful.</p>
+</div>
+<div class="paragraph">
+<p>Each store or read operation extends the validity of the data storage for another 30 minutes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="StartingThePaymentProcess"><a class="anchor" href="#StartingThePaymentProcess"></a>Starting the payment process</h3>
+<div class="paragraph">
+<p>The starting of the payment process is nearly the same as for the initialization of the data storage:</p>
+</div>
+<div class="paragraph">
+<p>You send a server-to-server request from your web server to the QENTA Checkout Server to a specific URL containing some specific request parameters.</p>
+</div>
+<div class="paragraph">
+<p>The URL for the server-to-server communication is:</p>
+</div>
+<div class="paragraph">
+<p><code>https://api.qenta.com/seamless/frontend/init</code></p>
+</div>
+<div class="paragraph">
+<p>Please be aware that it is sometimes necessary to enable server-to-server requests in the configuration of your web server. This issue arises typically on provider managed web servers with PHP.</p>
+</div>
+<div class="paragraph">
+<p>For a proper request you have to set a correct HTTP header. Therefore you need to set the HTTP header elements within your request as described in <a href="../datastorage_init/" class="page">Initialization of QENTA Data Storage</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ComputingTheFingerprint"><a class="anchor" href="#ComputingTheFingerprint"></a>Computing the fingerprint</h3>
+<div class="paragraph">
+<p>The fingerprint is computed by concatenating all request parameters without any dividers in between and using the secret as cryptographic key for the hashing function. If you do not use optional parameters you have to omit them in your fingerprint string.</p>
+</div>
+<div class="paragraph">
+<p>After concatenating all values to a single string create an <a href="https://en.wikipedia.org/wiki/Hash-based_message_authentication_code">HMAC-SHA-512</a> hash with your secret as cryptographic key. The result is the fingerprint which you add as a request parameter to the server-to-server call.</p>
+</div>
+<div class="paragraph">
+<p>The QENTA Checkout Server is thus able to check whether the received parameters are manipulated by a 3rd party. Therefore it is essential to keep your secret safe!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="RequestParametersToUse"><a class="anchor" href="#RequestParametersToUse"></a>Request parameters to use</h3>
+<div class="paragraph">
+<p>To initiate the payment process you have to set the required request parameters. Additionally you can use a lot of optional parameters. Please visit <a href="../../request_parameters/" class="page">Request parameters</a> for an overview and a detailed description of all relevant parameters.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ReturnValuesFromTheServertoserverInitiationRequest"><a class="anchor" href="#ReturnValuesFromTheServertoserverInitiationRequest"></a>Return values from the server-to-server initiation request</h3>
+<div class="paragraph">
+<p>After you send the initiation request as a server-to-server request from your web server to the QENTA Checkout Server you will get the result of the initiation as key-value pairs returned in the content of the response.</p>
+</div>
+<div class="paragraph">
+<p>If the initiation of the payment process was successful you will receive a parameter called <code>redirectUrl</code> which you use to redirect your consumer to the next page within the payment process. Typically your consumer is redirected to pages of financial institutions like internet banking pages or a page for entering the 3-D Secure code.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">redirectUrl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL to redirect your consumer.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If the initiation did not succeed you will get parameters describing the error:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of errors occurred.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error.{n}.errorCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a fixed length of 5.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric error code which you should log for later use.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error.{n}.message</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error message in English.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error.{n}.consumerMessage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error message in localized language for your consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error.{n}.paySysMessage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment method system specific error message only relevant for merchant.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Example of a possible error:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>error.1.message=CUSTOMERID+is+missing.&amp;error.1.consumerMessage=CUSTOMERID+is+missing.&amp;error.1.errorCode=11500&amp;error.2.message=Currency+is+missing.&amp;error.2.consumerMessage=Currency+is+missing.&amp;error.2.errorCode=11019&amp;error.3.message=Language+is+missing.&amp;error.3.consumerMessage=Language+is+missing.&amp;error.3.errorCode=11009&amp;error.4.message=Order+description+is+missing.&amp;error.4.consumerMessage=Order+description+is+missing.&amp;error.4.errorCode=11020&amp;error.5.message=SUCCESSURL+is+missing.&amp;error.5.consumerMessage=SUCCESSURL+is+missing.&amp;error.5.errorCode=11022&amp;error.6.message=FAILUREURL+is+missing.&amp;error.6.consumerMessage=FAILUREURL+is+missing.&amp;error.6.errorCode=11023&amp;error.7.message=CANCELURL+is+missing.&amp;error.7.consumerMessage=CANCELURL+is+missing.&amp;error.7.errorCode=11024&amp;error.8.message=SERVICEURL+is+missing.&amp;error.8.consumerMessage=SERVICEURL+is+missing.&amp;error.8.errorCode=11031&amp;error.9.message=CONFIRMURL+is+missing.&amp;error.9.consumerMessage=CONFIRMURL+is+missing.&amp;error.9.errorCode=11504&amp;error.10.message=IP-Address+is+missing.&amp;error.10.consumerMessage=IP-Address+is+missing.&amp;error.10.errorCode=11146&amp;error.11.message=USER_AGENT+is+missing.&amp;error.11.consumerMessage=USER_AGENT+is+missing.&amp;error.11.errorCode=11130&amp;error.12.message=FINGERPRINT+is+missing.&amp;error.12.consumerMessage=FINGERPRINT+is+missing.&amp;error.12.errorCode=11050&amp;error.13.message=REQUESTFINGERPRINTORDER+is+missing.&amp;error.13.consumerMessage=REQUESTFINGERPRINTORDER+is+missing.&amp;error.13.errorCode=11508&amp;errors=13</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Simplified code example for redirecting your consumer or retrieving errors if they occurred within the initiation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">//--------------------------------------------------------------------------------//
+// Retrieves the value for the redirect URL.
+//--------------------------------------------------------------------------------//
+
+$redirectURL = "";
+foreach (explode('&amp;', $curlResult) as $keyvalue) {
+  $param = explode('=', $keyvalue);
+  if (sizeof($param) == 2) {
+    $key = urldecode($param[0]);
+    if ($key == "redirectUrl") {
+      $redirectURL = urldecode($param[1]);
+      break;
+    }
+  }
+}
+
+//--------------------------------------------------------------------------------//
+// Redirects consumer to payment page.
+//--------------------------------------------------------------------------------//
+
+if ($redirectURL == "") {
+  echo "&lt;pre&gt;";
+  echo "Frontend Intitiation failed with errors:\n\n";
+  foreach (explode('&amp;', $curlResult) as $keyvalue) {
+    $param = explode('=', $keyvalue);
+    if (sizeof($param) == 2) {
+      $key = urldecode($param[0]);
+      $value = urldecode($param[1]);
+      echo $key . " = " . $value . "\n";
+    }
+  }
+  echo "&lt;/pre&gt;";
+} else {
+  header("Location: " . $redirectURL);
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="NextStep"><a class="anchor" href="#NextStep"></a>Next step</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../frontend_result/" class="page">Handling results of payment process</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/online-guides/main/wcs/frontend_init/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

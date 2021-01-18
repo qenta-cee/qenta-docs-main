@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wirecard Shop Plugin for Salesforce Commerce Cloud (Demandware) :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/shop_plugins/wcp/demandware/installation/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../../">QENTA Online Guides</a></li>
+    <li><a href="./">Wirecard Shop Plugin for Salesforce Commerce Cloud (Demandware)</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Wirecard Shop Plugin for Salesforce Commerce Cloud (Demandware)</h1>
+<div class="sect1">
+<h2 id="WirecardShopPluginForSalesforceCommerceClouddemandware"><a class="anchor" href="#WirecardShopPluginForSalesforceCommerceClouddemandware"></a>Wirecard Shop Plugin for Salesforce Commerce Cloud (Demandware)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="InstallationGuideForWirecardCheckoutPage"><a class="anchor" href="#InstallationGuideForWirecardCheckoutPage"></a>Installation guide for Wirecard Checkout Page</h3>
+<div class="paragraph">
+<p>This installation guide will show you the step-by-step installation of the plugin to your installed shop system on your web server. Please test your online shop and the configuration of the plugin on a test system, before you install the plugin on your production system.</p>
+</div>
+<div class="sect3">
+<h4 id="Prerequisites"><a class="anchor" href="#Prerequisites"></a>Prerequisites</h4>
+<div class="paragraph">
+<p>In order to integrate the Wirecard payment provider into your project make sure you have accomplished the following tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You have access to and finished the setup of your Wirecard account. For more information contact your Wirecard partner manager, sales representative or support.</p>
+</li>
+<li>
+<p>Your Wirecard account has been setup, and you have got your customer ID and pre-shared key (aka secret) to access it using the API.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step1InstallingTheWirecardIntegrationCartridge"><a class="anchor" href="#Step1InstallingTheWirecardIntegrationCartridge"></a>Step 1: Installing the Wirecard Integration Cartridge</h4>
+<div class="paragraph">
+<p>Please follow these initial steps to integrate the Wirecard integration cartridge to your project:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Please import the int_wirecard cartridge in your Salesforce Commerce Cloud (Demandware) UX Studio and assign it to your server project so that it is uploaded to the server.</p>
+</li>
+<li>
+<p>Login to Business Manager.</p>
+</li>
+<li>
+<p>Adjust the cartridge path:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Open "Administration" &#8594; "Sites" &#8594; "Manage Sites" and choose the site(s) in which you want to integrate the Wirecard payment service.</p>
+</li>
+<li>
+<p>Change to the "Settings" tab and add the int_wirecard cartridge, separated by colon (:), into your cartridge path.</p>
+</li>
+<li>
+<p>Go back to "Administration" &#8594; "Sites" &#8594; "Manage Sites" and choose the Business Manager site.</p>
+</li>
+<li>
+<p>Add the int_wirecard cartridge, separated by colon (:), into your cartridge path. <span class="image"><img src="/_images/shop_plugins/wcp/demandware/screen1.png" alt="image"></span></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Import the custom Site Preferences:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Switch to "Site Development" &#8594; "Import &amp; Export"</p>
+</li>
+<li>
+<p>Upload file Wirecard_system-objecttype-extensions.xml and import it afterwards. This file contains the necessary site preferences.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create or import the Payment Processors:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Rename file Wirecard_payment-processors.xml to payment-processors.xml and add it into your site import package file or create a site import which just contains this file. Upload and import the site import file under "Administration" &#8594; "Site Development" &#8594; "Site Import &amp; Export".</p>
+</li>
+<li>
+<p>Alternately, create the payment processors manually in your "Site" &#8594; "Ordering" &#8594; "Payment Processors"</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Id: WIRECARD_CREDIT; Description: Wirecard credit card payment processor.</p>
+</li>
+<li>
+<p>Id: WIRECARD_EPS; Description: Wirecard EPS Onlineueberweisung payment processor.</p>
+</li>
+<li>
+<p>Id: WIRECARD_IDEAL; Description: Wirecard iDeal payment processor.</p>
+</li>
+<li>
+<p>Id: WIRECARD_PAYPAL; Description: Wirecard PayPal payment processor.</p>
+</li>
+<li>
+<p>Id: WIRECARD_SOFORT; Description: Wirecard Sofort. payment processor.</p>
+</li>
+<li>
+<p>Id: WIRECARD_SELECT; Description: Wirecard Select payment processor. <span class="image"><img src="/_images/shop_plugins/wcp/demandware/screen2_5b_v2.png" alt="image"></span></p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Import the Wirecard Payment Methods:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select the site you want to integrate Wirecard, and go to "Ordering" &#8594; "Import &amp; Export".</p>
+</li>
+<li>
+<p>Upload file Wirecard_payment-methods.xml and import it as Payment Methods. Therefore, go to "Ordering" &#8594; "Import &amp; Export" &#8594; "Payment Methods", click Import and follow the import steps.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Activate the "Fatal Error" notification (optional):</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Navigate to "Administration" &#8594; "Operations" &#8594; "Custom Log Settings". Enter a list of e-mail addresses in the "Fatal" Receive Email input field.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step2SpecifyingValuesForTheSitePreferences"><a class="anchor" href="#Step2SpecifyingValuesForTheSitePreferences"></a>Step 2: Specifying values for the site preferences</h4>
+<div class="paragraph">
+<p>In Business Manager open your site, navigate to "Site Preferences" &#8594; "Custom Site Preferences" and choose the Wirecard preference group. This will open the preferences page where you see all required Site Preferences. Configure the settings as necessary:</p>
+</div>
+<div class="sect4">
+<h5 id="WirecardPreferences"><a class="anchor" href="#WirecardPreferences"></a>Wirecard Preferences</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Wirecard URL</strong>: Configuration value for the URL of the Wirecard server. The default value should already point to the correct server, but can be changed if necessary.</p>
+</li>
+<li>
+<p><strong>Customer ID</strong>: Enter the Wirecard customer ID you receive only for the Production system. The default values are for the generic test environment.</p>
+</li>
+<li>
+<p><strong>Secret String</strong>: Enter the Wirecard secret string / Pre-Shared key you receive only for the Production system. The default values are for the generic test environment.</p>
+</li>
+<li>
+<p><strong>Shop Id</strong>: Enter the value for the Shop ID, in order to indicate which premium templates should be loaded on their servers. You will receive this value from Wirecard.</p>
+</li>
+<li>
+<p><strong>Success URL</strong>: Indicates the pipeline which is called as Wirecard Success URL. The default value is already configured with the correct URL.</p>
+</li>
+<li>
+<p><strong>Cancel URL</strong>: Indicates the pipeline which is called as Wirecard Cancel URL. The default value is already configured with the correct URL.</p>
+</li>
+<li>
+<p><strong>Failure URL</strong>: Indicates the pipeline which is called as Wirecard Failure URL. The default value is already configured with the correct URL.</p>
+</li>
+<li>
+<p><strong>Confirm URL</strong>: Indicates the pipeline which is called as Wirecard Confirm URL. The default value is already configured with the correct URL.</p>
+</li>
+<li>
+<p><strong>Pending URL</strong>: Indicates the pipeline which is called as Wirecard Pending URL. The default value is already configured with the correct URL.</p>
+</li>
+<li>
+<p><strong>Service URL</strong>: Indicates the pipeline which is called as Wirecard Service URL. The default value is already configured with the correct URL. Note that the pipeline points to the default SG2 content page, and the ID of the content asset might be changed within the pipeline.</p>
+</li>
+<li>
+<p><strong>Display Text</strong>: Resource Bundle Key for the display text displayed on the Wirecard templates. The resource bundle file is part of the plugin.</p>
+</li>
+<li>
+<p><strong>Customer Statement</strong>: Resource Bundle Key for the Customer Statement Message. The resource bundle file is part of the plugin.</p>
+</li>
+<li>
+<p><strong>Order Description</strong>: Resource Bundle Key for the Order Description text displayed in Wirecard CEE Payment Center. The resource bundle file is part of the plugin.</p>
+</li>
+<li>
+<p><strong>Redirect Config</strong>: Controls if the Wirecard premium templates should be loaded in an iframe or within the browser window.</p>
+</li>
+<li>
+<p><strong>Submit Order Number</strong>: Defines if the value for order number will be submitted to Wirecard or not.</p>
+</li>
+<li>
+<p><strong>Duplicate Request Check</strong>: Defines if the Duplicate Request Check should be performed or not.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/demandware/screen3_step2_.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The following parameters are used as constants for the plugin, so please do not change the values of these parameters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Trim Response Parameters</strong>: Defines if the response parameters are trimmed by Wirecard for the fingerprint calculation. Default is true.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Please note that this parameter is not implemented by Wirecard yet. Response parameter values are always trimmed by Salesforce Commerce Cloud (Demandware), and the value should always be set to true.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Shop Name</strong>: Shop name of identify the plugin at Wirecard. Default is ‘Salesforce Commerce Cloud’ and should not be changed.</p>
+</li>
+<li>
+<p><strong>Shop Version</strong>: Shop name of identify the plugin at Wirecard. Default is ‘17.2.0’ and might be changed per year.</p>
+</li>
+<li>
+<p><strong>Plugin Name</strong>: The internal Wirecard name of the plugin. There is no need to change the default value.</p>
+</li>
+<li>
+<p><strong>Plugin Version</strong>: The internal Wirecard version of the plugin. There is no need to change the default value.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Please make sure you have completed all settings for Sandboxes/Development, Staging and Production systems as necessary.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step3SettingUpAndDefiningThePaymentMethods"><a class="anchor" href="#Step3SettingUpAndDefiningThePaymentMethods"></a>Step 3: Setting up and defining the payment methods</h4>
+<div class="paragraph">
+<p>You can also control some preferences for the Wirecard payment methods. Therefore, please select your site and navigate to "Ordering" &#8594; "Payment Methods". Within the list you find the following new payment methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>WIRECARD_EPS_ONLINE_TRANSFER: EPS Onlineüberweisung (mainly used for Austria)</p>
+</li>
+<li>
+<p>WIRECARD_IDEAL: iDeal (mainly used for the Netherlands)</p>
+</li>
+<li>
+<p>WIRECARD_SOFORT_UEBERWEISUNG: Sofort. (mainly used for Germany)</p>
+</li>
+<li>
+<p>WIRECARD_CREDIT_CARD: Credit Card</p>
+</li>
+<li>
+<p>WIRECARD_PAYPAL: <a href="../../../../payment_methods/paypal/start/" class="page">PayPal</a></p>
+</li>
+<li>
+<p>WIRECARD_SELECT: When using this payment method in the shop, the consumer selects the payment method in the Wirecard Checkout Page. This has the advantage that you can use any payment method Wirecard is supporting without modifying the source code of your plugin or your online shop. Please contact our <a href="../../../../support/" class="page">support teams</a> to enable additional payment methods.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>All payment methods are enabled by default, and should be disabled and sorted according to your needs.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You need to deactivate the Salesforce Commerce Cloud (Demandware) standard payment methods for CREDIT_CARD and PayPal.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The following custom attributes can be controlled for each payment method:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Wirecard Payment Type</strong>: The payment method string which is sent to Wirecard in the interface. The values are already configured for each payment method.</p>
+</li>
+<li>
+<p><strong>Wirecard Auto Deposit</strong>: Enables the autoDeposit option for Wirecard. It defines if a payment should be directly approved (authorized) and deposited (captured) in one single step. If set to false, the transaction will only be approved. This value is mainly used for Credit Card and PayPal transactions.</p>
+</li>
+<li>
+<p><strong>Wirecard Maximum Retries</strong>: Defines the number of maximum payment retries at Wirecard. If no value is defined, it won’t be submitted to Wirecard and a default parameter is used there.</p>
+</li>
+<li>
+<p><strong>Submit Shipping Data to Wirecard</strong>: Defines if the shipping address data are sent to Wirecard with the initial request. This value is only used for PayPal and has to be activated for this payment method.</p>
+</li>
+<li>
+<p><strong>Submit Billing Data to Wirecard</strong>: Defines if the billing address data are sent to Wirecard with the initial request. This value is only used for PayPal and has to be activated for this payment method.</p>
+</li>
+<li>
+<p><strong>Wirecard Update Shipping Data</strong>: Defines if the shipping address, which is returned by Wirecard, should overwrite the existing shipping address at the order. This value is only used for PayPal.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/demandware/screen3_step3_.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step4FrontendChangesAndAdjustments"><a class="anchor" href="#Step4FrontendChangesAndAdjustments"></a>Step 4: Frontend changes and adjustments</h4>
+<div class="paragraph">
+<p>Depending on your checkout process, you need at least to overwrite and design the following templates:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>checkout/billing/paymentmethods.isml</code>: This template lists the payment methods and fields in Site Genesis. The integration cartridge comes with an adjusted template which can be used in your storefront cartridge. It basically removes the standard credit card fields, and implements the logic to show only the "Select" payment method if it is activated. Styles should be moved to your project specific CSS file.</p>
+</li>
+<li>
+<p><code>checkout/billing/wirecarderrormessage.isml</code>: This template renders the error messages which are shown on the billing/payment page when Wirecard returns with a failure or the <code>cancelUrl</code>. The template can be included at the top of standard template <code>checkout/billing/billing.isml</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/demandware/3.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>checkout/confirmation/wirecardpendingpayment.isml</code>: This template renders an error/warning message which is shown on the order confirmation page when Wirecard returns with a Pending payment code. The template should be included at the top of the standard template checkout/confirmation/confirmation.isml.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/demandware/screenextra.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>All Wirecard-related wording and error messages are stored within the integration cartridge in <code>templates/default/resources/wirecard.properties</code>, and can be changed according to your needs. Default messages are delivered in English and German.</p>
+</div>
+<div class="paragraph">
+<p>For the texts which are sent to Wirecard (displayText, customerStatement, orderDescription), the order number can be used as a placeholder within the message.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/demandware/4.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step5NecessarySgControllerChanges"><a class="anchor" href="#Step5NecessarySgControllerChanges"></a>Step 5: Necessary SG Controller Changes</h4>
+<div class="paragraph">
+<p>A small change is necessary in the standard COPlaceOrder controller to ensure that the handlePayment function correctly redirects to Wirecard. Therefore, the ‘Handle’ hook returns a new result ‘redirected’ which the calling controller COPlaceOrder needs to evaluate correctly. The following changes have been made:</p>
+</div>
+<div class="paragraph">
+<p><strong>COPlaceOrder.handlePayments()</strong>: Return with ‘redirected: true’ – See lines 67ff in the screenshot below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/demandware/coplaceorder.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>COPlaceOrder.start()</strong>: Add logic to return in function start(). See line 163ff in the screenshot below:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/demandware/coplaceorder2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Furthermore, in order to ensure that the Wirecard redirect is tracked in Saleforce Commerce Cloud Analytics, you need to add a statement to controller <strong>COPlaceOrder-Start</strong>. The UUID of the basket needs to be mapped to a request custom parameter <code>OriginalBasketUUID</code>. The parameter is used in template <code>wirecard/wirecardforward.isml</code> to call the reporting hook. Changes to the number of the checkout step etc. need to be implemented in the project.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/demandware/coplaceorder3.png" alt="image"></span></p>
+</div>
+<div class="sect4">
+<h5 id="MainScripts"><a class="anchor" href="#MainScripts"></a>Main Scripts</h5>
+<div class="paragraph">
+<p><strong>WirecardManager</strong>: Main manager to handle the logic which is necessary for the integration. This is encapsulated in the following main functions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>getWirecardCallParameters(): Collects all required parameters to call Wirecard.</p>
+</li>
+<li>
+<p>setWirecardPaymentParameters(): Sets all response parameters to the order and payment transaction depending on used the payment method.</p>
+</li>
+<li>
+<p>validateWirecardAmountAndFingerprint(): Checks the Wirecard amount against the shop order amount and checks the fingerprint.</p>
+</li>
+<li>
+<p>setOrderPaymentStatus(): Sets the order payment status to PAID only if the payment status is SUCCESS and the confirmation url was called.</p>
+</li>
+<li>
+<p>checkAndRestoreBasket(): Checs if the basket has been restored when the order was set to failed, so after either the Cancel or Failure URL was called. Therefore, it is checked if the basket contains any line items (products or gift certificates). If a timeout is detected, it restores the basket and copies all line items, the billing and shipping address as well as the shipping method from the previously created order to the basket. Any copying of projectrelated custom attributes need to be added to this script.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>WirecardLogger</strong>: Implements the custom logging for the cartridge.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step6ScriptAdjustments"><a class="anchor" href="#Step6ScriptAdjustments"></a>Step 6: Script adjustments</h4>
+<div class="paragraph">
+<p>When the <code>cancelUrl</code>, <code>failureUrl</code> or <code>serviceUrl</code> are called, the logic automatically detects a session timeout. Then, the basket will be restored from the previously created order using script <code>wirecard/RestoreBasket.ds</code>. You need to add the logic to copy any custom attribute from the order to the basket within this script. There are comments in the script for each business object which might be affected (shipping method, shipment, line item, shipping address and billing address).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step7TestingTheWirecardIntegration"><a class="anchor" href="#Step7TestingTheWirecardIntegration"></a>Step 7: Testing the Wirecard integration</h4>
+<div class="paragraph">
+<p>Once you completed the setup of the cartridge the integration needs to be tested against the Wirecard test system. The connection settings are already pre-configured in the custom site preferences.</p>
+</div>
+<div class="paragraph">
+<p>All payment authorization processes, checks and forms are implemented on the Wirecard servers. When Wirecard responds with the <code>successUrl</code> or <code>confirmUrl</code>, all attributes are stored at the order and payment transaction if submitted and present in the response (see the list below). The values can be reviewed in "Business Manager" &#8594; "Select a Site" &#8594; "Ordering" &#8594; "Search and select an Order" &#8594; "Tabs: Attributes and Payment".</p>
+</div>
+<div class="sect4">
+<h5 id="OrderAttributes"><a class="anchor" href="#OrderAttributes"></a>Order attributes</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Wirecard Order No</strong>: The internal order number or transaction returned by Wirecard. The value is stored at the order to search for these values in Business Managers and realize an easier operations process. Please note that this value is also stored as "transactionId" at the payment transaction object.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="PaymentTransactionAttributes"><a class="anchor" href="#PaymentTransactionAttributes"></a>Payment transaction attributes</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Wirecard Financial Institution</strong>: The financial institution.</p>
+</li>
+<li>
+<p><strong>Wirecard Gateway Reference Number</strong>: The gateway reference number.</p>
+</li>
+<li>
+<p><strong>Wirecard Contract Number</strong>: The contract number.</p>
+</li>
+<li>
+<p><strong>Wirecard Payment Method</strong>: The Wirecard internal payment method.</p>
+</li>
+<li>
+<p><strong>Wirecard Payment State</strong>: The Wirecard payment state (e.g. SUCCESS, PENDING, CANCEL).</p>
+</li>
+<li>
+<p><strong>Wirecard Masked PAN (Credit Card)</strong>: The masked pan for the credit card. Only stored for credit card transactions.</p>
+</li>
+<li>
+<p><strong>Wirecard iDeal Consumer Name</strong>: The iDeal customer name.</p>
+</li>
+<li>
+<p><strong>Wirecard iDeal Consumer Account Number</strong>: The iDeal customer account number.</p>
+</li>
+<li>
+<p><strong>Wirecard iDeal Consumer City</strong>: The iDeal customer city.</p>
+</li>
+<li>
+<p><strong>Wirecard Sender Account Number (Sofortüberweisung)</strong>: The account number used at Sofort.</p>
+</li>
+<li>
+<p><strong>Wirecard Sender Account Owner (Sofortüberweisung)</strong>: The account owner who used Sofort.</p>
+</li>
+<li>
+<p><strong>Wirecard Sender Bank Number (Sofortüberweisung)</strong>: The bank number which was used for the transfer at Sofort.</p>
+</li>
+<li>
+<p><strong>Wirecard Sender Bank Name (Sofortüberweisung)</strong>: The bank name which was used for the transfer at Sofort.</p>
+</li>
+<li>
+<p><strong>Wirecard Sender BIC (Sofortüberweisung)</strong>: The BIC code used for the transfer at Sofort.</p>
+</li>
+<li>
+<p><strong>Wirecard Sender IBAN (Sofortüberweisung)</strong>: The IBAN used for the transfer at Sofort.</p>
+</li>
+<li>
+<p><strong>Wirecard Sender Country (Sofortüberweisung)</strong>: The country code of the sender used at Sofort.</p>
+</li>
+<li>
+<p><strong>Wirecard Security Criteria (Sofortüberweisung)</strong>: The security criteria returned by Sofort. Values are 0 (not secure) or 1 (secure), see the Wirecard documentation for more details.</p>
+</li>
+<li>
+<p><strong>Wirecard Paypal Payer Id</strong>: The payer ID of the customer who did the PayPal transaction.</p>
+</li>
+<li>
+<p><strong>Wirecard Paypal Payer Email</strong>: The e-mail address of the customer who did the PayPal transaction.</p>
+</li>
+<li>
+<p><strong>Wirecard Paypal Payer Last Name</strong>: The last name of the customer who did the PayPal transaction.</p>
+</li>
+<li>
+<p><strong>Wirecard Paypal Payer First Name</strong>: The first name of the customer who did the PayPal transaction.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/demandware/screen4_step7_.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step8Customizations"><a class="anchor" href="#Step8Customizations"></a>Step 8: Customizations</h4>
+<div class="paragraph">
+<p>You need to style and adjust the customization templates delivered by Wirecard with the integration package. The templates are not part of the plugin. Please refer to the documentation on how to adjust the templates, and e-mail them to our <a href="../../../../support/" class="page">support teams</a> once completed.</p>
+</div>
+<div class="paragraph">
+<p>Wirecard will assign a shop ID, which you need to add as a site preference.</p>
+</div>
+<div class="paragraph">
+<p>You can find more details regarding customizations of the Wirecard Checkout Page at <a href="../../../../wcp/customizations/" class="page">Customization</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step9FraudHandling"><a class="anchor" href="#Step9FraudHandling"></a>Step 9: Fraud handling</h4>
+<div class="paragraph">
+<p>When the <code>successUrl</code>, <code>pendingUrl</code> or <code>confirmUrl</code> is called, the return values are checked as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The order total amount at the order is the same as the authorized amount returned by Wirecard (success and confirmation only).</p>
+</li>
+<li>
+<p>The returned fingerprint is valid.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If the check fails, a fatal error is logged to the Wirecard log scope. You may enable or disable to be informed about the fatal errors via e-mail in Business Manager at "Administration" &#8594; "Operation"s &#8594; "Custom Log Settings".</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/demandware/screen5_step9_.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step10Golive"><a class="anchor" href="#Step10Golive"></a>Step 10: Go-live</h4>
+<div class="paragraph">
+<p>Once all testing is done and the premium templates are setup, we recommend placing at least one test order per payment method against the live system of Wirecard, using real payment data. You can configure the settings on the Salesforce Commerce Cloud (Demandware) production system for that, or use the development system if necessary.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="AdditionalImplementationDocumentation"><a class="anchor" href="#AdditionalImplementationDocumentation"></a>Additional implementation documentation</h4>
+<div class="sect4">
+<h5 id="Pendingurl"><a class="anchor" href="#Pendingurl"></a>PendingUrl</h5>
+<div class="paragraph">
+<p>The <code>pendingUrl</code> is called when Wirecard is not able to detect whether payment was successful or not. This might be the case for some payment methods such as e.g. PayPal. In this case, the standard behavior is to set the order state to ‘NEW’, but the payment status remains "NOT_PAID" and the <code>wirecardPaymentState</code> of the order is set to "PENDING".</p>
+</div>
+<div class="paragraph">
+<p>The order confirmation page is displayed to the customer and informs that the financial institution has not yet approved the payment and that confirmation will be sent later. Once the Wirecard payment state of the order is set to "SUCCESS", the order is completed and the payment state is set to <code>PAID</code>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="SessionTimeouts"><a class="anchor" href="#SessionTimeouts"></a>Session timeouts</h5>
+<div class="paragraph">
+<p>When there is a session timeout in Salesforce Commerce Cloud (Demandware), and the <code>confirmUrl</code>, <code>successUrl</code> or <code>pendingUrl</code> are called, there is no problem because the order is already created and will be set to state "NEW" within the pipeline. The customer might not be logged in anymore, but is still associated to the order.</p>
+</div>
+<div class="paragraph">
+<p>When the <code>cancelUrl</code>, <code>failureUrl</code> or <code>serviceUrl</code> are called, the logic automatically detects a session timeout. Then, the basket will be restored from the previously created order using script <code>RestoreBasket.ds</code>. You need to add the logic to copy any custom attribute from the order to the basket within this script. The payment and eventually added gift certificates are not restored in the script and must be entered again.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="TrimmedResponseParameterValuesFingerprintValidationIssues"><a class="anchor" href="#TrimmedResponseParameterValuesFingerprintValidationIssues"></a>Trimmed response parameter values – Fingerprint validation issues</h5>
+<div class="paragraph">
+<p>The standard Salesforce Commerce Cloud (Demandware) platform removes all trailing and leading white-spaces for response parameter values. So in case a trailing white-space is sent back from Wirecard with one of the parameter values, the server logic will get this parameter without any white-space. In this case, the fingerprint calculation will fail, even if the payment is correct. The issue currently happens with the test interface of Sofort and a trailing white-space for parameter value "senderBankName".</p>
+</div>
+<div class="paragraph">
+<p>In order to avoid this in future, a parameter <code>trimResponseParameters=yes</code> is send to Wirecard, so that the parameters are also trimmed within the Wirecard Checkout Server to calculate the fingerprint. The parameter value can be controlled using a site preference and is already part of the integration.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Controllers"><a class="anchor" href="#Controllers"></a>Controllers</h5>
+<div class="paragraph">
+<p><strong>COWirecard</strong>: Main controller which implements all required storefront and backend logic. It contains all return URLs from Wirecard, the logic to handle the call to Wirecard, the rollback (failure) and completion of the order.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="PaymentHooks"><a class="anchor" href="#PaymentHooks"></a>Payment hooks</h5>
+<div class="paragraph">
+<p><strong>WIRECARD_CREDIT</strong> et al.: These payment hooks are named as the payment methods, and contain three hook functions dynamically called by the SiteGenesis and Wirecard integration. The code is the same for all payment methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Handle: Called when the payment method is selected and adds the payment instrument to the basket.</p>
+</li>
+<li>
+<p>Authorize: Jumps to COWirecard-Redirect which handles the collection of the call parameters.</p>
+</li>
+<li>
+<p>Complete: Calls COWirecard-SetPaymentParameters to complete the payment and store all attributes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The hooks are registered in file hooks.json as defined in the Site Genesis standard cartridge.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="MainTemplates"><a class="anchor" href="#MainTemplates"></a>Main templates</h5>
+<div class="paragraph">
+<p><strong>wirecard/wirecardswitch</strong>: Implements the switch to decide if Wirecard should be opened in an iframe of the browser.</p>
+</div>
+<div class="paragraph">
+<p><strong>wirecard/wirecardforward</strong>: Submits the call parameters to Wirecard via post.</p>
+</div>
+<div class="paragraph">
+<p><strong>wirecard/wirecardresponse</strong>: Only called if Wirecard was opened in an iframe and responds within the iframe. The template posts all http parameters again to the top window, in order to avoid that the shop is loaded in the iframe again.</p>
+</div>
+<div class="paragraph">
+<p><strong>order/* </strong>: Business Manager hook templates for the "Order" &#8594; "Payment dialog" to print out all payment transaction fields and avoid error logs.</p>
+</div>
+<div class="paragraph">
+<p><strong>checkout/billing/* </strong>: See section Frontend Changes and Adjustments.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="InstallationGuideForPreviousVersions"><a class="anchor" href="#InstallationGuideForPreviousVersions"></a>Installation guide for previous versions</h3>
+<div class="paragraph">
+<p>If you use a previous version of Salesforce Commerce Cloud (Demandware) the following information may be of use for you.</p>
+</div>
+<div class="sect3">
+<h4 id="FrontendChangesAndAdjustment"><a class="anchor" href="#FrontendChangesAndAdjustment"></a>Frontend Changes and Adjustment</h4>
+<div class="paragraph">
+<p>In order to ensure that the Wirecard redirect is tracked in Salesforce Commerce Cloud Analytics, you should add an Assign node to pipeline <strong>COPlaceOrder-CreateOrder</strong>. The UUID of the basket needs to be mapped to a pipeline dictionary parameter <code>OriginalBasketUUID</code>. The parameter is used in template <strong>wirecard/wirecardforward.isml</strong> to call the reporting hook. Changes to the number of the checkout step etc. need to be implemented in the project.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="NecessaryPipelineCallNodes"><a class="anchor" href="#NecessaryPipelineCallNodes"></a>Necessary pipeline call nodes</h4>
+<div class="paragraph">
+<p>The Site Genesis 2 code supports the feature of "asynchronous payments" since version 13.1. The cartridge is build using this feature, but existing custom code can also be easily adapted if necessary.</p>
+</div>
+<div class="sect4">
+<h5 id="SiteGenesis2AsynchronousPaymentsIntegration"><a class="anchor" href="#SiteGenesis2AsynchronousPaymentsIntegration"></a>Site Genesis 2 – Asynchronous payments integration</h5>
+<div class="paragraph">
+<p>The cartridge should work as is and no pipeline modifications are necessary. The order is created in pipeline COPlaceOrder in state ‘CREATED’, and then the payment authentication is done. A dynamic pipeline node calls the "Authorize" pipeline for all Wirecard payment methods, which collects the necessary parameters and automatically posts this to Wirecard.</p>
+</div>
+<div class="paragraph">
+<p>The error and cancel handling is implemented in the main plugin pipeline COWirecard, and set the order to ‘FAILED’ in this case. The basket will be restored in this case.</p>
+</div>
+<div class="paragraph">
+<p>When the <code>confirmUrl</code>, <code>successUrl</code> or <code>pendingUrl</code> is called, all necessary attributes are stored at the order and payment. Pipeline COWirecard-SubmitImpl is called to complete the order and then the order confirmation page is shown.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="SiteGenesis2OlderVersionsmigrationGuide"><a class="anchor" href="#SiteGenesis2OlderVersionsmigrationGuide"></a>Site Genesis 2 – Older versions (migration guide)</h5>
+<div class="paragraph">
+<p>We strongly recommend to review the latest pipeline COPlaceOrder in the Site Genesis cartridge, and get familiar with the approach for asynchronous payments. The main changes you need to do in your project-specific pipeline COPlaceOrder are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Please add a new pipeline "COPlaceOrder-CreateOrder" to create the order and use pipeline "CreateOrder2" (copy the code). Remove pipelet "CreateOrderNo".</p>
+</li>
+<li>
+<p>Adjust "COPlaceOrder-HandlePayments" to make dynamic call nodes to &lt;payment-method-id&gt;-Authorize, or add each single payment method you want to support.</p>
+</li>
+<li>
+<p>Add a private call node for "COPlaceOrder-SubmitImpl", which is called by the plugin.</p>
+</li>
+<li>
+<p>Change "COPlaceOrder-PlaceOrder" and use pipelet "PlaceOrder" within there.</p>
+</li>
+<li>
+<p>Additional changes for the authorization of gift certificates or similar might be necessary, but this strongly depends on your existing code.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>COPlaceOrder – node for SubmitImpl</strong> <span class="image"><img src="/_images/demandware/5.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>COPlaceOrder – pipelines and logic for CreateOrder and PlaceOrder</strong> <span class="image"><img src="/_images/demandware/6.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="PipelineMainScripts"><a class="anchor" href="#PipelineMainScripts"></a>Main scripts</h5>
+<div class="paragraph">
+<p><strong>GetWirecardCallParameters</strong>: Collects all required parameters to call Wirecard.</p>
+</div>
+<div class="paragraph">
+<p><strong>SetWirecardPaymentParameters</strong>: Sets all response parameters to the order and payment transaction depending on used the payment method.</p>
+</div>
+<div class="paragraph">
+<p><strong>ValidateWirecardAmountAndFingerprint</strong>: Checks the Wirecard amount against the shop order amount and checks the fingerprint.</p>
+</div>
+<div class="paragraph">
+<p><strong>SetOrderPaymentStatus</strong>: Sets the order payment status to PAID only if the payment status is SUCCESS and the <code>confirmUrl</code> was called.</p>
+</div>
+<div class="paragraph">
+<p><strong>CheckSessionTimeout</strong>: This script checks if the basket has been restored when the order was set to failed, so after the either the <code>cancelUrl</code> or <code>failureUrl</code> was called. Therefore, it is checked if the basket contains any line items (products or gift certificates).</p>
+</div>
+<div class="paragraph">
+<p><strong>RestoreBasket</strong>: This script restores the basket and copies all line items, the billing and shipping address as well as the shipping method from the previously created order to the basket. Any copying of project-related custom attributes need to be added to this script.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../../.." data-page-path="/online-guides/main/shop_plugins/wcp/demandware/installation/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>transferFund :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/back-end_operations/transaction-based/transferfund/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QENTA Online Guides</a></li>
+    <li><a href="./">transferFund</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">transferFund</h1>
+<div class="sect1">
+<h2 id="Transferfund"><a class="anchor" href="#Transferfund"></a>transferFund</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>transferFund is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a>. This operation creates a credit note without dependancy on a specific order (in opposition to the operation <code>refund</code>).</p>
+</div>
+<div class="sect2">
+<h3 id="DifferentTypesOfFundTransfer"><a class="anchor" href="#DifferentTypesOfFundTransfer"></a>Different types of fund transfer</h3>
+<div class="paragraph">
+<p>Depending on the relevant payment method, Wirecard currently supports three different types of fund transfer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>#EXISTINGORDER</p>
+</li>
+<li>
+<p>#MONETA</p>
+</li>
+<li>
+<p>#SEPA-CT</p>
+</li>
+<li>
+<p>#SKRILLWALLET</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="Existingorder"><a class="anchor" href="#Existingorder"></a>EXISTINGORDER</h4>
+<div class="paragraph">
+<p>The data of an existing order which includes the fund receiver&#8217;s details, as stored on the Wirecard Checkout Server, are used. Thus, the parameters <code>sourceOrderNumber</code> and <code>fundTransferType</code> EXISTINGORDER are relevant to be used for this transfer type.</p>
+</div>
+<div class="paragraph">
+<p>This fund transfer type is used for the following payment methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../../payment_methods/ideal/start/" class="page">iDEAL</a> (depending on the relevant acquirer)</p>
+</li>
+<li>
+<p><a href="../../../payment_methods/installment/ratepay/" class="page">Installment: RatePAY</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/invoice/ratepay/" class="page">Invoice: RatePAY</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/invoice/wirecard/" class="page">Invoice by Wirecard</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/moneta/start/" class="page">moneta.ru</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/sepa_direct_debit/start/" class="page">SEPA Direct Debit</a> (depending on the relevant acquirer)</p>
+</li>
+<li>
+<p><a href="../../../payment_methods/skrill_digital/start/" class="page">Skrill Digital Wallet</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/sofort/start/" class="page">Sofort.</a> (depending on the relevant acquirer)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Moneta"><a class="anchor" href="#Moneta"></a>MONETA</h4>
+<div class="paragraph">
+<p>The Moneta Wallet Account ID of the receiver of the funds is known. Thus, the parameters <code>consumerWalletId</code> and <code>fundTransferType</code> MONETA are relevant to be used for this transfer type.</p>
+</div>
+<div class="paragraph">
+<p>This fund transfer type is used only for the following payment method:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>moneta.ru</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Sepact"><a class="anchor" href="#Sepact"></a>SEPA-CT</h4>
+<div class="paragraph">
+<p>The fund transfer type SEPA-CT is used to pay out money to any bank account using the SEPA standard. Thus, the parameters <code>bankBic</code>, <code>bankAccountIban</code>, <code>bankAccountOwner</code> and <code>fundTransferType</code> SEPA-CT (SEPA Credit Transfer) are relevant to be used for this transfer type.</p>
+</div>
+<div class="paragraph">
+<p>This fund transfer type is used for all payment methods provided that the BIC, IBAN and account owner are known and Wirecard Bank acts as acquirer.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Skrillwallet"><a class="anchor" href="#Skrillwallet"></a>SKRILLWALLET</h4>
+<div class="paragraph">
+<p>The e-mail address of the receiver of the funds is known. Thus, the parameters <code>consumerEmail</code> and <code>fundTransferType</code> SKRILLWALLET are relevant to be used for this transfer type.</p>
+</div>
+<div class="paragraph">
+<p>This fund transfer type is used only for the following payment method:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Skrill Digital Wallet</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AdditionalRequestParameter"><a class="anchor" href="#AdditionalRequestParameter"></a>Additional request parameter</h3>
+<div class="sect3">
+<h4 id="FundTransferTypeExistingorder"><a class="anchor" href="#FundTransferTypeExistingorder"></a>Fund transfer type: EXISTINGORDER</h4>
+<div class="paragraph">
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>sourceOrderNumber</code>.</p>
+</div>
+<div class="paragraph">
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>sourceOrderNumber</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="SkrillAdditionalRequiredRequestParameters"><a class="anchor" href="#SkrillAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Amount" class="page">request_parameters#amount</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Currency" class="page">request_parameters#currency</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 3 or numeric with a fixed length of 3.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Existingorder">fundTransferType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String with value "EXISTINGORDER".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fund transfer type EXISTINGORDER.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderdescription" class="page">request_parameters#orderDescription</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 255.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of order.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sourceOrderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Original order number used as source order.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="SkrillAdditionalOptionalRequestParameters"><a class="anchor" href="#SkrillAdditionalOptionalRequestParameters"></a>Additional optional request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Customerstatement" class="page">request_parameters#customerStatement</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 254 characters that may be restricted for specific payment methods.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Ordernumber" class="page">request_parameters#orderNumber</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order number of payment.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderreference" class="page">request_parameters#orderReference</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="FundTransferTypeMoneta"><a class="anchor" href="#FundTransferTypeMoneta"></a>Fund transfer type: MONETA</h4>
+<div class="paragraph">
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>consumerWalletId</code>.</p>
+</div>
+<div class="paragraph">
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>consumerWalletId</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="MonetaAdditionalRequiredRequestParameters"><a class="anchor" href="#MonetaAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Amount" class="page">request_parameters#amount</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Moneta">consumerWalletId</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and up to 254 characters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moneta Wallet Account ID of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Currency" class="page">request_parameters#currency</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 3 or numeric with a fixed length of 3.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Customerstatement" class="page">request_parameters#customerStatement</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 254 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Moneta">fundTransferType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String with value "MONETA".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fund transfer type MONETA.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderdescription" class="page">request_parameters#orderDescription</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 255.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of order.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="MonetaAdditionalOptionalRequestParameters"><a class="anchor" href="#MonetaAdditionalOptionalRequestParameters"></a>Additional optional request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Ordernumber" class="page">request_parameters#orderNumber</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order number of payment.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderreference" class="page">request_parameters#orderReference</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="FundTransferTypeSepact"><a class="anchor" href="#FundTransferTypeSepact"></a>Fund transfer type: SEPA-CT</h4>
+<div class="paragraph">
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code>, <code>bankAccountOwner</code>, <code>bankBic</code> and <code>bankAccountIban</code>.</p>
+</div>
+<div class="paragraph">
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code>, <code>bankAccountOwner</code>, <code>bankBic</code> and <code>bankAccountIban</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="SepaAdditionalRequiredRequestParameters"><a class="anchor" href="#SepaAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bankBic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of 8 to 11 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BIC of bank.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bankAccountIban</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of 16 to 34 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IBAN of account.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bankAccountOwner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of 1 to 255 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of owner of account.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Sepact">fundTransferType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String with value "SEPA-CT".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fund transfer type SEPA-CT.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="FundTransferTypeSkrillwallet"><a class="anchor" href="#FundTransferTypeSkrillwallet"></a>Fund transfer type: SKRILLWALLET</h4>
+<div class="paragraph">
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>consumerEmail</code>.</p>
+</div>
+<div class="paragraph">
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>consumerEmail</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="SkrillWalletAdditionalRequiredRequestParameters"><a class="anchor" href="#SkrillWalletAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Amount" class="page">request_parameters#amount</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#ConsumerBillingData" class="page">consumerEmail</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and up to 256 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consumer&#8217;s e-mail address registered as Skrill Wallet ID.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Currency" class="page">request_parameters#currency</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 3 or numeric with a fixed length of 3.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Customerstatement" class="page">request_parameters#customerStatement</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 254 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Skrillwallet">fundTransferType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String with value "SKRILLWALLET".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fund transfer type SKRILLWALLET.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderdescription" class="page">request_parameters#orderDescription</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 255.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of order.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="SkrillWalletAdditionalOptionalRequestParameters"><a class="anchor" href="#SkrillWalletAdditionalOptionalRequestParameters"></a>Additional optional request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Ordernumber" class="page">request_parameters#orderNumber</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order number of payment.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderreference" class="page">request_parameters#orderReference</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AdditionalResponseParameter"><a class="anchor" href="#AdditionalResponseParameter"></a>Additional response parameter</h3>
+<div class="paragraph">
+<p>The following parameter is generally valid for all transferFund operations and is available in addition to the <a href="../../response_parameters/" class="page">response parameters</a> returned for all back-end operations (Wirecard Checkout Page and Wirecard Checkout Seamless):</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of credit note.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/back-end_operations/transaction-based/transferfund/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

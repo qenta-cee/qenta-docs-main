@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Transaction-based and Non-transaction-based Operations :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/back-end_operations/functional_wcp_wcs/start/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QENTA Online Guides</a></li>
+    <li><a href="./">Transaction-based and Non-transaction-based Operations</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Transaction-based and Non-transaction-based Operations</h1>
+<div class="sect1">
+<h2 id="TransactionbasedAndNontransactionbasedOperations"><a class="anchor" href="#TransactionbasedAndNontransactionbasedOperations"></a>Transaction-based and Non-transaction-based Operations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Back-end operations for Wirecard Checkout Page and Wirecard Checkout Seamless are subdivided into two categories:</p>
+</div>
+<div class="paragraph">
+<p><a href="../../transaction-based/start/" class="page">Transaction-based operations</a><br>
+<a href="../../non-transaction-based/start/" class="page">Non-transaction-based operations</a><br></p>
+</div>
+<div class="sect2">
+<h3 id="TransactionbasedOperations"><a class="anchor" href="#TransactionbasedOperations"></a>Transaction-based operations</h3>
+<div class="paragraph">
+<p>Transaction-based operations for <strong>Wirecard Checkout Page</strong> and<strong> Wirecard Checkout Seamless</strong> depend on existing orders, i.e. orders which have been completed by the consumers in your online shop and which are at your disposal for further actions.</p>
+</div>
+<div class="sect3">
+<h4 id="AvailableTransactionbasedOperations"><a class="anchor" href="#AvailableTransactionbasedOperations"></a>Available transaction-based operations</h4>
+<div class="paragraph">
+<p>The following transaction-based operations are available:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Operation</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../transaction-based/approvereversal/" class="page">approveReversal</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For canceling an approval, typically done by your consumer in your online shop.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../transaction-based/deposit/" class="page">deposit</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For converting an approval into a deposit.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../transaction-based/depositreversal/" class="page">depositReversal</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For canceling a deposit.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../transaction-based/getorderdetails/" class="page">getOrderDetails</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For returning all order details including corresponding payments and credit notes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../transaction-based/recurpayment/" class="page">recurPayment</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For creating a new order based on an existing order, typically used for subscriptions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../transaction-based/refund/" class="page">refund</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For creating a credit note for an order, typically done by the merchant after the consumer returned an ordered product.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../transaction-based/refundreversal/" class="page">refundReversal</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For canceling a credit note.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../transaction-based/transferfund/" class="page">transferFund</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For creating a credit note without dependency on an pre-existing payment.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Please be aware that the availability of a transaction-based operation depends on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The payment method</p>
+</li>
+<li>
+<p>The financial institution</p>
+</li>
+<li>
+<p>The current state of the payment/order</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can always get <strong>all currently available transaction-based operations</strong> of a specific order by using the operation <strong><code>getOrderDetails</code></strong>.</p>
+</div>
+<div class="paragraph">
+<p>If you wish to use such transaction-based operations for Wirecard Checkout Page you need to purchase these features which are then enabled for you from our side. If you have any questions please contact our <a href="../../../contact/" class="page">sales teams</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="TransactionbasedOperationsAndPaymentMethods"><a class="anchor" href="#TransactionbasedOperationsAndPaymentMethods"></a>Transaction-based operations and payment methods</h4>
+<div class="paragraph">
+<p>You can find a detailed table displaying all supported payment methods and their corresponding transaction-based operations at <a href="../../transaction-based/table/" class="page">transaction-based operations by payment method</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OrderFlowDiagrams"><a class="anchor" href="#OrderFlowDiagrams"></a>Order flow diagrams</h4>
+<div class="paragraph">
+<p>For a visual representation of the order flow behavior and associated transaction-based operations of each payment method we invite you to have a look at the respective order flow diagrams for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../../payment_methods/bancontact_mrcash/state_diagram/" class="page">Bancontact</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/creditcard/state_diagram/" class="page">Credit Card</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/epaybg/state_diagram/" class="page">ePay.bg</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/eps/state_diagram/" class="page">eps-Überweisung</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/giropay/state_diagram/" class="page">giropay</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/ideal/state_diagram/" class="page">iDEAL</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/invoice/wirecard/state_diagram/" class="page">Invoice by Wirecard</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/maestro/state_diagram/" class="page">Maestro SecureCode</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/moneta/state_diagram/" class="page">moneta.ru</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/paybox/state_diagram/" class="page">paybox</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/invoice/payolution/state_diagram/" class="page">payolution: Invoice and Installment</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/paypal/state_diagram/" class="page">PayPal</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/paysafecard/state_diagram/" class="page">paysafecard</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/poli/state_diagram/" class="page">POLi</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/p24/state_diagram/" class="page">Przelewy24</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/invoice/ratepay/state_diagram/" class="page">RatePAY: Invoice and installment</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/sepa_direct_debit/state_diagram/" class="page">SEPA Direct Debit</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/skrill_digital/state_diagram/" class="page">Skrill Digital Wallet</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/sofort/state_diagram/" class="page">Sofort.</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/tatrapay/state_diagram/" class="page">TatraPay</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/trustly/state_diagram/" class="page">Trustly</a></p>
+</li>
+<li>
+<p><a href="../../../payment_methods/trustpay/state_diagram/" class="page">TrustPay</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="NontransactionbasedOperations"><a class="anchor" href="#NontransactionbasedOperations"></a>Non-transaction-based operations</h3>
+<div class="paragraph">
+<p>Non-transaction-based operations for <strong>Wirecard Checkout Page</strong> and<strong> Wirecard Checkout Seamless</strong> do not depend on existing orders. I.e. such operations are carried out independently of any existing orders.</p>
+</div>
+<div class="sect3">
+<h4 id="AvailableNontransactionbasedOperations"><a class="anchor" href="#AvailableNontransactionbasedOperations"></a>Available non-transaction-based operations</h4>
+<div class="paragraph">
+<p>The following non-transaction-based operations are available:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Operation</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../non-transaction-based/generateordernumber/" class="page">generateOrderNumber</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For creating a new order number in the payment system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../non-transaction-based/getfinancialinstitions/" class="page">getFinancialInstitutions</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For querying possible and supported financial institutions of a certain payment method.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Please be aware that the availability of a non-transaction-based operation depends on</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The payment method</p>
+</li>
+<li>
+<p>The financial institution</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you wish to use such non-transaction-based operations you need to purchase these features which are then enabled for you from our side. If you have any questions please contact our <a href="../../../contact/" class="page">sales teams</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="NontransactionbasedOperationsAndPaymentMethods"><a class="anchor" href="#NontransactionbasedOperationsAndPaymentMethods"></a>Non-transaction-based operations and payment methods</h4>
+<div class="paragraph">
+<p>You can find a detailed table displaying all supported payment methods and their corresponding non-transaction-based operations at <a href="../../non-transaction-based/table/" class="page">non-transaction-based operations by payment method</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="TechnicalImplementationOfBackendOperations"><a class="anchor" href="#TechnicalImplementationOfBackendOperations"></a>Technical implementation of back-end operations</h3>
+<div class="paragraph">
+<p>For detailed information on the technical implementation of back-end operations go to</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../technical_wcp/start/" class="page">Technical Implementation for Wirecard Checkout Page</a></p>
+</li>
+<li>
+<p><a href="../../technical_wcs/start/" class="page">Technical Implementation for Wirecard Checkout Seamless</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/back-end_operations/functional_wcp_wcs/start/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

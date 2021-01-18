@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wirecard Shop Plugin for ePages :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/shop_plugins/wcp/epages/installation/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../../">QENTA Online Guides</a></li>
+    <li><a href="./">Wirecard Shop Plugin for ePages</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Wirecard Shop Plugin for ePages</h1>
+<div class="sect1">
+<h2 id="WirecardShopPluginForEpages"><a class="anchor" href="#WirecardShopPluginForEpages"></a>Wirecard Shop Plugin for ePages</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="InstallationGuideForWirecardCheckoutPage"><a class="anchor" href="#InstallationGuideForWirecardCheckoutPage"></a>Installation guide for Wirecard Checkout Page</h3>
+<div class="paragraph">
+<p>This installation guide shows the step-by-step installation of the plugin to your installed shop system on your web server. Please test your online shop and the configuration of the plugin on a test system before installing the plugin on your production system.</p>
+</div>
+<div class="sect3">
+<h4 id="InstallingTheWirecardIntegrationCartridge"><a class="anchor" href="#InstallingTheWirecardIntegrationCartridge"></a>Installing the Wirecard integration cartridge</h4>
+<div class="paragraph">
+<p>Please follow these steps to integrate the Wirecard Cartridge to your project as described in “Installing the Cartridge”.</p>
+</div>
+<div class="sect4">
+<h5 id="Step1"><a class="anchor" href="#Step1"></a>Step 1</h5>
+<div class="paragraph">
+<p>Install the DE_INNOCHANGE Wirecard Cartridge package in your ePages shop environment.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step2"><a class="anchor" href="#Step2"></a>Step 2</h5>
+<div class="paragraph">
+<p>First of all the cartridge has to be assigned to the desired shop types in the publisher back office (PBO). Open the “Shop types” tab and select the desired shop type (in example “Demo”). Open the “Features” tab, select “Yes” for “Payment via Wirecard” and save and apply to all shops.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/pbosettings2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/pbosettings3.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/pbosettings4.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step3"><a class="anchor" href="#Step3"></a>Step 3</h5>
+<div class="paragraph">
+<p>Go to the payment settings in the merchant back office (MBO). In the main menu select “Settings” &#8594; “Payment”:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/backend1.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step4"><a class="anchor" href="#Step4"></a>Step 4</h5>
+<div class="paragraph">
+<p>In the last line of the displayed table select “Wirecard” as payment method as well as a name which is then visible in the shop. After clicking the “Save” button the new payment method becomes visible at the bottom of the table.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/backend2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The new payment method remains disabled until configuration is completed.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/backend3.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step5"><a class="anchor" href="#Step5"></a>Step 5</h5>
+<div class="paragraph">
+<p>For configuration, click "Wirecard" in the Payment Settings. The “General” tab opens. If the payment method is new and the settings are incomplete, there is a warning saying that the payment cannot be made visible. In the "General" tab set whether the payment method should be made visible in the shop and whether the payment method shall be a default payment method offered to the consumer. The payment method can only be set to "Default" if "Visible" is set to "Yes".</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/backendgeneral1.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step6"><a class="anchor" href="#Step6"></a>Step 6</h5>
+<div class="paragraph">
+<p>Define whether the payment method shall only be available for orders within a certain order value range. The minimum and maximum order value can be defined for each currency offered in the shop. If the value field is left empty, no restrictions will apply. The payment method is not displayed if the value of the respective order is outside the defined range.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung5.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step7"><a class="anchor" href="#Step7"></a>Step 7</h5>
+<div class="paragraph">
+<p>A discount or fee may be applied to the consumer&#8217;s transaction. The value of the discount or fee can be set as a fixed amount or as a certain percentage. Unless “Without” is selected, a new input field opens which allows to set the discount or fee. A fixed discount or fee has to be defined separately for each currency offered in the shop.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung6.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step8"><a class="anchor" href="#Step8"></a>Step 8</h5>
+<div class="paragraph">
+<p>The payment method can be restricted to billing addresses in certain regions. The list in this drop down field is based on the regions that were previously configured for the shop (“Settings” &#8594; “Country Settings” &#8594; “Regions”). If no regions are defined, “All countries of the shop” is displayed.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung7.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step9"><a class="anchor" href="#Step9"></a>Step 9</h5>
+<div class="paragraph">
+<p>Define the name which is displayed to the consumer as well as a comment field for each defined language of the shop. On the left there is the language set as default for the current administrator, on the right the language for translations can be selected. The comments can be designed using a WYSIWYG (“What you see is what you get”) editor.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/backendgeneral2.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step10"><a class="anchor" href="#Step10"></a>Step 10</h5>
+<div class="paragraph">
+<p>Now, proceed to upload a logo for the payment method. Depending on whether the checkbox for “Change size during upload” is checked or not, the logo will be scaled to a maximum of 64 x 64 pixels. Irrespective of any already uploaded image, the logo can be made invisible by setting “Display logo” to “No”.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung9.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step11"><a class="anchor" href="#Step11"></a>Step 11</h5>
+<div class="paragraph">
+<p>Open the “Settings” tab to complete configuration of the Wirecard payment method.</p>
+</div>
+<div class="paragraph">
+<p>Customer ID and secret are provided by Wirecard and are needed for authorizing the shop on the Wirecard server. An optional shop ID is provided if more than one online shop uses Wirecard as a payment method.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/backendsettings1.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Now, select which payment methods the consumer may use.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/backendsettings2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>If more than one payment method is available for the consumer to choose, create multiple Wirecard payment methods with different names and individual payment methods.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step12"><a class="anchor" href="#Step12"></a>Step 12</h5>
+<div class="paragraph">
+<p>Select whether the transaction should be debited directly or if only an authorization for the payment is made. The debit has to be confirmed manually afterwards.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung13.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step13"><a class="anchor" href="#Step13"></a>Step 13</h5>
+<div class="paragraph">
+<p>An order is created after the transaction via Wirecard was successfully made. The options “Order status for authorized payment” and “Order status for debited payment” allow to select which state the new order should receive. Depending on the transaction type, the state of one of the two options is used.</p>
+</div>
+<div class="paragraph">
+<p>The following states are available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Viewed</p>
+</li>
+<li>
+<p>Rejected</p>
+</li>
+<li>
+<p>In process</p>
+</li>
+<li>
+<p>Pending</p>
+</li>
+<li>
+<p>Ready for dispatch</p>
+</li>
+<li>
+<p>Partially dispatched</p>
+</li>
+<li>
+<p>Dispatched</p>
+</li>
+<li>
+<p>Delivered</p>
+</li>
+<li>
+<p>Partially invoiced</p>
+</li>
+<li>
+<p>Invoiced</p>
+</li>
+<li>
+<p>Partially paid</p>
+</li>
+<li>
+<p>Paid</p>
+</li>
+<li>
+<p>Closed</p>
+</li>
+<li>
+<p>Archived</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Please do not use “Pending” or “Rejected” for the order state as these states are used for payments with pending behavior.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung14.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step14"><a class="anchor" href="#Step14"></a>Step 14</h5>
+<div class="paragraph">
+<p>Choose whether or not the consumer billing data, consumer shipping data or the shopping basket data should be sent during the payment transaction. This is only needed for certain payment methods, e.g. Invoice by payolution and Invoice by RatePAY, or PayPal.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/backendsettings3.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step15"><a class="anchor" href="#Step15"></a>Step 15</h5>
+<div class="paragraph">
+<p>Now, define whether the Wirecard payment transaction should be concluded in a separate pop-up window, in the same shop window or in an iframe which is included in the shop.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung16.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step16"><a class="anchor" href="#Step16"></a>Step 16</h5>
+<div class="paragraph">
+<p>Use "Customer groups" to restrict Wirecard to certain consumer groups. <span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung17.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>If no groups are assigned, Wirecard can be used by any consumer. The following list shows exemplary groups defined for a shop. <span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung18.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step17"><a class="anchor" href="#Step17"></a>Step 17</h5>
+<div class="paragraph">
+<p>To configure Wirecard in the publisher back office (PBO), open the "Settings" tab.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung19.png" alt="image"></span> <span class="image"><img src="/shop_plugins/epages_wcp/wirecard_einrichtung20.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Then click “Payment” in category “External systems”.</p>
+</div>
+<div class="paragraph">
+<p>Next, select the store on which the shop is running and for which the Wirecard cartridge was installed. A new page opens, click "Wirecard" to show the settings.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step18"><a class="anchor" href="#Step18"></a>Step 18</h5>
+<div class="paragraph">
+<p>If the "Activate logging" checkbox is ticked, the entire communication between the shop and the Wirecard server is logged into the file “communication.log” on the server. <span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_einrichtung21.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The URL of the Wirecard server is by default set to <a href="https://checkout.wirecard.com/page/init-server.php" class="bare">https://checkout.wirecard.com/page/init-server.php</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/pbosettings1.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Furthermore there are fields to set the registration URL for the Checkout Portal and the URL for general information for shop plugins. By default these URLs are set and displayed in the MBO. If there is no value, the specific text with link in the MBO is invisible.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step19"><a class="anchor" href="#Step19"></a>Step 19</h5>
+<div class="paragraph">
+<p>The consumer can choose Wirecard as payment method during the payment process. Wirecard is only displayed if the payment method has been made visible and the order value is within the defined range.</p>
+</div>
+<div class="paragraph">
+<p>Both name and logo are displayed if the corresponding settings of the payment method have been made. If Wirecard is selected as payment method, a new step in the shopping basket is added.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/frontend1.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Step20"><a class="anchor" href="#Step20"></a>Step 20</h5>
+<div class="paragraph">
+<p>After confirming the order in “Check &amp; Order”, payment via Wirecard is executed.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/epages_wcp/wirecard_bestellen2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The layout is in line with the corresponding settings made in the MBO (see Display of Payment Pages).</p>
+</div>
+<div class="paragraph">
+<p>First, select the desired payment method. If the payment method was already selected in the settings, this step is omitted. Now the consumer has to fill in the required information for authentication. After successful transaction, the shop&#8217;s order confirmation page is displayed. In case of a failure, an error message is sent.</p>
+</div>
+<div class="paragraph">
+<p>If Wirecard is not able to detect whether the payment was successful or not, a forward to an alternative confirmation page is provided and information that the financial institution has not yet approved the payment is displayed. Also, there is an entry in the order table showing a pending state. If the payment is approved later, the order is confirmed and set to the order state which was selected in the MBO.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/ordertable2.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="InstallingTheCartridge"><a class="anchor" href="#InstallingTheCartridge"></a>Installing the Cartridge</h4>
+<div class="paragraph">
+<p>For installing or deleting the cartridge on Linux, SSH access is needed.</p>
+</div>
+<div class="paragraph">
+<p>After establishing connection with the server, change the path to the “Cartridges” folder of ePages which is usually located at “/srv/epages/eproot/Cartridges”.</p>
+</div>
+<div class="paragraph">
+<p>Look for the folder “DE_INNOCHANGE” (next to “DE_EPAGES”). If this folder is not available, create the folder. Copy the complete cartridge into “DE_INNOCHANGE” folder. In the command line set the right permissions by entering the following command: /etc/init.d/epages6 perm cartridges Set the environment variable to epages6 with the command: . /etc/default/epages6 Go to the folder where the Wirecard cartridge is located and create a makefile with: $PERL Makefile.PL</p>
+</div>
+<div class="paragraph">
+<p>Now the cartridge can be installed using the following command. Replace &lt;Store&gt; with the store on which the corresponding shop is running:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/install_cartridge1.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="DeletingTheCartridge"><a class="anchor" href="#DeletingTheCartridge"></a>Deleting the Cartridge</h4>
+<div class="paragraph">
+<p>Depending on the cartridge installation, the environment variables have to be loaded with: “. /etc/default/epages6” Now change the directory to the “$EPAGES_CARTRIDGES/DE_INNOCHANGE/Wirecard” folder and execute the following commands: (STORE=&lt;Store&gt; has to be replaced with the name of the store on which the corresponding shop is running):</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcp/epages/uninstall_cartridge.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../../.." data-page-path="/online-guides/main/shop_plugins/wcp/epages/installation/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

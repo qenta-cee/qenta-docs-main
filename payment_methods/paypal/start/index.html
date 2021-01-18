@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PayPal :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/payment_methods/paypal/start/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="./">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QENTA Online Guides</a></li>
+    <li><a href="../../start/">Integration of Payment Methods</a></li>
+    <li>Alternative Payments</li>
+    <li><a href="./">PayPal</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">PayPal</h1>
+<div class="sect1">
+<h2 id="Paypal"><a class="anchor" href="#Paypal"></a>PayPal</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="GeneralInformation"><a class="anchor" href="#GeneralInformation"></a>General information</h3>
+<div class="paragraph">
+<p>PayPal is an American company operating a worldwide online payments system which has been a wholly owned subsidiary of eBay from 2002 till its spin-off which was completed in July 2015. The company acts as acquirer, i.e. managing payment processing for online vendors, auction sites and other commercial users.</p>
+</div>
+<div class="paragraph">
+<p>Operating in more than 200 markets, PayPal has more than 160 million active, registered accounts and allows customers to make financial transactions online in many different currencies all over the world.</p>
+</div>
+<div class="paragraph">
+<p>Please visit <a href="https://www.paypal.com/at/home">PayPal</a> for further information and details.</p>
+</div>
+<div class="paragraph">
+<p>To integrate and offer PayPal as payment method to your consumers in your online shop you need to take into consideration the following issues.</p>
+</div>
+<div class="sect3">
+<h4 id="ImportantRequirements"><a class="anchor" href="#ImportantRequirements"></a>Important requirements</h4>
+<div class="paragraph">
+<p>The following requirements must be met when integrating PayPal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>All required data of your consumer are available.</p>
+</li>
+<li>
+<p>Submit additional parameters which are required by PayPal for processing the payment of your consumer.</p>
+</li>
+<li>
+<p>Your consumer may change the shipping address within the payment in PayPal. Therefore we return the shipping address together with other payment details in the response parameter to your online shop for further processing in your fulfillment process.</p>
+</li>
+<li>
+<p>Setup third party permissions for Wirecard to your PayPal account as described below.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Do not offer this payment method to your consumer in your online shop unless these requirements are met.</p>
+</div>
+<div class="paragraph">
+<p>Please visit <a href="https://www.paypal.com">PayPal</a> for further information and details.</p>
+</div>
+<div class="paragraph">
+<p>If your online shop is enabled for payment method PayPal it is required that you use additional request and response parameters when integrating Wirecard Checkout Page or Wirecard Checkout Seamless into your shop. Especially these request parameters have to been set whenever you (or your consumer) set the payment method to PayPal or to SELECT.</p>
+</div>
+<div class="paragraph">
+<p>If the payment has been accepted by PayPal you will get as response the parameter <code>paymentState</code> with the value ”SUCCESS”.</p>
+</div>
+<div class="paragraph">
+<p>We recommend to store the PayPal <code>TRANSACTIONID</code> of the payment as returned by the parameter <code>gatewayReferenceNumber</code> within the data regarding the corresponding session and order for documentation purposes.</p>
+</div>
+<div class="paragraph">
+<p>At a later time you have also the possibility to get the <code>TRANSACTIONID</code> via the Wirecard Payment Center by searching for the specific payment and then using the details view for the <code>GatewayReferenceNumber</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="TwostepProcessForApprovedPaymentsAndDepositedPayments"><a class="anchor" href="#TwostepProcessForApprovedPaymentsAndDepositedPayments"></a>Two-step process for approved payments and deposited payments</h4>
+<div class="paragraph">
+<p>PayPal transactions are by default set to be immediately approved and deposited in one single step.</p>
+</div>
+<div class="paragraph">
+<p>However, upon your request we are able to split up this single step into a two-step processes - approval and deposit. This two-step process allows you to distinguish between approved payments and deposited payments and perform certain actions for each of them. You have the possibility to decide when to deposit amounts that have already been approved.</p>
+</div>
+<div class="paragraph">
+<p>To enable the two-step process in your merchant settings, please contact our <a href="../../../support/" class="page">support teams</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="SettingUp3rdPartyPermissions"><a class="anchor" href="#SettingUp3rdPartyPermissions"></a>Setting up 3rd party permissions</h3>
+<div class="paragraph">
+<p>To enable the integration of PayPal into your online shop in our Wirecard Checkout solutions we need to get some "third party permissions" to your PayPal Business Account for accessing PayPal related payment information. Please follow the required setup steps described in <a href="../setup_3rd_party_permissions/" class="page">Setting up 3rd party permissions</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="OrderFlowDiagram"><a class="anchor" href="#OrderFlowDiagram"></a>Order flow diagram</h3>
+<div class="paragraph">
+<p>For a visual representation of the order flow behavior and associated transaction-based operations of this payment method we invite you to have a look at the respective <a href="../state_diagram/" class="page">order flow diagram</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="RequiredRequestParameters"><a class="anchor" href="#RequiredRequestParameters"></a>Required request parameters</h3>
+<div class="paragraph">
+<p>The use of the following request parameters is mandatory for payment method <code>PayPal</code>.</p>
+</div>
+<div class="sect3">
+<h4 id="ConsumerBillingDataAndShoppingBasketData"><a class="anchor" href="#ConsumerBillingDataAndShoppingBasketData"></a>consumer billing data and shopping basket data</h4>
+<div class="paragraph">
+<p>If you would like to use <strong><a href="https://www.paypal.com/at/webapps/mpp/seller-protection">PayPal Seller Protection</a></strong> the parameters for <strong>consumer billing data</strong> and <strong>shopping basket data are required</strong>. For further information on these parameters go to <a href="../../../request_parameters/#ConsumerBillingData" class="page">Consumer billing data</a> and <a href="../../../request_parameters/#ShoppingBasketData" class="page">Shopping basket data</a>.</p>
+</div>
+<div class="paragraph">
+<p>Please note the <strong>length restrictions</strong> that apply for this payment method and the following <strong>shopping basket parameters</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><a href="../../../request_parameters/#ShoppingBasketData" class="page">Shopping basket data</a></th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Within fingerprint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Short description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)ArticleNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and with a variable length of up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of article n in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and with a variable length of up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product description of article n in shopping basket.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="PendingurlAndConfirmurl"><a class="anchor" href="#PendingurlAndConfirmurl"></a>pendingUrl and confirmUrl</h4>
+<div class="paragraph">
+<p>With the parameter <code>pendingUrl</code> you can define the URL of your online shop where your consumer is forwarded when the payment process could not determine a result yet. On this page of your online shop you should inform your consumer about the pending situation of the payment process.</p>
+</div>
+<div class="paragraph">
+<p>With the parameter <code>confirmUrl</code> you can define the URL of your online shop used by the Wirecard Checkout Server to send to your online shop relevant return values containing the result of the payment process.</p>
+</div>
+<div class="paragraph">
+<p>Note that the state "pending" is only used if the parameter <code>pendingUrl</code> is <strong>set in combination with</strong> the parameter <code>confirmUrl</code>. Otherwise you will get a "failure" instead of a "pending" state.</p>
+</div>
+<div class="paragraph">
+<p>For further information have a look at <a href="../../../request_parameters/#pendingurl" class="page">pendingUrl</a> and <a href="../../../request_parameters/#confirmurl" class="page">confirmUrl</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="OptionalRequestParameters"><a class="anchor" href="#OptionalRequestParameters"></a>Optional request parameters</h3>
+<div class="paragraph">
+<p>The optional request parameters <code>customerStatement</code> and <code>orderReference</code> are more restricted with regard to their length and allowed characters than are other general <a href="../../../request_parameters/#OptionalParameters" class="page">request parameters</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">customerStatement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 254 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">orderReference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="ParameterBasketitemToReedemVouchers"><a class="anchor" href="#ParameterBasketitemToReedemVouchers"></a>Parameter basketItem to reedem vouchers</h4>
+<div class="paragraph">
+<p>If the consumer in your online shop redeems a voucher or coupon during the payment process, the optional request parameter <code>basketItem</code> must be used. This parameter must contain the negative amount corresponding to the voucher or coupon value. For vouchers with percentage discount, the percentage to be deducted must first be converted into an absolute value. The total basket amount displayed to the consumer in your online shop will then show both the voucher amount and the total basket amount reduced by this voucher amount.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AdditionalResponseParameters"><a class="anchor" href="#AdditionalResponseParameters"></a>Additional response parameters</h3>
+<div class="paragraph">
+<p>When using this payment method in your online shop, we will return additional parameters to your online shop. These parameters are specific to this payment method and are only returned when your consumer selects this payment method in your online shop.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">State</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../response_parameters/#ResponseParametersWhichWillBeReturnedForSuccessfulPayments" class="page">gatewayReferenceNumber</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 255.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transaction ID of authorization.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalBillingAgreementID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 19.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing agreement ID returned by PayPal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerAddressCity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City of shipping address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerAddressCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a variable lenth of up to 50.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country of shipping address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerAddressCountryCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code (ISO 3166-1) of shipping address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerAddressName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 32.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of shipping address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerAddressState</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State of shipping address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerAddressStreet1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 100.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Street line 1 of shipping address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerAddressStreet2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 100.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Street line 2 of shipping address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerAddressZIP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 20.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ZIP code of shipping address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerEmail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 127.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-mail address of consumer as returned by PayPal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerFirstName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 64.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First name of consumer as returned by PayPal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 13.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID of consumer as returned by PayPal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">paypalPayerLastName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 64.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last name of consumer as returned by PayPal.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="BackendOperations"><a class="anchor" href="#BackendOperations"></a>Back-end operations</h3>
+<div class="paragraph">
+<p>Please refer to <a href="../../../back-end_operations/transaction-based/table/" class="page">transaction-based operations by payment method</a> and <a href="../../../back-end_operations/non-transaction-based/table/" class="page">non-transaction-based operations by payment method</a> for further information and details on back-end operations in <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="RecurringPayments"><a class="anchor" href="#RecurringPayments"></a>Recurring payments</h4>
+<div class="paragraph">
+<p>To carry out recurring payments the parameter <a href="../../../request_parameters/#Transactionidentifier" class="page">request_parameters#transactionIdentifier</a> is used. For more information visit <a href="../../../back-end_operations/transaction-based/recurpayment/" class="page">recurPayment</a>.</p>
+</div>
+<div class="sect4">
+<h5 id="AdditionalRequiredRequestParameters"><a class="anchor" href="#AdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
+<div class="paragraph">
+<p>This otherwise optional request parameter <code>consumerDeviceId</code> is required by PayPal for so-called "on-demand payments" initiated by the consumer in the online shop.</p>
+</div>
+<div class="paragraph">
+<p>Recurring payments initiated by the merchant, without interaction of consumer, used for handling subscription-based transactions do not need this parameter.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Security parameter</th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Short description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerDeviceId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 32 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique token which serves as a method of fraud protection.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Please note that the parameter <code>consumerDeviceId</code> is NOT part of the fingerprint.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+We recommend merchants to contact PayPal on integration to obtain more information on this parameter in tems of the specific business case.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Additionally for payment method PayPal the <a href="../../../back-end_operations/transaction-based/recurpayment/#AdditionalOptionalRequestParameters" class="page">basket parameters</a> can be set and will be displayed when used in a recurring payment.</p>
+</div>
+<div class="paragraph">
+<p>Although the following parameters are in general optional, either <strong>all parameters</strong> need to be set, except for <code>basketItem(n)Description</code> and <code>basketItem(n)ImageUrl</code> which remain optional, <strong>or none</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Please note that these basket parameters are NOT part of the fingerprint.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><a href="../../../request_parameters/#ShoppingBasketData" class="page">Shopping basket data</a></th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Within fingerprint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Short description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItems</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of items in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)ArticleNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of article n in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product description of article n in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)ImageUrl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL to an image of each item.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product name of article n in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)Quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Items count of article n in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)UnitGrossAmount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Price per unit of article n in shopping basket with taxes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)UnitNetAmount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Price per unit of article n in shopping basket without taxes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)UnitTaxAmount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax amount per unit of article n in shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">basketItem(n)UnitTaxRate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Percentage of tax, e.g. 20 or 19.324. Up to 3 fractions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Percentage of tax per unit of article n in shopping basket.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="ApprovalFromPaypal"><a class="anchor" href="#ApprovalFromPaypal"></a>Approval from PayPal</h5>
+<div class="paragraph">
+<p>Please remember that for using the back-end operation <a href="../../../back-end_operations/transaction-based/recurpayment/" class="page">recurPayment</a> (called reference transaction in PayPal, <strong>not</strong> recurring transaction) you need to request approval from PayPal to enable this reference transaction. To request approval, please contact <a href="https://www.paypal.com">PayPal Customer Support</a> or your PayPal account representative. After receiving approval from PayPal please also contact our <a href="../../../support/" class="page">support teams</a> to enable this feature.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Faq"><a class="anchor" href="#Faq"></a>FAQ</h3>
+<div class="paragraph">
+<p><strong><em>Which language is presented to your consumer on the PayPal pages?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>If the parameter <code>consumerShippingCountry</code> is set, PayPal will display its own pages in the language of that country. Otherwise if this parameter is not set PayPal will use the language configured within the web browser of your consumer.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>What configuration settings are necessary if no shipping address needs to be entered by the consumer because e.g. only digital goods are sold in the online shop (no shipping)?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>The respective PayPal parameter is <code>NOSHIPPING=1</code>. Please be aware that your merchant configuration has to be changed by our <a href="../../../support/" class="page">support teams</a> on your behalf in order to use this feature.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>What configuration settings are necessary to prevent the consumer in your online shop from editing the shipping address (parameter "no address change")?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>The respective PayPal parameter is <code>ADDROVERRIDE=1</code>. Please be aware that your merchant configuration has to be changed by our <a href="../../../support/" class="page">support teams</a> on your behalf in order to use this feature.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>It is not possible to open PayPal in an iframe to enter the consumer&#8217;s data. How is the PayPal page displayed then?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>As pop-up which is generally well suited for all devices and used by default, or via a page redirect which should be used for checkout processes in web view within a native app. For further information contact our <a href="../../../support/" class="page">support teams</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>What happens if pop-up blockers are enabled and the PayPal page is not shown?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>When the consumer to your online shop selects the payment method PayPal, a pop-up will open by default to enter the relevant consumer&#8217;s payment details. Since a lot of consumers have pop-up blockers enabled, the pop-up may not be shown and consumers may not proceed with the checkout process. In order to allow consumers to proceed with the checkout even if pop-up blockers are enabled, Wirecard offers the option to open PayPal as a normal page without using pop-ups.</p>
+</div>
+<div class="paragraph">
+<p>Please contact our <a href="../../../support/" class="page">support teams</a> to enable this feature.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/payment_methods/paypal/start/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

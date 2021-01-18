@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Payment facilitator model :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/payment_methods/creditcard/payment_facilitator/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QENTA Online Guides</a></li>
+    <li><a href="./">Payment facilitator model</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Payment facilitator model</h1>
+<div class="sect1">
+<h2 id="PaymentFacilitatorModel"><a class="anchor" href="#PaymentFacilitatorModel"></a>Payment facilitator model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The payment facilitator model is used to <strong>clarify sub-merchant information</strong> and clearly identify the payment facilitator&#8217;s sub-merchants that may be participating in a transaction. This helps strengthening fraud monitoring and authorization screening, and provides clarity about transactions both for acquirers and cardholders.</p>
+</div>
+<div class="paragraph">
+<p>To support this model and obtain more transparency, <strong>all</strong> of the following additional request parameters are required to be sent to the acquirer by the payment facilitators as part of the transaction details, except for <code>subMerchantState</code> which is only required if <code>subMerchantCountry</code> code is <code>US</code> or <code>CA</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Within fingerprint</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subMerchantId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 15 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of sub-merchant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subMerchantName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 22 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of sub-merchant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subMerchantCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a fixed length of 2 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code of sub-merchant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subMerchantState</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a variable length of up to 3 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State of sub-merchant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subMerchantCity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 13 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City of sub-merchant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subMerchantStreet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 38 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Street name of sub-merchant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subMerchantZipCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 10 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zip code of sub-merchant.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Contact our <a href="../../../support/" class="page">support teams</a> for <strong>enabling</strong> these additional request parameters for your merchant account.</p>
+</div>
+<div class="paragraph">
+<p>For the <strong>back-end operations</strong> <a href="../../../back-end_operations/transaction-based/deposit/" class="page">deposit</a>, <a href="../../../back-end_operations/transaction-based/refund/" class="page">refund</a> and <a href="../../../back-end_operations/transaction-based/recurpayment/" class="page">recurPayment</a> the <strong>required order</strong> when computing the fingerprint is: <code>subMerchantId</code>, <code>subMerchantName</code>, <code>subMerchantStreet</code>, <code>subMerchantCity</code>, <code>subMerchantState</code>, <code>subMerchantCountry</code> and <code>subMerchantZipCode</code>.</p>
+</div>
+<div class="sect2">
+<h3 id="ErrorMessages"><a class="anchor" href="#ErrorMessages"></a>Error messages</h3>
+<div class="paragraph">
+<p>If your merchant account is configured as payment facilitator account, you need to send the additional sub-merchant data as part of the transaction details otherwise the transaction will be rejected and appropriate error messages will be returned.</p>
+</div>
+<div class="paragraph">
+<p>The following error messages are sent if the above mentioned parameters are not transmitted in the request:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SUBMERCHANT_ID is missing.</p>
+</li>
+<li>
+<p>SUBMERCHANT_NAME is missing.</p>
+</li>
+<li>
+<p>SUBMERCHANT_COUNTRY is missing.</p>
+</li>
+<li>
+<p>SUBMERCHANT_STREET is missing.</p>
+</li>
+<li>
+<p>SUBMERCHANT_ZIP_CODE is missing.</p>
+</li>
+<li>
+<p>SUBMERCHANT_CITY is missing.</p>
+</li>
+<li>
+<p>SUBMERCHANT_STATE is missing.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following error messages are sent if the transmitted request parameters do not have the correct length:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SUBMERCHANT_ID has an invalid length.</p>
+</li>
+<li>
+<p>SUBMERCHANT_NAME has an invalid length.</p>
+</li>
+<li>
+<p>SUBMERCHANT_COUNTRY has an invalid length.</p>
+</li>
+<li>
+<p>SUBMERCHANT_STREET has an invalid length.</p>
+</li>
+<li>
+<p>SUBMERCHANT_ZIP_CODE has an invalid length.</p>
+</li>
+<li>
+<p>SUBMERCHANT_CITY has an invalid length.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following error messages are sent if the contents of the above mentioned parameters is not correct:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SUBMERCHANT_ID is invalid.</p>
+</li>
+<li>
+<p>SUBMERCHANT_NAME is invalid.</p>
+</li>
+<li>
+<p>SUBMERCHANT_COUNTRY is invalid.</p>
+</li>
+<li>
+<p>SUBMERCHANT_STREET is invalid.</p>
+</li>
+<li>
+<p>SUBMERCHANT_ZIP_CODE is invalid.</p>
+</li>
+<li>
+<p>SUBMERCHANT_CITY is invalid.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/payment_methods/creditcard/payment_facilitator/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

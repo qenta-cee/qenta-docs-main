@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JAPI/SAPI and REST API Request Comparison :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/request_comparison_japi_sapi_vs._rest_api/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../">QENTA Online Guides</a></li>
+    <li><a href="./">JAPI/SAPI and REST API Request Comparison</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">JAPI/SAPI and REST API Request Comparison</h1>
+<div class="sect1">
+<h2 id="JapisapiAndRestApiRequestComparison"><a class="anchor" href="#JapisapiAndRestApiRequestComparison"></a>JAPI/SAPI and REST API Request Comparison</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The REST API architecture is completely different from the JAPI/SAPI architecture. Therefore, the fields have no corresponding equivalents. This page shows JAPI/SAPI requests and their REST API counterparts.</p>
+</div>
+<div class="sect2">
+<h3 id="HeaderInformation"><a class="anchor" href="#HeaderInformation"></a>Header Information</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">JAPI/SAPI</th>
+<th class="tableblock halign-left valign-top">REST API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authentication: Basic Auth Username: demo-merchant Password: 203yefsy Content-Type: text Format: NVP Endpoint: <a href="https://checkout.wirecard.com/enterprise-demo" class="bare">https://checkout.wirecard.com/enterprise-demo</a> PAN: 9500000000000002 Expiration: 12/2019</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authentication:Basic AuthUsername: 70000-APILUHN-CARDPassword: 8mhwavKVb91TContent-Type: application/xmlEndpoints:https://api-test.wirecard.com/engine/rest/paymentmethods/https://api-test.wirecard.com/engine/rest/payments/ PAN: 4271149787014678Expiration Month: 12Expiration Year: 2020CVC: 123Card type: visaPAN: 4012000300001003Expiration Month: 01Expiration Year: 2019CVC: 003Card type: visa</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="InitiatePayment"><a class="anchor" href="#InitiatePayment"></a>Initiate Payment</h3>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=INITIATEPAYMENT&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+PAYMENTTYPE=CREDITCARD&amp;
+AMOUNT=1.23&amp;
+CURRENCY=EUR&amp;
+ORDERNUMBER=7049&amp;
+ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+INITTYPE=CCARD&amp;
+PAN=9500000000000002&amp;
+EXPIRY=12/2019&amp;
+CONSUMER_BILLING_FIRST_NAME=John&amp;
+CONSUMER_BILLING_LAST_NAME=Doe&amp;
+CONSUMER_EMAIL=john.doe@test.com&amp;
+CONSUMER_BILLING_PHONE=5555555555&amp;
+CONSUMER_BILLING_ADDRESS_1=123 anystreet&amp;
+CONSUMER_BILLING_CITY=Brantford&amp;
+CONSUMER_BILLING_STATE=ON&amp;
+CONSUMER_BILLING_COUNTRY=CA&amp;
+CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;authorization&lt;/transaction-type&gt;
+    &lt;requested-amount currency="EUR"&gt;1.23&lt;/requested-amount&gt;
+    &lt;account-holder&gt;
+        &lt;first-name&gt;John&lt;/first-name&gt;
+        &lt;last-name&gt;Doe&lt;/last-name&gt;
+        &lt;email&gt;john.doe@test.com&lt;/email&gt;
+        &lt;phone&gt;5555555555&lt;/phone&gt;
+        &lt;address&gt;
+            &lt;street1&gt;123 anystreet&lt;/street1&gt;
+            &lt;city&gt;Brantford&lt;/city&gt;
+            &lt;state&gt;ON&lt;/state&gt;
+            &lt;country&gt;CA&lt;/country&gt;
+            &lt;postal-code&gt;M4P1E8&lt;/postal-code&gt;
+        &lt;/address&gt;
+    &lt;/account-holder&gt;
+    &lt;card&gt;
+        &lt;account-number&gt;4271149787014678&lt;/account-number&gt;
+        &lt;expiration-month&gt;12&lt;/expiration-month&gt;
+        &lt;expiration-year&gt;2020&lt;/expiration-year&gt;
+        &lt;card-security-code&gt;123&lt;/card-security-code&gt;
+        &lt;card-type&gt;visa&lt;/card-type&gt;
+    &lt;/card&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+    &lt;order-number&gt;7049&lt;/order-number&gt;
+    &lt;order-detail&gt;Test transaction Wirecard CEE.&lt;/order-detail&gt;
+    &lt;payment-methods&gt;
+        &lt;payment-method name="creditcard"/&gt;
+    &lt;/payment-methods&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="3dSecureInitiation"><a class="anchor" href="#3dSecureInitiation"></a>3-D Secure Initiation</h3>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=INITIATEPAYMENT&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+PAYMENTTYPE=CREDITCARD&amp;
+ORDERNUMBER=21402614&amp;
+AMOUNT=1.23&amp;
+CURRENCY=EUR&amp;
+ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+INITTYPE=3DSECURE&amp;
+PAN=9500000000000002&amp;
+EXPIRY=12/2019&amp;
+SUCCESSURL=https://example.com/success.html&amp;
+SERVICEURL=https://example.com/service.html&amp;
+CONSUMER_BILLING_FIRST_NAME=John&amp;
+CONSUMER_BILLING_LAST_NAME=Doe&amp;
+CONSUMER_EMAIL=john.doe@test.com&amp;
+CONSUMER_BILLING_PHONE=5555555555&amp;
+CONSUMER_BILLING_ADDRESS_1=123 anystreet&amp;
+CONSUMER_BILLING_CITY=Brantford&amp;
+CONSUMER_BILLING_STATE=ON&amp;
+CONSUMER_BILLING_COUNTRY=CA&amp;
+CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;!-- Check enrollment --&gt;
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;33f6d473-3036-4ca5-acb5-8c64dac862d1&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;check-enrollment&lt;/transaction-type&gt;
+    &lt;requested-amount currency="EUR"&gt;1.23&lt;/requested-amount&gt;
+    &lt;account-holder&gt;
+        &lt;first-name&gt;John&lt;/first-name&gt;
+        &lt;last-name&gt;Doe&lt;/last-name&gt;
+        &lt;email&gt;john.doe@test.com&lt;/email&gt;
+        &lt;phone&gt;&lt;/phone&gt;
+        &lt;address&gt;
+            &lt;street1&gt;123 anystreet&lt;/street1&gt;
+            &lt;city&gt;Brantford&lt;/city&gt;
+            &lt;state&gt;ON&lt;/state&gt;
+            &lt;country&gt;CA&lt;/country&gt;
+        &lt;/address&gt;
+     &lt;/account-holder&gt;
+     &lt;card&gt;
+        &lt;account-number&gt;4012000300001003&lt;/account-number&gt;
+        &lt;expiration-month&gt;01&lt;/expiration-month&gt;
+        &lt;expiration-year&gt;2019&lt;/expiration-year&gt;
+        &lt;card-type&gt;visa&lt;/card-type&gt;
+        &lt;card-security-code&gt;003&lt;/card-security-code&gt;
+     &lt;/card&gt;
+     &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="3dSecureAcsRedirect"><a class="anchor" href="#3dSecureAcsRedirect"></a>3-D Secure ACS Redirect</h3>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong> -&#8594; returns HTML with included javascript pop-up, which automatically opens 3-D Secure page for authentication.</p>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong> -&#8594; returns XML or JSON response; merchant needs to parse acs-url and implement functionality which redirects the consumer to the 3-D Secure page for authentication.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="3dSecureVerification"><a class="anchor" href="#3dSecureVerification"></a>3-D Secure Verification</h3>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=VERIFYPAYMENT&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+ORDERNUMBER=21402614&amp;
+MD=Q1JFRElUQ0FSRHwxfDF8MjE0MDI2MTQ=&amp;
+PARES=DEMO-PAYER-AUTHENTICATION-RESPONSE-CAN-BE-UP-TO-5K-OF-DATA+++MS4wMHw5Nzh8MjE0MDI2MTR8MjE0MDI2MTR8Q1JFRE
+lUQ0FSRHwyMDE4MTEwODA4Mjc1N3xSR1Z0Ync9PXxWR1Z6ZEhSeVlXNXpZV3QwYVc5dUlGZHBjbVZqWVhKa0lFTkZSUzRnUW1
+sMGRHVWdibWxqYUhRZ1lXSmlkV05vWlc0aHxyc2x5bDMxMXRrQXJteUxSWkMzOXVnPT0=</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong><br>
+<br>
+Check payer response (if cardholder authenticated with 3-D Secure):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;33f6d473-3036-4ca5-acb5-8c64dac862d1&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;check-payer-response&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from check enrollment}&lt;/parent-transaction-id&gt;
+    &lt;three-d&gt;
+        &lt;pares&gt;{pares inserted here}&lt;/pares&gt;
+    &lt;/three-d&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Send payment request:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+     &lt;merchant-account-id&gt;33f6d473-3036-4ca5-acb5-8c64dac862d1&lt;/merchant-account-id&gt;
+     &lt;request-id&gt;fbeee5af-8329-48ad-af9e-3aaca489520a&lt;/request-id&gt;
+     &lt;transaction-type&gt;purchase&lt;/transaction-type&gt;
+     &lt;parent-transaction-id&gt;${get transaction id from check enrollment}&lt;/parent-transaction-id&gt;
+     &lt;three-d&gt;
+        &lt;pares&gt;{pares inserted here}&lt;/pares&gt;
+    &lt;/three-d&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="DepositcaptureAuthorization"><a class="anchor" href="#DepositcaptureAuthorization"></a>Deposit/Capture Authorization</h3>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=DEPOSIT&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+AMOUNT=1.23&amp;
+CURRENCY=EUR&amp;
+ORDERNUMBER=21402615&amp;
+ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+PAYMENTNUMBER=21402615</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+   &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;capture-authorization&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from authorization}&lt;/parent-transaction-id&gt;
+    &lt;requested-amount currency="EUR"&gt;1.23&lt;/requested-amount&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="FirstInitiationForRecurringPayment"><a class="anchor" href="#FirstInitiationForRecurringPayment"></a>First Initiation for Recurring Payment</h3>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=INITIATEPAYMENT&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+PAYMENTTYPE=CREDITCARD&amp;
+AMOUNT=1.23&amp;
+CURRENCY=EUR&amp;
+ORDERNUMBER=21402615&amp;
+ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+INITTYPE=CCARD&amp;
+PAN=9500000000000002&amp;
+EXPIRY=12/2019&amp;
+CONSUMER_BILLING_FIRST_NAME=John&amp;
+CONSUMER_BILLING_LAST_NAME=Doe&amp;
+CONSUMER_EMAIL=john.doe@test.com&amp;
+CONSUMER_BILLING_PHONE=5555555555&amp;
+CONSUMER_BILLING_ADDRESS_1=123 anystreet&amp;
+CONSUMER_BILLING_CITY=Brantford&amp;
+CONSUMER_BILLING_STATE=ON&amp;
+CONSUMER_BILLING_COUNTRY=CA&amp;
+CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+    &lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;purchase&lt;/transaction-type&gt;
+    &lt;requested-amount currency="EUR"&gt;1.23&lt;/requested-amount&gt;
+    &lt;account-holder&gt;
+        &lt;first-name&gt;John&lt;/first-name&gt;
+        &lt;last-name&gt;Doe&lt;/last-name&gt;
+        &lt;email&gt;john.doe@test.com&lt;/email&gt;
+        &lt;phone&gt;&lt;/phone&gt;
+        &lt;address&gt;
+            &lt;street1&gt;123 anystreet&lt;/street1&gt;
+            &lt;city&gt;Brantford&lt;/city&gt;
+            &lt;state&gt;ON&lt;/state&gt;
+            &lt;country&gt;CA&lt;/country&gt;
+            &lt;postal-code&gt;M4P1E8&lt;/postal-code&gt;
+         &lt;/address&gt;
+    &lt;/account-holder&gt;
+    &lt;card&gt;
+        &lt;account-number&gt;4271149787014678&lt;/account-number&gt;
+        &lt;expiration-month&gt;12&lt;/expiration-month&gt;
+        &lt;expiration-year&gt;2020&lt;/expiration-year&gt;
+        &lt;card-type&gt;visa&lt;/card-type&gt;
+    &lt;/card&gt;
+    &lt;order-number&gt;21402615&lt;/order-number&gt;
+    &lt;order-detail&gt;Test transaction Wirecard CEE.&lt;/order-detail&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+    &lt;periodic-type&gt;recurring&lt;/periodic-type&gt;
+    &lt;sequence-type&gt;first&lt;/sequence-type&gt;
+    &lt;payment-methods&gt;
+        &lt;payment-method name="creditcard"/&gt;
+    &lt;/payment-methods&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="RecurringPayment"><a class="anchor" href="#RecurringPayment"></a>Recurring Payment</h3>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=RECURPAYMENT&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+PAYMENTTYPE=CREDITCARD&amp;
+ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+SOURCEORDERNUMBER=21402615&amp;
+ORDERNUMBER=44152&amp;
+AMOUNT=1.23&amp;
+CURRENCY=EUR&amp;
+ADMIN_PASSWORD=test&amp;
+CONSUMER_BILLING_FIRST_NAME=John&amp;
+CONSUMER_BILLING_LAST_NAME=Doe&amp;
+CONSUMER_EMAIL=john.doe@test.com&amp;
+CONSUMER_BILLING_PHONE=5555555555&amp;
+CONSUMER_BILLING_ADDRESS_1=123 anystreet&amp;
+CONSUMER_BILLING_CITY=Brantford&amp;
+CONSUMER_BILLING_STATE=ON&amp;
+CONSUMER_BILLING_COUNTRY=CA&amp;
+CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;purchase&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id first purchase}&lt;/parent-transaction-id&gt;
+    &lt;requested-amount currency="EUR"&gt;1.23&lt;/requested-amount&gt;
+    &lt;periodic&gt;
+        &lt;periodic-type&gt;recurring&lt;/periodic-type&gt;
+        &lt;sequence-type&gt;recurring&lt;/sequence-type&gt;
+    &lt;/periodic&gt;
+    &lt;payment-methods&gt;
+        &lt;payment-method name="creditcard"/&gt;
+    &lt;/payment-methods&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Referenced transaction:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;referenced-authorization&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
+    &lt;requested-amount currency="EUR"&gt;1.23&lt;/requested-amount&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="Refund"><a class="anchor" href="#Refund"></a>Refund</h3>
+<div class="paragraph">
+<p>A refund needs a preceding transaction to reference to.</p>
+</div>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=REFUND&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+PAYMENTTYPE=CREDITCARD&amp;
+ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+SOURCEORDERNUMBER=15598604&amp;
+ORDERNUMBER=3763380&amp;
+AMOUNT=1.23&amp;
+CURRENCY=EUR&amp;
+ADMIN_PASSWORD=test</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong><br>
+<br>
+Refund capture:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;refund-capture&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Refund purchase:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;refund-purchase&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Different Basic Auth credentials for refund:</strong> +Username: 16390-testing<br>
+Password: 3!3013=D3fD8X7</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Refund capture for non credit card (e.g. Paypal):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;be17476f-1a0c-442e-8841-70e33996c0aa&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;refund-debit&lt;/transaction-type&gt;
+    &lt;payment-methods&gt;
+        &lt;payment-method name="paypal" /&gt;
+    &lt;/payment-methods&gt;
+    &lt;requested-amount currency="EUR"&gt;1.23&lt;/requested-amount&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
+    &lt;order-description&gt;Test transaction Wirecard CEE.&lt;/order-description&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="ApproveReversal"><a class="anchor" href="#ApproveReversal"></a>Approve Reversal</h3>
+<div class="paragraph">
+<p>An approval reversal needs a preceding transaction to reference to.</p>
+</div>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=APPROVEREVERSAL&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+PAYMENTTYPE=CREDITCARD&amp;
+ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+PAYMENTNUMBER=5462117&amp;
+ORDERNUMBER=5462117&amp;
+ADMIN_PASSWORD=test</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong><br>
+<br>
+Void authorization:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;void-authorization&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Void preauthorization:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;void-preauthorization&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="DepositReversal"><a class="anchor" href="#DepositReversal"></a>Deposit Reversal</h3>
+<div class="paragraph">
+<p>A deposit reversal needs a preceding transaction to reference to.</p>
+</div>
+<div class="paragraph">
+<p><strong>JAPI/SAPI:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=DEPOSITREVERSAL&amp;
+MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
+PAYMENTTYPE=CREDITCARD&amp;
+ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+PAYMENTNUMBER=5462117&amp;
+ORDERNUMBER=5462117&amp;
+ADMIN_PASSWORD=test</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>REST API:</strong><br>
+<br>
+Void capture:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+    &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+    &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+    &lt;transaction-type&gt;void-capture&lt;/transaction-type&gt;
+    &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
+    &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Void purchase:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;payment xmlns="https://www.elastic-payments.com/schema/payment"&gt;
+     &lt;merchant-account-id&gt;07edc10b-d3f9-4d12-901f-0db7f4c7e75c&lt;/merchant-account-id&gt;
+     &lt;request-id&gt;${unique for each request}&lt;/request-id&gt;
+     &lt;transaction-type&gt;void-purchase&lt;/transaction-type&gt;
+     &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
+     &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
+&lt;/payment&gt;</code></pre>
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p>Back to <a href="../switching_to_wirecard_payment_processing_gateway/" class="page">Switching to Wirecard Payment Gateway main page.</a></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../.." data-page-path="/online-guides/main/request_comparison_japi_sapi_vs._rest_api/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

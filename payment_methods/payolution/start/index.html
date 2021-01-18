@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Payolution: Invoice and Installment :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/payment_methods/payolution/start/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QENTA Online Guides</a></li>
+    <li><a href="./">Payolution: Invoice and Installment</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Payolution: Invoice and Installment</h1>
+<div class="sect1">
+<h2 id="PayolutionInvoiceAndInstallment"><a class="anchor" href="#PayolutionInvoiceAndInstallment"></a>Payolution: Invoice and Installment</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="GeneralInformation"><a class="anchor" href="#GeneralInformation"></a>General information</h3>
+<div class="paragraph">
+<p>Payolution is an Austrian financial service provider which offers the payment methods <strong>invoice</strong> and <strong>installment</strong> as white label solutions for online transactions for the Austrian, German and Swiss online market.</p>
+</div>
+<div class="paragraph">
+<p>Merchants receive from payolution the entire amount even if the payment was not yet effected by the consumer in the merchant´s web shop. The items purchased in the web shop are sent to the consumer together with the relevant invoice. The consumer then effects the transfer of the respective amounts to payolution within the due date for payment. In case of an installment, the relevant partial amounts are collected from the consumer´s account by means of direct debit on a monthly basis.</p>
+</div>
+<div class="paragraph">
+<p>Please visit <a href="https://www.payolution.com/en">payolution</a> for further information.</p>
+</div>
+<div class="sect3">
+<h4 id="AdvantagesForMerchants"><a class="anchor" href="#AdvantagesForMerchants"></a>Advantages for merchants</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Quick and guaranteed payment since merchants receive the outstanding amounts irrespective of the consumers´ due date for payment.</p>
+</li>
+<li>
+<p>High conversion rate since e.g. installment is a very popular payment method in Austria, Germany and Switzerland.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="AdvantagesForConsumers"><a class="anchor" href="#AdvantagesForConsumers"></a>Advantages for consumers</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Selecting invoice, consumers receive the purchased items before paying them.</p>
+</li>
+<li>
+<p>Selecting installment, the outstanding amount is split up into several parts for payment by the consumer at successive fixed times.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="IntegrationRequirements"><a class="anchor" href="#IntegrationRequirements"></a>Integration requirements</h3>
+<div class="paragraph">
+<p>To integrate and offer the payment methods invoice and installment to the consumers in your web shop you need to fulfill some important requirements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Both the currency of the shopping cart and the currency of the order amount have to be EUR.</p>
+</li>
+<li>
+<p>Your consumer must be older than 18 years of age.</p>
+</li>
+<li>
+<p>The order amount must not be below or exceed the limits as agreed with payolution.</p>
+</li>
+<li>
+<p>All required consumer data must be available.</p>
+</li>
+<li>
+<p>Billing address and delivery address must be the same.</p>
+</li>
+<li>
+<p>Delivery country must be accepted by payolution.</p>
+</li>
+<li>
+<p>Additional parameters required by payolution for assessing the creditworthiness of your consumer must be submitted.</p>
+</li>
+<li>
+<p>Gift vouchers must be excluded and may not be purchased via invoice and installment.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Do not offer these payment methods to the consumers in your web shop unless these requirements are met.</p>
+</div>
+<div class="paragraph">
+<p>If your web shop is enabled for payment method invoice or installment it is required that you use additional request and response parameters when integrating the Wirecard Checkout Page into your shop. Especially the request parameters have to be set whenever you (or your consumer) set the payment method to INVOICE, INSTALLMENT or to SELECT.</p>
+</div>
+<div class="paragraph">
+<p>If invoice or installment has been accepted by payolution you will receive the response parameter <code>paymentState</code> with the value &#8220;SUCCESS&#8221;.</p>
+</div>
+<div class="paragraph">
+<p>The relevant invoice has to be sent to the consumer by the merchant. Payolution will only send an installment plan to the merchant´s consumer by e-mail if payment method installment is selected.</p>
+</div>
+<div class="paragraph">
+<p>For documentation purposes we recommend to store the reference number of the invoice or installment as returned by the parameter <code>gatewayReferenceNumber</code> together with the relevant session and order specific data.</p>
+</div>
+<div class="paragraph">
+<p>At a later time there is also the possibility to get the invoice or installment reference number via the Wirecard Payment Center by searching for the specific payment and then using the details view for the "Gateway-Referencenumber".</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ProcessDescription"><a class="anchor" href="#ProcessDescription"></a>Process description</h3>
+<div class="paragraph">
+<p>The following description outlines the individual steps from starting the checkout process to issuing credit notes:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The consumer in your web shop adds the items to the shopping basket, selects the preferred payment method, invoice or installment, and enters the required data such as address, e-mail and date of birth. The consumer then clicks "pay now".</p>
+</li>
+<li>
+<p>A risk assessment is carried out by payolution. If the payment is invalid, the consumer receives an error message and the transaction is not registered in the Payment Center. If the payment is valid, the transaction is approved (authorized) in the Payment Center.</p>
+</li>
+<li>
+<p>Approvals shall be converted into deposits on the same day the purchased items are dispatched. Please note that for payolution approvals may be converted into deposits within a standard period of 21 days.</p>
+</li>
+<li>
+<p>In order to actually receive the outstanding amounts, a manual day-end closing of deposited payments must be carried out in the Payment Center unless an automated night capture is enabled. By means of the day-end closing payolution is informed that the purchased items were delivered to the consumer. I.e. the day-end closing triggers the payment of outstanding amount to the merchant and initiates the receivables management against the consumer in your web shop. In case of installments, payments are captured by payolution.</p>
+</li>
+<li>
+<p>The outstanding amount is paid to the merchant within a certain payment deadline which depends on the relevant agreement concluded with payolution.</p>
+</li>
+<li>
+<p>The consumer receives the respective invoice together with the delivered items or per e-mail. Payment to payolution must be effected within a deadline of 14 days.</p>
+</li>
+<li>
+<p>If the consumer returns the purchased items, a credit note must be issued in the Payment Center. In order to pass the information about the returned items on to payolution, a day-end closing has to be carried out. Credit notes must be issued as quickly as possible (preferably on the day the returned items were received) since otherwise the consumer might receive a payment reminder.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Wirecard recommends to disable the feature <code>autoDeposit</code> to prevent an automated deposit and day-end closing of payments.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="TestingWithDemoData"><a class="anchor" href="#TestingWithDemoData"></a>Testing with demo data</h3>
+<div class="paragraph">
+<p>In order to test your integration of Wirecard Checkout Page or Wirecard Checkout Seamless in your web shop please use the following demo data:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Wirecard Checkout Page - Demo mode</th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CustomerId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D200906</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secret without shopId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DD5JJD4RKRQZBBNGVPGTGXBRGZ4GR9QZYKM8U7TADUDUNKQVDK62PVSTJARY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ShopId - invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kar</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ShopId - installment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rat</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secret with shopId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PXEEY98CG8S2NFXY58YUTBQYS6W2UJ5BERJM8KX35HSNCJ6XUHDERZQ6SX3P</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Wirecard Checkout Seamless - Demo mode</th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CustomerId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D200906</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secret without shopId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DD5JJD4RKRQZBBNGVPGTGXBRGZ4GR9QZYKM8U7TADUDUNKQVDK62PVSTJARY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ShopId - invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">qmorekar (only invoice is enabled, therefore the dataStorage is not activated).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ShopId - installment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">qmorerat (only installment is enabled, therefore the dataStorage is not activated).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secret with shopId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PXEEY98CG8S2NFXY58YUTBQYS6W2UJ5BERJM8KX35HSNCJ6XUHDERZQ6SX3P</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Please note that payolution will communicate the required live data to merchants only after the final tests of your integration were successfully completed and the entire installation was found adequate.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="InvoiceOrInstallmentInFollowupOperations"><a class="anchor" href="#InvoiceOrInstallmentInFollowupOperations"></a>Invoice or installment in follow-up operations</h3>
+<div class="paragraph">
+<p>Please refer to <a href="../../../back-end_operations/transaction-based/table/" class="page">Available operations per payment method</a> for further information and details on follow-up operations in <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="RequiredRequestParameters"><a class="anchor" href="#RequiredRequestParameters"></a>Required request parameters</h3>
+<div class="paragraph">
+<p>For payment methods invoice and installment these (otherwise optional) request parameters are required:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>consumerBillingFirstname</p>
+</li>
+<li>
+<p>consumerBillingLastname</p>
+</li>
+<li>
+<p>consumerBillingAddress1</p>
+</li>
+<li>
+<p>consumerBillingAddress2</p>
+</li>
+<li>
+<p>consumerBillingCity</p>
+</li>
+<li>
+<p>consumerBillingCountry</p>
+</li>
+<li>
+<p>consumerBillingZipCode</p>
+</li>
+<li>
+<p>consumerEmail</p>
+</li>
+<li>
+<p>consumerBirthDate</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AdditionalResponseParameter"><a class="anchor" href="#AdditionalResponseParameter"></a>Additional response parameter</h3>
+<div class="paragraph">
+<p>When using these payment methods in your web shop, Wirecard Checkout will return additional parameters to your web shop. These parameters are specific to these payment methods and are only returned when your consumer selects one of them in your web shop.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">State</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gatewayReferenceNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 255.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reference number of invoice or installment.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="InvoiceB2b"><a class="anchor" href="#InvoiceB2b"></a>Invoice B2B</h3>
+<div class="paragraph">
+<p>If you wish to handle an B2B invoice please use the following request parameters:</p>
+</div>
+<div class="sect3">
+<h4 id="RequiredRequestParameter"><a class="anchor" href="#RequiredRequestParameter"></a>Required request parameter</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">companyName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of 1 to 100.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of company.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If you use the parameter <code>companyName</code> the parameter <code>consumerBirthDate</code> is not required any more.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OptionalRequestParameters"><a class="anchor" href="#OptionalRequestParameters"></a>Optional request parameters</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">companyVatId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of 0 to 50.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VAT ID of company.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">companyTradeRegisterNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of 0 to 50.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trade register number of company.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">companyRegistryNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of 0 to 50.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional or alternative registry number of company.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/payment_methods/payolution/start/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

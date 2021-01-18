@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Credit Card :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/payment_methods/creditcard/start/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="./">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QENTA Online Guides</a></li>
+    <li><a href="../../start/">Integration of Payment Methods</a></li>
+    <li>Card Payments</li>
+    <li><a href="./">Credit Card</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Credit Card</h1>
+<div class="sect1">
+<h2 id="CreditCard"><a class="anchor" href="#CreditCard"></a>Credit Card</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="GeneralInformation"><a class="anchor" href="#GeneralInformation"></a>General information</h3>
+<div class="paragraph">
+<p>A credit card is a payment card issued to consumers as a payment method allowing the card holder to pay for goods and services based on the holder&#8217;s promise to pay for them. The issuer of the card creates a revolving account and grants a credit line to the card holder from which the card holder can borrow money for payment.</p>
+</div>
+<div class="paragraph">
+<p>A credit card is issued to a consumer at the time or after an account has been approved by the credit provider, which need not be the same entity as the card issuer. When a purchase is made, the card holder agrees to pay the card issuer and agrees to pay by signing a receipt with a record of the card details and indicating the amount to be paid or by entering a PIN (personal identification number).</p>
+</div>
+<div class="paragraph">
+<p>For transactions where the card is not shown (e.g. e-commerce, mail order, and telephone sales), merchants additionally verify that the consumer is in physical possession of the card and is the authorized user by asking for additional information such as the CVC (card verification code), date of expiry, and billing address.</p>
+</div>
+<div class="paragraph">
+<p>Each month, the card holder receives a statement indicating the purchases made with the card, any outstanding fees, and the total amount owed.</p>
+</div>
+<div class="paragraph">
+<p>Please visit <a href="https://en.wikipedia.org/wiki/Credit_card">Credit card</a> for further information and details.</p>
+</div>
+<div class="sect3">
+<h4 id="AdvantagesForMerchants"><a class="anchor" href="#AdvantagesForMerchants"></a>Advantages for merchants</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Reduction of back-office expenses of processing checks/cash and transporting them to the bank.</p>
+</li>
+<li>
+<p>Extra turnover since the consumer purchases goods and/or services immediately and is less inhibited by the amount of cash in his pocket and the immediate state of his bank balance.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="AdvantagesForConsumers"><a class="anchor" href="#AdvantagesForConsumers"></a>Advantages for consumers</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Very convenient payment method.</p>
+</li>
+<li>
+<p>Small short-term loans provided the total charges do not exceed the maximum credit line for the card.</p>
+</li>
+<li>
+<p>Many credit cards offer rewards and benefits packages.</p>
+</li>
+<li>
+<p>Reward points which may be redeemed for cash, products, or airline tickets.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="SupportedBrands"><a class="anchor" href="#SupportedBrands"></a>Supported brands</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Brand name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.americanexpress.com">American Express</a> including <a href="https://network.americanexpress.com/en/globalnetwork/safekey/">American Express SafeKey</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dinersclub.com">Diners Club</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Discover</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.discover.com">Discover</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JCB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.jcbusa.com">JCB</a> including <a href="https://www.global.jcb/en/products/security/jsecure/">J/Secure™</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../maestro/start/" class="page">Maestro SecureCode</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mastercard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.mastercard.com">Mastercard</a> including <a href="https://www.mastercard.com/">Mastercard SecureCode</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UATP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.uatp.com">UATP</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.visa.com">Visa</a> including <a href="https://www.visaeurope.com/en/cardholders/verified_by_visa.aspx">Verified by Visa</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="BinRanges"><a class="anchor" href="#BinRanges"></a>BIN ranges</h4>
+<div class="paragraph">
+<p>Credit card numbers, as imprinted on each credit card, share a common numbering scheme. Following this scheme, you may derive the relevant brand from the first digits, the so called Bank Identification Number (BIN), of the credit card number.</p>
+</div>
+<div class="paragraph">
+<p>The following table provides an overview of the most important digits and the relevant associated Credit Card brands.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Brand</th>
+<th class="tableblock halign-left valign-top">Number of digits</th>
+<th class="tableblock halign-left valign-top">BIN range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">34xx xxxx xxxx xxx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">37xx xxxx xxxx xxx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">300x xxxx xxxx xx<br>
+&#8230;&#8203;<br>
+305x xxxx xxxx xx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36xx xxxx xxxx xx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">38xx xxxx xxxx xx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JCB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3xxx xxxx xxxx xxxx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2131 xxxx xxxx xxx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1800 xxxx xxxx xxx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mastercard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50xx xxxx xxxx xxxx<br>
+&#8230;&#8203;<br>
+55xx xxxx xxxx xxxx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2221 xxxx xxxx xxxx<br>
+&#8230;&#8203;<br>
+2720 xxxx xxxx xxxx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4xxx xxxx xxxx xxxx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4xxx xxxx xxxx x</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>You can find more details in the Wikipedia article regarding <a href="https://en.wikipedia.org/wiki/Bank_card_number">Bank card numbers</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Acquirers"><a class="anchor" href="#Acquirers"></a>Acquirers</h3>
+<div class="paragraph">
+<p>For credit cards there are different <a href="../../../glossary/#Acquirers" class="page">acquirers</a>. For an overview of the acquirers and which <strong>features, brands and countries are supported by each acquirer</strong> visit the <a href="../acquirers/" class="page">overview of available acquirers</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AuthorizationsAndPreauthorizations"><a class="anchor" href="#AuthorizationsAndPreauthorizations"></a>Authorizations and pre-authorizations</h3>
+<div class="paragraph">
+<p><strong>Authorization</strong> is the procedure of approving (authorizing) credit card transactions and reserving the respective amount (which is then unavailable for the consumer) until the merchant captures (deposits) the transaction. I.e. if the consumer in your online shop uses a credit card to pay for the relevant items during the payment process, a verification takes place of whether there are sufficient funds available to cover the transaction. If there are sufficient funds, the respective amount is "reserved" or blocked and deducted from the consumer&#8217;s individual credit limit. However, at this point no money is actually transferred to you. After you carry out a capture of such authorized transactions or amounts and submit the transactions to your acquirer, the money will be transferred from your consumers' account to your bank account. This is not an immediate process and, depending on the relevant acquirer, may take <strong>up to 7 days</strong> during which the authorizations remain valid.</p>
+</div>
+<div class="paragraph">
+<p>If the consumer&#8217;s credit card limit is reached, the respective transactions will be declined when effecting an authorization.</p>
+</div>
+<div class="paragraph">
+<p><strong>Pre-authorization</strong> refers to an authorization of a transaction which will take place at a later time, e.g. for hotel booking, car rentals or items with varying delivery times.</p>
+</div>
+<div class="paragraph">
+<p>After successfully verifying the validity of the credit card, the funds in question are "reserved". Such pre-authorizations remain valid for a certain period of time, usually <strong>28 days</strong>, defined by the acquirer. The consumer&#8217;s credit limit is reduced by the relevant amount and thus not available to the consumer. During this time the amount can be captured. If the deadline has passed, the amount is again available to your consumer and it is no longer possible to capture the amount.</p>
+</div>
+<div class="sect3">
+<h4 id="SplitCapturesAndPreauthorization"><a class="anchor" href="#SplitCapturesAndPreauthorization"></a>Split captures and pre-authorization</h4>
+<div class="paragraph">
+<p><a href="../../../glossary/#SplitCapture" class="page">Split captures</a>, i.e. the capturing of multiple authorized amounts up to the limit of the total authorized amount, are only possible when pre-authorizations are made. As a merchant you benefit from the possibility of effecting split captures if e.g. some of the items of a transaction/purchase are captured immediately at the moment of shipment, while others are not available and will be captured at a later moment when they are available for shipment.</p>
+</div>
+<div class="paragraph">
+<p>Please note that split captures are not supported by all acquirers. At the moment, split captures (based on pre-authorizations) are only supported by Wirecard Bank for American Express, Diners Club, Mastercard, and Visa but currently not for JCB.</p>
+</div>
+<div class="paragraph">
+<p>For enabling this feature, please contact our <a href="../../../support/" class="page">support teams</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="WirecardFraudPreventionSuite"><a class="anchor" href="#WirecardFraudPreventionSuite"></a>Wirecard Fraud Prevention Suite</h3>
+<div class="paragraph">
+<p>The Wirecard Fraud Prevention Suite (FPS) is a risk management system which can reduce the risk of payment default. For more information visit <a href="https://www.wirecard.com/products/risk-management/fraud-prevention">Wirecard Fraud Prevention Suite</a> or contact our <a href="../../../contact/" class="page">sales teams</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="OrderFlowDiagram"><a class="anchor" href="#OrderFlowDiagram"></a>Order flow diagram</h3>
+<div class="paragraph">
+<p>For a visual representation of the order flow behavior and associated transaction-based operations of this payment method we invite you to have a look at the respective <a href="../state_diagram/" class="page">order flow diagram</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="OptionalRequestParameters"><a class="anchor" href="#OptionalRequestParameters"></a>Optional request parameters</h3>
+<div class="paragraph">
+<p>Depending on the relevant acquirers for credit cards, the optional request parameters <code>customerStatement</code> and <code>orderReference</code> are more restricted with regard to their length and allowed characters than are other general <a href="../../../request_parameters/#OptionalParameters" class="page">request parameters</a>.</p>
+</div>
+<div class="paragraph">
+<p>The following specifications and restrictions apply for the parameter <code>customerStatement</code>:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-left valign-top">Brand</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard Bank</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express, Diners Club, Discover, JCB, Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.<br>
+<code>customerStatement</code> consists of 2 descriptors which are separated by *.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 12 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>StaticDescriptor</code> is specified by Wirecard Bank compliance and is the same for each transaction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 12 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DynamicDescriptor</code> is optional, configurable and has to be activated.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SIX Pay</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 254 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evalon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club, Discover, JCB, Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConCardis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B+S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JCB, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SIX Payment Services</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DC Bank</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">card complete</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JCB, J/Secure™, Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Variable length of up to 4 characters. Allowed characters are [0-9]+$</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hobex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>customerStatement</code> is not used. Instead, the name of the merchant is always displayed on the consumer&#8217;s bank statement.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following specifications and restrictions apply for the parameter <code>orderReference</code> and <code>merchantReference</code>:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-left valign-top">Brand</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard Bank</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express, Diners Club, Discover, JCB, Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 32 characters. Allowed characters are [0-9a-zA-Z].</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SIX Pay</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hobex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evalon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club, Discover, JCB, Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ConCardis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not supported</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B+S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JCB, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SIX Payment Services</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DC Bank</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">card complete</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JCB, J/Secure™, Maestro SecureCode, Mastercard, Visa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 25 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="AdditionalRequestParameters"><a class="anchor" href="#AdditionalRequestParameters"></a>Additional request parameters</h3>
+<div class="paragraph">
+<p>Additional request parameters are only required when using credit cards and the <strong><a href="../payment_facilitator/" class="page">payment facilitator model</a></strong> in your online shop based on Wirecard Checkout Page or Wirecard Checkout Seamless.</p>
+</div>
+<div class="paragraph">
+<p>For merchants with the Merchant Category Code 6012 who reside in the UK, additional request parameters regarding <strong><a href="../recipient/" class="page">recipient data</a></strong> may be required.</p>
+</div>
+<div class="sect3">
+<h4 id="AdditionalOptionalRequestParametersForRecurringPayments"><a class="anchor" href="#AdditionalOptionalRequestParametersForRecurringPayments"></a>Additional optional request parameters for recurring payments</h4>
+<div class="paragraph">
+<p>According to credit card company requirements for risk minimization, there are two parameters for recurring payments for Wirecard Checkout Page and Wirecard Checkout Seamless:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../back-end_operations/transaction-based/recurpayment/#AdditionalOptionalRequestParametersForCreditCard" class="page">merchantTokenizationFlag</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets whether credit card details are stored for later use.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../back-end_operations/transaction-based/recurpayment/#AdditionalOptionalRequestParametersForCreditCard" class="page">periodicType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the periodic type of initial and recurring payments.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AdditionalResponseParameters"><a class="anchor" href="#AdditionalResponseParameters"></a>Additional response parameters</h3>
+<div class="paragraph">
+<p>When using the payment methods Credit Card and Credit Card - Mail Order and Telephone Order in your online shop, Wirecard will return additional parameters to your online shop. These parameters are specific to the above mentioned payment methods.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">State</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">anonymousPan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with 4 numbers.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last four digits of the credit card number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">authenticated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns <code>YES</code> if the card holder has been successfully authenticated, otherwise <code>NO</code>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The parameter <code>authenticated</code> is always returned if the payment was successful. If the consumer was authenticated by an additional security method, such as 3-D Secure, Mastercard SecureCode, Verified by Visa, <code>YES</code> will be returned. <code>NO</code> will be returned if no additional authentication took place.</p>
+</div>
+<div class="sect3">
+<h4 id="OptionalFeaturespecificParameterForWirecardCheckoutPageAndWirecardCheckoutSeamless"><a class="anchor" href="#OptionalFeaturespecificParameterForWirecardCheckoutPageAndWirecardCheckoutSeamless"></a>Optional feature-specific parameter for Wirecard Checkout Page and Wirecard Checkout Seamless</h4>
+<div class="paragraph">
+<p>This optional feature-specific response parameter enhances the functionality and usability of the payment process regarding specific features and functions and is enabled by Wirecard on your behalf. To enable this parameter please contact our <a href="../../../support/" class="page">support teams</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">State</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hashedPan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a fixed length of 128 (hash mechanism HMAC-SHA-512).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hashed credit card number.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>This parameter can be used to check if a certain credit card has been used by your consumer before, i.e. for recognizing a new registration with a different name but with the same credit card. You can safely store this hash without circumventing PCI compliance.</p>
+</div>
+<div class="paragraph">
+<p><code>hashedPan</code> is returned to the <code>confirmUrl</code> and contains a HMAC-SHA-512-hash of your consumers credit card number.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Please be aware that due to PCI DSS compliance, <code>hashedPan</code> cannot be returned neither with <code>maskedPan</code> nor <code>anonymousPan</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="OptionalFeaturespecificParametersForWirecardCheckoutPage"><a class="anchor" href="#OptionalFeaturespecificParametersForWirecardCheckoutPage"></a>Optional feature-specific parameters for Wirecard Checkout Page</h4>
+<div class="paragraph">
+<p>These optional feature-specific response parameters enhances the functionality and usability of the payment process regarding specific features and functions and are enabled by Wirecard on your behalf. To enable these parameters for your account please contact our <a href="../../../support/" class="page">support teams</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">State</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cardholder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a variable length of up to 80.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of holder of credit card which can only be used if the acquirer supports it.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">expiry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with special characters and a fixed length of 7.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiry date of credit card in format "mm/yyyy".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maskedPan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Success</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with special characters and a variable length of up to 19.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PCI-compliant masked card number in the format: first 6 digits and last 4 digits of card number with "*" in between depending on the current format of the card number.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Please note that the above mentioned response parameters are enabled by default when you use Wirecard Checkout Seamless in your online shop.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="AddressVerificationSystemavs"><a class="anchor" href="#AddressVerificationSystemavs"></a>Address Verification System (AVS)</h4>
+<div class="paragraph">
+<p>By means of AVS it is verified whether the billing address of the credit card matches the address that was given by the consumer in the online shop, i.e. the system checks the billing address of the credit card provided by the consumer with the address on file at the credit card company.</p>
+</div>
+<div class="paragraph">
+<p>If you want to use the <a href="../avs/" class="page">Address Verification System</a>, please contact our <a href="../../../support/" class="page">support teams</a> for enabling the additional response parameters listed on the page for your account.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="DefinitionOfTerms"><a class="anchor" href="#DefinitionOfTerms"></a>Definition of terms</h3>
+<div class="paragraph">
+<p>For the definitions of the most common terms used in relation to credit cards, such as <a href="../../../glossary/#IssuerOrIssuingBank" class="page">issuer</a>, <a href="../../../glossary/#AcquirerOrAquiringBank" class="page">acquirer</a>, <a href="../../../glossary/#3DSecure" class="page">3-D Secure</a>, and <a href="../../../glossary/#AddressVerificationSystem" class="page">glossary.adoc#AddressVerificationSystem</a>(AVS)[Address Verification System (AVS)] consult our <a href="../../../glossary/" class="page">Glossary</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Faq"><a class="anchor" href="#Faq"></a>FAQ</h3>
+<div class="paragraph">
+<p><strong><em>Why can I not reverse a deposit?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>Reversing deposits using the back-end operation <code>depositReversal</code> or in the Wirecard Payment Center may not be possible at the same day since the deposit may still be in process. Please perform the operation <code>refund</code> on the next day.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>Which problems might occur when effecting recurring payments on credit card basis?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>Generally, payments for the source order number must not be older than 400 days. If the order is older than 400 days, an error message is displayed.</p>
+</div>
+<div class="paragraph">
+<p>Also, if the expiration date of the credit card used for the stored source order was exceeded, an error message is displayed.</p>
+</div>
+<div class="paragraph">
+<p>In both error cases you have to obtain the new credit card details from your consumer and initiate a new order since it is not possible to carry out a recurring payment.</p>
+</div>
+<div class="paragraph">
+<p>If 3-D Secure is forced, no recurring payments are possible.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/payment_methods/creditcard/start/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

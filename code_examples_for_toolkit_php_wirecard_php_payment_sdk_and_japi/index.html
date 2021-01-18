@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Code Examples for Toolkit (PHP), JAPI and Wirecard PHP Payment SDK :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/code_examples_for_toolkit_php_wirecard_php_payment_sdk_and_japi/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../">QENTA Online Guides</a></li>
+    <li><a href="./">Code Examples for Toolkit (PHP), JAPI and Wirecard PHP Payment SDK</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Code Examples for Toolkit (PHP), JAPI and Wirecard PHP Payment SDK</h1>
+<div class="sect1">
+<h2 id="CodeExamplesForToolkitphpJapiAndWirecardPhpPaymentSdk"><a class="anchor" href="#CodeExamplesForToolkitphpJapiAndWirecardPhpPaymentSdk"></a>Code Examples for Toolkit (PHP), JAPI and Wirecard PHP Payment SDK</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These code examples provide guidance during the switching process from the Wirecard Checkout Enterprise legacy stack to the new Wirecard Payment Gateway stack.</p>
+</div>
+<div class="sect2">
+<h3 id="WirecardCheckoutEnterprise"><a class="anchor" href="#WirecardCheckoutEnterprise"></a>Wirecard Checkout Enterprise</h3>
+<div class="paragraph">
+<p>These code examples for credit card transactions show how the <a href="../detailed_core_feature_comparison/" class="page">core features</a> are implemented, using Toolkit and JAPI.</p>
+</div>
+<div class="sect3">
+<h4 id="Toolkitphp"><a class="anchor" href="#Toolkitphp"></a>Toolkit (PHP)</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">:::</th>
+<th class="tableblock halign-left valign-top">Toolkit (PHP) Code Sample</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration Setup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>$JAVA_HOME = "&lt;PUT YOUR JAVA HOME DIRECTORY HERE&gt;";</p>
+<p class="tableblock">$VOY_ROOTPATH = "&lt;PUT YOUR QTILL INSTALLATION DIRECTORY HERE&gt;";</p>
+<p class="tableblock">$VOY_CLASSPATH = "$VOY_ROOTPATH/voyager.zip
+-Dqtill.properties=$VOY_ROOTPATH/qtill.properties -Dfile.encoding=ISO-8859-1";</p>
+<p class="tableblock">$VOY_MERCHANTKEY = "&lt;PUT YOUR MERCHANTKEY HERE&gt;";</p>
+<p class="tableblock">$VOY_ADMINPASSWORD = "&lt;PUT YOUR ADMINPASSWORD HERE&gt;";</p>
+<p class="tableblock">$VOY_LANGUAGE = "de";</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initiate Payment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// Initiated in Frontend via WCS/WCP or JAPI/Serial API call.</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3-D Secure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// Initiated in Frontend via WCS/WCP or JAPI/Serial API call.</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deposit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>//Deposit refers to previously created order and initialization with specific order number.</p>
+<p class="tableblock">$orderNumber = 123123;
+$paymentNumber = $orderNumber;
+$amount = "1,23";
+$isocc = "EUR";</p>
+<p class="tableblock">$status = deposit($orderNumber, $paymentNumber, $amount, $isocc, $message);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recurring</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>$oldOrderNumber = 123123;
+$newOrderNumber = -1;</p>
+<p class="tableblock">$amout = "1,23";
+$isocc = "EUR";</p>
+<p class="tableblock">$orderDescription = "Test transaction Wirecard CEE.";</p>
+<p class="tableblock">$orderStatus = createOrder($newOrderNumber, $message);</p>
+<p class="tableblock">$recurStatus = recurPayment($oldOrderNumber, $newOrderNumber,
+                    $amount, $isocc, $orderDescription, $message);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refund</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>$oldOrderNumber = 123123;</p>
+<p class="tableblock">$newOrderNumber = -1;</p>
+<p class="tableblock">$amout = "1.23";
+$isocc = "EUR";</p>
+<p class="tableblock">$orderDescription = "Test transaction Wirecard CEE.";</p>
+<p class="tableblock">$orderStatus = createOrder($newOrderNumber, $message);</p>
+<p class="tableblock">$recurStatus = recurPayment($oldOrderNumber, $newOrderNumber,
+                $amount, $isocc, $orderDescription, $message);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Approve Reversal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// Ordernumber indicates which approval is reversed
+$orderNumber = 123123;
+$paymentNumber = $orderNumber;</p>
+<p class="tableblock">$status = approveReversal($orderNumber, $paymentNumber, $message);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deposit Reversal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// Ordernumber indicates which deposit is reversed
+$orderNumber = 123123;
+$paymentNumber = $orderNumber;</p>
+<p class="tableblock">$status = depositReversal($orderNumber, $paymentNumber, $message);</code></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="Japi"><a class="anchor" href="#Japi"></a>JAPI</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">JAPI Code Sample</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration Setup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QTillSettings settings = new QTillSettings(new java.io.File("/path/to/qtill.properties"));</p>
+<p class="tableblock">QTillInstance qtill = new QTillInstance("[your Merchant Key]", "[your Toolkit-Password]", settings);</p>
+<p class="tableblock">QTillInstance qtill = new QTillInstance();</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initiate Payment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QTillAmount amount = new QTillAmount("1.23", new QTillCurrency("EUR"));</p>
+<p class="tableblock">QTillDate expiry = new QTillDate(1, 2019);
+String pan = "9400000000000003";</p>
+<p class="tableblock">QTillCreditcardInitiation initiation = new QTillCreditcardInitiation(pan, expiry);
+initiation.setCardVerifyCode(new QTillNumericToken("003"));
+initiation.setCardholderName("John Doe");
+initiation.setClientIPAddress("1.2.3.4");</p>
+<p class="tableblock">int orderNumber = qtill.generateOrderNumber();</p>
+<p class="tableblock">QTillOrderReference orderReference = new QTillOrderReference(orderNumber, "Test transaction Wirecard CEE.");</p>
+<p class="tableblock">qtill.initiatePayment(new QTillInitiateDto(orderReference, amount, initiation));</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3-D Secure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// generate order number and reference
+int orderNumber = qtill.generateOrderNumber();
+orderReference = new QTillOrderReference(orderNumber, orderDescription);</p>
+<p class="tableblock">initiation = new QTill3DSecureInitiation(returnUrl, serviceUrl, userAgent, acceptHeaders, MCSC_PAN, expiry);
+qtill.initiatePayment(new QTillInitiateDto(this.orderReference, this.amount, this.initiation));</p>
+<p class="tableblock">String wumPaRes = "[from ACS returned parameter PaRes]";
+String wumMD = "[from ACS returned parameter MD]";</p>
+<p class="tableblock">QTill3DSecureValidationData validationData = new QTill3DSecureValidationData(wumPaRes, wumMD);
+validationData.setSupposedOrderNumber(orderNumber);</p>
+<p class="tableblock">QTillPayment payment = qtill.verifyPayment(validationData);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deposit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// generate new order
+int orderNumber = qtill.generateOrderNumber();
+orderReference = new QTillOrderReference(orderNumber, orderDescription);
+QTillAmount amount = new QTillAmount("1.23", QTillCurrency.EUR);</p>
+<p class="tableblock">QTillPayment payment = qtill.verifyPayment(orderNumber);
+int paymentNumber = payment.getPaymentNumber();</p>
+<p class="tableblock">qtill.deposit(new QTillDepositDto(orderNumber, paymentNumber, amount));</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recurring</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>int orderNumber = qtill.generateOrderNumber();</p>
+<p class="tableblock">int oldOrderNumber = 123123;</p>
+<p class="tableblock">QTillAmount amount = new QTillAmount("1.23", QTillCurrency.EUR);</p>
+<p class="tableblock">QTillOrderReference orderRef = new QTillOrderReference(orderNumber, ORDER_DESCRIPTION);</p>
+<p class="tableblock">qtill.recurPayment(new QTillRecurDto(oldOrderNumber, orderRef, amount, false, null, null, null, null));</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refund</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// get order number of order to be refunded
+int orderNumber = 123123;</p>
+<p class="tableblock">QTillAmount refundAmount = new QTillAmount("1.23", QTillCurrency.EUR);</p>
+<p class="tableblock">qtill.refund(new QTillRefundDto(refundAmount).setOrderNumber(orderNumber). setMerchantReference("MerchRefNo"));</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Approve Reversal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>+// Generate new order
+int orderNumber = this.qtill.generateOrderNumber();
+QTillAmount amount = new QTillAmount("1.23", QTillCurrency.EUR);
+orderReference = new QTillOrderReference(orderNumber, this.orderDescription);</p>
+<p class="tableblock">QTillPayment payment = qtill.verifyPayment(orderNumber);</p>
+<p class="tableblock">qtill.approveReversal(orderNumber, payment.getPaymentNumber()); +</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deposit Reversal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// Generate new order
+int orderNumber = qtill.generateOrderNumber();
+orderReference = new QTillOrderReference(orderNumber, orderDescription);
+QTillAmount amount = new QTillAmount("1.23", QTillCurrency.EUR);</p>
+<p class="tableblock">QTillPayment payment = qtill.verifyPayment(orderNumber);
+int paymentNumber = payment.getPaymentNumber();</p>
+<p class="tableblock">qtill.deposit(orderNumber, paymentNumber, amount);</p>
+<p class="tableblock">qtill.depositReversal(orderNumber, paymentNumber);</code></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="WirecardPaymentGateway"><a class="anchor" href="#WirecardPaymentGateway"></a>Wirecard Payment Gateway</h3>
+<div class="sect3">
+<h4 id="WirecardPhpPaymentSdk"><a class="anchor" href="#WirecardPhpPaymentSdk"></a>Wirecard PHP Payment SDK</h4>
+<div class="paragraph">
+<p>Wirecard PHP Payment SDK simplifies the REST API usage and facilitates its implementation. However, it offers less functionality than addressing the REST API directly. Its original purpose was to simplify the development of <a href="https://doc.wirecard.com/ShopSystems.html">Wirecard Shop Extensions</a>.</p>
+</div>
+<div class="paragraph">
+<p>The Wirecard PHP Payment SDK functions cannot be used as a replacement for the Wirecard Checkout Enterprise solutions, but may be helpful during the transition phase. They show how Wirecard developers implement certain features.<br>
+This table shows an overview of the available functions for credit card transactions.<br>
+Click <a href="https://github.com/wirecard/paymentSDK-php">here for the source code and detailed examples on GitHub</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Wirecard PHP Payment SDK Code Sample</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration Setup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// Add global config data
+$baseUrl = 'https://api-test.wirecard.com';
+$httpUser = '70000-APITEST-AP';
+$httpPass = 'qD2wzQ_hrc!8';</p>
+<p class="tableblock">$config = new Config\Config($baseUrl, $httpUser, $httpPass, 'EUR');</p>
+<p class="tableblock"> $creditcardConfig = new CreditCardConfig();</p>
+<p class="tableblock">$creditcardConfig-&gt;setNonThreeDCredentials(
+    '53f2895a-e4de-4e82-a813-0d87a10e55e6',
+    'dbc5a498-9a66-43b9-bf1d-a618dd399684'
+);</p>
+<p class="tableblock">$config-&gt;add($creditcardConfig);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initiate Payment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// Based on already existing tokenID for credit card.</p>
+<p class="tableblock">$transactionService = new TransactionService($config);</p>
+<p class="tableblock">$transaction = new CreditCardTransaction();
+$transaction-&gt;setAmount($amount);</p>
+<p class="tableblock">$transaction-&gt;setTokenId($tokenId);</p>
+<p class="tableblock">$transaction-&gt;setTermUrl($redirectUrl);</p>
+<p class="tableblock">$response = $transactionService-&gt;reserve($transaction);</code> <code>//For payment methods without capturing pay() initiates the payment</p>
+<p class="tableblock">$transactionService = new TransactionService($config);
+$transaction = new CreditCardTransaction();
+$transaction-&gt;setParentTransactionId($parentTransactionId)
+$transaction-&gt;setAmount($amount);</p>
+<p class="tableblock">$response = $transactionService-&gt;pay($transaction);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3-D Secure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">`+// Amounts larger than threeDMinLimit and smaller or equal
+$creditcardConfig&#8594;addNonThreeDMaxLimit(new Amount(100.0, 'EUR'));
+$creditcardConfig&#8594;addThreeDMinLimit(new Amount(50.0, 'EUR'));</p>
+<p class="tableblock">contains all relevant data for the payment process.
+$creditcardConfig&#8594;setThreeDCredentials(
+'508b8896-b37d-4614-845c-26bf8bf2c948',
+'dbc5a498-9a66-43b9-bf1d-a618dd399684'
+);
+$config&#8594;add($creditcardConfig);</p>
+<p class="tableblock">$transactionService = new TransactionService($config);</p>
+<p class="tableblock">$transaction = new CreditCardTransaction();
+$transaction&#8594;setAmount($amount);
+$transaction&#8594;setTokenId($tokenId);
+$transaction&#8594;setTermUrl($redirectUrl);
+$response = $transactionService&#8594;reserve($transaction);</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deposit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>//Initiate new transaction for capture-authorization
+$transactionService = new TransactionService($config);</p>
+<p class="tableblock">$transaction = new CreditCardTransaction();
+$transaction-&gt;setParentTransactionId($parentTransactionId)
+$transaction-&gt;setAmount($amount);</p>
+<p class="tableblock">reserve transaction
+$response = $transactionService-&gt;pay($transaction);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recurring</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// The credit card transaction contains all relevant data for the payment process.
+$transaction = new CreditCardTransaction();
+$transaction-&gt;setAmount($amount);</p>
+<p class="tableblock">$transaction-&gt;setTokenId($tokenId);</p>
+<p class="tableblock">$transactionService = new TransactionService($config);</p>
+<p class="tableblock">$response = $transactionService-&gt;pay($transaction);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refund</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// parent transaction id needs to be defined
+$transaction = new CreditCardTransaction();
+$transaction-&gt;setParentTransactionId($parentTransactionId]);</p>
+<p class="tableblock">$transactionService = new TransactionService($config);</p>
+<p class="tableblock">$response = $transactionService-&gt;cancel($transaction);</code> <code>// credit leads to payout to customer for credit card
+$accountHolder = new AccountHolder();
+$accountHolder-&gt;setLastName('Doe');</p>
+<p class="tableblock">$transaction = new CreditCardTransaction();
+$transaction-&gt;setAmount($amount);</p>
+<p class="tableblock">$transaction-&gt;setTokenId($tokenId);
+$transaction-&gt;setAccountHolder($accountHolder);</p>
+<p class="tableblock">$transactionService = new TransactionService($config);</p>
+<p class="tableblock">$response = $transactionService-&gt;credit($transaction);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Approve Reversal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// parent transaction id needs to be defined
+$transaction = new CreditCardTransaction();
+$transaction-&gt;setParentTransactionId($parentTransactionId]);</p>
+<p class="tableblock">$transactionService = new TransactionService($config);
+$response = $transactionService-&gt;cancel($transaction);</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deposit Reversal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>// parent transaction id needs to be defined
+$transaction = new CreditCardTransaction();
+$transaction-&gt;setParentTransactionId($parentTransactionId]);</p>
+<p class="tableblock">$transactionService = new TransactionService($config);
+$response = $transactionService-&gt;cancel($transaction);</code></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div class="paragraph">
+<p>Back to <a href="../switching_to_wirecard_payment_processing_gateway/" class="page">Switching to Wirecard Payment Gateway main page.</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../.." data-page-path="/online-guides/main/code_examples_for_toolkit_php_wirecard_php_payment_sdk_and_japi/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

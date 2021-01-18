@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wirecard Shop Plugin for Gambio GX3 :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/shop_plugins/wcs/gambio/installation/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wcp/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wcs/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/masterpass/start/">Masterpass</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/bancontact_mrcash/start/">Bancontact</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/poli/start/">POLi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/tatrapay/start/">TatraPay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/trustly/start/">Trustly</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/trustpay/start/">TrustPay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/epaybg/start/">ePay.bg</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/ratepay/">RatePAY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/invoice/wirecard/">Wirecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../../../payment_methods/installment/ratepay/">RatePAY</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/moneta/start/">moneta.ru</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/skrill_digital/start/">Skrill Digital Wallet</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Mobile Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../payment_methods/paybox/start/">paybox</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wca/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../wct/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../../">QENTA Online Guides</a></li>
+    <li><a href="./">Wirecard Shop Plugin for Gambio GX3</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Wirecard Shop Plugin for Gambio GX3</h1>
+<div class="sect1">
+<h2 id="WirecardShopPluginForGambioGx3"><a class="anchor" href="#WirecardShopPluginForGambioGx3"></a>Wirecard Shop Plugin for Gambio GX3</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="InstallationGuideForWirecardCheckoutSeamless"><a class="anchor" href="#InstallationGuideForWirecardCheckoutSeamless"></a>Installation guide for Wirecard Checkout Seamless</h3>
+<div class="paragraph">
+<p>This installation guide shows the step-by-step installation of the plugin to your installed shop system on your web server. Please test your online shop and the configuration of the plugin on a test system before installing the plugin on your production system.</p>
+</div>
+<div class="paragraph">
+<p>This installation guide is <strong>also applicable</strong> for <strong>Gambio GX2</strong>.</p>
+</div>
+<div class="sect3">
+<h4 id="Step1"><a class="anchor" href="#Step1"></a>Step 1</h4>
+<div class="paragraph">
+<p>Upload the zip file containing the plugin to the document root of your Gambio GX3 installation and unzip the file. The zip-archive already contains the directory path allowing the plugin to be stored automatically in the right folder.</p>
+</div>
+<div class="paragraph">
+<p>If you need to unzip the file on your own computer and then upload the plugin, please maintain the directory structure which already exists in the zip file.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step2"><a class="anchor" href="#Step2"></a>Step 2</h4>
+<div class="paragraph">
+<p>Add the configuration links to the back-end using the following SQL queries:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-PHP hljs" data-lang="PHP">ALTER TABLE admin_access ADD COLUMN wirecard_checkout_seamless_config INT NOT NULL DEFAULT 1;
+ALTER TABLE admin_access ADD COLUMN wirecard_checkout_seamless_backend INT NOT NULL DEFAULT 1;
+ALTER TABLE admin_access ADD COLUMN wirecard_checkout_seamless_support INT NOT NULL DEFAULT 1;
+ALTER TABLE admin_access ADD COLUMN wirecard_checkout_seamless_transferfund INT NOT NULL DEFAULT 1;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step3"><a class="anchor" href="#Step3"></a>Step 3</h4>
+<div class="paragraph">
+<p>Configure the payment methods adding the following values to <code>_initMappingArray</code> in file <code>system/classes/languages/LanguageTextManager.inc.php</code> around line 521:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>      'modules/payment/wcs_ccard.php'                    =&gt; 'wcs_ccard',
+      'modules/payment/wcs_ccardmoto.php'                =&gt; 'wcs_ccardmoto',
+      'modules/payment/wcs_bancontact_mistercash.php'    =&gt; 'wcs_bancontact_mistercash',
+      'modules/payment/wcs_epay_bg.php'                  =&gt; 'wcs_epay_bg',
+      'modules/payment/wcs_eps.php'                      =&gt; 'wcs_eps',
+      'modules/payment/wcs_giropay.php'                  =&gt; 'wcs_giropay',
+      'modules/payment/wcs_idl.php'                      =&gt; 'wcs_idl',
+      'modules/payment/wcs_invoice.php'                  =&gt; 'wcs_invoice',
+      'modules/payment/wcs_installment.php'              =&gt; 'wcs_installment',
+      'modules/payment/wcs_maestro.php'                  =&gt; 'wcs_maestro',
+      'modules/payment/wcs_moneta.php'                   =&gt; 'wcs_moneta',
+      'modules/payment/wcs_paypal.php'                   =&gt; 'wcs_paypal',
+      'modules/payment/wcs_pbx.php'                      =&gt; 'wcs_pbx',
+      'modules/payment/wcs_przelewy24.php'               =&gt; 'wcs_przelewy24',
+      'modules/payment/wcs_poli.php'                     =&gt; 'wcs_poli',
+      'modules/payment/wcs_psc.php'                      =&gt; 'wcs_psc',
+      'modules/payment/wcs_sepadd.php'                   =&gt; 'wcs_sepadd',
+      'modules/payment/wcs_skrilldirect.php'             =&gt; 'wcs_skrilldirect',
+      'modules/payment/wcs_skrillwallet.php'             =&gt; 'wcs_skrillwallet',
+      'modules/payment/wcs_sofortueberweisung.php'       =&gt; 'wcs_sofortueberweisung',
+      'modules/payment/wcs_tatrapay.php'                 =&gt; 'wcs_tatrapay',
+      'modules/payment/wcs_trustly.php'                  =&gt; 'wcs_trustly',
+      'modules/payment/wcs_trustpay.php'                 =&gt; 'wcs_trustpay',</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step4"><a class="anchor" href="#Step4"></a>Step 4</h4>
+<div class="paragraph">
+<p>In file <code>admin/orders.php</code> add after</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-PHP hljs" data-lang="PHP">$jsEngineLanguage['iloxx'] = $languageTextManager-&gt;get_section_array('iloxx');</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>the following line</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-PHP hljs" data-lang="PHP">$jsEngineLanguage['wirecard_checkout_seamless'] = $languageTextManager-&gt;get_section_array('wirecard_checkout_seamless');</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step5"><a class="anchor" href="#Step5"></a>Step 5</h4>
+<div class="paragraph">
+<p>Clear the cache. Go to "Toolbox" &#8594; "Cache" and execute "Empty page output cache", "Empty modules cache", "Empty submenus cache", "Empty categories and products cache", "Empty properties cache", "Empty filter cache", "Empty text cache", "Empty email templates cache".</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step6"><a class="anchor" href="#Step6"></a>Step 6</h4>
+<div class="paragraph">
+<p>Open the Administration of your Gambio GX3 installation with your favourite web browser and navigate to "Modules" &#8594; "Payment Systems".</p>
+</div>
+<div class="paragraph">
+<p>Install the desired payment methods.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_step7_payment_methods.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step7"><a class="anchor" href="#Step7"></a>Step 7</h4>
+<div class="paragraph">
+<p>You can carry out additional configurations for any installed payment method.</p>
+</div>
+<div class="paragraph">
+<p>Go to "MODULES", click "PAYMENT MODULES", select the desired payment method and click "EDIT" on the right side to configure the payment method.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_step8_edit_button.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>If "CCARD-MOTO" is one of the payment methods you offer in your online shop, mark this payment method and click the "Edit" button on the right to fill in the relevant fields including "Customer group" which is used to limit payment method CCARD-MOTO for certain customer groups.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_step9_edit_payment_method.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step8"><a class="anchor" href="#Step8"></a>Step 8</h4>
+<div class="paragraph">
+<p>For payment methods "invoice" and "installment" you need to select either "payolution" or "RatePAY" as your preferred financial service provider from the dropdown list.</p>
+</div>
+<div class="paragraph">
+<p>If <a href="../../../../payment_methods/payolution/start/" class="page">payolution</a> is your selected financial service provider, the allowed currencies and minimum age are predefined and cannot be changed.</p>
+</div>
+<div class="paragraph">
+<p>If <a href="../../../../payment_methods/ratepay/start/" class="page">RatePAY</a> is your selected financial service provider, the allowed currencies and minimum age may be freely configured.</p>
+</div>
+<div class="paragraph">
+<p>Minimum and maximum order amount may be freely defined both for payolution and RatePAY.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_step10_edit_invoice.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ConfiguringThePlugin"><a class="anchor" href="#ConfiguringThePlugin"></a>Configuring the plugin</h3>
+<div class="sect3">
+<h4 id="ConfiguringStep1"><a class="anchor" href="#ConfiguringStep1"></a>Step 1</h4>
+<div class="paragraph">
+<p>Open the Administration of your Gambio GX3 installation with your favourite web browser, navigate to "MODULES" and to the “Wirecard Checkout Seamless” menu.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_config_step1_select_module_-_kopie.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ConfiguringStep2"><a class="anchor" href="#ConfiguringStep2"></a>Step 2</h4>
+<div class="paragraph">
+<p>Now you can configure the following elements:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Configuration</th>
+<th class="tableblock halign-left valign-top">For integration, select predefined configuration settings or "production" for live systems. Attention: Be aware that no payments are processed in demo or test mode!</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Customer ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Your Wirecard customer number. See documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shop ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of your online shop within your customer ID. See documentation. This parameter has to be enabled by Wirecard CEE for your customerId.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secret</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secret string for signing and validating data to prove their authenticity. See documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backend password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password for backend operations (Toolkit). See documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service URL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL which leads to the imprint page containing contact information. See documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shop name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional text on invoice, max. 9 characters. See documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send detailed customer data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing and shipping address data are sent to Wirecard Checkout Seamless.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send confirmation e-mail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-mail address of merchant for receiving payment information details regarding the orders of the consumers in your online shop. See documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auto deposit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Automated deposit of approved payments. See documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send basket information</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shopping basket information is sent to Wirecard Checkout Seamless. See documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PCI DSS SAQ A Compliance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether Wirecard Checkout Seamless is PCI DSS SAQ A compliant or not.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Iframe CSS-URL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL pointing to CSS file to be included into iframe.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display card holder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display input field for card holder in your credit card form in the online shop.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display CVC field</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display input field for CVC in your credit card form in the online shop.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display credit card issue date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display input field for issue date field in your creditcard form in the online shop. Some credit cards do not have an issue date.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display credit card issue number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display input field for issue number in your credit card form in the online shop. Some credit cards do not have an issue number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order State</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Choose the payment statuses, which are displayed on the order details page, for the available order results.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_config_step2_configure_module.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>For a detailed description regarding the parameters used for communicating with Wirecard Checkout Seamless have a look at:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../../../request_parameters/" class="page">Request parameters</a></p>
+</li>
+<li>
+<p><a href="../../../../response_parameters/" class="page">Response parameters</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ConfiguringStep3"><a class="anchor" href="#ConfiguringStep3"></a>Step 3</h4>
+<div class="paragraph">
+<p>Finally, to test your configuration click the "Test configuration" button at the bottom of the page. If the test is ok, the following screen appears:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_config_step3_test_ok.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="CustomizingAndTranslatingTextResources"><a class="anchor" href="#CustomizingAndTranslatingTextResources"></a>Customizing and translating text resources</h3>
+<div class="paragraph">
+<p>You may customize and translate text resources. Example files are available within the zip-file at <code>/lang/[language code]/original_sections/modules/payment/wcs&lt;paymenttype&gt;.php</code>.</p>
+</div>
+<div class="paragraph">
+<p>The definitions of text resources regarding error messages for handling a cancelation or a failure of the payment (“cancelURL” and “failureURL”) are included in file <code>/lang/[language code]/original_sections/modules/payment/wirecard_checkout_seamless.lang.inc.php</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="SupportedBackendOperations"><a class="anchor" href="#SupportedBackendOperations"></a>Supported back-end operations</h3>
+<div class="paragraph">
+<p>This plugin for Gambio GX3 and Wirecard Checkout Seamless has been developed to carry out the following back-end operations directly from within our online shop:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>#approveReversal</p>
+</li>
+<li>
+<p>#deposit</p>
+</li>
+<li>
+<p>#depositReversal</p>
+</li>
+<li>
+<p>#refund</p>
+</li>
+<li>
+<p>#refundReversal</p>
+</li>
+<li>
+<p>#transferFund</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To carry out these back-end operations go to "Orders".</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_-_backend_orders.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Go to the details for the order.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_-_backend_view_details.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>All relevent order related data are displayed as in the following example:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_-_backend_deposit.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Starting from the above displayed screen, you may carry out the back-end operations <code>deposit</code> or <code>approveReversal</code>.</p>
+</div>
+<div class="sect3">
+<h4 id="Approvereversal"><a class="anchor" href="#Approvereversal"></a>approveReversal</h4>
+<div class="paragraph">
+<p>To reverse an approved payment, click the "Approve reversal" button on the order details page as described above.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Deposit"><a class="anchor" href="#Deposit"></a>deposit</h4>
+<div class="paragraph">
+<p>To deposit the fully approved amount, click the "Deposit" button on the order details page as described above.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Depositreversal"><a class="anchor" href="#Depositreversal"></a>depositReversal</h4>
+<div class="paragraph">
+<p>Once the amount is deposited, a <code>depositReversal</code> may be carried out. Click the "Deposit reversal" button as shown on the following screen:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_-_backend_deposit_reversal.png" alt="image"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Note that the back-end operations <code>approveReversal</code>, <code>deposit</code>, and <code>depositReversal</code> may only be executed before the day-end closing was carried out. Once a day-end closing was performed, these operations may no longer be carried out.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Refund"><a class="anchor" href="#Refund"></a>refund</h4>
+<div class="paragraph">
+<p>In order to refund an amount to your consumer, click on the "Add credit" button in the segment "Wirecard Checkout Seamless - Credits" in the order details. Enter the amount to refund in the following pop-up window.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_-_backend_refund.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Refundreversal"><a class="anchor" href="#Refundreversal"></a>refundReversal</h4>
+<div class="paragraph">
+<p>In the following example, the refunded amount is EUR 20.00. In order to reverse this refund, click the "Refund reversal" button.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_admin_-_backend_refundreversal.png" alt="image"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Note that the back-end operations <code>refund</code>, and <code>refundReversal</code> may only be executed after the day-end closing was carried out.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Transferfund"><a class="anchor" href="#Transferfund"></a>transferFund</h4>
+<div class="paragraph">
+<p>In order to carry out a fund transfer, navigate to "Modules" &#8594; "Wirecard Checkout Seamless" and click "Fund Transfer". A screen opens which allows you to choose one of the fund transfer types from the dropdown list: Existing order, Skrill Digital Wallet, moneta.ru, or SEPA-CT.</p>
+</div>
+<div class="paragraph">
+<p>For fund transfer type EXISTINGORDER, the fields "Amount", "Order description", and "Source order number" are mandatory. Fill in the fields and click the "Execute fund transfer" button. The following screen appears when the operation was successful.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_fundtransfer_existingorder.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>For fund transfer type Skrill Digital Wallet, the fields "Amount", "Order description", "Customer statement", and "Consumer e-mail address" are mandatory.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_fundtransfer_skrill.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>For fund transfer type moneta.ru, the fields "Amount", "Order description", "Customer statement", and "Consumer wallet ID" are mandatory.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_fundtransfer_moneta.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>For fund transfer type SEPA-CT, the fields "Amount", "Bank account owner", "BIC" and "IBAN" are mandatory.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_fundtransfer_sepa.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="RequestWirecardSupport"><a class="anchor" href="#RequestWirecardSupport"></a>Request Wirecard Support</h3>
+<div class="paragraph">
+<p>For enhanced user experience, we have included in our plugin a new feature which allows to send a support request to our support teams directly from the online shop.</p>
+</div>
+<div class="paragraph">
+<p>Click the "Request support from Wirecard" button at the bottom of the page. A dropdown list allows you to choose whether your request is sent to our support teams in Austria or Germany.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/shop_plugins/wcs/gambio/gambio_support.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Enter the e-mail address in the "Reply to" field to which you would like to receive the answer from the support team.</p>
+</div>
+<div class="paragraph">
+<p>After entering your message in the "Problem description" field, click the "Send support request" button to forward the message correspondingly.</p>
+</div>
+<div class="paragraph">
+<p>Our support teams then receive a summary of the configuration settings of your online shop and the problem description.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Please note that your secret and passwords are NOT included in this configuration setting summary.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../../.." data-page-path="/online-guides/main/shop_plugins/wcs/gambio/installation/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>
