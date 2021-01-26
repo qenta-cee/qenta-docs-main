@@ -115,8 +115,9 @@ body {
   background-position-x: 1rem;
 }
 
-.navbar-item:first-child {
-  visibility: hidden;
+.navbar-brand .navbar-item:first-child {
+  line-height: 3em;
+  color: rgba(255, 255, 255, 0);
 }
 
 h1.page {
