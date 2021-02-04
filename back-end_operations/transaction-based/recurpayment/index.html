@@ -272,10 +272,10 @@
 <p>The operation recurPayment is used to create a new order and a new payment attempt by reusing the payment information available in a previous order, the so-called source order.</p>
 </div>
 <div class="paragraph">
-<p>The<strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code> and <code>useIbanBic</code>.</p>
+<p>The<strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
 </div>
 <div class="paragraph">
-<p>The <strong>required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code> and <code>useIbanBic</code>.</p>
+<p>The <strong>required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
 </div>
 <div class="sect2">
 <h3 id="AdditionalRequiredRequestParameters"><a class="anchor" href="#AdditionalRequiredRequestParameters"></a>Additional required request parameters</h3>
@@ -315,6 +315,77 @@
 </tr>
 </tbody>
 </table>
+<div class="sect3">
+<h4 id="AdditionalRequiredRequestParametersForCreditCard"><a class="anchor" href="#AdditionalRequiredRequestParametersForCreditCard"></a>Additional required request parameters for credit card</h4>
+<div class="paragraph">
+<p>According to credit card company requirements for risk minimization, there are two parameters for recurring payments for Wirecard Checkout Page and Wirecard Checkout Seamless:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merchantTokenizationFlag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to set whether credit card details are stored for later use.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">periodicType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 possible values: <code>ucof</code>, <code>recurring</code>.<br></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="Merchanttokenizationflag"><a class="anchor" href="#Merchanttokenizationflag"></a>merchantTokenizationFlag</h5>
+<div class="paragraph">
+<p>Use this request parameter to set the recurring flaggings for specific orders.<br>
+You have to set the <code>merchantTokenizationFlag</code> to TRUE to save consumer&#8217;s card details for later use (e.g. one-click or auto-top-up or subscriptions).</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Periodictype"><a class="anchor" href="#Periodictype"></a>periodicType</h5>
+<div class="paragraph">
+<p>This request parameter may be used to set the periodic type of initial and recurring payments.<br>
+It may be set to 3 different values:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">periodicType value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ucof</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for unscheduled recurring payments (with different amounts)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>recurring</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for recurring payments like subscriptions (with same interval and same amount)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Regarding the <strong>fingerprint calculation</strong>, the relevant credit card parameters are appended to the payment facilitator parameters in the described order.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="AdditionalOptionalRequestParameters"><a class="anchor" href="#AdditionalOptionalRequestParameters"></a>Additional optional request parameters</h3>
@@ -694,77 +765,6 @@ Note that the parameter <code>consumerIpAddress</code> is <strong>not</strong> p
 <h5 id="ForHobexAsAcquirer"><a class="anchor" href="#ForHobexAsAcquirer"></a>For Hobex as acquirer</h5>
 <div class="paragraph">
 <p>Recurring transactions for Hobex do neither require the parameter <code>useIbanBic</code> nor the parameter <code>transactionIdentifier</code>.</p>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="AdditionalOptionalRequestParametersForCreditCard"><a class="anchor" href="#AdditionalOptionalRequestParametersForCreditCard"></a>Additional optional request parameters for credit card</h4>
-<div class="paragraph">
-<p>According to credit card company requirements for risk minimization, there are two parameters for recurring payments for Wirecard Checkout Page and Wirecard Checkout Seamless:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">merchantTokenizationFlag</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Used to set whether credit card details are stored for later use.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">periodicType</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2 possible values: <code>ucof</code>, <code>recurring</code>.<br></p></td>
-</tr>
-</tbody>
-</table>
-<div class="sect4">
-<h5 id="Merchanttokenizationflag"><a class="anchor" href="#Merchanttokenizationflag"></a>merchantTokenizationFlag</h5>
-<div class="paragraph">
-<p>Use this request parameter to set the recurring flaggings for specific orders.<br>
-You have to set the <code>merchantTokenizationFlag</code> to TRUE to save consumer&#8217;s card details for later use (e.g. one-click or auto-top-up or subscriptions).</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="Periodictype"><a class="anchor" href="#Periodictype"></a>periodicType</h5>
-<div class="paragraph">
-<p>This request parameter may be used to set the periodic type of initial and recurring payments.<br>
-It may be set to 3 different values:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">periodicType value</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ucof</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>recurring</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Regarding the <strong>fingerprint calculation</strong>, the relevant credit card parameters are appended to the payment facilitator parameters in the described order.</p>
 </div>
 </div>
 </div>
