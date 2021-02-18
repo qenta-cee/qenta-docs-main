@@ -94,9 +94,6 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../maestro/start/">Maestro SecureCode</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../masterpass/start/">Masterpass</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -557,7 +554,7 @@
 <div class="sect2">
 <h3 id="3ds2UseCases"><a class="anchor" href="#3ds2UseCases"></a>3DS2 Use Cases</h3>
 <div class="sect3">
-<h4 id="OnetimePayment"><a class="anchor" href="#OnetimePayment"></a>One-Time Payment</h4>
+<h4 id="OnetimePayment"><a class="anchor" href="#OnetimePayment"></a><strong>One-Time Payment</strong></h4>
 <div class="paragraph">
 <p>Generally One-Time Payment is one of the most frequently used workflows regarding checkout processes. Every transaction is executed by the consumer (consumer initiated - <code>CI</code>). Therefore Strong-Customer-Authentication (SCA) based on PSD2 is required.</p>
 </div>
@@ -617,7 +614,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="Oneclickcheckout"><a class="anchor" href="#Oneclickcheckout"></a>One-Click-Checkout</h4>
+<h4 id="Oneclickcheckout"><a class="anchor" href="#Oneclickcheckout"></a><strong>One-Click-Checkout</strong></h4>
 <div class="paragraph">
 <p>To execute One-Click-Checkout transactions, merchants have to store credit card data as a token in their web shops for recurring payments. The advantage of One-Click-Checkout transactions is that consumers do not have to re-renter their credit card data, they can initialize the transaction just in a few steps with the stored credit card details in the shop. Before this workflow can be done, merchants have to ask consumers about their consent to accept One-Click-Checkout transactions in the future. Please consider, that each transaction in this model is executed by the consumer (consumer-initiated - <code>CI</code>). Therefore Strong-Customer-Authentication (SCA) based on PSD2 is required.</p>
 </div>
@@ -723,7 +720,7 @@ We recommend to send optional parameter like <code>consumerAuthenticationMethod<
 </div>
 </div>
 <div class="sect3">
-<h4 id="SubscriptionModel"><a class="anchor" href="#SubscriptionModel"></a>Subscription Model</h4>
+<h4 id="SubscriptionModel"><a class="anchor" href="#SubscriptionModel"></a><strong>Subscription Model</strong></h4>
 <div class="paragraph">
 <p>When it comes to recurring payments, the subscription model with the same processed amount within periodical intervals is a popular payment solution for online shops. If you choose this model, you have to consider that consumers must be informed regarding terms of the agreement when setting up the recurring payment plan and the first transaction needs a Strong Costumer Authentication (SCA) since recurring payments are basically executed by the merchant (merchant-initiated transaction - <code>MIT</code>).</p>
 </div>
@@ -824,7 +821,7 @@ We recommend to send optional parameter like <code>consumerAuthenticationMethod<
 </div>
 </div>
 <div class="sect3">
-<h4 id="RecurringPaymentWithDifferentAmountsByEachPayment"><a class="anchor" href="#RecurringPaymentWithDifferentAmountsByEachPayment"></a>Recurring Payment with different amounts by each payment</h4>
+<h4 id="RecurringPaymentWithDifferentAmountsByEachPayment"><a class="anchor" href="#RecurringPaymentWithDifferentAmountsByEachPayment"></a><strong>Recurring Payment with different amounts by each payment</strong></h4>
 <div class="paragraph">
 <p>Unlike the subscription model where recurring payments happen with the same amount on a fixed date, some payment solutions in online shops require irregular intervals. Regarding PSD2 merchants also have the possibility to execute unscheduled merchant-initiated transactions (UCOF). The payment amount can be variable for each recurring payment. Merchants have to consider that consumers must be informed regarding terms of the unscheduled credential on file. The first transaction needs a Strong Costumer Authentication (SCA) since recurring payments are basically executed by the merchant (merchant-initiated transaction - <code>MIT</code>).</p>
 </div>

@@ -94,9 +94,6 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../../payment_methods/maestro/start/">Maestro SecureCode</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../payment_methods/masterpass/start/">Masterpass</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -266,17 +263,17 @@
 <h2 id="Deposit"><a class="anchor" href="#Deposit"></a>deposit</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>deposit is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a>. This operation causes an approval (authorization) to be converted into a deposit (captured payment). This operation is executed by you if an order of a consumer has been accepted. Additionally a daily-closing is automatically opened when there is no one already open for this payment method and currency.</p>
+<p>deposit is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. This operation causes an approval (authorization) to be converted into a deposit (captured payment). This operation is executed by you if an order of a consumer has been accepted. Additionally a daily-closing is automatically opened when there is no one already open for this payment method and currency.</p>
 </div>
 <div class="paragraph">
 <p>This operation can be <strong>reversed</strong> with the operation <code>depositReversal</code> when the corresponding daily-closing has not yet been done and the financial services provider and the payment method supports this operation.</p>
 </div>
 <div class="paragraph">
-<p>The <strong>required order</strong> of the required request parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is:<br>
+<p>The <strong>required order</strong> of the required request parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> is:<br>
 <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>amount</code> and <code>currency</code>.</p>
 </div>
 <div class="paragraph">
-<p>The <strong>required order</strong> of the required request parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is:<br>
+<p>The <strong>required order</strong> of the required request parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a> is:<br>
 <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>amount</code> and <code>currency</code>.</p>
 </div>
 <div class="paragraph">
@@ -518,7 +515,7 @@
 <div class="sect2">
 <h3 id="DepositAdditionalResponseParameters"><a class="anchor" href="#DepositAdditionalResponseParameters"></a>Additional response parameters</h3>
 <div class="paragraph">
-<p>The following parameter is used in addition to the <a href="../../response_parameters/" class="page">response parameters</a> needed for all back-end operations (Wirecard Checkout Page and Wirecard Checkout Seamless).</p>
+<p>The following parameter is used in addition to the <a href="../../response_parameters/" class="page">response parameters</a> needed for all back-end operations (QPAY Checkout Page and QMORE Checkout Seamless).</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -548,7 +545,7 @@
 <p><strong><em>Is it possible to do <a href="../../../glossary/#SplitCapture" class="page">split capture</a>?</em></strong></p>
 </div>
 <div class="paragraph">
-<p>Yes, Wirecard does support this operation; however, it must also be supported by your financial service provider.</p>
+<p>Yes, QENTA does support this operation; however, it must also be supported by your financial service provider.</p>
 </div>
 </div>
 </div>

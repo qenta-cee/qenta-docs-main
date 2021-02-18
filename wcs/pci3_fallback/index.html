@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>PCI DSS SAQ A compliance for Wirecard Checkout Seamless :: QENTA Online Guides</title>
+    <title>PCI DSS SAQ A compliance for QMORE Checkout Seamless :: QENTA Online Guides</title>
     <link rel="canonical" href="https://guides.qenta.com/online-guides/main/wcs/pci3_fallback/">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="/_/css/site.css">
@@ -93,9 +93,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../payment_methods/masterpass/start/">Masterpass</a>
   </li>
 </ul>
   </li>
@@ -252,7 +249,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../">QENTA Online Guides</a></li>
-    <li><a href="./">PCI DSS SAQ A compliance for Wirecard Checkout Seamless</a></li>
+    <li><a href="./">PCI DSS SAQ A compliance for QMORE Checkout Seamless</a></li>
   </ul>
 </nav>
 </div>
@@ -261,24 +258,24 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">PCI DSS SAQ A compliance for Wirecard Checkout Seamless</h1>
+<h1 class="page">PCI DSS SAQ A compliance for QMORE Checkout Seamless</h1>
 <div class="sect1">
-<h2 id="PciDssSaqAComplianceForWirecardCheckoutSeamless"><a class="anchor" href="#PciDssSaqAComplianceForWirecardCheckoutSeamless"></a>PCI DSS SAQ A compliance for Wirecard Checkout Seamless</h2>
+<h2 id="PciDssSaqAComplianceForWirecardCheckoutSeamless"><a class="anchor" href="#PciDssSaqAComplianceForWirecardCheckoutSeamless"></a>PCI DSS SAQ A compliance for QMORE Checkout Seamless</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>As of January 1st, 2018, PCI DSS v3.2.1 is mandatory for all e-commerce merchants and defines some new and stringent requirements for the handling of sensitive cardholder data in your online shop. Following this standard, a merchant&#8217;s web site(s) is not allowed to itself handle sensitive credit card specific data.</p>
 </div>
 <div class="paragraph">
-<p>For merchants, any efforts to become compliant with the new standard PCI DSS v3.2.1 and the corresponding Self-Assessment Questionnaire SAQ A-EP applicable for Wirecard Checkout Seamless, which might be required by your acquirer, will be rather costly and time-consuming.</p>
+<p>For merchants, any efforts to become compliant with the new standard PCI DSS v3.2.1 and the corresponding Self-Assessment Questionnaire SAQ A-EP applicable for QMORE Checkout Seamless, which might be required by your acquirer, will be rather costly and time-consuming.</p>
 </div>
 <div class="paragraph">
-<p>In this respect, Wirecard, as PCI DSS certified third-party payment processor, has developed the "PCI DSS SAQ A Compliance" feature for merchants who use Wirecard Checkout Seamless but are not themselves PCI-certified according to PCI DSS v3.2.1 based on SAQ A-EP.</p>
+<p>In this respect, QENTA, as PCI DSS certified third-party payment processor, has developed the "PCI DSS SAQ A Compliance" feature for merchants who use QMORE Checkout Seamless but are not themselves PCI-certified according to PCI DSS v3.2.1 based on SAQ A-EP.</p>
 </div>
 <div class="paragraph">
-<p>In other words, as a merchant or integrator you may decide whether you integrate Wirecard Checkout Seamless <strong>without</strong> the "PCI DSS SAQ A Compliance" feature requiring PCI DSS v3.2.1 certification and compliance with SAQ A-EP, or <strong>with</strong> the "PCI DSS SAQ A Compliance" feature which was developed especially for Wirecard Checkout Seamless and ensures compliance with PCI DSS v3.2.1 and is based on the less stringent <a href="../../security/start/#ApplicableSaqsForWirecardSolutions" class="page">SAQ A</a>.</p>
+<p>In other words, as a merchant or integrator you may decide whether you integrate QMORE Checkout Seamless <strong>without</strong> the "PCI DSS SAQ A Compliance" feature requiring PCI DSS v3.2.1 certification and compliance with SAQ A-EP, or <strong>with</strong> the "PCI DSS SAQ A Compliance" feature which was developed especially for QMORE Checkout Seamless and ensures compliance with PCI DSS v3.2.1 and is based on the less stringent <a href="../../security/start/#ApplicableSaqsForWirecardSolutions" class="page">SAQ A</a>.</p>
 </div>
 <div class="paragraph">
-<p>Please note that when using "PCI DSS SAQ A Compliance" you will of course still be able to enjoy all features and benefits of Wirecard Checkout Seamless without any restrictions.</p>
+<p>Please note that when using "PCI DSS SAQ A Compliance" you will of course still be able to enjoy all features and benefits of QMORE Checkout Seamless without any restrictions.</p>
 </div>
 <div class="paragraph">
 <p>For more information and details read <a href="https://www.pcisecuritystandards.org/documents/PCI_DSS-QRG-v3_2_1.pdf">PCI DSS v3.2.1</a> and <a href="https://www.pcisecuritystandards.org/documents/PCI-DSS-v3_2_1-SAQ-A_EP.pdf?agreement=true&amp;time=1557833228219">SAQ A-EP</a>.</p>
@@ -286,18 +283,18 @@
 <div class="sect2">
 <h3 id="Implementation"><a class="anchor" href="#Implementation"></a>Implementation</h3>
 <div class="paragraph">
-<p>When using Wirecard Checkout Seamless, sensitive payment data are typically entered by your consumers in your HTML forms in your online shop and directly transferred to Wirecard via JavaScript to be stored in the <a href="../datastorage_init/" class="page">Wirecard data storage</a>. Although sensitive data are never transferred to your online shop, compliance with the new PCI DSS v3.2.1 and corresponding SAQ A-EP is required.</p>
+<p>When using QMORE Checkout Seamless, sensitive payment data are typically entered by your consumers in your HTML forms in your online shop and directly transferred to QENTA via JavaScript to be stored in the <a href="../datastorage_init/" class="page">QENTA data storage</a>. Although sensitive data are never transferred to your online shop, compliance with the new PCI DSS v3.2.1 and corresponding SAQ A-EP is required.</p>
 </div>
 <div class="paragraph">
-<p>For "PCI DSS SAQ A Compliance" credit card relevant data are no longer transferred to Wirecard via JavaScript but are entered directly in a web form delivered by Wirecard. For this purpose an iframe is displayed containing the relevant credit card input fields where the content of this iframe is directly delivered by Wirecard.</p>
+<p>For "PCI DSS SAQ A Compliance" credit card relevant data are no longer transferred to QENTA via JavaScript but are entered directly in a web form delivered by QENTA. For this purpose an iframe is displayed containing the relevant credit card input fields where the content of this iframe is directly delivered by QENTA.</p>
 </div>
 <div class="paragraph">
-<p>Once your consumer has entered the financial data into the web form within the iframe, without noticing that it is actually hosted by Wirecard, he is redirected to your online shop. The whole process is designed seamlessly and allows for <a href="#CustomizationViaCss">customization</a> of the relevant iframe input fields via CSS.</p>
+<p>Once your consumer has entered the financial data into the web form within the iframe, without noticing that it is actually hosted by QENTA, he is redirected to your online shop. The whole process is designed seamlessly and allows for <a href="#CustomizationViaCss">customization</a> of the relevant iframe input fields via CSS.</p>
 </div>
 <div class="sect3">
 <h4 id="ParametersToUse"><a class="anchor" href="#ParametersToUse"></a>Parameters to use</h4>
 <div class="paragraph">
-<p>When initializing the Wirecard data storage for the feature "PCI DSS SAQ A Compliance" the following <strong>request parameter</strong>, which is optional for conventional Wirecard Checkout Seamless, <strong>becomes required</strong> to allow activation of the "PCI DSS SAQ A Compliance" feature:</p>
+<p>When initializing the QENTA data storage for the feature "PCI DSS SAQ A Compliance" the following <strong>request parameter</strong>, which is optional for conventional QMORE Checkout Seamless, <strong>becomes required</strong> to allow activation of the "PCI DSS SAQ A Compliance" feature:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -410,7 +407,7 @@ Please note that these fields must not be included in the fingerprint calculatio
 <div class="sect3">
 <h4 id="Iframe"><a class="anchor" href="#Iframe"></a>Iframe</h4>
 <div class="paragraph">
-<p>As regards the storing of payment data in the Wirecard data storage when using "PCI DSS SAQ A Compliance", the credit card specific input fields are displayed in an iframe which is hosted by Wirecard. In order to show this iframe, the Wirecard data storage provides a specific function which is used to load the iframe into a certain section of your HTML page:</p>
+<p>As regards the storing of payment data in the QENTA data storage when using "PCI DSS SAQ A Compliance", the credit card specific input fields are displayed in an iframe which is hosted by QENTA. In order to show this iframe, the QENTA data storage provides a specific function which is used to load the iframe into a certain section of your HTML page:</p>
 </div>
 <div class="paragraph">
 <p><strong>For Credit Card</strong></p>
@@ -535,10 +532,10 @@ buildIframeMaestro</p></td>
 <div class="sect3">
 <h4 id="CustomizationViaCss"><a class="anchor" href="#CustomizationViaCss"></a>Customization via CSS</h4>
 <div class="paragraph">
-<p>Wirecard ensures a seamless integration of "PCI DSS SAQ A Compliance" and the possibility to customize the iframe input fields according to your needs by using the parameter <code>iframeCssUrl</code> (URL to a CSS file on your server to perform customizations of the iframe input fields).</p>
+<p>QENTA ensures a seamless integration of "PCI DSS SAQ A Compliance" and the possibility to customize the iframe input fields according to your needs by using the parameter <code>iframeCssUrl</code> (URL to a CSS file on your server to perform customizations of the iframe input fields).</p>
 </div>
 <div class="paragraph">
-<p>To ensure that all elements within the checkout page are hosted by Wirecard systems and in order to provide for SAQ A compliance, this CSS file is received via your given URL in the request parameter <code>iframeCssUrl</code> from your server to the Wirecard CEE server. After successful validation by Wirecard, the CSS file is subsequently loaded by Wirecard (during each data storage init), parsed and delivered as inline CSS file within the iframe, i.e. the CSS file is not loaded from your server during presentation in the browser of your consumer.</p>
+<p>To ensure that all elements within the checkout page are hosted by QENTA systems and in order to provide for SAQ A compliance, this CSS file is received via your given URL in the request parameter <code>iframeCssUrl</code> from your server to the QENTA CEE server. After successful validation by QENTA, the CSS file is subsequently loaded by QENTA (during each data storage init), parsed and delivered as inline CSS file within the iframe, i.e. the CSS file is not loaded from your server during presentation in the browser of your consumer.</p>
 </div>
 <div class="paragraph">
 <p>Our system uses a URL-based caching mechanism for this <code>iframeCssUrl</code>. If you wish to disable this mechanism, please append the current timestamp as GET parameter, e.g. <code>https://www.servername.com/iframe.css?23472304897234789</code>.</p>

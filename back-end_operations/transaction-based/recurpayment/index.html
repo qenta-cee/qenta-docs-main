@@ -94,9 +94,6 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../../payment_methods/maestro/start/">Maestro SecureCode</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../payment_methods/masterpass/start/">Masterpass</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -266,16 +263,16 @@
 <h2 id="Recurpayment"><a class="anchor" href="#Recurpayment"></a>recurPayment</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>recurPayment is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a>. You can either call this operation automatically from the back-end of your online shop or manually from your web interface which you have implemented for administration purposes.</p>
+<p>recurPayment is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. You can either call this operation automatically from the back-end of your online shop or manually from your web interface which you have implemented for administration purposes.</p>
 </div>
 <div class="paragraph">
 <p>The operation recurPayment is used to create a new order and a new payment attempt by reusing the payment information available in a previous order, the so-called source order.</p>
 </div>
 <div class="paragraph">
-<p>The<strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
+<p>The<strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
 </div>
 <div class="paragraph">
-<p>The <strong>required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
+<p>The <strong>required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
 </div>
 <div class="sect2">
 <h3 id="AdditionalRequiredRequestParameters"><a class="anchor" href="#AdditionalRequiredRequestParameters"></a>Additional required request parameters</h3>
@@ -318,7 +315,7 @@
 <div class="sect3">
 <h4 id="AdditionalRequiredRequestParametersForCreditCard"><a class="anchor" href="#AdditionalRequiredRequestParametersForCreditCard"></a>Additional required request parameters for credit card</h4>
 <div class="paragraph">
-<p>According to credit card company requirements for risk minimization, there are two parameters for recurring payments for Wirecard Checkout Page and Wirecard Checkout Seamless:</p>
+<p>According to credit card company requirements for risk minimization, there are two parameters for recurring payments for QENTA Checkout Page and QENTA Checkout Seamless:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -429,7 +426,7 @@ It may be set to 3 different values:</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Additionally if you are using the <a href="https://www.wirecard.com/products/risk/fraudprevention/">Wirecard Fraud Prevention &amp; Fraud Detection</a> the following data on the consumer can be submitted for processing.</p>
+<p>Additionally if you are using the <a href="https://www.wirecard.com/products/risk/fraudprevention/">QENTA Fraud Prevention &amp; Fraud Detection</a> the following data on the consumer can be submitted for processing.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -773,7 +770,7 @@ Note that the parameter <code>consumerIpAddress</code> is <strong>not</strong> p
 <div class="sect4">
 <h5 id="Duedate"><a class="anchor" href="#Duedate"></a>dueDate</h5>
 <div class="paragraph">
-<p>If you choose Wirecard Bank as your acquirer, you can calculate the due date yourself. Wirecard requires from you to submit recurring and final direct debit payments four (4) banking days before the due date.</p>
+<p>If you choose Wirecard Bank as your acquirer, you can calculate the due date yourself. QENTA requires from you to submit recurring and final direct debit payments four (4) banking days before the due date.</p>
 </div>
 <div class="paragraph">
 <p>Please refer to <a href="../../../payment_methods/sepa_direct_debit/start/" class="page">SEPA Direct Debit</a> for further information and details on the due date calculation.</p>
@@ -796,7 +793,7 @@ Note that the parameter <code>consumerIpAddress</code> is <strong>not</strong> p
 <p>For recurring transactions based on SEPA Direct Debit, a given authorization by the consumer is used for regular direct debits initiated by the creditor, e.g payment for monthly rent. The initial <code>mandateId</code> signed by the consumer is used as a basis for all recurring transactions.</p>
 </div>
 <div class="paragraph">
-<p>The transaction type "final" defines the last transaction of a series of transactions. After a final payment has been processed for a mandate, it is not possible to generate more transactions for that mandate. At the moment Wirecard does not support final transactions. Please set your transaction to <code>RECUR</code> instead.</p>
+<p>The transaction type "final" defines the last transaction of a series of transactions. After a final payment has been processed for a mandate, it is not possible to generate more transactions for that mandate. At the moment QENTA does not support final transactions. Please set your transaction to <code>RECUR</code> instead.</p>
 </div>
 </div>
 </div>
@@ -817,7 +814,7 @@ Note that the parameter <code>consumerIpAddress</code> is <strong>not</strong> p
 <div class="sect2">
 <h3 id="AdditionalResponseParameters"><a class="anchor" href="#AdditionalResponseParameters"></a>Additional response parameters</h3>
 <div class="paragraph">
-<p>The following parameters are used in addition to the <a href="../../response_parameters/" class="page">response parameters</a> needed for all back-end operations (Wirecard Checkout Page and Wirecard Checkout Seamless).</p>
+<p>The following parameters are used in addition to the <a href="../../response_parameters/" class="page">response parameters</a> needed for all back-end operations (QPAY Checkout Page and QMORE Checkout Seamless).</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>

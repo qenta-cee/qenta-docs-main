@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Storing Sensitive Payment Data in Wirecard Data Storage :: QENTA Online Guides</title>
+    <title>Storing Sensitive Payment Data in QENTA Data Storage :: QENTA Online Guides</title>
     <link rel="canonical" href="https://guides.qenta.com/online-guides/main/wcs/datastorage_store/">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="/_/css/site.css">
@@ -93,9 +93,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../payment_methods/masterpass/start/">Masterpass</a>
   </li>
 </ul>
   </li>
@@ -252,7 +249,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../">QENTA Online Guides</a></li>
-    <li><a href="./">Storing Sensitive Payment Data in Wirecard Data Storage</a></li>
+    <li><a href="./">Storing Sensitive Payment Data in QENTA Data Storage</a></li>
   </ul>
 </nav>
 </div>
@@ -261,16 +258,16 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Storing Sensitive Payment Data in Wirecard Data Storage</h1>
+<h1 class="page">Storing Sensitive Payment Data in QENTA Data Storage</h1>
 <div class="sect1">
-<h2 id="StoringSensitivePaymentDataInWirecardDataStorage"><a class="anchor" href="#StoringSensitivePaymentDataInWirecardDataStorage"></a>Storing Sensitive Payment Data in Wirecard Data Storage</h2>
+<h2 id="StoringSensitivePaymentDataInQENTADataStorage"><a class="anchor" href="#StoringSensitivePaymentDataInQENTADataStorage"></a>Storing Sensitive Payment Data in QENTA Data Storage</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="WcsDataStoragePrerequisite"><a class="anchor" href="#WcsDataStoragePrerequisite"></a>Prerequisite</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../datastorage_init/" class="page">Initialization of Wirecard data storage</a></p>
+<p><a href="../datastorage_init/" class="page">Initialization of QENTA data storage</a></p>
 </li>
 </ul>
 </div>
@@ -385,7 +382,7 @@ paymentInformation.issueNumber = document.getElementById('cc_issueNumber').value
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">callbackFunction = function(aResponse) {
   // initiates the result string presented to the user
-  var s = "Response of Wirecard data storage call:\n\n";
+  var s = "Response of QENTA data storage call:\n\n";
   // checks if response status is without errors
   if (aResponse.getStatus() == 0) {
     // saves all anonymized payment information to a JavaScript object
@@ -438,7 +435,7 @@ paymentInformation.issueNumber = document.getElementById('cc_issueNumber').value
 <div class="sect2">
 <h3 id="StoringPaymentSpecificData"><a class="anchor" href="#StoringPaymentSpecificData"></a>Storing payment specific data</h3>
 <div class="paragraph">
-<p>To store the sensitive data of your consumer in the Wirecard data storage you may use the following payment-specific JavaScript functions, which you included as JavaScript file before.</p>
+<p>To store the sensitive data of your consumer in the QENTA data storage you may use the following payment-specific JavaScript functions, which you included as JavaScript file before.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -798,7 +795,7 @@ paymentInformation.bankNumber = document.getElementById('giropay_bankNumber').va
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../datastorage_read/" class="page">Reading stored payment data from Wirecard data storage</a></p>
+<p><a href="../datastorage_read/" class="page">Reading stored payment data from QENTA data storage</a></p>
 </li>
 </ul>
 </div>

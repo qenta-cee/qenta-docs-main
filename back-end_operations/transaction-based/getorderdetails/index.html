@@ -94,9 +94,6 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../../payment_methods/maestro/start/">Maestro SecureCode</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../../payment_methods/masterpass/start/">Masterpass</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -266,13 +263,13 @@
 <h2 id="Getorderdetails"><a class="anchor" href="#Getorderdetails"></a>getOrderDetails</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>getOrderDetails is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a>. This operation returns all details for a given order including all possible operations, corresponding payments and credit notes.</p>
+<p>getOrderDetails is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. This operation returns all details for a given order including all possible operations, corresponding payments and credit notes.</p>
 </div>
 <div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code> and <code>orderNumber</code>.</p>
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code> and <code>orderNumber</code>.</p>
 </div>
 <div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code> and <code>orderNumber</code>.</p>
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code> and <code>orderNumber</code>.</p>
 </div>
 <div class="sect2">
 <h3 id="GetOrderDetailsAdditionalRequiredRequestParameters"><a class="anchor" href="#GetOrderDetailsAdditionalRequiredRequestParameters"></a>Additional required request parameters</h3>
@@ -301,7 +298,7 @@
 <div class="sect2">
 <h3 id="GetOrderDetailsAdditionalResponseParameters"><a class="anchor" href="#GetOrderDetailsAdditionalResponseParameters"></a>Additional response parameters</h3>
 <div class="paragraph">
-<p>The following parameters are used in addition to the <a href="../../response_parameters/" class="page">response parameters</a> needed for all back-end operations (Wirecard Checkout Page and Wirecard Checkout Seamless).</p>
+<p>The following parameters are used in addition to the <a href="../../response_parameters/" class="page">response parameters</a> needed for all back-end operations (QPAY Checkout Page and QMORE Checkout Seamless).</p>
 </div>
 <div class="paragraph">
 <p>Within the additional response parameters there are some parameters which will occur more than once. Therefore we use the letters "n" and "m" as placeholders for digits. Currently "n" is always 1 because this operation returns only one order. The letter "m" indicates that there may be more than one payment or credit objects returned.</p>
@@ -720,7 +717,7 @@
 <div class="sect3">
 <h4 id="FeaturespecificParameter"><a class="anchor" href="#FeaturespecificParameter"></a>Feature-specific parameter</h4>
 <div class="paragraph">
-<p>This response parameter enhances the result data of the payment process regarding specific features and functions and is enabled by Wirecard on your behalf.</p>
+<p>This response parameter enhances the result data of the payment process regarding specific features and functions and is enabled by QENTA on your behalf.</p>
 </div>
 <div class="paragraph">
 <p>To enable this response parameter please contact our <a href="../../../support/" class="page">support teams</a>.</p>
@@ -862,11 +859,11 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">WCP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard Processing (credit cards and direct debit system)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QENTA Processing (credit cards and direct debit system)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">WGP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">giropay via Wirecard Processing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">giropay via QENTA Processing</p></td>
 </tr>
 </tbody>
 </table>
@@ -1138,7 +1135,7 @@
 <p><strong><em>What is the meaning of the return message PENDING?</em></strong></p>
 </div>
 <div class="paragraph">
-<p>If the operation <code>getOrderDetails</code> is carried out for order numbers which are still "in progress" in Wirecard Checkout Page or Wirecard Checkout Seamless, no statement on the actual or final order state may be retrieved and the message PENDING is returned. When repeating the operation <code>getOrderDetails</code> for such order numbers after a while, the message REJECTED might, for instance, be returned.</p>
+<p>If the operation <code>getOrderDetails</code> is carried out for order numbers which are still "in progress" in QPAY Checkout Page or QMORE Checkout Seamless, no statement on the actual or final order state may be retrieved and the message PENDING is returned. When repeating the operation <code>getOrderDetails</code> for such order numbers after a while, the message REJECTED might, for instance, be returned.</p>
 </div>
 <div class="paragraph">
 <p>For this reason, it is recommended to perform the operation <code>getOrderDetails</code> after receiving e.g. the <code>confirmUrl</code> in order to obtain useful and accurate results.</p>

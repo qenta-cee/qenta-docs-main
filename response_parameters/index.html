@@ -94,9 +94,6 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../payment_methods/maestro/start/">Maestro SecureCode</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../payment_methods/masterpass/start/">Masterpass</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -268,7 +265,7 @@
 <div class="sect2">
 <h3 id="GeneralInformation"><a class="anchor" href="#GeneralInformation"></a>General information</h3>
 <div class="paragraph">
-<p>This page describes the response parameters returned from the Wirecard Checkout Server to your online shop.</p>
+<p>This page describes the response parameters returned from the QENTA Checkout Server to your online shop.</p>
 </div>
 <div class="paragraph">
 <p>Take the following information into consideration during integration into your online shop:</p>
@@ -279,7 +276,7 @@
 <p>Use the same <strong>upper- and lowercase</strong> writing of the parameter names and values as described.</p>
 </li>
 <li>
-<p><strong>Check</strong> all responses of the Wirecard Checkout Server by using the <strong>fingerprint</strong> method as described in the sections describing the handling of the response parameters.</p>
+<p><strong>Check</strong> all responses of the QENTA Checkout Server by using the <strong>fingerprint</strong> method as described in the sections describing the handling of the response parameters.</p>
 </li>
 <li>
 <p>Some payment methods return <strong>additional response parameters</strong> or may have other particular requirements regarding response parameters. Therefore the number of response parameters is <strong>not fixed</strong>. Have a look at the <a href="../payment_methods/start/" class="page">Payment method specific documentation</a> for more information about the use of these additional response parameters and particular parameters.</p>
@@ -420,7 +417,7 @@ Please contact our <a href="../support/" class="page">support teams</a> to enabl
 <div class="sect2">
 <h3 id="ForFailedPayments"><a class="anchor" href="#ForFailedPayments"></a>For failed payments</h3>
 <div class="sect3">
-<h4 id="WirecardCheckoutPage"><a class="anchor" href="#WirecardCheckoutPage"></a>Wirecard Checkout Page</h4>
+<h4 id="QPAYCheckoutPage"><a class="anchor" href="#QPAYCheckoutPage"></a>QPAY Checkout Page</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -444,7 +441,7 @@ Please contact our <a href="../support/" class="page">support teams</a> to enabl
 </table>
 </div>
 <div class="sect3">
-<h4 id="WirecardCheckoutSeamless"><a class="anchor" href="#WirecardCheckoutSeamless"></a>Wirecard Checkout Seamless</h4>
+<h4 id="QMORECheckoutSeamless"><a class="anchor" href="#QMORECheckoutSeamless"></a>QMORE Checkout Seamless</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -497,7 +494,7 @@ Please contact our <a href="../support/" class="page">support teams</a> to enabl
 <div class="sect2">
 <h3 id="FeaturespecificParameters"><a class="anchor" href="#FeaturespecificParameters"></a>Feature-specific parameters</h3>
 <div class="paragraph">
-<p>These response parameters enhance the result data of the payment process regarding specific features and functions and are enabled by Wirecard on your behalf.</p>
+<p>These response parameters enhance the result data of the payment process regarding specific features and functions and are enabled by QENTA on your behalf.</p>
 </div>
 <div class="paragraph">
 <p>To enable one or more of these response parameters contact our <a href="../support/" class="page">support teams</a>.</p>
@@ -533,11 +530,11 @@ Please contact our <a href="../support/" class="page">support teams</a> to enabl
 </tbody>
 </table>
 <div class="paragraph">
-<p>The parameter <code>instrumentCountry</code> is also returned via the transaction-based operation (back-end operation) <a href="../back-end_operations/transaction-based/getorderdetails/#ResponseParameterEnabledByWirecardOnYourBehalf" class="page">getOrderDetails</a> both for Wirecard Checkout Page and Wirecard Checkout Seamless.</p>
+<p>The parameter <code>instrumentCountry</code> is also returned via the transaction-based operation (back-end operation) <a href="../back-end_operations/transaction-based/getorderdetails/#ResponseParameterEnabledByWirecardOnYourBehalf" class="page">getOrderDetails</a> both for QPAY Checkout Page and QMORE Checkout Seamless.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="WirecardFraudPreventionSuitefpsParameters"><a class="anchor" href="#WirecardFraudPreventionSuitefpsParameters"></a>Wirecard Fraud Prevention Suite (FPS) parameters</h3>
+<h3 id="WirecardFraudPreventionSuitefpsParameters"><a class="anchor" href="#WirecardFraudPreventionSuitefpsParameters"></a>QENTA Fraud Prevention Suite (FPS) parameters</h3>
 <div class="paragraph">
 <p>If you have enabled the Wirecard Fraud Prevention Suite (FPS) on your behalf, you can use the following return parameter.</p>
 </div>
@@ -1030,7 +1027,7 @@ riskReturnMessage=General Risk Rejection.</pre>
 <div class="sect3">
 <h4 id="Instrumentcountry"><a class="anchor" href="#Instrumentcountry"></a>instrumentCountry</h4>
 <div class="paragraph">
-<p>From January 1, 2015 a new rule applies on the sale of digital goods (exclusively digital goods) to consumers in EU countries. According to this rule the merchant is responsible for accounting for VAT to the respective authority of the consumer&#8217;s EU member state. Since in the case of digital goods the information on the consumer&#8217;s country cannot be derived from the delivery address, information on the consumer&#8217;s country is taken from the data returned to Wirecard by the respective financial service provider. E.g. in the case of credit cards, the country of the credit card issuer is returned and used to determine the consumer&#8217;s country.</p>
+<p>From January 1, 2015 a new rule applies on the sale of digital goods (exclusively digital goods) to consumers in EU countries. According to this rule the merchant is responsible for accounting for VAT to the respective authority of the consumer&#8217;s EU member state. Since in the case of digital goods the information on the consumer&#8217;s country cannot be derived from the delivery address, information on the consumer&#8217;s country is taken from the data returned to QENTA by the respective financial service provider. E.g. in the case of credit cards, the country of the credit card issuer is returned and used to determine the consumer&#8217;s country.</p>
 </div>
 <div class="paragraph">
 <p>Currently, this parameter may be used for the following payment methods: Credit Card, iDEAL, PayPal and Sofort.</p>

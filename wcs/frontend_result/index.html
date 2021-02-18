@@ -94,9 +94,6 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../payment_methods/masterpass/start/">Masterpass</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -268,7 +265,7 @@
 <div class="sect2">
 <h3 id="PossibleResultsOfPaymentProcess"><a class="anchor" href="#PossibleResultsOfPaymentProcess"></a>Possible results of payment process</h3>
 <div class="paragraph">
-<p>There are four possible results which can be returned from Wirecard Checkout Seamless to the <code>confirmUrl</code>:</p>
+<p>There are four possible results which can be returned from QMORE Checkout Seamless to the <code>confirmUrl</code>:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -296,7 +293,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PENDING</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The result of the payment process has yet to be determined. Typically occurs on payment methods requiring additional checks or actions by financial service providers or your consumer. When Wirecard retrieves updated information from the financial service provider, either a success or a failure is sent to your online shop.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The result of the payment process has yet to be determined. Typically occurs on payment methods requiring additional checks or actions by financial service providers or your consumer. When QENTA retrieves updated information from the financial service provider, either a success or a failure is sent to your online shop.</p></td>
 </tr>
 </tbody>
 </table>
@@ -304,7 +301,7 @@
 <div class="sect2">
 <h3 id="ReceivingResultOfPaymentProcess"><a class="anchor" href="#ReceivingResultOfPaymentProcess"></a>Receiving result of payment process</h3>
 <div class="paragraph">
-<p>After your consumer has finished the payment process, Wirecard Checkout Seamless sends the result to your online shop, e.g. the <code>confirmUrl</code> you set when initiating the payment process. The data is sent as a POST request. Be aware that (in contrast to Wirecard Checkout Page) the response parameters are only sent to the <code>confirmUrl</code> and <strong>not</strong> to the <code>successUrl</code>, <code>cancelUrl</code>, <code>failureUrl</code> or <code>pendingUrl</code>.</p>
+<p>After your consumer has finished the payment process, QMORE Checkout Seamless sends the result to your online shop, e.g. the <code>confirmUrl</code> you set when initiating the payment process. The data is sent as a POST request. Be aware that (in contrast to QPAY Checkout Page) the response parameters are only sent to the <code>confirmUrl</code> and <strong>not</strong> to the <code>successUrl</code>, <code>cancelUrl</code>, <code>failureUrl</code> or <code>pendingUrl</code>.</p>
 </div>
 <div class="paragraph">
 <p>Please visit <a href="../../response_parameters/" class="page">Response Parameters</a> for a detailed description of the parameters you receive, which may vary depending on the payment method.</p>
@@ -367,10 +364,10 @@ if (strcmp($paymentState,"SUCCESS") == 0) {
 <div class="sect2">
 <h3 id="CheckingIfReturnedValuesAreValid"><a class="anchor" href="#CheckingIfReturnedValuesAreValid"></a>Checking if returned values are valid</h3>
 <div class="paragraph">
-<p>To check the authenticity of the return values sent from the Wirecard Checkout Server to your online shop, compare the <code>responseFingerprint</code> with an hash of the return values.</p>
+<p>To check the authenticity of the return values sent from the QENTA Checkout Server to your online shop, compare the <code>responseFingerprint</code> with an hash of the return values.</p>
 </div>
 <div class="paragraph">
-<p>Create a string by concatenating all returned parameters based on the order in the return parameter <code>responseFingerprintOrder</code>. Then hash the string with an <a href="https://en.wikipedia.org/wiki/Hash-based_message_authentication_code">HMAC-SHA-512</a> algorithm using the secret as cryptographic key and compare the result with the value of the return parameter <code>responseFingerprint</code>. If both values are identical, the response is authentic, i.e. the confirmation was indeed sent by Wirecard. If these values are not identical, re-check the calculation and consider that someone compromised the return values or has sent a possibly <strong>false confirmation for the payment</strong>. Therefore, do not trust these return values and do not assume that the payment was made even if it appears that way to you!</p>
+<p>Create a string by concatenating all returned parameters based on the order in the return parameter <code>responseFingerprintOrder</code>. Then hash the string with an <a href="https://en.wikipedia.org/wiki/Hash-based_message_authentication_code">HMAC-SHA-512</a> algorithm using the secret as cryptographic key and compare the result with the value of the return parameter <code>responseFingerprint</code>. If both values are identical, the response is authentic, i.e. the confirmation was indeed sent by QENTA. If these values are not identical, re-check the calculation and consider that someone compromised the return values or has sent a possibly <strong>false confirmation for the payment</strong>. Therefore, do not trust these return values and do not assume that the payment was made even if it appears that way to you!</p>
 </div>
 <div class="paragraph">
 <p>In order to ensure a secure communication it is essential that you <strong>never</strong> disclose or share your secret with persons who are not involved in developing the online shop! Also, <strong>never</strong> forward the secret via unsecured communication channels e.g. mail, e-mail, fax or instant messaging. When the secret is submitted by fax make sure that the contents of the fax is disclosed only to authorized persons!</p>
@@ -391,9 +388,9 @@ if (strcmp($paymentState,"SUCCESS") == 0) {
 </div>
 </div>
 <div class="sect3">
-<h4 id="WhyStoringReturnValuesOfWirecardCheckoutSeamless"><a class="anchor" href="#WhyStoringReturnValuesOfWirecardCheckoutSeamless"></a>Why storing return values of Wirecard Checkout Seamless</h4>
+<h4 id="WhyStoringReturnValuesOfQMORECheckoutSeamless"><a class="anchor" href="#WhyStoringReturnValuesOfQMORECheckoutSeamless"></a>Why storing return values of QMORE Checkout Seamless</h4>
 <div class="paragraph">
-<p>To be able to identify each payment of each consumer at a later time and to correlate it to the corresponding session and order <strong>store all return values</strong> of Wirecard Checkout Seamless in relation to that session and order.</p>
+<p>To be able to identify each payment of each consumer at a later time and to correlate it to the corresponding session and order <strong>store all return values</strong> of QMORE Checkout Seamless in relation to that session and order.</p>
 </div>
 <div class="paragraph">
 <p>This is required in order to ensure a well-defined relation between the session data, the order of your consumer and the results of the checkout process.</p>
@@ -408,7 +405,7 @@ if (strcmp($paymentState,"SUCCESS") == 0) {
 <div class="sect3">
 <h4 id="TimeForStoringData"><a class="anchor" href="#TimeForStoringData"></a>Time for storing data</h4>
 <div class="paragraph">
-<p>Before starting the payment process in Wirecard Checkout Seamless:</p>
+<p>Before starting the payment process in QMORE Checkout Seamless:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -419,7 +416,7 @@ if (strcmp($paymentState,"SUCCESS") == 0) {
 <p>Set the request parameter <code>orderIdent</code> to a unique ID regarding the session and order of your consumer. This can be a session ID, an order number or a debit number.</p>
 </li>
 <li>
-<p>Use custom parameters to pass a unique ID corresponding to a payment process to the Wirecard Checkout Server. All of your custom parameters are returned to your online shop as return values after the payment process has been completed.</p>
+<p>Use custom parameters to pass a unique ID corresponding to a payment process to the QENTA Checkout Server. All of your custom parameters are returned to your online shop as return values after the payment process has been completed.</p>
 </li>
 </ul>
 </div>
@@ -429,7 +426,7 @@ if (strcmp($paymentState,"SUCCESS") == 0) {
 <div class="ulist">
 <ul>
 <li>
-<p>Save all returned values or at least the returned order number you receive from the Wirecard Checkout Server. Also ensure that you can relate them to the initial data regarding the payment process.</p>
+<p>Save all returned values or at least the returned order number you receive from the QENTA Checkout Server. Also ensure that you can relate them to the initial data regarding the payment process.</p>
 </li>
 </ul>
 </div>
@@ -445,7 +442,7 @@ if (strcmp($paymentState,"SUCCESS") == 0) {
 </div>
 </div>
 <div class="sect2">
-<h3 id="WirecardCheckoutJournal"><a class="anchor" href="#WirecardCheckoutJournal"></a>Wirecard Checkout Journal</h3>
+<h3 id="QENTACheckoutJournal"><a class="anchor" href="#QENTACheckoutJournal"></a>QENTA Checkout Journal</h3>
 <div class="paragraph">
 <p>To check your integration of Wirecard Checkout Seamless regarding transactions (except data storage operations) you can use a "debugging" tool which gives you an overview of your transaction details when doing a checkout.</p>
 </div>
@@ -453,7 +450,7 @@ if (strcmp($paymentState,"SUCCESS") == 0) {
 <p>Note that due to data protection regulations no test mode transactions are possible.</p>
 </div>
 <div class="paragraph">
-<p>Please enter the username and password you receive from Wirecard to get access to all transactions regarding your specific <code>customerId</code>.</p>
+<p>Please enter the username and password you receive from QENTA to get access to all transactions regarding your specific <code>customerId</code>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -462,14 +459,14 @@ if (strcmp($paymentState,"SUCCESS") == 0) {
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Wirecard Checkout Journal</th>
+<th class="tableblock halign-left valign-top">QENTA Checkout Journal</th>
 <th class="tableblock halign-left valign-top"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://checkout.wirecard.com/journal" class="bare">https://checkout.wirecard.com/journal</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://portal.qenta.com/journal/" class="bare">https://portal.qenta.com/journal/</a></p></td>
 </tr>
 </tbody>
 </table>

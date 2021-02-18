@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Process Overview for Wirecard Checkout Seamless :: QENTA Online Guides</title>
+    <title>Process Overview for QMORE Checkout Seamless :: QENTA Online Guides</title>
     <link rel="canonical" href="https://guides.qenta.com/online-guides/main/wcs/process_overview/">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="/_/css/site.css">
@@ -93,9 +93,6 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../payment_methods/masterpass/start/">Masterpass</a>
   </li>
 </ul>
   </li>
@@ -252,7 +249,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../">QENTA Online Guides</a></li>
-    <li><a href="./">Process Overview for Wirecard Checkout Seamless</a></li>
+    <li><a href="./">Process Overview for QMORE Checkout Seamless</a></li>
   </ul>
 </nav>
 </div>
@@ -261,14 +258,14 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Process Overview for Wirecard Checkout Seamless</h1>
+<h1 class="page">Process Overview for QMORE Checkout Seamless</h1>
 <div class="sect1">
-<h2 id="ProcessOverviewForWirecardCheckoutSeamless"><a class="anchor" href="#ProcessOverviewForWirecardCheckoutSeamless"></a>Process Overview for Wirecard Checkout Seamless</h2>
+<h2 id="ProcessOverviewForQMORECheckoutSeamless"><a class="anchor" href="#ProcessOverviewForQMORECheckoutSeamless"></a>Process Overview for QENTA Checkout Seamless</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="PaymentProcessAsSeenByTheIntegrator"><a class="anchor" href="#PaymentProcessAsSeenByTheIntegrator"></a>Payment process as seen by the integrator</h3>
 <div class="paragraph">
-<p>When integrating Wirecard Checkout Seamless to your online shop you have to perform the following main steps:</p>
+<p>When integrating QMORE Checkout Seamless to your online shop you have to perform the following main steps:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="/_images/wcs/wcs_checkout_process_integrator.png" alt="image"></span></p>
@@ -276,14 +273,14 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Initializing Wirecard data storage</p>
+<p>Initializing QENTA data storage</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>First of all you have to initialize the Wirecard data storage by making a server-side call to a specific URL of Wirecard Checkout Seamless using some well-defined parameters.</p>
+<p>First of all you have to initialize the QENTA data storage by making a server-side call to a specific URL of QMORE Checkout Seamless using some well-defined parameters.</p>
 </li>
 <li>
-<p>The result of this initialization is a data storage which you can use to store sensitive payment method specific data (like credit card numbers) of your consumer on the Wirecard Checkout Server without having to handle these sensitive data in your online shop or on your web server.</p>
+<p>The result of this initialization is a data storage which you can use to store sensitive payment method specific data (like credit card numbers) of your consumer on the QMORE Checkout Server without having to handle these sensitive data in your online shop or on your web server.</p>
 </li>
 <li>
 <p>This data storage is available for 30 minutes after the last read or write access.</p>
@@ -302,13 +299,13 @@
 <p>After initializing the data storage you receive a URL as a return parameter.</p>
 </li>
 <li>
-<p>With this URL you are able to integrate JavaScript functionality of Wirecard for storing sensitive payment data which your consumer entered in a web form in your online shop.</p>
+<p>With this URL you are able to integrate JavaScript functionality of QENTA for storing sensitive payment data which your consumer entered in a web form in your online shop.</p>
 </li>
 <li>
 <p>These JavaScript functions allow you to bypass the sensitive payment data of your consumer from your online shop and your web server.</p>
 </li>
 <li>
-<p>These data are directly sent to the Wirecard data storage without transferring them "through your online shop or your web server".</p>
+<p>These data are directly sent to the QENTA data storage without transferring them "through your online shop or your web server".</p>
 </li>
 </ol>
 </div>
@@ -318,7 +315,7 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>After you stored sensitive payment data to the Wirecard data storage you can start the payment process by making a server-side call of another URL of Wirecard Checkout Seamless.</p>
+<p>After you stored sensitive payment data to the QENTA data storage you can start the payment process by making a server-side call of another URL of QMORE Checkout Seamless.</p>
 </li>
 <li>
 <p>This server-to-server call returns a URL to where you redirect your consumer for executing the payment process and where external pages of financial institutions (like 3-D Secure pages) are displayed.</p>
@@ -362,7 +359,7 @@
 <p>Online shop</p>
 </li>
 <li>
-<p>Wirecard Checkout Seamless</p>
+<p>QMORE Checkout Seamless</p>
 </li>
 </ul>
 </div>
@@ -381,16 +378,16 @@
 <p>Then the online shop initiates the data storage as a server-to-server request.</p>
 </li>
 <li>
-<p>Wirecard Checkout Seamless returns the data storage ID and the JavaScript URL.</p>
+<p>QMORE Checkout Seamless returns the data storage ID and the JavaScript URL.</p>
 </li>
 <li>
 <p>The online shop displays the input form for entering payment data such as credit card number, expiration date, etc. to the consumer, and/or redirects the consumer to the financial service provider.</p>
 </li>
 <li>
-<p>Then the consumer enters the required payment data into the input form and the data are sent to Wirecard.</p>
+<p>Then the consumer enters the required payment data into the input form and the data are sent to QENTA.</p>
 </li>
 <li>
-<p>Wirecard Checkout Seamless stores the payment data on a PCI-compliant server.</p>
+<p>QMORE Checkout Seamless stores the payment data on a PCI-compliant server.</p>
 </li>
 <li>
 <p>The online shop receives and displays the anonymized payment data.</p>
@@ -402,22 +399,22 @@
 <p>Afterwards the consumer reviews the order details and commits the payment by clicking a relevant button.</p>
 </li>
 <li>
-<p>The transaction details are sent as server-to-server request to Wirecard Checkout Seamless.</p>
+<p>The transaction details are sent as server-to-server request to QMORE Checkout Seamless.</p>
 </li>
 <li>
-<p>Wirecard Checkout Seamless redirects the consumer to the external pages of the financial service provider.</p>
+<p>QMORE Checkout Seamless redirects the consumer to the external pages of the financial service provider.</p>
 </li>
 <li>
 <p>The consumer fills in the required payment details into the external pages of the financial service provider.</p>
 </li>
 <li>
-<p>Wirecard Checkout Seamless confirms the transaction to the online shop by sending a server-to-server request.</p>
+<p>QMORE Checkout Seamless confirms the transaction to the online shop by sending a server-to-server request.</p>
 </li>
 <li>
 <p>Now the online shop stores the transaction result.</p>
 </li>
 <li>
-<p>Wirecard Checkout Seamless redirects the consumer to the <code>successUrl</code> if the payment was completed with success (or to the <code>failureUrl</code>, <code>pendingUrl</code> or <code>cancelUrl</code> when an error occurred during the payment process, the result could not be determined yet or the payment process has been canceled by the consumer respectively).</p>
+<p>QMORE Checkout Seamless redirects the consumer to the <code>successUrl</code> if the payment was completed with success (or to the <code>failureUrl</code>, <code>pendingUrl</code> or <code>cancelUrl</code> when an error occurred during the payment process, the result could not be determined yet or the payment process has been canceled by the consumer respectively).</p>
 </li>
 <li>
 <p>Then, the online shop displays an appropriate page providing the consumer with information on the result of the payment process.</p>
@@ -430,7 +427,7 @@
 <div class="sect3">
 <h4 id="DefinitionOfTerms"><a class="anchor" href="#DefinitionOfTerms"></a>Definition of terms</h4>
 <div class="paragraph">
-<p>For the definitions of the most common terms used in relation to the payment process based on Wirecard Checkout Seamless, such as <a href="../../glossary/#DataStorage" class="page">data storage</a>, <a href="../../glossary/#Frontend" class="page">front-end</a> and <a href="../../glossary/#Backend" class="page">back-end</a>, consult our <a href="../../glossary/" class="page">Glossary</a>.</p>
+<p>For the definitions of the most common terms used in relation to the payment process based on QMORE Checkout Seamless, such as <a href="../../glossary/#DataStorage" class="page">data storage</a>, <a href="../../glossary/#Frontend" class="page">front-end</a> and <a href="../../glossary/#Backend" class="page">back-end</a>, consult our <a href="../../glossary/" class="page">Glossary</a>.</p>
 </div>
 </div>
 </div>
@@ -443,8 +440,8 @@
 <p>Click the following links for the example codes on Github:</p>
 </div>
 <div class="paragraph">
-<p><a href="https://github.com/wirecard/wcs-example-php">Example Code for most payment methods</a><br>
-<a href="https://github.com/wirecard/wcs-example-new-php">Example Code for Masterpass, Credit Card and Sofort.</a></p>
+<p><a href="https://github.com/qenta-cee/qcp-example-php">Example Code for most payment methods</a><br>
+<a href="https://github.com/qenta-cee/qcs-example-php">Example Code for Masterpass, Credit Card and Sofort.</a></p>
 </div>
 </div>
 </div>
