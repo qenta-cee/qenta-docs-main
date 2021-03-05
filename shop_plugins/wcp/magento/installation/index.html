@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Wirecard Shop Plugin for Magento 1.x :: QENTA Online Guides</title>
+    <title>QENTA Shop Plugin for Magento 1.x :: QENTA Online Guides</title>
     <link rel="canonical" href="https://guides.qenta.com/online-guides/main/shop_plugins/wcp/magento/installation/">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="/_/css/site.css">
@@ -249,7 +249,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../../../">QENTA Online Guides</a></li>
-    <li><a href="./">Wirecard Shop Plugin for Magento 1.x</a></li>
+    <li><a href="./">QENTA Shop Plugin for Magento 1.x</a></li>
   </ul>
 </nav>
 </div>
@@ -258,17 +258,14 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Wirecard Shop Plugin for Magento 1.x</h1>
+<h1 class="page">QENTA Shop Plugin for Magento 1.x</h1>
 <div class="sect1">
-<h2 id="WirecardShopPluginForMagento1x"><a class="anchor" href="#WirecardShopPluginForMagento1x"></a>Wirecard Shop Plugin for Magento 1.x</h2>
+<h2 id="QENTAShopPluginForMagento1x"><a class="anchor" href="#QENTAShopPluginForMagento1x"></a>QENTA Shop Plugin for Magento 1.9.x / OpenMage 19.x</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="InstallationGuideForWirecardCheckoutPage"><a class="anchor" href="#InstallationGuideForWirecardCheckoutPage"></a>Installation guide for Wirecard Checkout Page</h3>
+<h3 id="InstallationGuideForQPAYCheckoutPage"><a class="anchor" href="#InstallationGuideForQPAYCheckoutPage"></a>Installation guide for QPAY Checkout Page</h3>
 <div class="paragraph">
 <p>This installation guide shows the step-by-step installation of the plugin to your installed shop system on your web server. Please test your online shop and the configuration of the plugin on a test system before installing the plugin on your production system.</p>
-</div>
-<div class="paragraph">
-<p>If you are <strong>upgrading from a previous version</strong>, read the <a href="#UpgradingFromVersion36">upgrade section</a> first.</p>
 </div>
 <div class="sect3">
 <h4 id="Step1ZipFile"><a class="anchor" href="#Step1ZipFile"></a>Step 1 - Zip File</h4>
@@ -282,7 +279,7 @@
 <div class="sect3">
 <h4 id="Step2"><a class="anchor" href="#Step2"></a>Step 2</h4>
 <div class="paragraph">
-<p>Next you need to navigate to "System" &#8594; "Configuration" &#8594; "Wirecard Checkout Page" (on the left side).</p>
+<p>Next you need to navigate to "System" &#8594; "Configuration" &#8594; "QENTA Checkout Page" (on the left side).</p>
 </div>
 <div class="paragraph">
 <p>For a basic configuration enter your <strong>customer ID, shop ID</strong> and your <strong>secret</strong> and set the <strong>URL to imprint page</strong>. You can additionally go over the settings and configure the plugin according to your requirements. Please refer to the section <a href="#AdvancedConfiguration">advanced configuration</a> for a more detailed description about the configuration possibilities.</p>
@@ -317,7 +314,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>"<strong>Demo</strong>": Demo mode configuration. No communication with your financial service provider but only between your online shop and the Wirecard Checkout Server.</p>
+<p>"<strong>Demo</strong>": Demo mode configuration. No communication with your financial service provider but only between your online shop and the QENTA Checkout Server.</p>
 </li>
 <li>
 <p>"<strong>Test</strong>": During test mode there is communication between your online shop and a test bank or demo bank provided for this purpose by the relevant financial service provider. However, the payment process is only simulated and no money is transferred.</p>
@@ -340,7 +337,7 @@
 <div class="sect3">
 <h4 id="DeviceDetection"><a class="anchor" href="#DeviceDetection"></a>Device detection</h4>
 <div class="paragraph">
-<p>If this feature is enabled the plugin <strong>automatically identifies the consumer device</strong> (either desktop, smartphone or tablet). If a mobile device is identified, the corresponding request parameter <code>layout</code> is automatically set to the value <code>tablet</code> or <code>smartphone</code> and Wirecard Checkout Page is optimized for the corresponding mobile device.</p>
+<p>If this feature is enabled the plugin <strong>automatically identifies the consumer device</strong> (either desktop, smartphone or tablet). If a mobile device is identified, the corresponding request parameter <code>layout</code> is automatically set to the value <code>tablet</code> or <code>smartphone</code> and QPAY Checkout Page is optimized for the corresponding mobile device.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -348,12 +345,12 @@
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Please note that the parameter <code>layout</code> is only relevant if you do <strong>NOT</strong> use the responsive design of Wirecard Checkout Page. For more information on the responsive design contact our <a href="../../../../support/" class="page">support teams</a>.</th>
+<th class="tableblock halign-left valign-top">Please note that the parameter <code>layout</code> is only relevant if you do <strong>NOT</strong> use the responsive design of QPAY Checkout Page. For more information on the responsive design contact our <a href="../../../../support/" class="page">support teams</a>.</th>
 </tr>
 </thead>
 </table>
 <div class="paragraph">
-<p>To improve usability for smartphones and tablets, the plugin automatically disables the embedding in an iframe on tablets and smartphones and redirects the consumer to Wirecard Checkout Page. After the payment process is completed, your consumer is redirected to your online shop.</p>
+<p>To improve usability for smartphones and tablets, the plugin automatically disables the embedding in an iframe on tablets and smartphones and redirects the consumer to QPAY Checkout Page. After the payment process is completed, your consumer is redirected to your online shop.</p>
 </div>
 <div class="paragraph">
 <p>Please <strong>contact our <a href="../../../../contact/" class="page">sales teams</a> if you wish to use the feature</strong> in your Magento online shop.</p>
@@ -380,66 +377,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="UpgradingFromVersion36"><a class="anchor" href="#UpgradingFromVersion36"></a>Upgrading from version 3.6</h3>
-<div class="paragraph">
-<p>There are some major changes in version 4.x. Therefore the new plugin does not replace the plugin with version 3.6 and can be installed in parallel. Since removing payment methods in Magento leads to a problem in displaying the orders which were made with the corresponding payment method, the plugin with version 3.6 needs to remain installed after the upgrade.</p>
-</div>
-<div class="paragraph">
-<p>When the plugin with version 4.x is successfully installed, disable the payment method at "System" &#8594; "Configuration" &#8594; "Payment Methods".</p>
-</div>
-</div>
-<div class="sect2">
 <h3 id="Faq"><a class="anchor" href="#Faq"></a>FAQ</h3>
-<div class="paragraph">
-<p><strong><em>Is the plugin compatible with the Magento Compiler?</em></strong></p>
-</div>
-<div class="paragraph">
-<p>Yes, compatibility is given starting with plugin version 3.4.0. To check the "Compiler Status" in your Magento Administration Panel go to "System" &#8594; "Tools" &#8594; "Compilation". The "Compiler Status" should be enabled.</p>
-</div>
-<div class="paragraph">
-<p><strong><em>How to update from versions earlier than version 3.3.0 to the current version?</em></strong></p>
-</div>
-<div class="paragraph">
-<p>When you are updating from a plugin version earlier than version 3.3.0 proceed as follows:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Perform a backup of your online shop and the database.</p>
-</li>
-<li>
-<p>Clear the configuration cache.</p>
-</li>
-<li>
-<p>Remove the following files and folders only:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>/app/design/frontend/base/default/layout/qpay.xml</code></p>
-</li>
-<li>
-<p><code>/app/design/frontend/base/default/template/qpay</code></p>
-</li>
-<li>
-<p><code>/app/design/adminhtml/default/default/template/qpay</code></p>
-</li>
-<li>
-<p><code>/app/code/community/Phoenix/WirecardQPay/controllers</code></p>
-</li>
-<li>
-<p><code>/app/code/community/Phoenix/WirecardQPay/etc/system.xml</code></p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong><em>I performed an update following the steps described in "Updating from versions earlier than version 3.3.0 to the current version", however, the former payment methods are still displayed. How can I solve this problem?</em></strong></p>
-</div>
-<div class="paragraph">
-<p>Deleting the config of the previous plugin in the database has not succeeded. You need to delete the config manually by executing the following SQL statement “DELETE FROM core_config_data WHERE path LIKE '%qenta%';” and clear the configuration cache again.</p>
-</div>
 <div class="paragraph">
 <p><strong><em>When does the input field "Company Trade Registration Number" appear?</em></strong></p>
 </div>
