@@ -263,16 +263,19 @@
 <h2 id="Recurpayment"><a class="anchor" href="#Recurpayment"></a>recurPayment</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>recurPayment is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. You can either call this operation automatically from the back-end of your online shop or manually from your web interface which you have implemented for administration purposes.</p>
+<p>The operation recurPayment uses the payment information available from a previous order, the so-called source order, to create a new order and a new payment attempt.</p>
 </div>
 <div class="paragraph">
-<p>The operation recurPayment is used to create a new order and a new payment attempt by reusing the payment information available in a previous order, the so-called source order.</p>
+<p>recurPayment is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. You can either call this operation automatically from the back-end of your online shop or manually from your web interface which you have implemented for administration purposes.</p>
 </div>
 <div class="paragraph">
 <p>The<strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
 </div>
 <div class="paragraph">
 <p>The <strong>required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
+</div>
+<div class="paragraph">
+<p><a href="#FingerprintContinue">Fingerprint continues here&#8230;&#8203;</a></p>
 </div>
 <div class="sect2">
 <h3 id="AdditionalRequiredRequestParameters"><a class="anchor" href="#AdditionalRequiredRequestParameters"></a>Additional required request parameters</h3>
@@ -580,8 +583,8 @@ Note that this parameter is <strong>not</strong> part of the fingerprint.</p></t
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Continuing the fingerprint order described above, the <strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> is: <code>consumerEmail</code>, <code>consumerBirthDate</code>, <code>consumerTaxIdentificationNumber</code>, <code>consumerDriversLicenseNumber</code>, <code>consumerDriversLicenseState</code>, <code>consumerDriversLicenseCountry</code>, <code>consumerBillingFirstName</code>, <code>consumerBillingLastName</code>, <code>consumerBillingAddress1</code>, <code>consumerBillingAddress2</code>, <code>consumerBillingCity</code>, <code>consumerBillingState</code>, <code>consumerBillingCountry</code>, <code>consumerBillingZipCode</code>, <code>consumerBillingPhone</code>, <code>consumerBillingFax</code>, <code>consumerShippingFirstName</code>, <code>consumerShippingLastName</code>, <code>consumerShippingAddress1</code>, <code>consumerShippingAddress2</code>, <code>consumerShippingCity</code>, <code>consumerShippingState</code>, <code>consumerShippingCountry</code>, <code>consumerShippingZipCode</code>, <code>consumerShippingPhone</code> and <code>consumerShippingFax</code>.</p>
+<div id="FingerprintContinue" class="paragraph">
+<p>Continuing the fingerprint order described above, the <strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> is: <code>consumerEmail</code>, <code>consumerMerchantCrmId</code>, <code>consumerBirthDate</code>, <code>consumerTaxIdentificationNumber</code>, <code>consumerDriversLicenseNumber</code>, <code>consumerDriversLicenseState</code>, <code>consumerDriversLicenseCountry</code>, <code>consumerBillingFirstName</code>, <code>consumerBillingLastName</code>, <code>consumerBillingAddress1</code>, <code>consumerBillingAddress2</code>, <code>consumerBillingCity</code>, <code>consumerBillingState</code>, <code>consumerBillingCountry</code>, <code>consumerBillingZipCode</code>, <code>consumerBillingPhone</code>, <code>consumerBillingFax</code>, <code>consumerShippingFirstName</code>, <code>consumerShippingLastName</code>, <code>consumerShippingAddress1</code>, <code>consumerShippingAddress2</code>, <code>consumerShippingCity</code>, <code>consumerShippingState</code>, <code>consumerShippingCountry</code>, <code>consumerShippingZipCode</code>, <code>consumerShippingPhone</code> and <code>consumerShippingFax</code>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -636,6 +639,30 @@ Note that the parameter <code>consumerIpAddress</code> is <strong>not</strong> p
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Transactionidentifier">transactionIdentifier</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Single" class="page">request_parameters#SINGLE</a> (used by default if no transaction type is stated) or #RECUR or <a href="../../../request_parameters/#Initial" class="page">request_parameters#INITIAL</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="AcquirerP4"><a class="anchor" href="#AcquirerP4"></a>For Acquirer P4</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerMerchantCrmId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of Merchant CRM.</p></td>
 </tr>
 </tbody>
 </table>
