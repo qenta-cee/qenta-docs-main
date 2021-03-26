@@ -366,7 +366,7 @@
 </table>
 </div>
 <div class="sect4">
-<h5 id="DirectDebitWithoutSepa9Columns"><a class="anchor" href="#DirectDebitWithoutSepa9Columns"></a>Direct debit without SEPA (9 columns)</h5>
+<h5 id="DirectDebitWithoutSepa9Columns"><a class="anchor" href="#DirectDebitWithoutSepa9Columns"></a>Direct Debit without SEPA (9 columns)</h5>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -408,16 +408,17 @@
 </table>
 </div>
 <div class="sect4">
-<h5 id="RecurringTransactions67Columns"><a class="anchor" href="#RecurringTransactions67Columns"></a>Recurring transactions (6-7 columns)</h5>
+<h5 id="RecurringTransactionsColumns"><a class="anchor" href="#RecurringTransactionsColumns"></a>Recurring Transactions (6-8 columns)</h5>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2858%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
 </colgroup>
 <thead>
 <tr>
@@ -428,29 +429,44 @@
 <th class="tableblock halign-left valign-top">Last name</th>
 <th class="tableblock halign-left valign-top">Number</th>
 <th class="tableblock halign-left valign-top">Customer statement <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Merchant CRM ID <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1234567</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EUR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">102,15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">112,15</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Max</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Mustermann</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">17</p></td>
 <td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7654321</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7654321</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EUR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">42,23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">223,23</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lisa</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kaufrausch</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ONr.18 recur</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7654000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EUR</p></td>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Merchant CRM ID should have only 40 characters. Strings longer than 40 characters may be truncated.
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect4">
 <h5 id="Refunds34Columns"><a class="anchor" href="#Refunds34Columns"></a>Refunds (3-4 columns)</h5>
@@ -466,7 +482,7 @@
 <th class="tableblock halign-left valign-top">Currency</th>
 <th class="tableblock halign-left valign-top">Amount</th>
 <th class="tableblock halign-left valign-top">Number</th>
-<th class="tableblock halign-left valign-top">Customer statement <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Customer statement <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></th>
 </tr>
 </thead>
 <tbody>
@@ -501,13 +517,13 @@
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">IBAN</th>
-<th class="tableblock halign-left valign-top">BIC <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></th>
+<th class="tableblock halign-left valign-top">BIC <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></th>
 <th class="tableblock halign-left valign-top">Currency</th>
 <th class="tableblock halign-left valign-top">Amount</th>
 <th class="tableblock halign-left valign-top">First name</th>
 <th class="tableblock halign-left valign-top">Last name</th>
 <th class="tableblock halign-left valign-top">Number</th>
-<th class="tableblock halign-left valign-top">Customer statement <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Customer statement <sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></th>
 </tr>
 </thead>
 <tbody>
@@ -554,7 +570,7 @@
 <th class="tableblock halign-left valign-top">First name</th>
 <th class="tableblock halign-left valign-top">Last name</th>
 <th class="tableblock halign-left valign-top">Number</th>
-<th class="tableblock halign-left valign-top">Customer statement <sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Customer statement <sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup></th>
 </tr>
 </thead>
 <tbody>
@@ -609,9 +625,9 @@
 <th class="tableblock halign-left valign-top">Amount</th>
 <th class="tableblock halign-left valign-top">First name</th>
 <th class="tableblock halign-left valign-top">Last name</th>
-<th class="tableblock halign-left valign-top">Number <sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup></th>
-<th class="tableblock halign-left valign-top">Order number <sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup></th>
-<th class="tableblock halign-left valign-top">Authcode <sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Number <sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Order number <sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Authcode <sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup></th>
 <th class="tableblock halign-left valign-top">Message</th>
 </tr>
 </thead>
@@ -675,9 +691,9 @@
 <th class="tableblock halign-left valign-top">First name</th>
 <th class="tableblock halign-left valign-top">Last name</th>
 <th class="tableblock halign-left valign-top">Customer statement</th>
-<th class="tableblock halign-left valign-top">Number <sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup></th>
-<th class="tableblock halign-left valign-top">Order number <sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup></th>
-<th class="tableblock halign-left valign-top">Authcode <sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Number <sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Order number <sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup></th>
+<th class="tableblock halign-left valign-top">Authcode <sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup></th>
 <th class="tableblock halign-left valign-top">Message</th>
 </tr>
 </thead>
@@ -1009,22 +1025,25 @@
 <a href="#_footnoteref_7">7</a>. Optional
 </div>
 <div class="footnote" id="_footnotedef_8">
-<a href="#_footnoteref_8">8</a>. Number defined by you and transmitted in the file. If the number is set to “0” by you, QENTA will assign a corresponding number.
+<a href="#_footnoteref_8">8</a>. Optional
 </div>
 <div class="footnote" id="_footnotedef_9">
-<a href="#_footnoteref_9">9</a>. Number used by QENTA for processing the file.
+<a href="#_footnoteref_9">9</a>. Number defined by you and transmitted in the file. If the number is set to “0” by you, QENTA will assign a corresponding number.
 </div>
 <div class="footnote" id="_footnotedef_10">
-<a href="#_footnoteref_10">10</a>. Authorization code from financial service provider which is automatically returned.
+<a href="#_footnoteref_10">10</a>. Number used by QENTA for processing the file.
 </div>
 <div class="footnote" id="_footnotedef_11">
-<a href="#_footnoteref_11">11</a>. Number defined by you and transmitted in the file. If the number is set to “0” by you, QENTA will assign a corresponding number.
+<a href="#_footnoteref_11">11</a>. Authorization code from financial service provider which is automatically returned.
 </div>
 <div class="footnote" id="_footnotedef_12">
-<a href="#_footnoteref_12">12</a>. Number used by QENTA for processing the file.
+<a href="#_footnoteref_12">12</a>. Number defined by you and transmitted in the file. If the number is set to “0” by you, QENTA will assign a corresponding number.
 </div>
 <div class="footnote" id="_footnotedef_13">
-<a href="#_footnoteref_13">13</a>. Authorization code from financial service provider which is automatically returned.
+<a href="#_footnoteref_13">13</a>. Number used by QENTA for processing the file.
+</div>
+<div class="footnote" id="_footnotedef_14">
+<a href="#_footnoteref_14">14</a>. Authorization code from financial service provider which is automatically returned.
 </div>
 </div>
 </article>
