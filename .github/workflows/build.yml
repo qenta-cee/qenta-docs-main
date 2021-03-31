@@ -29,6 +29,9 @@ jobs:
       - name: Modify Paths
         id: post-process
         run: bash scripts/remove_path.sh "online-guides/main"
+      - name: Check for Invalid References
+        id: invalid-refs
+        run: bash scripts/invalid_refs.sh
       - name: Deploy to Github Pages
         id: deploy-gh
         if: success() && steps.branch.outputs.name == 'master'
