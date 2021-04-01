@@ -101,9 +101,6 @@
     <span class="nav-text">Bank Transfer</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#payment_methods/bancontact_mrcash/start.adoc">payment_methods/bancontact_mrcash/start.adoc</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../payment_methods/eps/start/">eps-Überweisung</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -223,19 +220,942 @@
 </aside>
 <article class="doc">
 <h1 class="page">Datenschutzhinweise zu einzelnen Parametern</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Folgende Parameter sind personenbezogene Daten im datenschutzrechlichen Sinn:</p>
+</div>
+<div class="olist arabic">
+<div class="title">Übersicht</div>
+<ol class="arabic">
+<li>
+<p><a href="#Transaktionsdaten">Transaktionsdaten</a></p>
+</li>
+<li>
+<p><a href="#Zahlungsdaten">Zahlungsdaten</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="#ZahlungsdatenAllgemein">Allgemein</a></p>
+</li>
+<li>
+<p><a href="#ZahlungsdatenFeatures">Features</a></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><a href="#OnlineDaten">Online Daten</a></p>
+</li>
+<li>
+<p><a href="#Warenkorbdaten">Warenkorbdaten</a></p>
+</li>
+<li>
+<p><a href="#Personendaten">Personendaten</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="#PersonendatenFeatures">Features</a></p>
+</li>
+<li>
+<p><a href="#PersonendatenEndkundendaten">Endkundendaten</a></p>
+</li>
+<li>
+<p><a href="#PersonendatenPaymentFacilitatorModell">Payment Facilitator Modell</a></p>
+</li>
+<li>
+<p><a href="#PersonendatenPayPal">PayPal spezifisch</a></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><a href="#ZweckDerDatenverarbeitungJeDatenkategorie">Zweck der Datenverarbeitung je Datenkategorie</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="DatenschutzhinweiseZuEinzelnenParametern"><a class="anchor" href="#DatenschutzhinweiseZuEinzelnenParametern"></a>Datenschutzhinweise zu einzelnen Parametern</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="PersonenbezogeneParameter"><a class="anchor" href="#PersonenbezogeneParameter"></a>Personenbezogene Parameter</h3>
-<div class="paragraph">
-<p>Folgende Parameter sind personenbezogene Daten im datenschutzrechlichen Sinn:</p>
+<div class="sect3">
+<h4 id="Transaktionsdaten"><a class="anchor" href="#Transaktionsdaten"></a>Transaktionsdaten</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#Language" class="page"><code>language</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input, Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vom Merchant bevorzugte Sprache für das Zahlungsfenster für diese Zahlungstransaktion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#Paymenttype" class="page"><code>paymentType</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input, Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verwendetes Zahlungsmittel der Transaktion, die dem Merchant zuzuordnen ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#Amount" class="page"><code>amount</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input, Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Umsatzhöhe der Transaktion, die dem Merchant zuzuordnen ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#Currency" class="page"><code>currency</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input, Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Währung der Transaktion, die dem Merchant zuzuordnen ist</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Zahlungsdaten"><a class="anchor" href="#Zahlungsdaten"></a>Zahlungsdaten</h3>
+<div class="sect3">
+<h4 id="ZahlungsdatenAllgemein"><a class="anchor" href="#ZahlungsdatenAllgemein"></a>Zahlungsdaten: Allgemein</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#Financialinstritution" class="page"><code>financialInstitution</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input, Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant, Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In Transaktion involvierte Bank, von der aus der Merchant bezahlt wird. Kontoführendes Geldinsitut des Zahlenden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sepa_direct_debit/start/#Creditorid" class="page"><code>creditorID</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SEPA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input, Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numerischer Wert, der dem Merchant durch den Zahlungsmittelanbieter für SEPA-Transaktionen zugewiesen ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paysafecard/start/#RequiredRequestParameter" class="page"><code>consumerMerchantCrmId</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SEPA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Von paysafecard verpflichtend geforderter Parameter zur Identifizierung des Endkunden. Personenbezug abhängig von den durch den Merchant übermittelten Daten</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="ZahlungsdatenFeatures"><a class="anchor" href="#ZahlungsdatenFeatures"></a>Zahlungsdaten: Features</h4>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Kreditkarte</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Feature</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#Instrumentcountry" class="page"><code>instrumentCountry</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditkarte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Staat, aus dem das ausgestellte Zahlungsmittel stammt, mit dem beim Merchant eingekauft wurde</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/start/#hashedPan" class="page"><code>hashedPan</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditkarte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Kreditkarteninhaber)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditkartennummer des Karteninhabers in Form eines Hash-Werts <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/start/#OptionalFeaturespecificParametersAdditionallyForQpay" class="page"><code>cardholder</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditkarte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Kreditkarteninhaber)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name des Karteninhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/start/#OptionalFeaturespecificParametersAdditionallyForQpay" class="page"><code>`maskedPan</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditkarte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Kreditkarteninhaber)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditkartennummer des Karteninhabers (10 der insgesamt 16 bis 19 Stellen sichtbar)</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. iDEAL</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input/Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Betrifft</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personenbezug</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/ideal/start/#AdditionalResponseParameters" class="page"><code>idealConsumerIBAN</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iDEAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontoinformationen (IBAN) des Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/ideal/start/#AdditionalResponseParameters" class="page"><code>idealConsumerBIC</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iDEAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontoinformationen (BIC) des Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/ideal/start/#AdditionalResponseParameters" class="page"><code>idealConsumerName</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iDEAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name des Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/ideal/start/#AdditionalResponseParameters" class="page"><code>idealConsumerAccountNumber</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iDEAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontoinformationen (IBAN) des Zahlenden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/ideal/start/#AdditionalResponseParameters" class="page"><code>idealConsumerCity</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iDEAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt, in der Bankkonto des Kontoinhabers gelegen ist</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Sofort.</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/#AdditionalResponseParameters" class="page"><code>senderAccountNumber</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bankkonto des Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/#AdditionalResponseParameters" class="page"><code>senderAccountOwner</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name des Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/#AdditionalResponseParameters" class="page"><code>senderBankName</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank des Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/#AdditionalResponseParameters" class="page"><code>senderBankNumber</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bankkonto des Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/#AdditionalResponseParameters" class="page"><code>senderBIC</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bankkonto des Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/#AdditionalResponseParameters" class="page"><code>senderCountry</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Land, in dem Bankkonto des Kontoinhabers gelegen ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/#AdditionalResponseParameters" class="page"><code>senderIBAN</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bankkonto des Kontoinhabers</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="OnlineDaten"><a class="anchor" href="#OnlineDaten"></a>Online Daten</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#AdditionallyForQmoreCheckoutSeamlessTable" class="page"><code>consumerIPAddress</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP-Adresse des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#AdditionallyForQmoreCheckoutSeamlessTable" class="page"><code>consumerUserAgent</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vom Endkunden benutzter Browser</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Warenkorbdaten"><a class="anchor" href="#Warenkorbdaten"></a>Warenkorbdaten</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItems</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)ArticleNumber</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Artikelnummer der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)Description</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Artikelbeschreibung der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)ImageUrl</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aussehen der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)Name</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)Quantity</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Menge der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)UnitGrossAmount</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brutto Preis der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)UnitNetAmount</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Netto Preis der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)UnitTaxAmount</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Steuerbetrag der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ShoppingBasketData" class="page unresolved"><code>basketItem(n)UnitTaxRate</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Steuersatz der Produkte, die der Merchant mit dieser Transaktion verkauft</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Personendaten"><a class="anchor" href="#Personendaten"></a>Personendaten</h3>
+<div class="sect3">
+<h4 id="PersonendatenFeatures"><a class="anchor" href="#PersonendatenFeatures"></a>Personendaten: Features</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#Confirmmail" class="page unresolved"><code>confirmMail</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Email-Adresse des Merchants (seines Mitarbeiters) für den Erhalt des Confirm-Mails</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="PersonendatenEndkundendaten"><a class="anchor" href="#PersonendatenEndkundendaten"></a>Personendaten: Endkundendaten</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerData" class="page unresolved"><code>consumerEmail</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Email-Adresse des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerData" class="page unresolved"><code>consumerBirthDate</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geburtstag des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerData" class="page unresolved"><code>consumerTaxIdentificationNumber</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Steuer-Identifikationsnummer des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerData" class="page unresolved"><code>consumerDriversLicenseNumber</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Führerscheinnummer des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerData" class="page unresolved"><code>consumerDriversLicenseState</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provinz innerhalb eines Staates, die den Führerschein des Endkunden ausgestellt hat</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerData" class="page unresolved"><code>consumerDriversLicenseCountry</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Staat, der den Führerschein des Endkunden ausgestellt hat</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingFirstname</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingLastname</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Familienname des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingAddress1</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Straßenname des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingAddress2</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hausnummer des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingCity</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingState</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provinz des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingCountry</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Staat des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingZipCode</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postleitzahl des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingPhone</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Telefonnummer des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerBillingData" class="page unresolved"><code>consumerBillingFax</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faxnummer des Endkunden auf den die Rechnung ausgestellt ist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingFirstName</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingLastName</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingAddress1</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Straße des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingAddress2</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hausnummer des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingCity</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingState</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provinz des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingCountry</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Staat des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingZipCode</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postleitzahl des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingPhone</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Telefonnummer des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#request_parameters..adoc#ConsumerShippingData" class="page unresolved"><code>consumerShippingFax</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faxnummer des Endkunden an den der Versand der Bestellung geht</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="PersonendatenPaymentFacilitatorModell"><a class="anchor" href="#PersonendatenPaymentFacilitatorModell"></a>Personendaten: Payment Facilitator Modell</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Payment Facilitator Modell</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/payment_facilitator/" class="page"><code>subMerchantId</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marktplatzmodell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sub Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kundennummer des Sub Merchants</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/payment_facilitator/" class="page"><code>subMerchantName</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marktplatzmodell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sub Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kundennummer des Sub Merchants</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/payment_facilitator/" class="page"><code>subMerchantCountry</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marktplatzmodell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sub Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Staat des Sub Merchants</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/payment_facilitator/" class="page"><code>subMerchantState</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marktplatzmodell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sub Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provinz des Sub Merchants</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/payment_facilitator/" class="page"><code>subMerchantCity</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marktplatzmodell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sub Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt des Sub Merchants</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/payment_facilitator/" class="page"><code>subMerchantStreet</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marktplatzmodell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sub Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Straße des Sub Merchants</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/payment_facilitator/" class="page"><code>subMerchantZipCode`</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marktplatzmodell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sub Merchant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postleitzahl des Sub Merchants</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="PersonendatenPayPal"><a class="anchor" href="#PersonendatenPayPal"></a>Personendaten: PayPal</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Input/Output</th>
+<th class="tableblock halign-left valign-top">Betrifft</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerAddressCity</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt in der Endkunde wohnt (Lieferadresse)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerAddressCountry</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Staat in dem Endkunde wohnt (Lieferadresse)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerAddressCountryCode</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ländercode des Staats in dem Endkunde wohnt (Lieferadresse)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerAddressName</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name des Endkunden (Lieferadresse)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerAddressState</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provinz in der Endkunde wohnt (Lieferadresse)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerAddressStreet1</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Straße (Adresszeile 1) des Endkunden (Lieferadresse)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerAddressStreet2</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Straße (Adresszeile 2) des Endkunden (Lieferadresse)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerAddressZIP</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postleitzahl des Endkunden (Lieferadresse)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerEmail</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Email-Adresse des PayPal-Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerFirstName</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname des PayPal-Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerLastName</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nachname des PayPal-Kontoinhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#AdditionalResponseParameters" class="page"><code>paypalPayerID</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde (Zahlender)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numerischer Wert, der dem Endkunden durch den Zahlungsmittelanbieter für PayPal-Transaktionen zugewiesen ist</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect2">
 <h3 id="ZweckDerDatenverarbeitungJeDatenkategorie"><a class="anchor" href="#ZweckDerDatenverarbeitungJeDatenkategorie"></a>Zweck der Datenverarbeitung je Datenkategorie</h3>
-
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Datenkategorie</th>
+<th class="tableblock halign-left valign-top">Zweck der Datenverarbeitung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Transaktionsdaten">Transaktionsdaten</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Erforderliches Datum für erfolgreiche Zahlungsabwicklung</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahlungsdaten: <a href="#ZahlungsdatenAllgemein">Allgemein</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Erforderliches Datum für Zahlungsmittel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahlungsdaten: <a href="#ZahlungsdatenFeatures">Features</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gewünschtes Feature des Merchant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#OnlineDaten">Online Daten</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflichtangaben für Risikobewertungsprozesse; Pflichtangaben für diverse Zahlungsmittelanbieter; Unterstützende Informationen zur Störungsbehebung und Fehleranalyse</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Warenkorbdaten">Warenkorbdaten</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflichtangaben für Zahlungsmittelanbieter von Invoice und Installment; Pflichtangaben für Risikobewertungsprozesse sowie zum Anzeigen von Transaktionsdetails für Wallets (z.B.: Paypal, Masterpass)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personendaten: <a href="#PersonendatenFeatures">Features</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gewünschtes Feature des Merchant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personendaten: <a href="#PersonendatenEndkundendaten">Endkundendaten</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflichtangaben für Zahlungsmittelanbieter von Invoice und Installment; Pflichtangaben für Risikobewertungsprozesse sowie zum Anzeigen von Transaktionsdetails für Wallets (zB Paypal, Masterpass)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personendaten: <a href="#PersonendatenPaymentFacilitatorModell">Payment Facilitator Modell</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimumanforderung zur Realisierung der Marktplatzvariante (Payment Facilitator Modell): Zuordnung einer Transaktion zum Unternehmen (SubMerchant), welches auf einer Händlerplatform Produkte/Diensteistungen anbietet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personendaten: <a href="#PersonendatenPayPal">PayPal spezifisch</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rückgabedaten des Zahlungsanbieters PayPal</p></td>
+</tr>
+</tbody>
+</table>
 </div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. Eindeutiger Zufallswerts (Hash-Wert), der den Merchant erkennen lässt, ob für unterschiedliche Zahlungstransaktionen dieselbe Kreditkartennummer verwendet wurde (nicht jedoch, wer Karteninhaber ist)
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. Bezieht sich auf den Händler des Händlers
 </div>
 </div>
 </article>

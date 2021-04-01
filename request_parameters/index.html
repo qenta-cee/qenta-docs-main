@@ -101,9 +101,6 @@
     <span class="nav-text">Bank Transfer</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#payment_methods/bancontact_mrcash/start.adoc">payment_methods/bancontact_mrcash/start.adoc</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../payment_methods/eps/start/">eps-Überweisung</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -819,8 +816,9 @@ Provides information to your consumer if payment is pending.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="sect4">
-<h5 id="ConsumerBillingData"><a class="anchor" href="#ConsumerBillingData"></a>Consumer billing data</h5>
+</div>
+<div class="sect3">
+<h4 id="ConsumerBillingData"><a class="anchor" href="#ConsumerBillingData"></a>Consumer Billing Data</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -912,8 +910,8 @@ Provides information to your consumer if payment is pending.</p></td>
 </tbody>
 </table>
 </div>
-<div class="sect4">
-<h5 id="ConsumerShippingData"><a class="anchor" href="#ConsumerShippingData"></a>Consumer shipping data</h5>
+<div class="sect3">
+<h4 id="ConsumerShippingData"><a class="anchor" href="#ConsumerShippingData"></a>Consumer Shipping Data</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -1010,7 +1008,6 @@ Provides information to your consumer if payment is pending.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 <div class="sect3">
 <h4 id="ShoppingBasketData"><a class="anchor" href="#ShoppingBasketData"></a>Shopping basket data</h4>
@@ -1577,7 +1574,7 @@ Provides information to your consumer if payment is pending.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No decimal places allowed.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lybian Dinar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Libyan Dinar</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maximum of 3 decimal places (1000 Dirham = 1 Dinar).</p></td>
 </tr>
 </tbody>
@@ -1892,10 +1889,6 @@ Provides information to your consumer if payment is pending.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The consumer may select one of the activated payment methods directly in QPAY Checkout Page. Please note that SELECT is only available for QPAY Checkout Page.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BANCONTACT_MISTERCASH</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/bancontact_mrcash/start.adoc" class="page unresolved">Bancontact/Mister Cash</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CCARD</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/start/" class="page">Credit Card</a>, <a href="../payment_methods/maestro/start/" class="page">Maestro SecureCode</a></p></td>
 </tr>
@@ -1925,7 +1918,7 @@ Provides information to your consumer if payment is pending.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INVOICE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/invoice/payolution/" class="page">Invoice: payolution</a>, <a href="../payment_methods/invoice/ratepay/" class="page">Invoice: RatePAY</a> or <a href="../payment_methods/invoice/wirecard/" class="page">Invoice by Wirecard</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/invoice/payolution/" class="page">Invoice: payolution</a>, <a href="../payment_methods/invoice/ratepay/" class="page">Invoice: RatePAY</a> or <a href="#payment_methods/invoice/wirecard.adoc" class="page unresolved">Invoice by Wirecard</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">MAESTRO</p></td>
@@ -2311,11 +2304,6 @@ If your web server is down for some reason or cannot be accessed by the QENTA Ch
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BANCONTACT_MISTERCASH</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bancontact/Mister Cash</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bancontact/Mister Cash</p></td>
-</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CCARD / CCARD-MOTO /<br>
 MASTERPASS</p></td>
@@ -2833,12 +2821,6 @@ The <code>pendingUrl</code> is an optional request parameter for backward compat
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BANCONTACT_MISTERCASH</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CCARD</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -3079,7 +3061,7 @@ The <code>pendingUrl</code> is an optional request parameter for backward compat
 <div class="sect2">
 <h3 id="DetailedDescriptionOfFeaturespecificParameters"><a class="anchor" href="#DetailedDescriptionOfFeaturespecificParameters"></a>Detailed description of feature-specific parameters</h3>
 <div class="sect3">
-<h4 id="Autodeposit"><a class="anchor" href="#Autodeposit"></a>autoDeposit</h4>
+<h4 id="Autodeposit"><a class="anchor" href="#Autodeposit"></a><code>autoDeposit</code></h4>
 <div class="paragraph">
 <p>After a consumer has successfully completed a payment in your online shop, this payment - depending on the payment method - is only approved (authorized) and not yet deposited (captured).</p>
 </div>
@@ -3103,7 +3085,7 @@ The <code>pendingUrl</code> is an optional request parameter for backward compat
 </div>
 </div>
 <div class="sect3">
-<h4 id="Confirmmail"><a class="anchor" href="#Confirmmail"></a>confirmMail</h4>
+<h4 id="Confirmmail"><a class="anchor" href="#Confirmmail"></a><code>confirmMail</code></h4>
 <div class="paragraph">
 <p>With the parameter <code>confirmMail</code> you can define one (exactly one) e-mail address of the merchant for receiving payment details regarding the orders of your consumers in the online shop. This e-mail may contain information about payment state, order number, payment method, payment amount and payment currency.</p>
 </div>

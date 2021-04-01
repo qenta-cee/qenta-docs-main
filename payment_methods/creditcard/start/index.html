@@ -101,9 +101,6 @@
     <span class="nav-text">Bank Transfer</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#payment_methods/bancontact_mrcash/start.adoc">payment_methods/bancontact_mrcash/start.adoc</a>
-  </li>
-  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../eps/start/">eps-Überweisung</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -727,7 +724,7 @@
 <p>The parameter <code>authenticated</code> is always returned if the payment was successful. If the consumer was authenticated by an additional security method, such as 3-D Secure, Mastercard SecureCode, Verified by Visa, <code>YES</code> will be returned. <code>NO</code> will be returned if no additional authentication took place.</p>
 </div>
 <div class="sect3">
-<h4 id="OptionalFeaturespecificParameterForWirecardCheckoutPageAndWirecardCheckoutSeamless"><a class="anchor" href="#OptionalFeaturespecificParameterForWirecardCheckoutPageAndWirecardCheckoutSeamless"></a>Optional feature-specific parameter for Wirecard Checkout Page and Wirecard Checkout Seamless</h4>
+<h4 id="hashedPan"><a class="anchor" href="#hashedPan"></a>Optional feature-specific parameter for Wirecard Checkout Page and Wirecard Checkout Seamless</h4>
 <div class="paragraph">
 <p>This optional feature-specific response parameter enhances the functionality and usability of the payment process regarding specific features and functions and is enabled by Wirecard on your behalf. To enable this parameter please contact our <a href="../../../support/" class="page">support teams</a>.</p>
 </div>
@@ -775,7 +772,7 @@ Please be aware that due to PCI DSS compliance, <code>hashedPan</code> cannot be
 </div>
 </div>
 <div class="sect3">
-<h4 id="OptionalFeaturespecificParametersForWirecardCheckoutPage"><a class="anchor" href="#OptionalFeaturespecificParametersForWirecardCheckoutPage"></a>Optional feature-specific parameters for Wirecard Checkout Page</h4>
+<h4 id="OptionalFeaturespecificParametersAdditionallyForQpay"><a class="anchor" href="#OptionalFeaturespecificParametersAdditionallyForQpay"></a>Optional feature-specific parameters for QPAY Checkout Page</h4>
 <div class="paragraph">
 <p>These optional feature-specific response parameters enhances the functionality and usability of the payment process regarding specific features and functions and are enabled by Wirecard on your behalf. To enable these parameters for your account please contact our <a href="../../../support/" class="page">support teams</a>.</p>
 </div>
