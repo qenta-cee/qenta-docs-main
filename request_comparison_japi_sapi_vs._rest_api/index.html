@@ -255,13 +255,13 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=INITIATEPAYMENT&amp;
+<pre class="highlightjs highlight"><code>COMMAND=INITIATEPAYMENT&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 PAYMENTTYPE=CREDITCARD&amp;
 AMOUNT=1.23&amp;
 CURRENCY=EUR&amp;
 ORDERNUMBER=7049&amp;
-ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+ORDERDESCRIPTION=Test transaction QENTA CEE.&amp;
 INITTYPE=CCARD&amp;
 PAN=9500000000000002&amp;
 EXPIRY=12/2019&amp;
@@ -309,7 +309,7 @@ CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
     &lt;/card&gt;
     &lt;ip-address&gt;127.0.0.1&lt;/ip-address&gt;
     &lt;order-number&gt;7049&lt;/order-number&gt;
-    &lt;order-detail&gt;Test transaction Wirecard CEE.&lt;/order-detail&gt;
+    &lt;order-detail&gt;Test transaction QENTA CEE.&lt;/order-detail&gt;
     &lt;payment-methods&gt;
         &lt;payment-method name="creditcard"/&gt;
     &lt;/payment-methods&gt;
@@ -325,13 +325,13 @@ CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=INITIATEPAYMENT&amp;
+<pre class="highlightjs highlight"><code>COMMAND=INITIATEPAYMENT&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 PAYMENTTYPE=CREDITCARD&amp;
 ORDERNUMBER=21402614&amp;
 AMOUNT=1.23&amp;
 CURRENCY=EUR&amp;
-ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+ORDERDESCRIPTION=Test transaction QENTA CEE.&amp;
 INITTYPE=3DSECURE&amp;
 PAN=9500000000000002&amp;
 EXPIRY=12/2019&amp;
@@ -403,7 +403,7 @@ CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=VERIFYPAYMENT&amp;
+<pre class="highlightjs highlight"><code>COMMAND=VERIFYPAYMENT&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 ORDERNUMBER=21402614&amp;
 MD=Q1JFRElUQ0FSRHwxfDF8MjE0MDI2MTQ=&amp;
@@ -457,12 +457,12 @@ Check payer response (if cardholder authenticated with 3-D Secure):</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=DEPOSIT&amp;
+<pre class="highlightjs highlight"><code>COMMAND=DEPOSIT&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 AMOUNT=1.23&amp;
 CURRENCY=EUR&amp;
 ORDERNUMBER=21402615&amp;
-ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+ORDERDESCRIPTION=Test transaction QENTA CEE.&amp;
 PAYMENTNUMBER=21402615</code></pre>
 </div>
 </div>
@@ -491,13 +491,13 @@ PAYMENTNUMBER=21402615</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=INITIATEPAYMENT&amp;
+<pre class="highlightjs highlight"><code>COMMAND=INITIATEPAYMENT&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 PAYMENTTYPE=CREDITCARD&amp;
 AMOUNT=1.23&amp;
 CURRENCY=EUR&amp;
 ORDERNUMBER=21402615&amp;
-ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+ORDERDESCRIPTION=Test transaction QENTA CEE.&amp;
 INITTYPE=CCARD&amp;
 PAN=9500000000000002&amp;
 EXPIRY=12/2019&amp;
@@ -562,10 +562,10 @@ CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=RECURPAYMENT&amp;
+<pre class="highlightjs highlight"><code>COMMAND=RECURPAYMENT&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 PAYMENTTYPE=CREDITCARD&amp;
-ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+ORDERDESCRIPTION=Test transaction QENTA CEE.&amp;
 SOURCEORDERNUMBER=21402615&amp;
 ORDERNUMBER=44152&amp;
 AMOUNT=1.23&amp;
@@ -579,8 +579,21 @@ CONSUMER_BILLING_ADDRESS_1=123 anystreet&amp;
 CONSUMER_BILLING_CITY=Brantford&amp;
 CONSUMER_BILLING_STATE=ON&amp;
 CONSUMER_BILLING_COUNTRY=CA&amp;
-CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
+CONSUMER_BILLING_ZIP_CODE=M4P1E8&amp;
+CONSUMER_MERCHANT_CRM_ID=12345freetochoose</code></pre>
 </div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Find more information about <a href="../back-end_operations/transaction-based/recurpayment/#consumerMerchantCrmId" class="page">recurring payments here</a>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><strong>REST API:</strong></p>
@@ -631,10 +644,10 @@ CONSUMER_BILLING_ZIP_CODE=M4P1E8</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=REFUND&amp;
+<pre class="highlightjs highlight"><code>COMMAND=REFUND&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 PAYMENTTYPE=CREDITCARD&amp;
-ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+ORDERDESCRIPTION=Test transaction QENTA CEE.&amp;
 SOURCEORDERNUMBER=15598604&amp;
 ORDERNUMBER=3763380&amp;
 AMOUNT=1.23&amp;
@@ -704,7 +717,7 @@ Password: 3!3013=D3fD8X7</p>
     &lt;/payment-methods&gt;
     &lt;requested-amount currency="EUR"&gt;1.23&lt;/requested-amount&gt;
     &lt;parent-transaction-id&gt;${get transaction id from parent transaction}&lt;/parent-transaction-id&gt;
-    &lt;order-description&gt;Test transaction Wirecard CEE.&lt;/order-description&gt;
+    &lt;order-description&gt;Test transaction QENTA CEE.&lt;/order-description&gt;
 &lt;/payment&gt;</code></pre>
 </div>
 </div>
@@ -720,10 +733,10 @@ Password: 3!3013=D3fD8X7</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=APPROVEREVERSAL&amp;
+<pre class="highlightjs highlight"><code>COMMAND=APPROVEREVERSAL&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 PAYMENTTYPE=CREDITCARD&amp;
-ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+ORDERDESCRIPTION=Test transaction QENTA CEE.&amp;
 PAYMENTNUMBER=5462117&amp;
 ORDERNUMBER=5462117&amp;
 ADMIN_PASSWORD=test</code></pre>
@@ -773,10 +786,10 @@ Void authorization:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">COMMAND=DEPOSITREVERSAL&amp;
+<pre class="highlightjs highlight"><code>COMMAND=DEPOSITREVERSAL&amp;
 MERCHANTKEY=41HxtdddMcf.z-rVhvc84C1.vwsnk7xoppacfzL0QdJHQ_&amp;
 PAYMENTTYPE=CREDITCARD&amp;
-ORDERDESCRIPTION=Test transaction Wirecard CEE.&amp;
+ORDERDESCRIPTION=Test transaction QENTA CEE.&amp;
 PAYMENTNUMBER=5462117&amp;
 ORDERNUMBER=5462117&amp;
 ADMIN_PASSWORD=test</code></pre>
@@ -816,7 +829,7 @@ Void capture:</p>
 </div>
 <hr>
 <div class="paragraph">
-<p>Back to <a href="#switching_to_wirecard_payment_processing_gateway.adoc" class="page unresolved">Switching to Wirecard Payment Gateway main page.</a></p>
+<p>Back to <a href="#switching_to_wirecard_payment_processing_gateway.adoc" class="page unresolved">Switching to QENTA Payment Gateway main page.</a></p>
 </div>
 </div>
 </div>
