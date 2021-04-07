@@ -424,6 +424,30 @@ If the <code>mandateSignatureDate</code> is not set, Wirecard will use the curre
 </div>
 </div>
 <div class="sect2">
+<h3 id="SepaDirectDebitAndB4Payments"><a class="anchor" href="#SepaDirectDebitAndB4Payments"></a>SEPA Direct Debit and B4 Payments</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerMerchantCrmId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of Merchant CRM.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
 <h3 id="SepaDirectDebitAndHobex"><a class="anchor" href="#SepaDirectDebitAndHobex"></a>SEPA Direct Debit and Hobex</h3>
 <div class="paragraph">
 <p>If Hobex is your chosen acquirer, Hobex instead of you draws the direct debits from the debtor´s bank to one joint account. Therefore, no individual creditor IDs are available for you and any value within the request parameter <code>creditorId</code> will be ignored.</p>
