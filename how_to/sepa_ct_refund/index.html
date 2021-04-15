@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>How to refund for iDEAL, Skrill Digital Wallet and Sofort payments? :: QENTA Online Guides</title>
+    <title>How to refund for iDEAL, and Sofort payments? :: QENTA Online Guides</title>
     <link rel="canonical" href="https://guides.qenta.com/online-guides/main/how_to/sepa_ct_refund/">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="/_/css/site.css">
@@ -210,7 +210,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../">QENTA Online Guides</a></li>
-    <li><a href="./">How to refund for iDEAL, Skrill Digital Wallet and Sofort payments?</a></li>
+    <li><a href="./">How to refund for iDEAL, and Sofort payments?</a></li>
   </ul>
 </nav>
 </div>
@@ -219,17 +219,17 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">How to refund for iDEAL, Skrill Digital Wallet and Sofort payments?</h1>
+<h1 class="page">How to refund for iDEAL, and Sofort payments?</h1>
 <div class="sect1">
-<h2 id="HowToRefundForIdealSkrillDigitalWalletAndSofortPayments"><a class="anchor" href="#HowToRefundForIdealSkrillDigitalWalletAndSofortPayments"></a>How to refund for iDEAL, Skrill Digital Wallet and Sofort payments?</h2>
+<h2 id="HowToRefundForIdealAndSofortPayments"><a class="anchor" href="#HowToRefundForIdealAndSofortPayments"></a>How to refund for iDEAL, and Sofort payments?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For payment methods iDEAL, Skrill Digital Wallet and Sofort, the back-end operation <code>refund</code> is not supported by the payment method itself. Transferring money back to your consumer is nevertheless sometimes necessary.</p>
+<p>For payment methods iDEAL and Sofort, the back-end operation <code>refund</code> is not supported by the payment method itself. Transferring money back to your consumer is nevertheless sometimes necessary.</p>
 </div>
 <div class="sect2">
 <h3 id="Solution"><a class="anchor" href="#Solution"></a>Solution</h3>
 <div class="paragraph">
-<p>Although the above listed payment methods do not allow for refund themselves, the bank account information, which is necessary to effect payments, is known to Wirecard. Thus the back-end operation <code>transferFund</code> may be carried out.</p>
+<p>Although the above listed payment methods do not allow for refund themselves, the bank account information, which is necessary to effect payments, is known to QENTA. Thus the back-end operation <code>transferFund</code> may be carried out.</p>
 </div>
 <div class="paragraph">
 <p>You can perform <code>transferFund</code> with <code>fundTransferType</code> set to <code>EXISTINGORDER</code> and provide the corresponding order number to transfer funds to your consumer.</p>

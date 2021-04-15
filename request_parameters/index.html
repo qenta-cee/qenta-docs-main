@@ -663,9 +663,6 @@ Provides information to your consumer if payment is pending.</p></td>
 <div class="paragraph">
 <p>Also note that the below mentioned <strong>data type descriptions and restrictions may differ depending on the relevant financial service provider</strong>.</p>
 </div>
-<div class="paragraph">
-<p>Additionally if you are using the <a href="https://www.wirecard.com/products/risk/fraudprevention/">QENTA Fraud Prevention &amp; Fraud Detection</a> some parameters may be required.</p>
-</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -1421,48 +1418,6 @@ Provides information to your consumer if payment is pending.</p></td>
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="QentaFraudPreventionSuite"><a class="anchor" href="#QentaFraudPreventionSuite"></a>QENTA Fraud Prevention Suite</h4>
-<div class="paragraph">
-<p>If the <a href="https://www.wirecard.com/products/risk-management/fraud-prevention">QENTA Fraud Prevention Suite</a> (FPS) has been enabled upon your request, you can use the following optional request parameters for each individual transaction to overwrite your default configured behavior.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Within fingerprint</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Risksuppress">riskSuppress</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enables or disables a risk check.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Riskconfigalias">riskConfigAlias</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Required if used.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length between 1 and 16.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Selection of the used risk rule.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Please be aware that you can use the FPS only for the following payment types: <a href="#Paymenttype">CCARD</a> and <a href="#Paymenttype">CCARD-MOTO</a>.</p>
-</div>
-<div class="paragraph">
-<p>To enable the FPS, please contact our <a href="../contact/" class="page">sales teams</a>.</p>
-</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="CustomParameters"><a class="anchor" href="#CustomParameters"></a>Custom parameters</h3>
@@ -1897,10 +1852,6 @@ Provides information to your consumer if payment is pending.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/ccard_moto/start/" class="page">Credit Card - Mail Order and Telephone Order</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EPAY_BG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/epaybg/start.adoc" class="page unresolved">ePay.bg</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EPS</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/eps/start/" class="page">eps-Überweisung</a></p></td>
 </tr>
@@ -1914,23 +1865,15 @@ Provides information to your consumer if payment is pending.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INSTALLMENT</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/installment/payolution/" class="page">Installment: payolution</a> or <a href="#payment_methods/installment/ratepay.adoc" class="page unresolved">Installment: RatePAY</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/installment/payolution/" class="page">Installment: payolution</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INVOICE</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/invoice/payolution/" class="page">Invoice: payolution</a>, <a href="../payment_methods/invoice/ratepay/" class="page">Invoice: RatePAY</a> or <a href="#payment_methods/invoice/wirecard.adoc" class="page unresolved">Invoice by Wirecard</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/invoice/payolution/" class="page">Invoice: payolution</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">MAESTRO</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/maestro/start/" class="page">Maestro SecureCode</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MASTERPASS</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/masterpass/start.adoc" class="page unresolved">Masterpass</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MONETA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/moneta/start.adoc" class="page unresolved">moneta.ru</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PRZELEWY24</p></td>
@@ -1939,14 +1882,6 @@ Provides information to your consumer if payment is pending.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PAYPAL</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/" class="page">PayPal</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PBX</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/paybox/start.adoc" class="page unresolved">paybox</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">POLI</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/poli/start.adoc" class="page unresolved">POLi</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PSC</p></td>
@@ -1963,18 +1898,6 @@ Provides information to your consumer if payment is pending.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SOFORTUEBERWEISUNG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/" class="page">Sofort.</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TATRAPAY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/tatrapay/start.adoc" class="page unresolved">TatraPay</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TRUSTLY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/trustly/start.adoc" class="page unresolved">Trustly</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TRUSTPAY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#payment_methods/trustpay/start.adoc" class="page unresolved">TrustPay</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2305,400 +2228,344 @@ If your web server is down for some reason or cannot be accessed by the QENTA Ch
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CCARD / CCARD-MOTO /<br>
-MASTERPASS</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MC</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mastercard</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CCARD / CCARD-MOTO /<br></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">MCSC</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mastercard SecureCode</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mastercard SecureCode</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maestro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Visa</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Visa</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visa</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VbV</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verified by Visa</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verified by Visa</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Amex</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amexsafekey</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">American Express SafeKey</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express SafeKey</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Diners</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Discover</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Discover</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Discover</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">JCB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">JCB</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JCB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">J/Secure</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">J/Secure™</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">J/Secure™</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CCARD / CCARD-MOTO</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UATP</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Universal Airline Travel Plan</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EPAY_BG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ePay.bg</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ePay.bg</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EPS</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AAB</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AAB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Austrian Anadi Bank AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">MB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Marchfelder Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BAF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Österreichische Ärzte- und Apothekerbank</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Österreichische Ärzte- und Apothekerbank</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BA-CA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Austria</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Austria</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BCS</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BCS</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bankhaus Carl Spängler &amp; Co. AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BSS</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bankhaus Schelhammer &amp; Schattera AG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bawag</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BAWAG P.S.K. AG</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BAWAG P.S.K. AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BKS</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BKS</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BKS Bank AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BKB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brüll Kallmus Bank AG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BTV</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BTV VIER LÄNDER BANK</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BTV VIER LÄNDER BANK</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CBGG</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CBGG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Capital Bank Grawe Gruppe AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dolomitenbank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bawag</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Easybank AG</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Easybank AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spardat</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EBS</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EBS</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Erste Bank und Sparkassen</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HAA</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hypo Alpe-Adria-Bank International AG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VLH</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hypo Vorarlberg Bank AG</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hypo Vorarlberg Bank AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NLH</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NLH</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HYPO NOE LB für Niederösterreich u. Wien</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hypo-Racon</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hypo-Racon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hypo Oberösterreich</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hypo-Racon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">S</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hypo Salzburg</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hypo Salzburg</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hypo-Racon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">St</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">St</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hypo Steiermark</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hypo Tirol Bank AG</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BB-Racon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bank Burgenland</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oberbank AG</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oberbank AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Racon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Raiffeisen Bankengruppe Österreich</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Raiffeisen Bankengruppe Österreich</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SB</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Schoellerbank AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bawag</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bawag</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SBW</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sparda Bank Wien</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Volksbank Gruppe</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Volksbank Gruppe</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">VKB</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VKB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Volkskreditbank AG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARZ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VRB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VR-Bank Braunau</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EPS-SO</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EPS SELECT OPTION</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GIROPAY</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GIROPAY</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GIROPAY</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">giropay</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IDL</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IDL</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ABNAMROBANK</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ABN AMRO Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ASNBANK</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ASN Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BUNQ</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bunq Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INGBANK</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ING</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">KNAB</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Knab</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RABOBANK</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rabobank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SNSBANK</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SNS Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">REGIOBANK</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Regio Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TRIODOSBANK</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Triodos Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VANLANSCHOT</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Van Lanschot Bankiers</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INVOICE</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">payolution</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">payolution</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RatePAY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RatePAY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INSTALLMENT</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">payolution</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">payolution</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RatePAY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RatePAY</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">MAESTRO</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maestro</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MONETA</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">moneta.ru</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">moneta.ru</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PAYPAL</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PAYPAL</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PayPal</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PBX</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PBX</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mobile Phone Invoice</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">POLI</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">POLi</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">POLi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PRZELEWY24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Przelewy24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Przelewy24</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Przelewy24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Przelewy24</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SEPA-DD</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SEPA-DD</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SEPA Direct Debit</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SKRILLWALLET</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Skrill Digital Wallet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Skrill Digital Wallet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SOFORTUEBERWEISUNG</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SOFORTUEBERWEISUNG</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sofort.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TATRAPAY</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TatraPay</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TatraPay</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TRUSTLY</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TRUSTLY</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Trustly</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TRUSTPAY</p></td>
 </tr>
 </tbody>
 </table>

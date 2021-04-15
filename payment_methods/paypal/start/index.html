@@ -267,7 +267,7 @@
 <p>Please visit <a href="https://www.paypal.com">PayPal</a> for further information and details.</p>
 </div>
 <div class="paragraph">
-<p>If your online shop is enabled for payment method PayPal it is required that you use additional request and response parameters when integrating Wirecard Checkout Page or Wirecard Checkout Seamless into your shop. Especially these request parameters have to been set whenever you (or your consumer) set the payment method to PayPal or to SELECT.</p>
+<p>If your online shop is enabled for payment method PayPal it is required that you use additional request and response parameters when integrating QPAY Checkout Page or QMORE Checkout Seamless into your shop. Especially these request parameters have to been set whenever you (or your consumer) set the payment method to PayPal or to SELECT.</p>
 </div>
 <div class="paragraph">
 <p>If the payment has been accepted by PayPal you will get as response the parameter <code>paymentState</code> with the value ”SUCCESS”.</p>
@@ -276,7 +276,7 @@
 <p>We recommend to store the PayPal <code>TRANSACTIONID</code> of the payment as returned by the parameter <code>gatewayReferenceNumber</code> within the data regarding the corresponding session and order for documentation purposes.</p>
 </div>
 <div class="paragraph">
-<p>At a later time you have also the possibility to get the <code>TRANSACTIONID</code> via the Wirecard Payment Center by searching for the specific payment and then using the details view for the <code>GatewayReferenceNumber</code>.</p>
+<p>At a later time you have also the possibility to get the <code>TRANSACTIONID</code> via the QPC Payment Center by searching for the specific payment and then using the details view for the <code>GatewayReferenceNumber</code>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -288,7 +288,7 @@
 <p>However, upon your request we are able to split up this single step into a two-step processes - approval and deposit. This two-step process allows you to distinguish between approved payments and deposited payments and perform certain actions for each of them. You have the possibility to decide when to deposit amounts that have already been approved.</p>
 </div>
 <div class="paragraph">
-<p>To enable the two-step process in your merchant settings, please contact our <a href="../../../support/" class="page">support teams</a>.</p>
+<p>To enable the two-step process in your merchant settings, please contact our <a href="../../../contact/" class="page">support teams</a>.</p>
 </div>
 </div>
 </div>
@@ -519,7 +519,7 @@
 <div class="sect2">
 <h3 id="BackendOperations"><a class="anchor" href="#BackendOperations"></a>Back-end operations</h3>
 <div class="paragraph">
-<p>Please refer to <a href="../../../back-end_operations/transaction-based/table/" class="page">transaction-based operations by payment method</a> and <a href="../../../back-end_operations/non-transaction-based/table/" class="page">non-transaction-based operations by payment method</a> for further information and details on back-end operations in <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a>.</p>
+<p>Please refer to <a href="../../../back-end_operations/transaction-based/table/" class="page">transaction-based operations by payment method</a> and <a href="../../../back-end_operations/non-transaction-based/table/" class="page">non-transaction-based operations by payment method</a> for further information and details on back-end operations in <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>.</p>
 </div>
 <div class="sect3">
 <h4 id="RecurringPayments"><a class="anchor" href="#RecurringPayments"></a>Recurring payments</h4>
@@ -689,25 +689,25 @@ We recommend merchants to contact PayPal on integration to obtain more informati
 <p><strong><em>What configuration settings are necessary if no shipping address needs to be entered by the consumer because e.g. only digital goods are sold in the online shop (no shipping)?</em></strong></p>
 </div>
 <div class="paragraph">
-<p>The respective PayPal parameter is <code>NOSHIPPING=1</code>. Please be aware that your merchant configuration has to be changed by our <a href="../../../support/" class="page">support teams</a> on your behalf in order to use this feature.</p>
+<p>The respective PayPal parameter is <code>NOSHIPPING=1</code>. Please be aware that your merchant configuration has to be changed by our <a href="../../../contact/" class="page">support teams</a> on your behalf in order to use this feature.</p>
 </div>
 <div class="paragraph">
 <p><strong><em>What configuration settings are necessary to prevent the consumer in your online shop from editing the shipping address (parameter "no address change")?</em></strong></p>
 </div>
 <div class="paragraph">
-<p>The respective PayPal parameter is <code>ADDROVERRIDE=1</code>. Please be aware that your merchant configuration has to be changed by our <a href="../../../support/" class="page">support teams</a> on your behalf in order to use this feature.</p>
+<p>The respective PayPal parameter is <code>ADDROVERRIDE=1</code>. Please be aware that your merchant configuration has to be changed by our <a href="../../../contact/" class="page">support teams</a> on your behalf in order to use this feature.</p>
 </div>
 <div class="paragraph">
 <p><strong><em>It is not possible to open PayPal in an iframe to enter the consumer&#8217;s data. How is the PayPal page displayed then?</em></strong></p>
 </div>
 <div class="paragraph">
-<p>As pop-up which is generally well suited for all devices and used by default, or via a page redirect which should be used for checkout processes in web view within a native app. For further information contact our <a href="../../../support/" class="page">support teams</a>.</p>
+<p>As pop-up which is generally well suited for all devices and used by default, or via a page redirect which should be used for checkout processes in web view within a native app. For further information contact our <a href="../../../contact/" class="page">support teams</a>.</p>
 </div>
 <div class="paragraph">
 <p><strong><em>What happens if pop-up blockers are enabled and the PayPal page is not shown?</em></strong></p>
 </div>
 <div class="paragraph">
-<p>When the consumer to your online shop selects the payment method PayPal, a pop-up will open by default to enter the relevant consumer&#8217;s payment details. Since a lot of consumers have pop-up blockers enabled, the pop-up may not be shown and consumers may not proceed with the checkout process. In order to allow consumers to proceed with the checkout even if pop-up blockers are enabled, Wirecard offers the option to open PayPal as a normal page without using pop-ups.</p>
+<p>When the consumer to your online shop selects the payment method PayPal, a pop-up will open by default to enter the relevant consumer&#8217;s payment details. Since a lot of consumers have pop-up blockers enabled, the pop-up may not be shown and consumers may not proceed with the checkout process. In order to allow consumers to proceed with the checkout even if pop-up blockers are enabled, QENTA offers the option to open PayPal as a normal page without using pop-ups.</p>
 </div>
 <div class="paragraph">
 <p>Please contact our <a href="../../../support/" class="page">support teams</a> to enable this feature.</p>

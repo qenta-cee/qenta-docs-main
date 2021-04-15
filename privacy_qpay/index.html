@@ -223,12 +223,6 @@
 <div class="sect1">
 <h2 id="InformationOnTheProtectionOfPersonalDataForQpayCheckoutPage"><a class="anchor" href="#InformationOnTheProtectionOfPersonalDataForQpayCheckoutPage"></a>Information on the protection of personal data for QPAY Checkout Page</h2>
 <div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="Overview"><a class="anchor" href="#Overview"></a>Overview</h2>
-<div class="sectionbody">
 <div class="paragraph">
 <p>This chapter provides information on all data that are processed by our solution QPAY Checkout Page.</p>
 </div>
@@ -249,10 +243,10 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>Go to section “Payment method selection” in chapter <a href="#BasicSolution">Basic Solution</a> to simulate the processing of data (parameters) for a given payment transaction and the selected payment method. Furthermore, section <a href="#AdditionalFeatures">Additional Features</a> provides additional information on the processing of data (parameters) for each feature that was added to the basic solution.</p>
+<p>Go to section Payment method selection in chapter <a href="#BasicSolution">Basic Solution</a> to simulate the processing of data (parameters) for a given payment transaction and the selected payment method. Furthermore, section <a href="#AdditionalFeatures">Additional Features</a> provides additional information on the processing of data (parameters) for each feature that was added to the basic solution.</p>
 </div>
 <div class="paragraph">
-<p>Should you have any further questions regarding data protection details and individual parameters, e.g. data subjects, categories of data, etc., consult <a href="../privacy/#DataProtectionInformationRegardingIndividualParameters" class="page">privacy.adoc#DataProtectionInformationRegardingIndividualParameters</a> for additional information.</p>
+<p>Should you have any further questions regarding data protection details and individual parameters, e.g. data subjects, categories of data, etc., consult <a href="../privacy_parameter/" class="page">Datenschutzhinweise zu einzelnen Parametern</a> for additional information.</p>
 </div>
 </div>
 </div>
@@ -291,22 +285,1299 @@
 </li>
 </ul>
 </div>
-<div class="sect2">
-<h3 id="PaymentMethodSelection"><a class="anchor" href="#PaymentMethodSelection"></a>Payment method selection</h3>
-
 </div>
-<div class="sect2">
-<h3 id="InputData"><a class="anchor" href="#InputData"></a>Input data</h3>
-
 </div>
-<div class="sect2">
-<h3 id="OutputData"><a class="anchor" href="#OutputData"></a>Output data</h3>
-
+<div class="sect1">
+<h2 id="Select"><a class="anchor" href="#Select"></a>Select Payment Method</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Please select a payment method:</p>
 </div>
-<div class="sect2">
-<h3 id="DataEnteredByTheConsumer"><a class="anchor" href="#DataEnteredByTheConsumer"></a>Data entered by the consumer</h3>
-
-</div>
+<select id="pmpicker"></select>
+<h3 id="Kreditkarte" class="discrete datapriv cat_kreditkarte">Kreditkarte</h3>
+<table id="InputKreditkarte" class="tableblock frame-all grid-all stretch datapriv cat_kreditkarte">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/creditcard/start/#additional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputKreditkarte" class="tableblock frame-all grid-all stretch datapriv cat_kreditkarte">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundeKreditkarte" class="tableblock frame-all grid-all stretch datapriv cat_kreditkarte">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PAN, CVC, Name, Expiry Date, Issue Date, Cardholder Name</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="eps" class="discrete datapriv cat_eps">eps-Überweisung</h3>
+<table id="InputEps" class="tableblock frame-all grid-all stretch datapriv cat_eps">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/eps/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputEps" class="tableblock frame-all grid-all stretch datapriv cat_eps">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundeEps" class="tableblock frame-all grid-all stretch datapriv cat_eps">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="giropay" class="discrete datapriv cat_giropay">Giropay</h3>
+<table id="Inputgiropay" class="tableblock frame-all grid-all stretch datapriv cat_giropay">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/giropay/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputGiropay" class="tableblock frame-all grid-all stretch datapriv cat_giropay">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundeGiropay" class="tableblock frame-all grid-all stretch datapriv cat_giropay">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank, Account number, Account owner</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="iDEAL" class="discrete datapriv cat_ideal">iDEAL</h3>
+<table id="InputIdeal" class="tableblock frame-all grid-all stretch datapriv cat_ideal">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/ideal/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputIdeal" class="tableblock frame-all grid-all stretch datapriv cat_ideal">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundeIdeal" class="tableblock frame-all grid-all stretch datapriv cat_ideal">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="P24" class="discrete datapriv cat_p24">Przelewy24</h3>
+<table id="InputP24" class="tableblock frame-all grid-all stretch datapriv cat_p24">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/p24/start/#required_request_parameter" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/p24/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputP24" class="tableblock frame-all grid-all stretch datapriv cat_p24">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundeP24" class="tableblock frame-all grid-all stretch datapriv cat_p24">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Sofort" class="discrete datapriv cat_sofort">Sofort</h3>
+<table id="InputSofort" class="tableblock frame-all grid-all stretch datapriv cat_sofort">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sofort/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputSofort" class="tableblock frame-all grid-all stretch datapriv cat_sofort">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundeSofort" class="tableblock frame-all grid-all stretch datapriv cat_sofort">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="PayPal" class="discrete datapriv cat_paypal">PayPal</h3>
+<table id="InputPaypal" class="tableblock frame-all grid-all stretch datapriv cat_paypal">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#required_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputPaypal" class="tableblock frame-all grid-all stretch datapriv cat_paypal">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additonal Response Parameters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paypal/start/#additional_response_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundePaypal" class="tableblock frame-all grid-all stretch datapriv cat_paypal">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Paysafecard" class="discrete datapriv cat_paysafecard">Paysafecard</h3>
+<table id="InputPaysafecard" class="tableblock frame-all grid-all stretch datapriv cat_paysafecard">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paysafecard/start/#required_request_parameter" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/paysafecard/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputPaysafecard" class="tableblock frame-all grid-all stretch datapriv cat_paysafecard">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundePaysafecard" class="tableblock frame-all grid-all stretch datapriv cat_paysafecard">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Invoice_Payolution" class="discrete datapriv cat_invpayolution">Invoice by Payolution</h3>
+<table id="InputPayolutionInvoice" class="tableblock frame-all grid-all stretch datapriv cat_invpayolution">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/invoice/payolution/#required_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/invoice/payolution/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/invoice/payolution/#invoice_b2b" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputPayolutionInvoice" class="tableblock frame-all grid-all stretch datapriv cat_invpayolution">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundePayolutionInvoice" class="tableblock frame-all grid-all stretch datapriv cat_invpayolution">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Installment_Payolution" class="discrete datapriv cat_instpayolution">Installment by Payolution</h3>
+<table id="InputPayolutionInst" class="tableblock frame-all grid-all stretch datapriv cat_instpayolution">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/installment/payolution/#required_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/installment/payolution/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputPayolutionInst" class="tableblock frame-all grid-all stretch datapriv cat_instpayolution">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundePayolutionInst" class="tableblock frame-all grid-all stretch datapriv cat_instpayolution">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="SEPA_DD_Hobex" class="discrete datapriv cat_sepaddhobex">SEPA Direct Debit by Hobex</h3>
+<table id="InputHobexSepaDD" class="tableblock frame-all grid-all stretch datapriv cat_sepaddhobex">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sepa_direct_debit/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sepa_direct_debit/start/#sepa_direct_debit_and_hobex" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputHobexSepaDD" class="tableblock frame-all grid-all stretch datapriv cat_sepaddhobex">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additonal Response Parameters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sepa_direct_debit/start/#sepa_direct_debit_and_hobex" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundeHobexSepaDD" class="tableblock frame-all grid-all stretch datapriv cat_sepaddhobex">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Account owner, BIC, IBAN</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="SEPA_DD_B4Payments" class="discrete datapriv cat_sepaddb4payments">SEPA Direct Debit by B4Payments</h3>
+<table id="InputWirecardSepaDD" class="tableblock frame-all grid-all stretch datapriv cat_sepaddb4payments">
+<caption class="title">Input Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sepa_direct_debit/start/#optional_request_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters (payment method)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sepa_direct_debit/start/" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Request Parameters B2B (payment method)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#required_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Required Request Parameter (Standard)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional Request Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#optional_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../request_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plugin-Specific Data (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<table id="OutputWirecarSepaDD" class="tableblock frame-all grid-all stretch datapriv cat_sepaddb4payments">
+<caption class="title">Output Data</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additonal Response Parameters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../payment_methods/sepa_direct_debit/start/" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameters regarding the status of a payment (standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#state_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 to N Optional Custom Parameters (Standard)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../response_parameters/#custom_parameters" class="page" target="_blank" rel="noopener">Info</a></p></td>
+</tr>
+</tbody>
+</table>
+<table id="EndkundeWirecardSepaDD" class="tableblock frame-all grid-all stretch datapriv cat_sepaddb4payments">
+<caption class="title">Data entered by the consumer</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter type</th>
+<th class="tableblock halign-left valign-top">Processed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively external payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusively QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data partially in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entry of data in QENTA payment page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Account owner, BIC, IBAN</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
@@ -318,6 +1589,215 @@
 <div class="paragraph">
 <p>All parameters indicated for the respective feature need to be processed to ensure our solution meets the contractual obligations to the merchant (purpose of the processing of data).</p>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Optimization of usability</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feature</th>
+<th class="tableblock halign-left valign-top">Processing of data and information on the protection of personal data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Customizable layout for QPAY Checkout Page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to align QPAY Checkout Page with a given corporate design. The layout adaptation is carried out via a predefined <a href="../wcp/customizations/" class="page">CSS-Template</a>, which is assigned to the merchant&#8217;s shopId. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Payment method sort order</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to define the sort order of the payment methods offered in QPAY Checkout Page. This configuration setting is done via parameter <a href="../request_parameters/#Paymenttypesortorder" class="page"><code>paymenttypeSortOrder</code></a>. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Additional languages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In order to display the payment window in the language preferred by the consumer, the merchant retrieves the consumer browser language settings, which are forwarded to QENTA via parameter <a href="../request_parameters/#Language" class="page"><code>language</code></a>. Thus, processing of personal data involves the consumer’s language, although the consumer remains unknown because the personal data are not known.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Additional currencies</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Depending on the merchant’s product portfolio, certain products may be paid in 1 to N currencies. Depending on the product and consumer’s choice, QENTA is informed on the currency via parameter <a href="../request_parameters/#Currency" class="page"><code>currency</code></a>. Thus, processing of personal data involves the currency of the merchant’s processed payment transaction.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Optimization of internal processes</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feature</th>
+<th class="tableblock halign-left valign-top">Processing of data and information on the protection of personal data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5. Recurring payment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to carry out recurring payments via parameter <a href="../back-end_operations/transaction-based/recurpayment/#Recurpayment" class="page"><code>recurPayment</code></a>. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6. Additional access to the QPC Payment Center</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For the web application of the <a href="https://qenta-cee.at/haendler-login/">Merchant Login</a> a new access is set up which does not involve any personal data. A username and password are required for the access. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7. This feature involves the processing of personal data, i.e. <a href="#payment-methods/creditcard/start.adoc" class="page unresolved"><code>cardholder</code></a> as the card holder information is sent to the merchant.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8. Return of masked credit card number</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature involves the processing of personal data, i.e. <a href="#payment-methods/creditcard/start.adoc" class="page unresolved"><code>maskedPan</code></a> as 10 of a total of 16 to 19 digits of the credit card number are sent to the merchant.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9. Return of transaction reference number</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain a unique reference number of the transaction via parameter <a href="../response_parameters/" class="page"><code>gatewayReferenceNumber</code></a>. Thus, no additional processing of personal data takes place.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10. Return of iDEAL consumer data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain detailed information on the consumer, all of which are considered personal data: <a href="#payment-methods/ideal/start.adoc" class="page unresolved"><code>idealConsumerData</code></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11. Return of PayPal consumer data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain detailed information on the consumer, all of which are considered personal data: <a href="#payment-methods/paypal/start.adoc" class="page unresolved"><code>paypalConsumerData</code></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12. Return of Sofort. consumer data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain detailed information on the consumer, all of which are considered personal data: <a href="#payment-methods/sofort/start.adoc" class="page unresolved"><code>sofortConsumerData</code></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13. Return of contract number associated with transaction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant’s system to obtain the contract number of the processor/acquirer via parameter <a href="../response_parameters/" class="page"><code>gatewayContractNumber</code></a>. Thus, no additional processing of personal data takes place.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14. Return of instrument country</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain personal data on the country in which the consumer’s payment method was issued via parameter <a href="../response_parameters/#instrumentcountry" class="page"><code>instrumentCountry</code></a>. However, the consumer remains unknown because the personal data are not known.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15. Return of SEPA consumer data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain detailed information on the consumer, all of which are considered personal data: <a href="#payment-methods/sepa_direct_debit/start.adoc" class="page unresolved"><code>SepaConsumerData</code></a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16. This feature allows to verify consumer-specific personal data (name, address, etc.), which were forwarded by the merchant, and to inform the merchant of the verification result <a href="../payment_methods/creditcard/avs/" class="page"><code>avsResponseParameters</code></a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17. Display of 3-D Secure transaction for credit card</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to display to the consumer information regarding 3-D Secure transaction for the relevant payment on the payment page. This configuration setting on part of QPAY does not imply any additional processing of personal data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18. Return of credit card expiration date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain the expiration date of the used credit card via parameter <a href="../payment_methods/creditcard/start/" class="page"><code>expiry</code></a>. However, this mere date does not permit any conclusions to be drawn as to the person it relates.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19. Return of hashed credit card number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain the random value <a href="../payment_methods/creditcard/start/#hashedPAN" class="page"><code>hashedPAN</code></a>, which provides information as to whether the same credit card number has been used for different payment transactions. However, these data do not permit any conclusions to be drawn as to the person they relate, e.g. card holder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20. Selective automatic deposit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Via parameter <a href="../request_parameters/" class="page"><code>autodeposit</code></a> the merchant may define the time of deposit for each individual transaction. This is a configuration setting relating to a decision which has to be made anyway during payment processing. The parameter only defines the time of deposit. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21. Selection of credit card brand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to define via the additional parameter <a href="../request_parameters/#Financialinstitution" class="page"><code>financialInstitution</code></a> which card brands are allowed for payment. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22. Maximum number of unsuccessful payment attempts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to define the permitted number of unsuccessful payment attempts. This configuration setting is done via parameter <a href="../request_parameters/#Maxretries" class="page"><code>maxRetries</code></a>. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23. Unique order number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The parameter <a href="../request_parameters/#Ordernumber" class="page"><code>orderNumber</code></a> allows the merchant to unequivocally assign each transaction in order to fulfill organizational requirements. However, these data do not permit any conclusions to be drawn as to the person they relate.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24. Extension of QPAY Checkout Page for back office use</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to trigger payment instead of the consumer. However, no further processing of data categories takes place.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Security features</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feature</th>
+<th class="tableblock halign-left valign-top">Processing of data and information on the protection of personal data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25. Confirmation notification by e-mail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This feature allows the merchant to obtain, via e-mail sent to the specified e-mail address, all response parameters that would otherwise be received via the <a href="../request_parameters/#Confirmurl" class="page"><code>confirmUrl</code></a>. Thus, no additional processing of personal data takes place. To view the respective response information click <a href="../request_parameters/#Confirmurl" class="page"><code>confirmUrl</code></a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">26. Confirmation notification re-delivery attempts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the merchant’s server is not accessible, this feature allows several re-delivery attempts in order to send the confirmation notification. However, this configuration setting does not imply any additional processing of personal data.</p></td>
+</tr>
+</tbody>
+</table>
+<script>
+/**
+* Find all payment methods, return array of objects which contain name and class identifier
+* @return {Array}       Array filled with Objects containing name and classname
+*/
+function paymentMethods() {
+  let struct = {};
+  let cats = document.querySelectorAll('.datapriv');
+  let pms = Array.from(cats).filter(c => c.nodeName.toLowerCase() == 'h3');
+  pms.forEach(pm => {
+    let classname = Array.from(pm.classList).filter(c => c.startsWith('cat_')).shift().toString().substr(4);
+
+    if (pm.innerText && pm.id && classname) {
+      struct[classname] = {
+        name: pm.innerText,
+        id: pm.id
+      };
+    }
+  });
+  return struct;
+}
+
+/**
+* Fills payment method selection with all pm's found on the page
+*/
+function fillDropDown(pms) {
+  pmPicker = document.getElementById('pmpicker');
+  Object.entries(pms).forEach(pm => {
+    let o = document.createElement('option');
+    o.text = pm[1].name;
+    o.value = pm[0];
+    pmPicker.appendChild(o);
+  });
+  pmPicker.addEventListener('change', function () {
+    document.querySelectorAll('.datapriv').forEach(e => {
+      e.style.display = 'none';
+    });
+    document.querySelectorAll('.cat_' + pmPicker.value).forEach(e => {
+      e.style.display = 'block';
+    });
+    // disabled because these items no longer appear in menu-toc after restructuring
+    // // Hide hidden entries from Menu-Toc
+    // Object.entries(pms).map((pm) => {return pm[1].id}).forEach((href) => {
+    //   document.querySelector('div.toc-menu > ul > li > a[href="#' + href + '"]').parentElement.style.display = 'none';
+    // });
+    // // Show currently selected to Menu-Toc
+    // Object.entries(pms).forEach((pm) => {
+    //   if(pm[0] == pmPicker.value) {
+    //         document.querySelector('div.toc-menu > ul > li > a[href="#' + pm[1].id + '"]').parentElement.style.display = 'block';
+    //   }
+    // });
+  });
+  pmPicker.selectedIndex = 0;
+  pmPicker.dispatchEvent(new Event('change'));
+}
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  let pms = paymentMethods();
+
+  if (typeof pms == 'object') {
+    fillDropDown(pms);
+  }
+});
+</script>
 </div>
 </div>
 </article>

@@ -314,10 +314,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.mastercard.com">Mastercard</a> including <a href="https://www.mastercard.com/">Mastercard SecureCode</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UATP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.uatp.com">UATP</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Visa</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.visa.com">Visa</a> including <a href="https://www.visaeurope.com/en/cardholders/verified_by_visa.aspx">Verified by Visa</a></p></td>
 </tr>
@@ -444,17 +440,11 @@
 <p><a href="../../../glossary/#SplitCapture" class="page">Split captures</a>, i.e. the capturing of multiple authorized amounts up to the limit of the total authorized amount, are only possible when pre-authorizations are made. As a merchant you benefit from the possibility of effecting split captures if e.g. some of the items of a transaction/purchase are captured immediately at the moment of shipment, while others are not available and will be captured at a later moment when they are available for shipment.</p>
 </div>
 <div class="paragraph">
-<p>Please note that split captures are not supported by all acquirers. At the moment, split captures (based on pre-authorizations) are only supported by Wirecard Bank for American Express, Diners Club, Mastercard, and Visa but currently not for JCB.</p>
+<p>Please note that split captures are not supported by all acquirers.</p>
 </div>
 <div class="paragraph">
 <p>For enabling this feature, please contact our <a href="../../../support/" class="page">support teams</a>.</p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="WirecardFraudPreventionSuite"><a class="anchor" href="#WirecardFraudPreventionSuite"></a>Wirecard Fraud Prevention Suite</h3>
-<div class="paragraph">
-<p>The Wirecard Fraud Prevention Suite (FPS) is a risk management system which can reduce the risk of payment default. For more information visit <a href="https://www.wirecard.com/products/risk-management/fraud-prevention">Wirecard Fraud Prevention Suite</a> or contact our <a href="../../../contact/" class="page">sales teams</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -647,7 +637,7 @@
 <div class="sect2">
 <h3 id="AdditionalRequestParameters"><a class="anchor" href="#AdditionalRequestParameters"></a>Additional request parameters</h3>
 <div class="paragraph">
-<p>Additional request parameters are only required when using credit cards and the <strong><a href="../payment_facilitator/" class="page">payment facilitator model</a></strong> in your online shop based on Wirecard Checkout Page or Wirecard Checkout Seamless.</p>
+<p>Additional request parameters are only required when using credit cards and the <strong><a href="../payment_facilitator/" class="page">payment facilitator model</a></strong> in your online shop based on QPAY Checkout Page or QMORE Checkout Seamless.</p>
 </div>
 <div class="paragraph">
 <p>For merchants with the Merchant Category Code 6012 who reside in the UK, additional request parameters regarding <strong><a href="../recipient/" class="page">recipient data</a></strong> may be required.</p>
@@ -655,7 +645,7 @@
 <div class="sect3">
 <h4 id="AdditionalOptionalRequestParametersForRecurringPayments"><a class="anchor" href="#AdditionalOptionalRequestParametersForRecurringPayments"></a>Additional optional request parameters for recurring payments</h4>
 <div class="paragraph">
-<p>According to credit card company requirements for risk minimization, there are two parameters for recurring payments for Wirecard Checkout Page and Wirecard Checkout Seamless:</p>
+<p>According to credit card company requirements for risk minimization, there are two parameters for recurring payments for QPAY Checkout Page and QMORE Checkout Seamless:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -724,9 +714,9 @@
 <p>The parameter <code>authenticated</code> is always returned if the payment was successful. If the consumer was authenticated by an additional security method, such as 3-D Secure, Mastercard SecureCode, Verified by Visa, <code>YES</code> will be returned. <code>NO</code> will be returned if no additional authentication took place.</p>
 </div>
 <div class="sect3">
-<h4 id="hashedPan"><a class="anchor" href="#hashedPan"></a>Optional feature-specific parameter for Wirecard Checkout Page and Wirecard Checkout Seamless</h4>
+<h4 id="hashedPan"><a class="anchor" href="#hashedPan"></a>Optional feature-specific parameter for QPAY Checkout Page and QMORE Checkout Seamless</h4>
 <div class="paragraph">
-<p>This optional feature-specific response parameter enhances the functionality and usability of the payment process regarding specific features and functions and is enabled by Wirecard on your behalf. To enable this parameter please contact our <a href="../../../support/" class="page">support teams</a>.</p>
+<p>This optional feature-specific response parameter enhances the functionality and usability of the payment process regarding specific features and functions and is enabled by QENTA on your behalf. To enable this parameter please contact our <a href="../../../support/" class="page">support teams</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -847,7 +837,7 @@ Please note that the above mentioned response parameters are enabled by default 
 <p><strong><em>Why can I not reverse a deposit?</em></strong></p>
 </div>
 <div class="paragraph">
-<p>Reversing deposits using the back-end operation <code>depositReversal</code> or in the Wirecard Payment Center may not be possible at the same day since the deposit may still be in process. Please perform the operation <code>refund</code> on the next day.</p>
+<p>Reversing deposits using the back-end operation <code>depositReversal</code> or in the QPC Payment Center may not be possible at the same day since the deposit may still be in process. Please perform the operation <code>refund</code> on the next day.</p>
 </div>
 <div class="paragraph">
 <p><strong><em>Which problems might occur when effecting recurring payments on credit card basis?</em></strong></p>
@@ -860,9 +850,6 @@ Please note that the above mentioned response parameters are enabled by default 
 </div>
 <div class="paragraph">
 <p>In both error cases you have to obtain the new credit card details from your consumer and initiate a new order since it is not possible to carry out a recurring payment.</p>
-</div>
-<div class="paragraph">
-<p>If 3-D Secure is forced, no recurring payments are possible.</p>
 </div>
 </div>
 </div>

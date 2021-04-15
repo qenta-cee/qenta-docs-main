@@ -226,11 +226,9 @@
 <div class="sect2">
 <h3 id="AdditionalResponseParameters"><a class="anchor" href="#AdditionalResponseParameters"></a>Additional response parameters</h3>
 <div class="paragraph">
-<p>Within the usage of this payment type in your web shop the Wirecard Checkout Page will return additional parameters to your web shop. These parameters are specific to this payment type and are only returned when your consumer selects it in your web shop.</p>
+<p>Within the usage of this payment type in your web shop the QPAY Checkout Page will return additional parameters to your web shop. These parameters are specific to this payment type and are only returned when your consumer selects it in your web shop.</p>
 </div>
-<div class="sect3">
-<h4 id="ResponseParametersSince1stOfAugust2013"><a class="anchor" href="#ResponseParametersSince1stOfAugust2013"></a>Response parameters since 1st of August 2013</h4>
-<table class="tableblock frame-all grid-all stretch">
+<table id="ResponseParameters" class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -266,43 +264,6 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="sect3">
-<h4 id="LegacyBasedResponseParameters"><a class="anchor" href="#LegacyBasedResponseParameters"></a>Legacy based response parameters</h4>
-<div class="paragraph">
-<p>The following response parameters are sent for compatibility reasons and should be ignored.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">State</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">idealConsumerAccountNumber</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">success</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with a variable length of up to 255</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IBAN of account (same as idealConsumerIBAN)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">idealConsumerCity</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">success</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters and a variable length of up to 255</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">city of holder of account as returned by iDEAL issuer</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>

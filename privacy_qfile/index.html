@@ -223,8 +223,6 @@
 <div class="sect1">
 <h2 id="InformationOnTheProtectionOfPersonalDataForQfileCheckoutAutomated"><a class="anchor" href="#InformationOnTheProtectionOfPersonalDataForQfileCheckoutAutomated"></a>Information on the protection of personal data for QFILE Checkout Automated</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="Overview"><a class="anchor" href="#Overview"></a>Overview</h3>
 <div class="paragraph">
 <p>This chapter provides information on all data that are processed by our solution QFILE Checkout Automated (QFILE).</p>
 </div>
@@ -245,14 +243,16 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>Go to section “<a href="#DataEnteredByTheMerchant">Data entered by the merchant</a>” for an overview on the processing of data (parameters) for a given payment transaction and the selected payment method. Furthermore, section <a href="#AdditionalFeatures">Additional features</a> provides additional information on the processing of data (parameters) for each feature that was added to the basic solution.</p>
+<p>Go to section <a href="#DataEnteredByTheMerchant">Data entered by the merchant</a> for an overview on the processing of data (parameters) for a given payment transaction and the selected payment method. Furthermore, section <a href="#AdditionalFeatures">Additional features</a> provides additional information on the processing of data (parameters) for each feature that was added to the basic solution.</p>
 </div>
 <div class="paragraph">
 <p>Additionally, the general functioning of the product QFILE - both in its basic version and when using different payment methods - is also described in detail here: <a href="../wca/start/" class="page">Using QFILE</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="DataEnteredByTheMerchant"><a class="anchor" href="#DataEnteredByTheMerchant"></a>Data entered by the merchant</h3>
+</div>
+<div class="sect1">
+<h2 id="DataEnteredByTheMerchant"><a class="anchor" href="#DataEnteredByTheMerchant"></a>Data entered by the merchant</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>All indicated parameters need to be processed to ensure that the solution QFILE Checkout Automated, basic version, meets our contractual obligations to the merchant (purpose of the processing of data):</p>
 </div>
@@ -270,21 +270,174 @@
 </ul>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="StandardParameter"><a class="anchor" href="#StandardParameter"></a>Standard Parameter</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="DownloadingStatusOfAPayment"><a class="anchor" href="#DownloadingStatusOfAPayment"></a>Downloading Status of a payment</h3>
+<h3 id="Transaktionsdaten"><a class="anchor" href="#Transaktionsdaten"></a>Data category: transaction data</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data Subject</th>
+<th class="tableblock halign-left valign-top">Personal Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merchant, consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency used for the payment</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merchant, consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount of the transaction</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Personendaten"><a class="anchor" href="#Personendaten"></a>Data category: personal details</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data Subject</th>
+<th class="tableblock halign-left valign-top">Personal Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First name of the consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last name of the consumer</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Zahlungsmittelspezifisch"><a class="anchor" href="#Zahlungsmittelspezifisch"></a>Parameters processed dependent on the respective payment method (all data category "payment data")</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Credit Card</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data Subject</th>
+<th class="tableblock halign-left valign-top">Personal Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit card number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit card number of the consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiration date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiration date of the credit card user by the consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CVC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CVC of the credit card user by the consumer</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Direct Debit with SEPA</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data Subject</th>
+<th class="tableblock halign-left valign-top">Personal Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IBAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Account Number of the consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BIC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Identification Code of the consumer&#8217;s bank</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="DownloadingStatusOfAPayment"><a class="anchor" href="#DownloadingStatusOfAPayment"></a>Downloading Status of a payment</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>After uploading the payment details of your customers, the file is processed. Once processing of the file is completed, the transactions can be downloaded as tab-delimited text file which you may convert back into an xls-file. Thus, no additional processing of personal data takes place when downloading the payment response data.</p>
 </div>
-<div class="paragraph">
-<p>For more information:</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="AdditionalFeatures"><a class="anchor" href="#AdditionalFeatures"></a>Additional features</h3>
+<div class="sect1">
+<h2 id="AdditionalFeatures"><a class="anchor" href="#AdditionalFeatures"></a>Additional features</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This chapter provides information on the data processed for each feature that has been added to the basic QFILE Checkout Automated solution.</p>
 </div>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feature</th>
+<th class="tableblock halign-left valign-top">Processing of data and information on the protection of personal data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Additional access to the QPC Payment Center</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For the web application of the <a href="https://qenta-cee.at/haendler-login/">QPC Merchant Login</a> a new access is set up which does not involve any personal data. A username and password are required for the access. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Additional currencies</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For the web application of the <a href="https://qenta-cee.at/haendler-login/">QPC Merchant Login</a> a new access is set up which does not involve any personal data. A username and password are required for the access. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Recurring payment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Based on a configuration setting provided by QENTA, this feature allows the merchant to carry out recurring payment. A recurring payment is carried out by filling in the batch file as described in the <a href="../wca/start/" class="page">QFILE Documentation</a>. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </article>

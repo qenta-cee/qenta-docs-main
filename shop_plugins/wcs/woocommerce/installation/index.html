@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Wirecard Shop Plugin for WooCommerce :: QENTA Online Guides</title>
+    <title>QENTA Shop Plugin for WooCommerce :: QENTA Online Guides</title>
     <link rel="canonical" href="https://guides.qenta.com/online-guides/main/shop_plugins/wcs/woocommerce/installation/">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="/_/css/site.css">
@@ -210,7 +210,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../../../">QENTA Online Guides</a></li>
-    <li><a href="./">Wirecard Shop Plugin for WooCommerce</a></li>
+    <li><a href="./">QENTA Shop Plugin for WooCommerce</a></li>
   </ul>
 </nav>
 </div>
@@ -219,19 +219,19 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Wirecard Shop Plugin for WooCommerce</h1>
+<h1 class="page">QENTA Shop Plugin for WooCommerce</h1>
 <div class="sect1">
-<h2 id="WirecardShopPluginForWoocommerce"><a class="anchor" href="#WirecardShopPluginForWoocommerce"></a>Wirecard Shop Plugin for WooCommerce</h2>
+<h2 id="QENTAShopPluginForWoocommerce"><a class="anchor" href="#QENTAShopPluginForWoocommerce"></a>QENTA Shop Plugin for WooCommerce</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="InstallationGuideForWirecardCheckoutSeamless"><a class="anchor" href="#InstallationGuideForWirecardCheckoutSeamless"></a>Installation guide for Wirecard Checkout Seamless</h3>
+<h3 id="InstallationGuideForQMORECheckoutSeamless"><a class="anchor" href="#InstallationGuideForQMORECheckoutSeamless"></a>Installation guide for QMORE Checkout Seamless</h3>
 <div class="paragraph">
 <p>This installation guide shows the step-by-step installation of the plugin to your installed shop system on your web server. Please test your online shop and the configuration of the plugin on a test system before installing the plugin on your production system.</p>
 </div>
 <div class="sect3">
 <h4 id="Step1"><a class="anchor" href="#Step1"></a>Step 1</h4>
 <div class="paragraph">
-<p>Upload the zip file containing the Wirecard Checkout Seamless plugin using the plugin management function of WordPress, or upload it directly to the wp-content/plugins directory of your WordPress installation.</p>
+<p>Upload the zip file containing the QMORE Checkout Seamless plugin using the plugin management function of WordPress, or upload it directly to the wp-content/plugins directory of your WordPress installation.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="/_images/shop_plugins/wcs/woocommerce/install_1.png" alt="image"></span></p>
@@ -249,7 +249,7 @@
 <div class="sect3">
 <h4 id="Step3"><a class="anchor" href="#Step3"></a>Step 3</h4>
 <div class="paragraph">
-<p>Now you need to configure the plugin. Proceed to “WooCommerce” → “Settings” → “Checkout” and click the “Wirecard Checkout Seamless” button.</p>
+<p>Now you need to configure the plugin. Proceed to “WooCommerce” → “Settings” → “Checkout” and click the “QMORE Checkout Seamless” button.</p>
 </div>
 </div>
 <div class="sect3">
@@ -268,7 +268,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Demo</strong>: Demo mode configuration. No communication with your financial service provider but only between your online shop and the Wirecard Checkout Server.</p>
+<p><strong>Demo</strong>: Demo mode configuration. No communication with your financial service provider but only between your online shop and the QENTA Checkout Server.</p>
 </li>
 <li>
 <p><strong>Test</strong>: During test mode there is communication between your online shop and a test bank or demo bank provided for this purpose by the relevant financial service provider. However, the payment process is only simulated and no money is transferred.</p>
@@ -297,13 +297,13 @@
 <div class="sect4">
 <h5 id="PciDssSaqACompliance"><a class="anchor" href="#PciDssSaqACompliance"></a>PCI DSS SAQ A Compliance</h5>
 <div class="paragraph">
-<p>The shop plugin fulfills the requirements for credit card payments set forth in the PCI DSS v3.2.1 which is mandatory for all e-commerce merchants as of January 1st, 2018. Following this standard, a merchant&#8217;s web site(s) is not allowed to itself handle sensitive credit card specific data. Please visit <a href="../../../../wcs/pci3_fallback/" class="page">PCI DSS SAQ A Compliance for Wirecard Checkout Seamless</a> for more information and details.</p>
+<p>The shop plugin fulfills the requirements for credit card payments set forth in the PCI DSS v3.2.1 which is mandatory for all e-commerce merchants as of January 1st, 2018. Following this standard, a merchant&#8217;s web site(s) is not allowed to itself handle sensitive credit card specific data. Please visit <a href="../../../../wcs/pci3_fallback/" class="page">PCI DSS SAQ A Compliance for QMORE Checkout Seamless</a> for more information and details.</p>
 </div>
 <div class="paragraph">
-<p>“SAQ A compliance” is not selected by default, which means that the rather stringent SAQ A-EP is applicable for your online shop and Wirecard Checkout Seamless will <strong>not</strong> be integrated with the “PCI DSS SAQ A Compliance” feature.</p>
+<p>“SAQ A compliance” is not selected by default, which means that the rather stringent SAQ A-EP is applicable for your online shop and QMORE Checkout Seamless will <strong>not</strong> be integrated with the “PCI DSS SAQ A Compliance” feature.</p>
 </div>
 <div class="paragraph">
-<p>Please note that for using the “PCI DSS SAQ A Compliance” feature for Wirecard Checkout Seamless, “SAQ A Compliance” must explicitly be checked.</p>
+<p>Please note that for using the “PCI DSS SAQ A Compliance” feature for QMORE Checkout Seamless, “SAQ A Compliance” must explicitly be checked.</p>
 </div>
 <div class="paragraph">
 <p>To customize the iframe input fields when using the “PCI DSS SAQ A Compliance” feature, enter a full URL to a CSS file on your server into the “Iframe CSS URL” field.</p>
@@ -328,7 +328,7 @@
 <div class="sect3">
 <h4 id="Step6"><a class="anchor" href="#Step6"></a>Step 6</h4>
 <div class="paragraph">
-<p>Finally, verify that the Wirecard Checkout Seamless payment method is displayed on the checkout page:</p>
+<p>Finally, verify that the QMORE Checkout Seamless payment method is displayed on the checkout page:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="/_images/shop_plugins/wcs/woocommerce/frontend_1.png" alt="image" width="500"></span></p>
@@ -347,10 +347,7 @@
 <p><a href="../../../../payment_methods/ccard_moto/start/" class="page">Credit Card - Mail Order and Telephone Order</a></p>
 </li>
 <li>
-<p><a href="#payment_methods/epaybg/start.adoc" class="page unresolved">ePay.bg</a></p>
-</li>
-<li>
-<p><a href="../../../../payment_methods/eps/start/" class="page">eps-Überweisung</a></p>
+<p>* <a href="../../../../payment_methods/eps/start/" class="page">eps-Überweisung</a></p>
 </li>
 <li>
 <p><a href="../../../../payment_methods/giropay/start/" class="page">giropay</a></p>
@@ -362,25 +359,10 @@
 <p><a href="../../../../payment_methods/installment/payolution/" class="page">Installment by payolution</a></p>
 </li>
 <li>
-<p><a href="#payment_methods/installment/ratepay.adoc" class="page unresolved">Installment by RatePay</a></p>
-</li>
-<li>
 <p><a href="../../../../payment_methods/invoice/payolution/" class="page">Invoice by payolution</a></p>
 </li>
 <li>
-<p><a href="../../../../payment_methods/invoice/ratepay/" class="page">Invoice by RatePay</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/invoice/wirecard.adoc" class="page unresolved">Invoice by Wirecard</a></p>
-</li>
-<li>
 <p><a href="../../../../payment_methods/maestro/start/" class="page">Maestro SecureCode</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/moneta/start.adoc" class="page unresolved">moneta.ru</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/paybox/start.adoc" class="page unresolved">paybox</a></p>
 </li>
 <li>
 <p><a href="../../../../payment_methods/paypal/start/" class="page">PayPal</a></p>
@@ -389,28 +371,13 @@
 <p><a href="../../../../payment_methods/paysafecard/start/" class="page">paysafecard</a></p>
 </li>
 <li>
-<p><a href="#payment_methods/poli/start.adoc" class="page unresolved">POLi</a></p>
-</li>
-<li>
 <p><a href="../../../../payment_methods/p24/start/" class="page">Przelewy24</a></p>
 </li>
 <li>
 <p><a href="../../../../payment_methods/sepa_direct_debit/start/" class="page">SEPA Direct Debit</a></p>
 </li>
 <li>
-<p><a href="#payment_methods/skrill_digital/start.adoc" class="page unresolved">Skrill Digital Wallet</a></p>
-</li>
-<li>
 <p><a href="../../../../payment_methods/sofort/start/" class="page">Sofort.</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/tatrapay/start.adoc" class="page unresolved">TatraPay</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/trustly/start.adoc" class="page unresolved">Trustly</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/trustpay/start.adoc" class="page unresolved">TrustPay</a></p>
 </li>
 </ul>
 </div>
@@ -418,7 +385,7 @@
 <div class="sect4">
 <h5 id="SupportedBackendOperations"><a class="anchor" href="#SupportedBackendOperations"></a>Supported back-end operations</h5>
 <div class="paragraph">
-<p>The plugin for WooCommerce and Wirecard Checkout Seamless allows to carry out the following back-end operation directly in your online shop for each order at “Wirecard Checkout Seamless” &#8594; “Transactions”:</p>
+<p>The plugin for WooCommerce and Wirecard Checkout Seamless allows to carry out the following back-end operation directly in your online shop for each order at “QMORE Checkout Seamless” &#8594; “Transactions”:</p>
 </div>
 <div class="ulist">
 <ul>

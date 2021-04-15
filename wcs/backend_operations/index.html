@@ -226,7 +226,7 @@
 <div class="sect2">
 <h3 id="WhatAreBackendOperations"><a class="anchor" href="#WhatAreBackendOperations"></a>What are back-end operations?</h3>
 <div class="paragraph">
-<p>Within the usage of Wirecard Checkout Seamless, you have the possibility to use commands which enables various operations regarding the orders of your consumer. These operations are called by a server-to-server request from your web server to the Wirecard Checkout Platform. So you have the possibility either to call these operations automatically from the back-end of your web shop or manually from your web interface you have implemented for administration purposes.</p>
+<p>Within the usage of QMORE Checkout Seamless, you have the possibility to use commands which enables various operations regarding the orders of your consumer. These operations are called by a server-to-server request from your web server to the Wirecard Checkout Platform. So you have the possibility either to call these operations automatically from the back-end of your web shop or manually from your web interface you have implemented for administration purposes.</p>
 </div>
 </div>
 <div class="sect2">
@@ -538,13 +538,13 @@
 </tbody>
 </table>
 <div class="paragraph">
-<p>(*) please contact our Support team via <a href="mailto:support@wirecard.at">support@wirecard.at</a> to enable this feature</p>
+<p>(*) please contact our Support team via <a href="mailto:support@qenta.at">support@qenta.at</a> to enable this feature</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="HowIsABackendOperationStarted"><a class="anchor" href="#HowIsABackendOperationStarted"></a>How is a back-end operation started?</h3>
 <div class="paragraph">
-<p>To start a back-end operation you send a server-to-server request from your web server to the Wirecard Checkout Platform to a specific URL and specific POST-parameters depending on the operation you want to use.</p>
+<p>To start a back-end operation you send a server-to-server request from your web server to the QENTA Checkout Platform to a specific URL and specific POST-parameters depending on the operation you want to use.</p>
 </div>
 <div class="paragraph">
 <p>Please be aware that it is sometimes necessary to enable server-to-server requests within the configuration of your web server. This issue arises typically on provider managed web servers with PHP.</p>
@@ -566,7 +566,7 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Host</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Domain name of server. Has to be set to the following value: <code>secure.wirecard-cee.com</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain name of server. Has to be set to the following value: <code>api.qenta.com</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">User-Agent</p></td>
@@ -587,7 +587,7 @@
 </tbody>
 </table>
 <div class="paragraph">
-<p>Please be aware that an incorrect setting of the header parameters results to an HTTP 403 error message of the Wirecard Checkout Platform.</p>
+<p>Please be aware that an incorrect setting of the header parameters results to an HTTP 403 error message of the QENTA Checkout Platform.</p>
 </div>
 </div>
 <div class="sect2">
@@ -605,7 +605,7 @@
 <p>After concatenating all values to a single string you use a SHA512 hash and the result is the fingerprint which you add as a request parameter to the server-to-server call.</p>
 </div>
 <div class="paragraph">
-<p>The Wirecard Checkout Platform knows also your secret and is able to check if the received parameters are not manipulated by a 3rd party. Therefore it is essential that only you and Wirecard knows your secret!</p>
+<p>The QENTA Checkout Platform knows also your secret and is able to check if the received parameters are not manipulated by a 3rd party. Therefore it is essential that only you and Wirecard knows your secret!</p>
 </div>
 </div>
 <div class="sect2">
@@ -677,7 +677,7 @@
 <div class="sect2">
 <h3 id="HowAreTheValuesReturned"><a class="anchor" href="#HowAreTheValuesReturned"></a>How are the values returned?</h3>
 <div class="paragraph">
-<p>After you send the request as a server-to-server request from your web server to the Wirecard Checkout Platform you will get the result of the back-end operation as key-values pairs returned in the content of the response.</p>
+<p>After you send the request as a server-to-server request from your web server to the QENTA Checkout Platform you will get the result of the back-end operation as key-values pairs returned in the content of the response.</p>
 </div>
 </div>
 <div class="sect2">
@@ -799,7 +799,7 @@
 <p>The required order of the parameter values when computing the fingerprint is: customerId, shopId, password, secret, language and orderNumber</p>
 </div>
 <div class="paragraph">
-<p>The URL for the server-to-server call is: <code>https://secure.wirecard-cee.com/qmore/backend/approveReversal</code></p>
+<p>The URL for the server-to-server call is: <code>https://api.qenta.com/qmore/backend/approveReversal</code></p>
 </div>
 <div class="sect4">
 <h5 id="ApprovereversalAdditionalRequiredRequestParameters"><a class="anchor" href="#ApprovereversalAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
@@ -844,7 +844,7 @@
 <p>The required order of the parameter values when computing the fingerprint is: customerId, shopId, password, secret, language, orderNumber, amount and currency</p>
 </div>
 <div class="paragraph">
-<p>The URL for the server-to-server call is: <code>https://secure.wirecard-cee.com/qmore/backend/deposit</code></p>
+<p>The URL for the server-to-server call is: <code>https://api.qenta.com/qmore/backend/deposit</code></p>
 </div>
 <div class="sect4">
 <h5 id="DepositAdditionalRequiredRequestParameters"><a class="anchor" href="#DepositAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
@@ -914,7 +914,7 @@
 <p>The required order of the parameter values when computing the fingerprint is: customerId, shopId, password, secret, language, orderNumber and paymentNumber</p>
 </div>
 <div class="paragraph">
-<p>The URL for the server-to-server call is: <code>https://secure.wirecard-cee.com/qmore/backend/depositReversal</code></p>
+<p>The URL for the server-to-server call is: <code>https://api.qenta.com/qmore/backend/depositReversal</code></p>
 </div>
 <div class="sect4">
 <h5 id="DepositreversalAdditionalRequiredRequestParameters"><a class="anchor" href="#DepositreversalAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
@@ -961,7 +961,7 @@
 <p>The required order of the parameter values when computing the fingerprint is: customerId, shopId, password, secret, language and orderNumber</p>
 </div>
 <div class="paragraph">
-<p>The URL for the server-to-server call is: <code>https://secure.wirecard-cee.com/qmore/backend/getOrderDetails</code></p>
+<p>The URL for the server-to-server call is: <code>https://api.qenta.com/qmore/backend/getOrderDetails</code></p>
 </div>
 <div class="sect4">
 <h5 id="GetorderdetailsAdditionalRequiredRequestParameters"><a class="anchor" href="#GetorderdetailsAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
@@ -1371,7 +1371,7 @@
 <p>The required order of the parameter values when computing the fingerprint is: customerId, shopId, password, secret, language, orderNumber, sourceOrderNumber, autoDeposit, orderDescription, amount and currency</p>
 </div>
 <div class="paragraph">
-<p>The URL for the server-to-server call is: <code>https://secure.wirecard-cee.com/qmore/backend/recurPayment</code></p>
+<p>The URL for the server-to-server call is: <code>https://api.qenta.com/qmore/backend/recurPayment</code></p>
 </div>
 <div class="sect4">
 <h5 id="RecurpaymentAdditionalRequiredRequestParameters"><a class="anchor" href="#RecurpaymentAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
@@ -1475,7 +1475,7 @@
 <p>The required order of the parameter values when computing the fingerprint is: customerId, shopId, password, secret, language, orderNumber, amount and currency</p>
 </div>
 <div class="paragraph">
-<p>The URL for the server-to-server call is: <code>https://secure.wirecard-cee.com/qmore/backend/refund</code></p>
+<p>The URL for the server-to-server call is: <code>https://api.qenta.com/qmore/backend/refund</code></p>
 </div>
 <div class="sect4">
 <h5 id="RefundAdditionalRequiredRequestParameters"><a class="anchor" href="#RefundAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
@@ -1545,7 +1545,7 @@
 <p>The required order of the parameter values when computing the fingerprint is: customerId, shopId, password, secret, language, orderNumber and creditNumber</p>
 </div>
 <div class="paragraph">
-<p>The URL for the server-to-server call is: <code>https://secure.wirecard-cee.com/qmore/backend/refundReversal</code></p>
+<p>The URL for the server-to-server call is: <code>https://api.qenta.com/qmore/backend/refundReversal</code></p>
 </div>
 <div class="sect4">
 <h5 id="RefundreversalAdditionalRequiredRequestParameters"><a class="anchor" href="#RefundreversalAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>

@@ -224,12 +224,12 @@
 <h2 id="Transferfund"><a class="anchor" href="#Transferfund"></a>transferFund</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>transferFund is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> and <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a>. This operation creates a credit note without dependancy on a specific order (in opposition to the operation <code>refund</code>).</p>
+<p>transferFund is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. This operation creates a credit note without dependancy on a specific order (in opposition to the operation <code>refund</code>).</p>
 </div>
 <div class="sect2">
 <h3 id="DifferentTypesOfFundTransfer"><a class="anchor" href="#DifferentTypesOfFundTransfer"></a>Different types of fund transfer</h3>
 <div class="paragraph">
-<p>Depending on the relevant payment method, Wirecard currently supports three different types of fund transfer:</p>
+<p>Depending on the relevant payment method, QENTA currently supports three different types of fund transfer:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -237,20 +237,14 @@
 <p>#EXISTINGORDER</p>
 </li>
 <li>
-<p>#MONETA</p>
-</li>
-<li>
 <p>#SEPA-CT</p>
-</li>
-<li>
-<p>#SKRILLWALLET</p>
 </li>
 </ul>
 </div>
 <div class="sect3">
 <h4 id="Existingorder"><a class="anchor" href="#Existingorder"></a>EXISTINGORDER</h4>
 <div class="paragraph">
-<p>The data of an existing order which includes the fund receiver&#8217;s details, as stored on the Wirecard Checkout Server, are used. Thus, the parameters <code>sourceOrderNumber</code> and <code>fundTransferType</code> EXISTINGORDER are relevant to be used for this transfer type.</p>
+<p>The data of an existing order which includes the fund receiver&#8217;s details, as stored on the QENTA Checkout Server, are used. Thus, the parameters <code>sourceOrderNumber</code> and <code>fundTransferType</code> EXISTINGORDER are relevant to be used for this transfer type.</p>
 </div>
 <div class="paragraph">
 <p>This fund transfer type is used for the following payment methods:</p>
@@ -261,41 +255,10 @@
 <p><a href="../../../payment_methods/ideal/start/" class="page">iDEAL</a> (depending on the relevant acquirer)</p>
 </li>
 <li>
-<p><a href="#payment_methods/installment/ratepay.adoc" class="page unresolved">Installment: RatePAY</a></p>
-</li>
-<li>
-<p><a href="../../../payment_methods/invoice/ratepay/" class="page">Invoice: RatePAY</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/invoice/wirecard.adoc" class="page unresolved">Invoice by Wirecard</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/moneta/start.adoc" class="page unresolved">moneta.ru</a></p>
-</li>
-<li>
 <p><a href="../../../payment_methods/sepa_direct_debit/start/" class="page">SEPA Direct Debit</a> (depending on the relevant acquirer)</p>
 </li>
 <li>
-<p><a href="#payment_methods/skrill_digital/start.adoc" class="page unresolved">Skrill Digital Wallet</a></p>
-</li>
-<li>
 <p><a href="../../../payment_methods/sofort/start/" class="page">Sofort.</a> (depending on the relevant acquirer)</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Moneta"><a class="anchor" href="#Moneta"></a>MONETA</h4>
-<div class="paragraph">
-<p>The Moneta Wallet Account ID of the receiver of the funds is known. Thus, the parameters <code>consumerWalletId</code> and <code>fundTransferType</code> MONETA are relevant to be used for this transfer type.</p>
-</div>
-<div class="paragraph">
-<p>This fund transfer type is used only for the following payment method:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>moneta.ru</p>
 </li>
 </ul>
 </div>
@@ -309,207 +272,16 @@
 <p>This fund transfer type is used for all payment methods provided that the BIC, IBAN and account owner are known and Wirecard Bank acts as acquirer.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Skrillwallet"><a class="anchor" href="#Skrillwallet"></a>SKRILLWALLET</h4>
-<div class="paragraph">
-<p>The e-mail address of the receiver of the funds is known. Thus, the parameters <code>consumerEmail</code> and <code>fundTransferType</code> SKRILLWALLET are relevant to be used for this transfer type.</p>
-</div>
-<div class="paragraph">
-<p>This fund transfer type is used only for the following payment method:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Skrill Digital Wallet</p>
-</li>
-</ul>
-</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="AdditionalRequestParameter"><a class="anchor" href="#AdditionalRequestParameter"></a>Additional request parameter</h3>
 <div class="sect3">
 <h4 id="FundTransferTypeExistingorder"><a class="anchor" href="#FundTransferTypeExistingorder"></a>Fund transfer type: EXISTINGORDER</h4>
 <div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>sourceOrderNumber</code>.</p>
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>sourceOrderNumber</code>.</p>
 </div>
 <div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>sourceOrderNumber</code>.</p>
-</div>
-<div class="sect4">
-<h5 id="SkrillAdditionalRequiredRequestParameters"><a class="anchor" href="#SkrillAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Amount" class="page">request_parameters#amount</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Currency" class="page">request_parameters#currency</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 3 or numeric with a fixed length of 3.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Currency code.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Existingorder">fundTransferType</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">String with value "EXISTINGORDER".</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fund transfer type EXISTINGORDER.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderdescription" class="page">request_parameters#orderDescription</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 255.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of order.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sourceOrderNumber</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Original order number used as source order.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="SkrillAdditionalOptionalRequestParameters"><a class="anchor" href="#SkrillAdditionalOptionalRequestParameters"></a>Additional optional request parameters</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Credit number.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Customerstatement" class="page">request_parameters#customerStatement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 254 characters that may be restricted for specific payment methods.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Ordernumber" class="page">request_parameters#orderNumber</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Order number of payment.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderreference" class="page">request_parameters#orderReference</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 128 characters.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="FundTransferTypeMoneta"><a class="anchor" href="#FundTransferTypeMoneta"></a>Fund transfer type: MONETA</h4>
-<div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>consumerWalletId</code>.</p>
-</div>
-<div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>consumerWalletId</code>.</p>
-</div>
-<div class="sect4">
-<h5 id="MonetaAdditionalRequiredRequestParameters"><a class="anchor" href="#MonetaAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Amount" class="page">request_parameters#amount</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Moneta">consumerWalletId</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and up to 254 characters</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Moneta Wallet Account ID of consumer.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Currency" class="page">request_parameters#currency</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 3 or numeric with a fixed length of 3.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Currency code.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Customerstatement" class="page">request_parameters#customerStatement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 254 characters.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Moneta">fundTransferType</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">String with value "MONETA".</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fund transfer type MONETA.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderdescription" class="page">request_parameters#orderDescription</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 255.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of order.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="MonetaAdditionalOptionalRequestParameters"><a class="anchor" href="#MonetaAdditionalOptionalRequestParameters"></a>Additional optional request parameters</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Credit number.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Ordernumber" class="page">request_parameters#orderNumber</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Order number of payment.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderreference" class="page">request_parameters#orderReference</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 128 characters.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
-</tr>
-</tbody>
-</table>
+<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>sourceOrderNumber</code>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -560,103 +332,11 @@
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="FundTransferTypeSkrillwallet"><a class="anchor" href="#FundTransferTypeSkrillwallet"></a>Fund transfer type: SKRILLWALLET</h4>
-<div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">Wirecard Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>consumerEmail</code>.</p>
-</div>
-<div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcs/start/" class="page">Wirecard Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>creditNumber</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>fundTransferType</code> and <code>consumerEmail</code>.</p>
-</div>
-<div class="sect4">
-<h5 id="SkrillWalletAdditionalRequiredRequestParameters"><a class="anchor" href="#SkrillWalletAdditionalRequiredRequestParameters"></a>Additional required request parameters</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Amount" class="page">request_parameters#amount</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#ConsumerBillingData" class="page">consumerEmail</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and up to 256 characters.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Consumer&#8217;s e-mail address registered as Skrill Wallet ID.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Currency" class="page">request_parameters#currency</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 3 or numeric with a fixed length of 3.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Currency code.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Customerstatement" class="page">request_parameters#customerStatement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 254 characters.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Skrillwallet">fundTransferType</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">String with value "SKRILLWALLET".</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fund transfer type SKRILLWALLET.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderdescription" class="page">request_parameters#orderDescription</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 255.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of order.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="SkrillWalletAdditionalOptionalRequestParameters"><a class="anchor" href="#SkrillWalletAdditionalOptionalRequestParameters"></a>Additional optional request parameters</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Data type</th>
-<th class="tableblock halign-left valign-top">Short description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Credit number.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Ordernumber" class="page">request_parameters#orderNumber</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a variable length of up to 9 digits.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Order number of payment.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../request_parameters/#Orderreference" class="page">request_parameters#orderReference</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 128 characters.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="AdditionalResponseParameter"><a class="anchor" href="#AdditionalResponseParameter"></a>Additional response parameter</h3>
 <div class="paragraph">
-<p>The following parameter is generally valid for all transferFund operations and is available in addition to the <a href="../../response_parameters/" class="page">response parameters</a> returned for all back-end operations (Wirecard Checkout Page and Wirecard Checkout Seamless):</p>
+<p>The following parameter is generally valid for all transferFund operations and is available in addition to the <a href="../../response_parameters/" class="page">response parameters</a> returned for all back-end operations (QPAY Checkout Page and QMORE Checkout Seamless):</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>

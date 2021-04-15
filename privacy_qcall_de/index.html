@@ -221,10 +221,8 @@
 <article class="doc">
 <h1 class="page">Datenschutzinfo für QCALL Checkout Terminal</h1>
 <div class="sect1">
-<h2 id="DatenschutzinfoFrQcallCheckoutTerminal"><a class="anchor" href="#DatenschutzinfoFrQcallCheckoutTerminal"></a>Datenschutzinfo für QCALL Checkout Terminal</h2>
+<h2 id="_datenschutzinfo_für_qcall_checkout_terminal"><a class="anchor" href="#_datenschutzinfo_für_qcall_checkout_terminal"></a>Datenschutzinfo für QCALL Checkout Terminal</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="berblick"><a class="anchor" href="#berblick"></a>Überblick</h3>
 <div class="paragraph">
 <p>Auf dieser Infoseite können Sie sich über alle Daten informieren, die das Produkt "QCALL Checkout Terminal" (QCALL) verarbeitet.</p>
 </div>
@@ -251,8 +249,10 @@
 <p>Die allgemeine Funktionsweise des Produkts QCALL - sowohl in seiner Basisversion als auch abhängig vom Einsatz verschiedener Zahlungsmittel - ist zudem hier ausführlich beschrieben: <a href="../wct/using_wirecard_checkout_terminal_german/" class="page">Bedienungsanleitung QCALL</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="EingabenMerchant"><a class="anchor" href="#EingabenMerchant"></a>Eingaben Merchant</h3>
+</div>
+<div class="sect1">
+<h2 id="EingabenMerchant"><a class="anchor" href="#EingabenMerchant"></a>Eingaben Merchant</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Sämtliche hier angegebenen personenbezogenen Parameter müssen verarbeitet werden, um das Produkt QCALL in seiner Basisversion dem Merchant zur Verfügung stellen zu können (Zweck der Datenverarbeitung).</p>
 </div>
@@ -270,12 +270,190 @@
 </ul>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="StandardParameter"><a class="anchor" href="#StandardParameter"></a>Standard Parameter</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="Zusatzfeatures"><a class="anchor" href="#Zusatzfeatures"></a>Zusatzfeatures</h3>
+<h3 id="Transaktionsdaten"><a class="anchor" href="#Transaktionsdaten"></a>Datenkategorie: Transaktionsdaten</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Betroffene Person</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Betrag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant, Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Umsatzhöhe (Betrag) der Transaktion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Währung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merchant, Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Währungscode des Betrags</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Personendaten"><a class="anchor" href="#Personendaten"></a>Datenkategorie: Personendaten</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Betroffene Person</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nachname</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nachname des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firma</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firmenname, unter dem die betreffenden Artikel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Produkte) bestellt werden</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adresse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Zahlungsmittelspezifisch"><a class="anchor" href="#Zahlungsmittelspezifisch"></a>Zahlungsmittelspezifische Parameters (alle Datenkategorien "Zahlungsdaten")</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Credit Card</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Betroffene Person</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Karteninhaber der Kreditkarte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name des Karteninhabers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit card number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditkartennummer des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiration date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ablaufdatum der benutzten Kreditkarte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CVC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kartenprüfnummer der Kreditkarte des Endkunden</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Sepa Lastschriftverfahren</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Betroffene Person</th>
+<th class="tableblock halign-left valign-top">Personenbezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontoinhaber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inhaber des Endkunden-Bankkontos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IBAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IBAN des Endkunden</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BIC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endkunde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Identification Code der Bank des Endkunden</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Zusatzfeatures"><a class="anchor" href="#Zusatzfeatures"></a>Zusatzfeatures</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Für jedes zusätzlich zum Basisprodukt QCALL bestellte Feature ist hier ersichtlich, welche Daten das jeweilige Feature verarbeitet.</p>
 </div>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feature</th>
+<th class="tableblock halign-left valign-top">Verarbeitete Daten und Datenschutzinfos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Weitere Zugänge zum QENTA Payment Center</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Für die Web-Applikationen des Händlerlogins wird ein neuer Zugang für den Merchant angelegt, der nicht personengebunden ist. Für den Zugang ist ein Benutzername und ein Passwort erforderlich. Dadurch kommt es zu keiner zusätzlichen Verarbeitung von personenbezogenen Daten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Zusätzliche Währungen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abhängig vom Produktkatalog des Merchants sind bestimmte Produkte in 1 bis N Währungen zahlbar, die von QENTA als Konfigurationseinstellungen hinterlegt werden. Dadurch kommt es zu keiner zusätzlichen Verarbeitung von personenbezogenen Daten. Allerdings ist die Währung der Zahlung selbst ein personenbezogenes Datum, die über die Währung der abgewickelten Zahlungstransaktion des Merchants Auskunft gibt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Wiederkehrende Zahlung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mit diesem Feature wird der Merchant über eine Konfigurationseinstellung seitens QENTA in die Lage versetzt, wiederkehrende Zahlungen durchführen. Für die Durchführung einer wiederkehrenden Zahlung ist die Option "Recurring Payment" unter Angabe der Order Number auszuwählen wie in der QCALL-Dokumentation näher beschrieben. Dadurch kommt es zu keiner zusätzlichen Verarbeitung von personenbezogenen Daten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Sofortige Buchung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Über diese Konfigurationseinstellung wird die Buchung sofort durchgeführt (anstatt einer Genehmigung der Zahlungstransaktion mit anschließender manueller Buchung). Dadurch kommt es zu keiner zusätzlichen Verarbeitung von personenbezogenen Daten.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </article>

@@ -224,7 +224,7 @@
 <h2 id="HowToSimplifyPaymentForRegularConsumers"><a class="anchor" href="#HowToSimplifyPaymentForRegularConsumers"></a>How to simplify payment for regular consumers?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For regular consumers you may want to simplify the checkout by shortening the payment process if the consumer&#8217;s payment method data is already known to Wirecard.</p>
+<p>For regular consumers you may want to simplify the checkout by shortening the payment process if the consumer&#8217;s payment method data is already known to QENTA.</p>
 </div>
 <div class="paragraph">
 <p>The <strong>advantage for merchants</strong> are less shopping cart abandonments during the checkout process due to the enhanced ease of use.</p>
@@ -251,9 +251,6 @@
 <div class="paragraph">
 <p>Recurring payments require special security considerations since a payment can be initiated without the knowledge of all payment method details. Thus, a person with malicious intent could order <strong>and pay</strong> items in your online shop using the account of one of your consumers, if e.g. the password is too simple.</p>
 </div>
-<div class="paragraph">
-<p>In addition to your own security measures the <a href="https://www.wirecard.com/products/risk/fraudprevention/">Wirecard Fraud Prevention Suite</a> can be used for <a href="../../back-end_operations/transaction-based/recurpayment/#AdditionalOptionalRequestParameters" class="page">recurring payments</a>.</p>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -269,9 +266,6 @@
 </div>
 <div class="paragraph">
 <p>Credit and debit cards do expire, making a recurring payment impossible. Save the response parameter <code>expiry</code> at the initial payment in correlation to your consumer to check if a recurring payment is still possible.</p>
-</div>
-<div class="paragraph">
-<p>Also some credit and debit cards only allow <strong>3-D Secure</strong> authenticated transactions. For these cards <strong>no recurring payments</strong> are possible.</p>
 </div>
 <div class="paragraph">
 <p>Since payments can be effected by logging in into your online shop, place significant importance on <strong>security</strong>. If an unauthorized person can gain access to an account of your consumer, ordering items to a different shipping address could be possible and your consumer would be charged. Therefore consider additional authorization measures for effecting a recurring payment.</p>

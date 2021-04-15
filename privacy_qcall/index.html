@@ -223,8 +223,6 @@
 <div class="sect1">
 <h2 id="InformationOnTheProtectionOfPersonalDataForQcallCheckoutTerminal"><a class="anchor" href="#InformationOnTheProtectionOfPersonalDataForQcallCheckoutTerminal"></a>Information on the protection of personal data for Qcall Checkout Terminal</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="Overview"><a class="anchor" href="#Overview"></a>Overview</h3>
 <div class="paragraph">
 <p>This chapter provides information on all data that are processed by our solution QCALL Checkout Termianl (QCALL).</p>
 </div>
@@ -245,14 +243,16 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>Go to section “<a href="#DataEnteredByTheMerchant">Data entered by the merchant</a>” for an overview on the processing of data (parameters) for a given payment transaction and the selected payment method. Furthermore, section <a href="#AdditionalFeatures">Additional features</a> provides additional information on the processing of data (parameters) for each feature that was added to the basic solution.</p>
+<p>Go to section <a href="#DataEnteredByTheMerchant">Data entered by the merchant</a> for an overview on the processing of data (parameters) for a given payment transaction and the selected payment method. Furthermore, section <a href="#AdditionalFeatures">Additional features</a> provides additional information on the processing of data (parameters) for each feature that was added to the basic solution.</p>
 </div>
 <div class="paragraph">
 <p>Additionally, the general functioning of the product QCALL - both in its basic version and when using different payment methods - is also described in detail here: <a href="../wct/using_wirecard_checkout_terminal/" class="page">Using QCALL</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="DataEnteredByTheMerchant"><a class="anchor" href="#DataEnteredByTheMerchant"></a>Data entered by the merchant</h3>
+</div>
+<div class="sect1">
+<h2 id="DataEnteredByTheMerchant"><a class="anchor" href="#DataEnteredByTheMerchant"></a>Data entered by the merchant</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>All indicated parameters need to be processed to ensure that the solution QCALL Checkout Terminal, basic version, meets our contractual obligations to the merchant (purpose of the processing of data):</p>
 </div>
@@ -270,12 +270,190 @@
 </ul>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="StandardParameter"><a class="anchor" href="#StandardParameter"></a>Standard Parameter</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="AdditionalFeatures"><a class="anchor" href="#AdditionalFeatures"></a>Additional features</h3>
+<h3 id="Transaktionsdaten"><a class="anchor" href="#Transaktionsdaten"></a>Data category: transaction data</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data Subject</th>
+<th class="tableblock halign-left valign-top">Personal Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merchant, consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount of the transaction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merchant, consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency used for the payment</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Personendaten"><a class="anchor" href="#Personendaten"></a>Data category: personal details</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data Subject</th>
+<th class="tableblock halign-left valign-top">Personal Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First name of the consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last name of the consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Company</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the company ordering the relevant items (products)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adresse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address of the consumer</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Zahlungsmittelspezifisch"><a class="anchor" href="#Zahlungsmittelspezifisch"></a>Parameters processed dependent on the respective payment method (all data category "payment data")</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Credit Card</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data Subject</th>
+<th class="tableblock halign-left valign-top">Personal Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Card holder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the cardholder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit card number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit card number of the consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiration date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ablaufdatum der benutzten Kreditkarte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CVC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiration date of the credit card user by the consumer</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Direct Debit with SEPA</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data Subject</th>
+<th class="tableblock halign-left valign-top">Personal Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Account holder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Owner of the consumers bank account</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IBAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Account Number of the consumer&#8217;s bank</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BIC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Identification Code of the consumer&#8217;s bank</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="AdditionalFeatures"><a class="anchor" href="#AdditionalFeatures"></a>Additional features</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This chapter provides information on the data processed for each feature that has been added to the basic QCALL Checkout Automated solution.</p>
 </div>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feature</th>
+<th class="tableblock halign-left valign-top">Processing of data and information on the protection of personal data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Additional access to the QPC Payment Center</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For the web application of the <a href="https://qenta-cee.at/haendler-login/">Merchant Login</a> a new access is set up which does not involve any personal data. A username and password are required for the access. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2. Additional currencies</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Depending on the merchant’s product portfolio, certain products may be paid in 1 to N currencies, which are defined by QENTA in the configuration setting. Thus, no additional processing of personal data takes place. However, the currency of the payment itself is considered personal data that relates to the currency of the processed transaction of the merchant.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3. Recurring payment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Based on a configuration setting provided by QENTA, this feature allows the merchant to carry out recurring payments. A recurring payment is carried out by selecting option "Recurring Payment" and stating the respective order number as described in detail in the <a href="../wct/start/" class="page">QCALL Documentation</a>. Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4. Immediate deposit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This configuration setting allows an immediate deposit (instead of an authorization of the transaction with subsequent manual deposit). Thus, no additional processing of personal data takes place.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </article>
