@@ -6,8 +6,21 @@ body {
   outline: none;
 }
 
-.content a[href^="https:"]::after {
+.content a[href^="https:"]::after, .content a[target="_blank"]::after {
   content: " "url("../img/external-link.svg");
+}
+
+nav.breadcrumbs li:last-child a {
+  font-weight: bold;
+}
+
+*[class^='cat_'] {
+    display: none;
+}
+
+#pmpicker {
+  font-size: 1em;
+  padding: 0.5em;
 }
 
 #search-input {
