@@ -239,7 +239,7 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Please note that due to security reasons neither url() functions nor @import directives (e.g. external fonts) are allowed in the CSS file. If they are used they will be ignored. +Never send any font changes within the CSS file. Security checks may last several minutes and lead to payment cancelation. We strongly recommend to customize your fonts using <a href="#CustomizationUsingTemplates">CSS templates</a>.</p>
+<p>Please note that due to security reasons neither <code>url()</code> functions nor @import directives (e.g. external fonts) are allowed in the CSS file. If they are used they will be ignored. Never send any font changes within the CSS file. Security checks may last several minutes and lead to payment cancelation. We strongly recommend to customize your fonts using <a href="#CustomizationUsingTemplates">CSS templates</a>.</p>
 </div>
 </td>
 </tr>
@@ -346,7 +346,7 @@
 <p>In the meantime you may already want to start editing the templates to your needs.</p>
 </li>
 <li>
-<p>After editing of the template files, please send them as a zipped file to our <a href="../../support/" class="page">support teams</a>. We will check your customization and configure Wirecard Checkout Page according to your needs.</p>
+<p>After editing of the template files, please send them as a zipped file to our <a href="../../support/" class="page">support teams</a>. We will check your customization and configure QPAY Checkout Page according to your needs.</p>
 </li>
 </ol>
 </div>
@@ -356,7 +356,7 @@
 <div class="sect4">
 <h5 id="DownloadingAndUnzippingTheTemplatesFile"><a class="anchor" href="#DownloadingAndUnzippingTheTemplatesFile"></a>Downloading and unzipping the templates file</h5>
 <div class="paragraph">
-<p>These templates are available on <a href="https://github.com/qenta-cee/responsive-template-qcp">GitHub</a>.</p>
+<p>The template is available on <a href="https://github.com/qenta-cee/responsive-template-qcp">GitHub</a>. Click <span class="menuseq"><b class="menu">Code</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Download ZIP</b></span> to download it.</p>
 </div>
 <div class="paragraph">
 <p>This zip-file contains the following elements:</p>
@@ -397,7 +397,7 @@
 <p>Within the HTML files (qtemplate.info.html, qtemplate.intermediate.html and qtemplate.payment.html) you can see HTML comments which start always with the text &#8220;QENTA&#8221; and end always with &#8220;BEGIN&#8221; or &#8220;END&#8221;. In between there are individual names, depending on the individual tag.</p>
 </div>
 <div class="paragraph">
-<p>These tags define the beginning and the end of page elements which are replaced with current values of the actual payment of your consumer when using QENTA Checkout Page. To help you during your customization of these template files, we have added typical dummy texts between these tags. In production mode all content between these tags will be replaced by Wirecard Checkout Page.</p>
+<p>These tags define the beginning and the end of page elements which are replaced with current values of the actual payment of your consumer when using QENTA Checkout Page. To help you during your customization of these template files, we have added typical dummy texts between these tags. In production mode all content between these tags will be replaced by QPAY Checkout Page.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -408,14 +408,14 @@
 </div>
 </div>
 <div class="sect4">
-<h5 id="WhichElementsOfQPAYCheckoutPageCanBeCustomized"><a class="anchor" href="#WhichElementsOfQPAYCheckoutPageCanBeCustomized"></a>Which elements of Wirecard Checkout Page can be customized?</h5>
+<h5 id="WhichElementsOfQPAYCheckoutPageCanBeCustomized"><a class="anchor" href="#WhichElementsOfQPAYCheckoutPageCanBeCustomized"></a>Which elements of QPAY Checkout Page can be customized?</h5>
 <div class="paragraph">
 <p>Within the customization possibilities you can modify the following elements:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Customizing the HTML files outside the Wirecard specific tags to modify the markup and content of these HTML pages.</p>
+<p>Customizing the HTML files outside the QENTA specific tags to modify the markup and content of these HTML pages.</p>
 </li>
 <li>
 <p>Customizing the CSS file named &#8220;merchant.css&#8221; within the folder &#8220;/styles&#8221;.</p>
@@ -429,7 +429,7 @@
 <div class="sect4">
 <h5 id="MaskingOfSpecialCharactersInTemplates"><a class="anchor" href="#MaskingOfSpecialCharactersInTemplates"></a>Masking of special characters in templates</h5>
 <div class="paragraph">
-<p>In order to avoid any display problems in your online shop resulting from the use of special characters it is required that you mask such special characters with HTML entities in the templates you forward to Wirecard.</p>
+<p>In order to avoid any display problems in your online shop resulting from the use of special characters it is required that you mask such special characters with HTML entities in the templates you forward to QENTA.</p>
 </div>
 <div class="paragraph">
 <p>For a list of HTML entities to mask special characters please visit <a href="https://www.w3schools.com/charsets/ref_html_8859.asp">HTML entities</a>.</p>
@@ -442,7 +442,7 @@
 </div>
 </div>
 <div class="sect4">
-<h5 id="WhichQENTATagsCanBeUsedInWhichPage"><a class="anchor" href="#WhichQENTATagsCanBeUsedInWhichPage"></a>Which Wirecard tags can be used in which page?</h5>
+<h5 id="WhichQENTATagsCanBeUsedInWhichPage"><a class="anchor" href="#WhichQENTATagsCanBeUsedInWhichPage"></a>Which QENTA tags can be used in which page?</h5>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -590,7 +590,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="DescriptionOfWirecardTags"><a class="anchor" href="#DescriptionOfWirecardTags"></a>Description of QENTA tags</h4>
+<h4 id="DescriptionOfQentaTags"><a class="anchor" href="#DescriptionOfQentaTags"></a>Description of QENTA tags</h4>
 <div class="sect4">
 <h5 id="Qhead"><a class="anchor" href="#Qhead"></a>QHEAD</h5>
 <div class="paragraph">
