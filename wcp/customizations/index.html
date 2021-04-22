@@ -353,11 +353,6 @@
 </div>
 <div class="sect3">
 <h4 id="EditingTheTemplates"><a class="anchor" href="#EditingTheTemplates"></a>Editing the templates</h4>
-<div class="sect4">
-<h5 id="DownloadingAndUnzippingTheTemplatesFile"><a class="anchor" href="#DownloadingAndUnzippingTheTemplatesFile"></a>Downloading and unzipping the templates file</h5>
-<div class="paragraph">
-<p>The template is available on <a href="https://github.com/qenta-cee/responsive-template-qcp">GitHub</a>. Click <span class="menuseq"><b class="menu">Code</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Download ZIP</b></span> to download it.</p>
-</div>
 <div class="paragraph">
 <p>This zip-file contains the following elements:</p>
 </div>
@@ -391,10 +386,10 @@
 </ul>
 </div>
 </div>
-<div class="sect4">
-<h5 id="WhatAreQENTATags"><a class="anchor" href="#WhatAreQENTATags"></a>What are QENTA tags?</h5>
+<div class="sect3">
+<h4 id="WhatAreQENTATags"><a class="anchor" href="#WhatAreQENTATags"></a>What are QENTA tags?</h4>
 <div class="paragraph">
-<p>Within the HTML files (qtemplate.info.html, qtemplate.intermediate.html and qtemplate.payment.html) you can see HTML comments which start always with the text &#8220;QENTA&#8221; and end always with &#8220;BEGIN&#8221; or &#8220;END&#8221;. In between there are individual names, depending on the individual tag.</p>
+<p>Within the HTML files (<code>qtemplate.info.html</code>, <code>qtemplate.intermediate.html</code> and <code>qtemplate.payment.html</code>) you can see HTML comments which start always with the text &#8220;QENTA&#8221; and end always with &#8220;BEGIN&#8221; or &#8220;END&#8221;. In between there are individual names, depending on the individual tag.</p>
 </div>
 <div class="paragraph">
 <p>These tags define the beginning and the end of page elements which are replaced with current values of the actual payment of your consumer when using QENTA Checkout Page. To help you during your customization of these template files, we have added typical dummy texts between these tags. In production mode all content between these tags will be replaced by QPAY Checkout Page.</p>
@@ -407,8 +402,8 @@
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="WhichElementsOfQPAYCheckoutPageCanBeCustomized"><a class="anchor" href="#WhichElementsOfQPAYCheckoutPageCanBeCustomized"></a>Which elements of QPAY Checkout Page can be customized?</h5>
+<div class="sect3">
+<h4 id="WhichElementsOfQPAYCheckoutPageCanBeCustomized"><a class="anchor" href="#WhichElementsOfQPAYCheckoutPageCanBeCustomized"></a>Which elements of QPAY Checkout Page can be customized?</h4>
 <div class="paragraph">
 <p>Within the customization possibilities you can modify the following elements:</p>
 </div>
@@ -426,8 +421,8 @@
 </ul>
 </div>
 </div>
-<div class="sect4">
-<h5 id="MaskingOfSpecialCharactersInTemplates"><a class="anchor" href="#MaskingOfSpecialCharactersInTemplates"></a>Masking of special characters in templates</h5>
+<div class="sect3">
+<h4 id="MaskingOfSpecialCharactersInTemplates"><a class="anchor" href="#MaskingOfSpecialCharactersInTemplates"></a>Masking of special characters in templates</h4>
 <div class="paragraph">
 <p>In order to avoid any display problems in your online shop resulting from the use of special characters it is required that you mask such special characters with HTML entities in the templates you forward to QENTA.</p>
 </div>
@@ -435,14 +430,14 @@
 <p>For a list of HTML entities to mask special characters please visit <a href="https://www.w3schools.com/charsets/ref_html_8859.asp">HTML entities</a>.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="TestingTheCustomization"><a class="anchor" href="#TestingTheCustomization"></a>Testing the customization</h5>
+<div class="sect3">
+<h4 id="TestingTheCustomization"><a class="anchor" href="#TestingTheCustomization"></a>Testing the customization</h4>
 <div class="paragraph">
 <p>You can either open the HTML files directly in the file system in your favorite browser or upload them to your web server to test in real conditions like https.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="WhichQENTATagsCanBeUsedInWhichPage"><a class="anchor" href="#WhichQENTATagsCanBeUsedInWhichPage"></a>Which QENTA tags can be used in which page?</h5>
+<div class="sect3">
+<h4 id="WhichQENTATagsCanBeUsedInWhichPage"><a class="anchor" href="#WhichQENTATagsCanBeUsedInWhichPage"></a>Which QENTA tags can be used in which page?</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -460,127 +455,127 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QHEAD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QHEAD</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QSCRIPTWARNING</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QSCRIPTWARNING</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QMERCHANTIMAGE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QMERCHANTIMAGE</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QMERCHANTIMAGE200X100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QMERCHANTIMAGE200X100</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBRANDIMAGEVERTICAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBRANDIMAGEVERTICAL</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBRANDIMAGEHORIZONTAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBRANDIMAGEHORIZONTAL</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBRANDIMAGE200X220</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBRANDIMAGE200X220</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBRANDIMAGE350X30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBRANDIMAGE350X30</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QCERTIFICATE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QCERTIFICATE</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QENTAINFO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QENTAINFO</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QORDERINFO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QORDERINFO</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QORDIVIDER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QORDIVIDER</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QINPUTHEAD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QINPUTHEAD</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QINPUTFOOT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QINPUTFOOT</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QINFOTEXT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QINFOTEXT</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QERRORTEXT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QERRORTEXT</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QINPUT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QINPUT</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QCSSBUTTONS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QCSSBUTTONS</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBUTTONS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBUTTONS</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QWAKEUPMESSAGE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QWAKEUPMESSAGE</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QCHECKOUTEXPRESS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QCHECKOUTEXPRESS</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Never</p></td>
@@ -588,23 +583,22 @@
 </tbody>
 </table>
 </div>
-</div>
 <div class="sect3">
 <h4 id="DescriptionOfQentaTags"><a class="anchor" href="#DescriptionOfQentaTags"></a>Description of QENTA tags</h4>
 <div class="sect4">
-<h5 id="Qhead"><a class="anchor" href="#Qhead"></a>QHEAD</h5>
+<h5 id="Qhead"><a class="anchor" href="#Qhead"></a><code>QHEAD</code></h5>
 <div class="paragraph">
 <p>Contains the title of the HTML page, the include of the default CSS (&#8220;/styles/qstyles.css&#8221;), the includes for the JavaScript files and sets the content type.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qscriptwarning"><a class="anchor" href="#Qscriptwarning"></a>QSCRIPTWARNING</h5>
+<h5 id="Qscriptwarning"><a class="anchor" href="#Qscriptwarning"></a><code>QSCRIPTWARNING</code></h5>
 <div class="paragraph">
 <p>Contains a warning text if JavaScript is not enabled within the web browser of your consumer.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="QmerchantimageQmerchantimage200x100"><a class="anchor" href="#QmerchantimageQmerchantimage200x100"></a>QMERCHANTIMAGE, QMERCHANTIMAGE200X100</h5>
+<h5 id="QmerchantimageQmerchantimage200x100"><a class="anchor" href="#QmerchantimageQmerchantimage200x100"></a><code>QMERCHANTIMAGE</code>, <code>QMERCHANTIMAGE200X100</code></h5>
 <div class="paragraph">
 <p>Contains the logo of your online shop, i.e. the image you alternatively define by setting a URL in the request parameter <code>imageUrl</code>. Depending on the tag you use in the template files your logo can have the following dimensions in pixel:</p>
 </div>
@@ -623,12 +617,12 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QMERCHANTIMAGE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QMERCHANTIMAGE</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">95pixel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">65pixel</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QMERCHANTIMAGE200X100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QMERCHANTIMAGE200X100</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">200pixel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">100pixel</p></td>
 </tr>
@@ -639,7 +633,7 @@
 </div>
 </div>
 <div class="sect4">
-<h5 id="QbrandimageverticalQbrandimagehorizontalQbrandimage200x220Qbrandimage350x30"><a class="anchor" href="#QbrandimageverticalQbrandimagehorizontalQbrandimage200x220Qbrandimage350x30"></a>QBRANDIMAGEVERTICAL, QBRANDIMAGEHORIZONTAL, QBRANDIMAGE200X220, QBRANDIMAGE350X30</h5>
+<h5 id="QbrandimageverticalQbrandimagehorizontalQbrandimage200x220Qbrandimage350x30"><a class="anchor" href="#QbrandimageverticalQbrandimagehorizontalQbrandimage200x220Qbrandimage350x30"></a><code>QBRANDIMAGEVERTICAL</code>, <code>QBRANDIMAGEHORIZONTAL</code>, <code>QBRANDIMAGE200X220</code>, <code>QBRANDIMAGE350X30</code></h5>
 <div class="paragraph">
 <p>Contains the logos of the brands of payment methods you offer in your online shop which may be displayed within the payment process. Depending on the tag you use within the template files the brand logos can have the following dimensions in pixel:</p>
 </div>
@@ -658,22 +652,22 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBRANDIMAGEVERTICAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBRANDIMAGEVERTICAL</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">90pixel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">220pixel</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBRANDIMAGEHORIZONTAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBRANDIMAGEHORIZONTAL</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">220pixel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">90pixel</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBRANDIMAGE200X220</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBRANDIMAGE200X220</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">200pixel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">220pixel</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QBRANDIMAGE350X30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>QBRANDIMAGE350X30</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">350pixel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">30pixel</p></td>
 </tr>
@@ -687,67 +681,67 @@
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qcertificate"><a class="anchor" href="#Qcertificate"></a>QCERTIFICATE</h5>
+<h5 id="Qcertificate"><a class="anchor" href="#Qcertificate"></a><code>QCERTIFICATE</code></h5>
 <div class="paragraph">
 <p>Contains the certification logo of VeriSign.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qentainfo"><a class="anchor" href="#Qentainfo"></a>QENTAINFO</h5>
+<h5 id="Qentainfo"><a class="anchor" href="#Qentainfo"></a><code>QENTAINFO</code></h5>
 <div class="paragraph">
 <p>Contains the logo of QENTA, which is required for each page within the QPAY Checkout Page.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qorderinfo"><a class="anchor" href="#Qorderinfo"></a>QORDERINFO</h5>
+<h5 id="Qorderinfo"><a class="anchor" href="#Qorderinfo"></a><code>QORDERINFO</code></h5>
 <div class="paragraph">
 <p>Contains information about the current order of your consumer in your online shop. This is the text you send as request parameter &#8220;displayText&#8221; to QPAY Checkout Page. Additionally the amount, currency and current date are displayed to your consumer.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qordivider"><a class="anchor" href="#Qordivider"></a>QORDIVIDER</h5>
+<h5 id="Qordivider"><a class="anchor" href="#Qordivider"></a><code>QORDIVIDER</code></h5>
 <div class="paragraph">
 <p>Contains a visible horizontal line with the word <strong>or</strong> in the middle of it.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qinputhead"><a class="anchor" href="#Qinputhead"></a>QINPUTHEAD</h5>
+<h5 id="Qinputhead"><a class="anchor" href="#Qinputhead"></a><code>QINPUTHEAD</code></h5>
 <div class="paragraph">
 <p>Contains the header for the input fields.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qinputfoot"><a class="anchor" href="#Qinputfoot"></a>QINPUTFOOT</h5>
+<h5 id="Qinputfoot"><a class="anchor" href="#Qinputfoot"></a><code>QINPUTFOOT</code></h5>
 <div class="paragraph">
 <p>Contains the footer of the input fields.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qinfotext"><a class="anchor" href="#Qinfotext"></a>QINFOTEXT</h5>
+<h5 id="Qinfotext"><a class="anchor" href="#Qinfotext"></a><code>QINFOTEXT</code></h5>
 <div class="paragraph">
 <p>Contains information texts regarding the current state within the payment process.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qerrortext"><a class="anchor" href="#Qerrortext"></a>QERRORTEXT</h5>
+<h5 id="Qerrortext"><a class="anchor" href="#Qerrortext"></a><code>QERRORTEXT</code></h5>
 <div class="paragraph">
 <p>Contains information texts regarding error messages or critical information texts.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qinput"><a class="anchor" href="#Qinput"></a>QINPUT</h5>
+<h5 id="Qinput"><a class="anchor" href="#Qinput"></a><code>QINPUT</code></h5>
 <div class="paragraph">
 <p>Contains input elements like text fields, option buttons, radio buttons, check boxes or selection lists. These elements are always encapsulated within the tags &#8220;QINPUTHEAD&#8221; and &#8220;QINPUTFOOT&#8221;.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qcssbuttons"><a class="anchor" href="#Qcssbuttons"></a>QCSSBUTTONS</h5>
+<h5 id="Qcssbuttons"><a class="anchor" href="#Qcssbuttons"></a><code>QCSSBUTTONS</code></h5>
 <div class="paragraph">
 <p>Contains the buttons for the actions "Cancel", "Back" and "Next". Please be aware that these buttons are defined as unordered list items and designed as buttons via corresponding CSS definitions.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qbuttons"><a class="anchor" href="#Qbuttons"></a>QBUTTONS</h5>
+<h5 id="Qbuttons"><a class="anchor" href="#Qbuttons"></a><code>QBUTTONS</code></h5>
 <div class="paragraph">
 <p>Contains the buttons as images for the actions "Cancel", "Back" and "Next". These buttons are defined as images with the following names:</p>
 </div>
@@ -774,20 +768,20 @@
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-This method of displaying buttons on a customized version of QPAY Checkout Page is outdated and only documented for compatibility reasons to old customizations. Please use QCSSBUTTONS instead of QBUTTONS.
+This method of displaying buttons on a customized version of QPAY Checkout Page is outdated and only documented for compatibility reasons to old customizations. Please use <code>QCSSBUTTONS</code> instead of <code>QBUTTONS</code>.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qwakeupmessage"><a class="anchor" href="#Qwakeupmessage"></a>QWAKEUPMESSAGE</h5>
+<h5 id="Qwakeupmessage"><a class="anchor" href="#Qwakeupmessage"></a><code>QWAKEUPMESSAGE</code></h5>
 <div class="paragraph">
 <p>Contains pages of 3rd party financial institutions like 3-D Secure for credit cards or online banking pages.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Qcheckoutexpress"><a class="anchor" href="#Qcheckoutexpress"></a>QCHECKOUTEXPRESS</h5>
+<h5 id="Qcheckoutexpress"><a class="anchor" href="#Qcheckoutexpress"></a><code>QCHECKOUTEXPRESS</code></h5>
 <div class="paragraph">
 <p>Contains a list of express checkout and "Buy with &#8230;&#8203;" buttons. Only displayed on the credit card input page.</p>
 </div>
