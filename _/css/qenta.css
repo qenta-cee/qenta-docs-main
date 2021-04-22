@@ -15,7 +15,11 @@ nav.breadcrumbs li:last-child a {
 }
 
 *[class^='cat_'] {
-    display: none;
+  display: none;
+}
+
+.doc h4, .doc h5 { 
+  font-weight: bold;
 }
 
 #pmpicker {
