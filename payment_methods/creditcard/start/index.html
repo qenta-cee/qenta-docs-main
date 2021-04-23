@@ -478,35 +478,10 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">American Express, Diners Club, Discover, JCB, Maestro SecureCode, Mastercard, Visa</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.<br>
-<code>customerStatement</code> consists of 2 descriptors which are separated by *.</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 12 characters.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>StaticDescriptor</code> is specified by Wirecard Bank compliance and is the same for each transaction.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 12 characters.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DynamicDescriptor</code> is optional, configurable and has to be activated.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SIX Pay</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 254 characters.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Text displayed on bank statement issued to your consumer by the financial service provider.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Evalon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club, Discover, JCB, Maestro SecureCode, Mastercard, Visa</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ConCardis</p></td>
@@ -572,12 +547,6 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Wirecard Bank</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">American Express, Diners Club, Discover, JCB, Maestro SecureCode, Mastercard, Visa</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 32 characters. Allowed characters are [0-9a-zA-Z].</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial institution.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SIX Pay</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
@@ -586,12 +555,6 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hobex</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode, Mastercard, Visa</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Evalon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club, Discover, JCB, Maestro SecureCode, Mastercard, Visa</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
@@ -628,7 +591,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">card complete</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">JCB, J/Secure™, Maestro SecureCode, Mastercard, Visa</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII with a variable length of up to 25 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 25 characters.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">:::</p></td>
 </tr>
 </tbody>
@@ -678,7 +641,7 @@
 <div class="sect2">
 <h3 id="AdditionalResponseParameters"><a class="anchor" href="#AdditionalResponseParameters"></a>Additional response parameters</h3>
 <div class="paragraph">
-<p>When using the payment methods Credit Card and Credit Card - Mail Order and Telephone Order in your online shop, Wirecard will return additional parameters to your online shop. These parameters are specific to the above mentioned payment methods.</p>
+<p>When using the payment methods Credit Card and Credit Card - Mail Order and Telephone Order in your online shop, QENTA will return additional parameters to your online shop. These parameters are specific to the above mentioned payment methods.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -764,7 +727,7 @@ Please be aware that due to PCI DSS compliance, <code>hashedPan</code> cannot be
 <div class="sect3">
 <h4 id="OptionalFeaturespecificParametersAdditionallyForQpay"><a class="anchor" href="#OptionalFeaturespecificParametersAdditionallyForQpay"></a>Optional feature-specific parameters for QPAY Checkout Page</h4>
 <div class="paragraph">
-<p>These optional feature-specific response parameters enhances the functionality and usability of the payment process regarding specific features and functions and are enabled by Wirecard on your behalf. To enable these parameters for your account please contact our <a href="../../../support/" class="page">support teams</a>.</p>
+<p>These optional feature-specific response parameters enhances the functionality and usability of the payment process regarding specific features and functions and are enabled by QENTA on your behalf. To enable these parameters for your account please contact our <a href="../../../support/" class="page">support teams</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -809,26 +772,11 @@ Please be aware that due to PCI DSS compliance, <code>hashedPan</code> cannot be
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Please note that the above mentioned response parameters are enabled by default when you use Wirecard Checkout Seamless in your online shop.
+Please note that the above mentioned response parameters are enabled by default when you use QMORE Checkout Seamless in your online shop.
 </td>
 </tr>
 </table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="AddressVerificationSystemavs"><a class="anchor" href="#AddressVerificationSystemavs"></a>Address Verification System (AVS)</h4>
-<div class="paragraph">
-<p>By means of AVS it is verified whether the billing address of the credit card matches the address that was given by the consumer in the online shop, i.e. the system checks the billing address of the credit card provided by the consumer with the address on file at the credit card company.</p>
-</div>
-<div class="paragraph">
-<p>If you want to use the <a href="../avs/" class="page">Address Verification System</a>, please contact our <a href="../../../support/" class="page">support teams</a> for enabling the additional response parameters listed on the page for your account.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="DefinitionOfTerms"><a class="anchor" href="#DefinitionOfTerms"></a>Definition of terms</h3>
-<div class="paragraph">
-<p>For the definitions of the most common terms used in relation to credit cards, such as <a href="../../../glossary/#IssuerOrIssuingBank" class="page">issuer</a>, <a href="../../../glossary/#AcquirerOrAquiringBank" class="page">acquirer</a>, <a href="../../../glossary/#3DSecure" class="page">3-D Secure</a>, and <a href="../../../glossary/#AddressVerificationSystem" class="page">glossary.adoc#AddressVerificationSystem</a>(AVS)[Address Verification System (AVS)] consult our <a href="../../../glossary/" class="page">Glossary</a>.</p>
 </div>
 </div>
 <div class="sect2">
