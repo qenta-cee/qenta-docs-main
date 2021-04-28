@@ -2,6 +2,10 @@ body {
   color: rgb(23, 64, 101);
 }
 
+strong {
+  font-weight: 600;
+}
+
 *:focus {
   outline: none;
 }
