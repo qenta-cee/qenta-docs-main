@@ -9435,13 +9435,13 @@ td>
 <td class=3D"confluenceTd"><p><br></p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>MasterCard SecureCode</p></td>
+<td class=3D"confluenceTd"><p>Mastercard ID Check</p></td>
 <td class=3D"confluenceTd"><p style=3D"text-align: center;">Ja</p></td>
 <td class=3D"confluenceTd"><p>APG, CPT, VPG, WCP</p></td>
 <td class=3D"confluenceTd"><p><br></p></td>
 </tr>
 <tr>
-<td class=3D"confluenceTd"><p>Verified by VISA</p></td>
+<td class=3D"confluenceTd"><p>Visa Secure</p></td>
 <td class=3D"confluenceTd"><p style=3D"text-align: center;">Ja</p></td>
 <td class=3D"confluenceTd"><p>APG, CPT, VPG, WCP</p></td>
 <td class=3D"confluenceTd"><p>unterschiedliche Schreibweise m=C3=B6glich!</=
@@ -9811,7 +9811,7 @@ abgewiesen. Bitte kontaktieren Sie Ihren Payment Service Provider.</p></td>
 </tr>
 <tr>
 <td class=3D"confluenceTd"><p>20013</p></td>
-<td class=3D"confluenceTd"><p>Zahlung nur mit Verified by VISA m=C3=B6glich=
+<td class=3D"confluenceTd"><p>Zahlung nur mit Visa Secure m=C3=B6glich=
 , bitte wenden Sie sich an Ihren Kartenausgeber.</p></td>
 </tr>
 <tr>
