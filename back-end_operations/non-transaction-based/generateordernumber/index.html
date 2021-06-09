@@ -221,7 +221,7 @@
 <h2 id="Generateordernumber"><a class="anchor" href="#Generateordernumber"></a>generateOrderNumber</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>generateOrderNumber is one of the <a href="../start/" class="page">non-transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. This operation returns a new and unique order number which can be used for Wirecard Checkout Page and Wirecard Checkout Seamless frontend requests or as parameter <code>orderNumber</code> for the transaction-based operation <code>recurPayment</code>. The order number is generated only once and remains valid indefinitely, even if the order number is not used.</p>
+<p>generateOrderNumber is one of the <a href="../start/" class="page">non-transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. This operation returns a new and unique order number which can be used for QPAY Checkout Page and QMORE Checkout Seamless frontend requests or as parameter <code>orderNumber</code> for the transaction-based operation <code>recurPayment</code>. The order number is generated only once and remains valid indefinitely, even if the order number is not used.</p>
 </div>
 <div class="paragraph">
 <p>The required order of the parameter values when computing the fingerprint for <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code> and <code>language</code>.</p>

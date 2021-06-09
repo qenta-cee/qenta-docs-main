@@ -223,36 +223,36 @@
 <div class="sect2">
 <h3 id="WhatAreBackendOperations"><a class="anchor" href="#WhatAreBackendOperations"></a>What are back-end operations?</h3>
 <div class="paragraph">
-<p>Within the usage of QMORE Checkout Seamless, you have the possibility to use commands which enables various operations regarding the orders of your consumer. These operations are called by a server-to-server request from your web server to the Wirecard Checkout Platform. So you have the possibility either to call these operations automatically from the back-end of your web shop or manually from your web interface you have implemented for administration purposes.</p>
+<p>Within the usage of QMORE Checkout Seamless, you have the possibility to use commands which enables various operations regarding the orders of your consumer. These operations are called by a server-to-server request from your web server to QENTA. So you have the possibility either to call these operations automatically from the back-end of your web shop or manually from your web interface you have implemented for administration purposes.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="WhichBackendOperationsAreAvailable"><a class="anchor" href="#WhichBackendOperationsAreAvailable"></a>Which back-end operations are available?</h3>
 <div class="paragraph">
-<p>The Wirecard Checkout Seamless offers you the following back-end operations:</p>
+<p>The QMORE Checkout Seamless offers you the following back-end operations:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>#approveReversal for cancelling an approval</p>
+<p><a href="#ApproveReversal">[ApproveReversal]</a> for cancelling an approval</p>
 </li>
 <li>
-<p>#deposit for converting an approval to a posting</p>
+<p><a href="#Deposit">deposit</a> for converting an approval to a posting</p>
 </li>
 <li>
-<p>#depositReversal for cancelling a posting</p>
+<p><a href="#DepositReversal">[DepositReversal]</a> for cancelling a posting</p>
 </li>
 <li>
-<p>#getOrderDetails for returning all order&#8217;s detail including corresponding payments and credit notes</p>
+<p><a href="#GetOrderDetails">[GetOrderDetails]</a> for returning all order&#8217;s detail including corresponding payments and credit notes</p>
 </li>
 <li>
-<p>#recurPayment for creating a new order based on an existing order</p>
+<p><a href="#RecurPayment">[RecurPayment]</a> for creating a new order based on an existing order</p>
 </li>
 <li>
-<p>#refund for creating a credit note for an order</p>
+<p><a href="#Refund">refund</a> for creating a credit note for an order</p>
 </li>
 <li>
-<p>#refundReversal for cancelling a credit note</p>
+<p><a href="#RefundReversal">[RefundReversal]</a> for cancelling a credit note</p>
 </li>
 </ul>
 </div>
@@ -393,16 +393,6 @@
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Instantbank</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
@@ -421,26 +411,6 @@
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">moneta.ru</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">mpass</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Przelewy24</p></td>
@@ -463,26 +433,6 @@
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Paybox</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">POLi</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Paysafecard</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
@@ -493,37 +443,7 @@
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quick</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Skrill Direct</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Skrill Digital Wallet</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sofort.com</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sofort</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -535,7 +455,7 @@
 </tbody>
 </table>
 <div class="paragraph">
-<p>(*) please contact our Support team via <a href="mailto:support@qenta.at">support@qenta.at</a> to enable this feature</p>
+<p>(*) please contact our Support team via <a href="mailto:support@qenta.com">support@qenta.com</a> to enable this feature</p>
 </div>
 </div>
 <div class="sect2">
@@ -602,7 +522,7 @@
 <p>After concatenating all values to a single string you use a SHA512 hash and the result is the fingerprint which you add as a request parameter to the server-to-server call.</p>
 </div>
 <div class="paragraph">
-<p>The QENTA Checkout Platform knows also your secret and is able to check if the received parameters are not manipulated by a 3rd party. Therefore it is essential that only you and Wirecard knows your secret!</p>
+<p>The QENTA Checkout Platform knows also your secret and is able to check if the received parameters are not manipulated by a 3rd party. Therefore it is essential that only you and QENTA know your secret!</p>
 </div>
 </div>
 <div class="sect2">
@@ -793,7 +713,7 @@
 <p>This operation cancels an approval. This can only be done when the approval has not yet been debited and is supported by the financial service provider.</p>
 </div>
 <div class="paragraph">
-<p>The required order of the parameter values when computing the fingerprint is: customerId, shopId, password, secret, language and orderNumber</p>
+<p>The required order of the parameter values when computing the fingerprint is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code> and <code>orderNumber</code></p>
 </div>
 <div class="paragraph">
 <p>The URL for the server-to-server call is: <code>https://api.qenta.com/qmore/backend/approveReversal</code></p>
@@ -815,7 +735,7 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numerical with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number of payment</p></td>
 </tr>
@@ -930,12 +850,12 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numerical with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number of payment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">paymentNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>paymentNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">payment number which is typically the same as the order number</p></td>
 </tr>
@@ -977,7 +897,7 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numerical with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number of payment</p></td>
 </tr>
@@ -1001,357 +921,357 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orders</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orders</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">always 1 if a corresponding order has been found, otherwise 0</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.merchantNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.merchantNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">id of merchant</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.paymentType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.paymentType</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with a variable length of up to 32</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">payment type of order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.amount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amount</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amount of order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.brand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.brand</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with a variable length of up to 255</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">brand of payment type</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.currency</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with a fixed length of 3 or numeric with a fixed length of 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">currency code of amount</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.orderDescription</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.orderDescription</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with a variable length of up to 255</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">unique description of the consumer&#8217;s order in a human readable form</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.acquirer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.acquirer</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">aquirer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.contractNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.contractNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters and a variable length of up to 255</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">contract number of financial service provider</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.operationsAllowed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.operationsAllowed</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">comma-separated string of available back-end operations or an empty string if no back-end operation is possible</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.orderReference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.orderReference</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 128</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order reference</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.customerStatement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.customerStatement</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with a variable length of up to 254</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">text visible for consumer on payment record</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.orderText</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.orderText</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with a variable length of up to 254</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order text reduced to ASCII-character set</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.timeCreated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.timeCreated</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date and time when order has been created</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.timeModified</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.timeModified</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date and time when order has been modified the last time</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.state</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with a variable length of 16</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">state of order (e.g. ORDERED, REFUNDABLE, CLOSED, &#8230;&#8203;)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.sourceOrderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.sourceOrderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">source order number if there is a connection to another order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.payments</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.payments</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">count of corresponding payment objects</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">order.{n}.credits</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order.{n}.credits</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">count of corresponding credit objects</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.merchantNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.merchantNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">id of merchant</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paymentNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paymentNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">number of payment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">number of order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.approvalCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.approvalCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">approval code of financial service provider (may be also an empty string</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.batchNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.batchNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">only available if day-end closing was done for this order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.approveAmount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.approveAmount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amount</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">approved amount of order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.depositAmount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.depositAmount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amount</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">posting amount of order</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.currency</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with a fixed length of 3 or numeric with a fixed length of 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">currency code</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.timeCreated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.timeCreated</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date and time when payment has been created</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.timeModified</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.timeModified</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date and time when payment has been modified the last time</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.state</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with up to 32 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">state of payment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paymentType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paymentType</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 64 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">type of payment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.operationsAllowed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.operationsAllowed</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">comma-separated string of available back-end operations or an empty string if no back-end operation is possible</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.gatewayReferenceNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.gatewayReferenceNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters with up to 255 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">reference number of corresponding financial service provider</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.avsResultCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.avsResultCode</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters with up to 5 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">result code of AVS check</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.avsResultMessage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.avsResultMessage</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters and up to 256 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">result text of AVS check</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.ideslConsumerName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.ideslConsumerName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with up to 255 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">name of iDEAL consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.idealConsumerCity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.idealConsumerCity</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters and up to 255 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">city of iDEAL consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.idealConsumerAccountNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.idealConsumerAccountNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 255 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">account number of iDEAL consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 13 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ID of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerEmail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerEmail</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters and up to 127 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">e-Mail of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerFirstName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerFirstName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 64 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">first name of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerLastName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerLastName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 64 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">last name of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerAddressCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerAddressCountry</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with a fixed length of 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">country of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerAddressCity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerAddressCity</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with up to 40 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ciy of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerAddressState</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerAddressState</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with a fixed length of 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">state of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerAddressName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerAddressName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 100 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">address name of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerAddressStreet1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerAddressStreet1</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 100 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">street (1) of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerAddressStreet2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerAddressStreet2</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 100 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">street (2) of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerZIP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerZIP</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 32 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">zip code of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerAddressStatus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerAddressStatus</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 32 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">state of address verification of PayPal consumer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.paypalPayerProtectionEligibility</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.paypalPayerProtectionEligibility</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 32 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">information regarding PayPal merchant protection</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.senderAccountOwner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.senderAccountOwner</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters and up to 255 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">name of owner of account</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.senderAccountNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.senderAccountNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 30</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">number of account</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.senderBankNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.senderBankNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 30</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">bank number of account</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.senderBankName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.senderBankName</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 30</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">bank number of account</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.senderBIC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.senderBIC</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 50 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BIC of account</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.senderIBAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.senderIBAN</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with up to 50 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IBAN of account</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.senderCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.senderCountry</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with a fixed length of 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">country code of sender</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">payment.{n}.{m}.securityCriteria</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment.{n}.{m}.securityCriteria</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a fixed length of 1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">security criterion returned by sofortüberweisung where ”1” means the criteria were met and ”0” means criteria were not met, in that case you should wait until the amount has been received on your side before sending goods or grant access to digital media</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.merchantNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.merchantNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">id of merchant</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.creditNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.creditNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">credit number</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.batchNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.batchNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a variable length of up to 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">batch number for corresponding day-end closing</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.amount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amount</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amount of credit</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.currency</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with a fixed length of 3 or numeric with a fixed length of 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">currency code of amount</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.timeCreated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.timeCreated</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date and time when credit has been created</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.timeModified</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.timeModified</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">date and time when credit has been modified the last time</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.state</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with special characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">current state of credit (credit_refunded o credit_closed)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.operationsAllowed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.operationsAllowed</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">comma-separated string of available back-end operations or an empty string if no back-end operation is possible</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">credit.{n}.{m}.gatewayReferenceNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>credit.{n}.{m}.gatewayReferenceNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with special characters with up to 255 characters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">reference number of corresponding financial service provider</p></td>
 </tr>
@@ -1387,22 +1307,22 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sourceOrderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sourceOrderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numerical with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">original order number used for new payment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>amount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amount</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">posting amount</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>currency</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with a fixed length of 3 or numeric with a fixed length of 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">currency code of amount</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orderDescription</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderDescription</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphanumeric with a variable length of up to 255</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">textual description of order</p></td>
 </tr>
@@ -1426,12 +1346,12 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numerical with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number of payment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">autoDeposit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>autoDeposit</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">"yes" or "no"</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">automated debiting of payment or not</p></td>
 </tr>
@@ -1455,7 +1375,7 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numerical with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number of payment</p></td>
 </tr>
@@ -1491,17 +1411,17 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numerical with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number of payment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>amount</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">amount</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">posting amount</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>currency</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">alphabetic with a fixed length of 3 or numeric with a fixed length of 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">currency code of amount</p></td>
 </tr>
@@ -1525,7 +1445,7 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>creditNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">number of credit note</p></td>
 </tr>
@@ -1561,12 +1481,12 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">orderNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>orderNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numerical with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">order number of payment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">creditNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>creditNumber</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">numeric with a fixed length of 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">credit number which has to be cancelled</p></td>
 </tr>

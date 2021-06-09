@@ -361,10 +361,6 @@ paymentInformation.issueNumber = document.getElementById('cc_issueNumber').value
     s += "bankAccountIban: " + info.bankAccountIban + "\n";
     s += "accountOwner: " + info.accountOwner + "\n";
 
-    //Response for paymentType: PBX
-    s + = "Response for paymentType: PBX\n";
-    s += "payerPayboxNumber: " + info.payerPayboxNumber + "\n";
-
     //Response for paymentType: GIROPAY
     s + = "Response for paymentType: GIROPAY\n";
     s += "accountOwner: " + info.accountOwner + "\n";
@@ -404,8 +400,6 @@ dataStorage.storeCreditCardMotoInformation(paymentInformation, callbackFunction)
 dataStorage.storeMaestroInformation(paymentInformation, callbackFunction);
 
 dataStorage.storeSepaDdInformation(paymentInformation, callbackFunction);
-
-dataStorage.storePayboxInformation(paymentInformation, callbackFunction);
 
 dataStorage.storeGiropayInformation(paymentInformation, callbackFunction);</code></pre>
 </div>
@@ -629,7 +623,7 @@ paymentInformation.issueNumber = document.getElementById('cc_issueNumber').value
 <td class="tableblock halign-left valign-top"><p class="tableblock">bankBic</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 12 characters.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BIC of bank. (<a href="https://en.wikipedia.org/wiki/Bank_Identifier_Code">Bank Identifier Code</a>)<br>
-Required only for Hobex. For Wirecard Bank, bankBic is optional.</p></td>
+Required only for Hobex</p></td>
 </tr>
 </tbody>
 </table>

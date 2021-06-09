@@ -224,8 +224,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="QPAYCheckoutPageForMagento1x"><a class="anchor" href="#QPAYCheckoutPageForMagento1x"></a>QPAY Checkout Page for Openmage 19.x (Magento 1.9.x)</h3>
+<div class="sect1">
+<h2 id="QPAYCheckoutPageForMagento1x"><a class="anchor" href="#QPAYCheckoutPageForMagento1x"></a>QPAY Checkout Page for Openmage 19.x (Magento 1.9.x)</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -247,8 +248,8 @@
 <div class="paragraph">
 <p>GitHub provides the possibility to <strong>get notifications on plugin updates</strong>. If you want to be notified by email, select "watching" on the <a href="https://github.com/qenta-cee/magento-qcp/subscription">GitHub notification status page</a>.</p>
 </div>
-<div class="sect3">
-<h4 id="SupportedPaymentMethods"><a class="anchor" href="#SupportedPaymentMethods"></a>Supported payment methods</h4>
+<div class="sect2">
+<h3 id="SupportedPaymentMethods"><a class="anchor" href="#SupportedPaymentMethods"></a>Supported payment methods</h3>
 <div class="paragraph">
 <p>The following list summarizes all payment methods supported by our plugin for Openmage and QPAY Checkout Page:</p>
 </div>
@@ -273,19 +274,16 @@
 <p><a href="../../../../payment_methods/ideal/start/" class="page">iDEAL</a></p>
 </li>
 <li>
-<p><a href="../../../../payment_methods/installment/payolution/" class="page">Installment: payolution</a> or <a href="#payment_methods/installment/ratepay.adoc" class="page unresolved">Installment: RatePAY</a></p>
+<p><a href="../../../../payment_methods/installment/payolution/" class="page">Installment: payolution</a></p>
 </li>
 <li>
-<p><a href="../../../../payment_methods/invoice/payolution/" class="page">Invoice: payolution</a> or <a href="#payment_methods/invoice/ratepay.adoc" class="page unresolved">Invoice: RatePAY</a></p>
+<p><a href="../../../../payment_methods/invoice/payolution/" class="page">Invoice: payolution</a></p>
 </li>
 <li>
 <p><a href="../../../../payment_methods/p24/start/" class="page">Przelewy24</a></p>
 </li>
 <li>
 <p><a href="../../../../payment_methods/paypal/start/" class="page">PayPal</a></p>
-</li>
-<li>
-<p><a href="#payment_methods/paybox/start.adoc" class="page unresolved">paybox</a></p>
 </li>
 <li>
 <p><a href="../../../../payment_methods/paysafecard/start/" class="page">paysafecard</a></p>
@@ -302,13 +300,14 @@
 <p>Please note that the parameter <code>paymentType</code> is used to define the value of the payment method the user selected in your online shop. For a list of all parameter values go to <a href="../../../../request_parameters/#Paymenttype" class="page">payment types</a>.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Faq"><a class="anchor" href="#Faq"></a>FAQ</h4>
+<div class="sect2">
+<h3 id="Faq"><a class="anchor" href="#Faq"></a>FAQ</h3>
 <div class="paragraph">
 <p><strong><em>I would like to edit the orders using my own script. But I receive error messages. What is the problem?</em></strong></p>
 </div>
 <div class="paragraph">
 <p>You need to insert the following code at the beginning of your script: <code>spl_autoload_register(array(Mage::getModel("Qenta_CheckoutPage_Model_Autoloader"), "autoload"), true, true);</code></p>
+</div>
 </div>
 </div>
 </div>
