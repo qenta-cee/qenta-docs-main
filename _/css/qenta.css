@@ -11,7 +11,9 @@ strong {
 }
 
 .content a[href^="https:"]::after, .content a[target="_blank"]::after {
-  content: " "url("../img/external-link.svg");
+  text-decoration: none;
+  content: url(../img/external-link.svg);
+  margin-left: 0.1rem;
 }
 
 nav.breadcrumbs li:last-child a {
@@ -147,6 +149,12 @@ h1.page {
 
 .doc a {
   color: #104d92;
+  text-decoration: underline dotted;
+  text-underline-position: under;
+}
+
+.doc a.footnote {
+  text-decoration: none;
 }
 
 footer.qenta {
