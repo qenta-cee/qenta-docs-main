@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Wirecard Shop Plugin for OXID eSales :: QENTA Online Guides</title>
+    <title>QENTA Shop Plugin for OXID eSales :: QENTA Online Guides</title>
     <link rel="canonical" href="https://guides.qenta.com/online-guides/main/shop_plugins/wcs/oxid/installation/">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="/_/css/site.css">
@@ -137,9 +137,6 @@
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../../../payment_methods/installment/payolution/">payolution</a>
   </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="#payment_methods/installment/ratepay.adoc">RatePAY</a>
-  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
@@ -210,7 +207,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../../../">QENTA Online Guides</a></li>
-    <li><a href="./">Wirecard Shop Plugin for OXID eSales</a></li>
+    <li><a href="./">QENTA Shop Plugin for OXID eSales</a></li>
   </ul>
 </nav>
 </div>
@@ -219,40 +216,37 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Wirecard Shop Plugin for OXID eSales</h1>
-<div class="sect1">
-<h2 id="WirecardShopPluginForOxidEsales"><a class="anchor" href="#WirecardShopPluginForOxidEsales"></a>Wirecard Shop Plugin for OXID eSales</h2>
-<div class="sectionbody">
+<h1 class="page">QENTA Shop Plugin for OXID eSales</h1>
 <div class="sect2">
-<h3 id="InstallationGuideForWirecardCheckoutSeamless"><a class="anchor" href="#InstallationGuideForWirecardCheckoutSeamless"></a>Installation guide for Wirecard Checkout Seamless</h3>
+<h3 id="InstallationGuideForQMORECheckoutSeamless"><a class="anchor" href="#InstallationGuideForQMORECheckoutSeamless"></a>Installation guide for QMORE Checkout Seamless</h3>
 <div class="paragraph">
 <p>This installation guide shows the step-by-step installation of the plugin to your installed shop system on your web server. Please test your online shop and the configuration of the plugin on a test system before installing the plugin on your production system.</p>
 </div>
 <div class="sect3">
 <h4 id="Step1"><a class="anchor" href="#Step1"></a>Step 1</h4>
 <div class="paragraph">
-<p><strong>Upload the zip file</strong> containing the Wirecard Checkout Seamless plugin to the <strong>document root</strong> of your OXID Shop installation and <strong>unzip the file</strong>. The zip-archive already contains the directory path allowing the plugin to be stored automatically in the right folder.</p>
+<p><strong>Upload the zip file</strong> containing the QMORE Checkout Seamless plugin to the <strong>document root</strong> of your OXID Shop installation and <strong>unzip the file</strong>. The zip-archive already contains the directory path allowing the plugin to be stored automatically in the right folder.</p>
 </div>
 <div class="paragraph">
 <p>If you need to unzip the file on your own computer and then upload the plugin, please maintain the directory structure which already exists in the zip file.</p>
 </div>
 <div class="paragraph">
-<p>To <strong>enable the module</strong> navigate to "Extensions" &#8594; "Modules", select "Wirecard Checkout Seamless" and click on "<strong>Activate</strong>".</p>
+<p>To <strong>enable the module</strong> navigate to "Extensions" &#8594; "Modules", select "QENTA Checkout Seamless" and click on "<strong>Activate</strong>".</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="/_images/shop_plugins/oxid_wcs/oxid_wcs_-_activate_plugin.png" alt="image"></span></p>
+<p><span class="image"><img src="/_images/shop_plugins/oxid_wcp/oxid_wcp_-_step_1.png" alt="image"></span></p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="Step2"><a class="anchor" href="#Step2"></a>Step 2</h4>
 <div class="paragraph">
-<p>Next select the "Settings" tab on the same page.</p>
+<p>Next select the "Settings" tab on the same Seamless.</p>
 </div>
 <div class="paragraph">
-<p>For a basic configuration enter your <strong>customer ID, shop ID</strong> and your <strong>secret</strong> and set the <strong>URL to imprint page</strong>. You can additionally go over the settings and configure the plugin according to your requirements. Please refer to the section <a href="#AdvancedConfiguration">advanced configuration</a> for a more detailed description about the configuration possibilities.</p>
+<p>For a basic configuration enter your <strong>customer ID, shop ID</strong> and your <strong>secret</strong> and set the <strong>URL to imprint Seamless</strong>. You can additionally go over the settings and configure the plugin according to your requirements. Please refer to the section <a href="#AdvancedConfiguration">advanced configuration</a> for a more detailed description about the configuration possibilities.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="/_images/shop_plugins/oxid_wcs/oxid_wcs_-_basic_settings.png" alt="image"></span></p>
+<p><span class="image"><img src="/_images/shop_plugins/oxid_wcp/oxid_wcp_-_step_2.png" alt="image"></span></p>
 </div>
 </div>
 <div class="sect3">
@@ -264,19 +258,19 @@
 <p>Each payment method you want to make available to your consumer needs to be activated by clicking on the payment method, <strong>selecting "Active"</strong> and clicking on the "Save" button.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="/_images/shop_plugins/oxid_wcs/oxid_wcs_-_assign_user_groups.png" alt="image"></span></p>
+<p><span class="image"><img src="/_images/shop_plugins/oxid_wcp/oxid_wcp_-_step_3.png" alt="image"></span></p>
 </div>
 <div class="paragraph">
 <p><strong>"Assign User Groups"</strong> in the "Main" tab and <strong>"Assign Countries"</strong> in the "Country" tab allows you to enable specific payment methods for specific user groups and countries.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="/_images/shop_plugins/oxid_wcs/oxid_wcs_-_assign_countries.png" alt="image"></span></p>
+<p><span class="image"><img src="/_images/shop_plugins/oxid_wcp/oxid_wcp_-_step_4.png" alt="image"></span></p>
 </div>
 <div class="paragraph">
 <p>Additionally the <strong>payment methods</strong> need to be assigned to your <strong>shipping methods</strong> at "Shop Settings" &#8594; "Shipping Methods". Select each shipping method, switch to the tab "Payment" and click "Assign Payment Methods" and assign those you want to make available when your consumer selects the respective shipping method.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="/_images/shop_plugins/oxid_wcs/oxid_wcs_-_assign_payment_to_shipping.png" alt="image"></span></p>
+<p><span class="image"><img src="/_images/shop_plugins/oxid_wcp/oxid_wcp_-_step_5.png" alt="image"></span></p>
 </div>
 </div>
 </div>
@@ -290,7 +284,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>"<strong>Demo</strong>": Demo mode configuration. No communication with your financial service provider but only between your online shop and the Wirecard Checkout Server.</p>
+<p>"<strong>Demo</strong>": Demo mode configuration. No communication with your financial service provider but only between your online shop and the QENTA Checkout Server.</p>
 </li>
 <li>
 <p>"<strong>Test</strong>": During test mode there is communication between your online shop and a test bank or demo bank provided for this purpose by the relevant financial service provider. However, the payment process is only simulated and no money is transferred.</p>
@@ -302,78 +296,28 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="PciDssSaqACompliance"><a class="anchor" href="#PciDssSaqACompliance"></a>PCI DSS SAQ A Compliance</h4>
-<div class="paragraph">
-<p>The shop plugin fulfills the requirements for credit card payments set forth in the PCI DSS v3.2.1 which is mandatory for all e-commerce merchants as of January 1st, 2018. Following this standard, a merchant&#8217;s web site(s) is not allowed to itself handle sensitive credit card specific data.</p>
-</div>
-<div class="paragraph">
-<p>Please visit <a href="../../../../wcs/pci3_fallback/" class="page">PCI DSS SAQ A Compliance for Wirecard Checkout Seamless</a> for more information and details.</p>
-</div>
-<div class="paragraph">
-<p>To this effect, some new parameters need to be set in "Shop Settings" → "Wirecard Checkout Seamless Settings" → "Plugin Settings":</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="/_images/shop_plugins/oxid_wcs/oxid_wcs_-_pci.png" alt="image"></span></p>
-</div>
-<div class="paragraph">
-<p>"SAQ A compliance" is not selected by default, which means that the rather stringent SAQ A-EP is applicable for your online shop and Wirecard Checkout Seamless will <strong>not</strong> be integrated with the "PCI DSS SAQ A Compliance" feature.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Please note that for using the "PCI DSS SAQ A Compliance" feature for Wirecard Checkout Seamless, "SAQ A Compliance" must explicitly be checked.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>To customize the iframe input fields when using the "PCI DSS SAQ A Compliance" feature, enter a full URL to a CSS file on your server into the "Iframe CSS URL" field.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Please note that due to security reasons neither url() functions nor @import directives (e.g. external fonts) are allowed in the CSS file. If they are used they will be ignored.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Select <code>Display card holder field</code> if you wish to display the card holder field for "PCI DSS SAQ A Compliance" and correspondingly the other credit card fields.</p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="AdditionalSettings"><a class="anchor" href="#AdditionalSettings"></a>Additional settings</h4>
 <div class="paragraph">
 <p><strong>Automated deposit</strong>: To prevent the expiration of uncaptured payments you may select this feature which enables an automated deposit and day-end closing of payments. Please contact our <a href="../../../../contact/" class="page">sales teams</a> to enable this feature. If you select this feature without previous enabling you will get an error message.</p>
 </div>
 <div class="paragraph">
-<p><strong>Fraud Prevention Suite</strong>: For a description of this feature please refer to the <a href="../../../../request_parameters/#Riskconfigalias" class="page">request parameter description</a>. Please contact our <a href="../../../../contact/" class="page">sales teams</a> to enable this feature. If you select this feature without previous enabling you will get an error message.</p>
+<p><strong>Payment method sort order</strong>: The payments can be sorted in the order of the "Payment method sort order". The payment with the smallest number entered in this field will be displayed first. You may take into consideration, which payments are mostly used by your consumer and which payments you want your consumers to use and order the payment methods accordingly.</p>
+</div>
+<div class="paragraph">
+<p><strong>Folder for orders</strong>: For each state of the payment a folder can be selected the order should be stored in.</p>
+</div>
+<div class="paragraph">
+<p><strong>Iframe settings</strong>: It is possible to differentiate how QMORE Checkout Seamless is displayed in your online shop. Per default QMORE Checkout Seamless will be displayed in an iframe within the online shop. You can disable the use of an iframe for each payment method. When disabled, your consumer will be redirected to QMORE Checkout Seamless and the online shop will momentarily not be visible. For more information please refer to <a href="../../../../wcp/integration_desktop/" class="page">Integration Possibilities for Desktop Devices</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="Faq"><a class="anchor" href="#Faq"></a>FAQ</h3>
 <div class="paragraph">
-<p><strong><em>Your consumer gets an error message regarding a missing CVC after entering the credit card number, even if the option for the corresponding check is not activated?</em></strong></p>
-</div>
-<div class="paragraph">
-<p>The CVC has to be used for all types of cards where a CVC is required (like Visa or Mastercard). If you activate that check in the back-end of your shop, only card without CVC can be used by your consumers (like Maestro or UATP).</p>
-</div>
-<div class="paragraph">
 <p><strong><em>What about using Zend Guard Loader?</em></strong></p>
 </div>
 <div class="paragraph">
-<p>OXID eShop Enterprise and Professional editions run only properly within Zend Guard Loader (former Zend Optimizer) but is not needed for Community edition. You can find more details regaring this at <a href="https://wiki.oxidforge.org/Installation#Zend_Guard_Loader.2FZend_Optimizer">Zend Guard Loader</a>.</p>
-</div>
-</div>
+<p>OXID eShop Enterprise and Professional editions runs only properly within Zend Guard Loader (former Zend Optimizer) but is not needed for Community edition. You can find more details regaring this at <a href="https://wiki.oxidforge.org/Installation#Zend_Guard_Loader.2FZend_Optimizer" class="bare">https://wiki.oxidforge.org/Installation#Zend_Guard_Loader.2FZend_Optimizer</a></p>
 </div>
 </div>
 </article>
@@ -407,7 +351,7 @@ Please note that due to security reasons neither url() functions nor @import dir
                 <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
               </li>
               <li class="el-item">
-                <a class="el-link" href="https://qenta-cee.at/kontakt">Kontakt</a>
+                <a class="el-link" href="https://guides.qenta.com/contact/">Kontakt</a>
               </li>
               <li class="el-item">
                 <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
@@ -426,7 +370,7 @@ Please note that due to security reasons neither url() functions nor @import dir
                 <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
               </li>
               <li class="el-item">
-                <a class="el-link" href="https://qenta-cee.at/datenschutz">Datenschutz</a>
+                <a class="el-link" href="https://guides.qenta.com/privacy/">Datenschutz</a>
               </li>
               <li class="el-item">
                 <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
