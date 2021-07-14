@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Integration Guide :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/qpay/integration/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qmore/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shop_plugins/start/">Integration into Shop Systems</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qfile/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qcall/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">QENTA Online Guides</a></li>
+    <li><a href="./">Integration Guide</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Integration Guide</h1>
+<div class="sect1">
+<h2 id="IntegrationGuide"><a class="anchor" href="#IntegrationGuide"></a>Integration Guide</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="Overview"><a class="anchor" href="#Overview"></a>Overview</h3>
+<div class="paragraph">
+<p>To start integrating the payment process in your online shop you only need to add an HTML-form with some specific field names and values to your web page displaying the order details of your consumer. By submitting the form, and thus submitting the defined values, your consumer is forwarded to QPAY Checkout Page.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wcp/wcp_ablauf.png" alt="image" width="900"></span></p>
+</div>
+<div class="paragraph">
+<p>On QPAY Checkout Page a web page from our QENTA Checkout Server is shown to your consumer containing an HTML-form where entering of sensitive financial data is possible in a secure manner. After entering these data, your consumer commits the payment and QPAY Checkout Page handles the entire communication with the financial service provider.</p>
+</div>
+<div class="paragraph">
+<p>After the payment process on the part of the financial service provider is completed, QPAY Checkout Page informs your online shop about the result of the payment and forwards the consumer to a specific URL in your online shop which depends on the result of the payment process.</p>
+</div>
+<div class="paragraph">
+<p>Your online shop and your web server do not need to be PCI-compliant because all financial issues are handled by QPAY Checkout Page which is hosted on the QENTA Checkout Server and is itself PCI-compliant and certified for managing and storing sensitive financial data of your consumers like credit card numbers.</p>
+</div>
+<div class="paragraph">
+<p>There are four possible results which can be returned from QPAY Checkout Page to your online shop:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">State</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SUCCESS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The payment process has been successfully completed by your consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CANCEL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The payment process has been canceled by your consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FAILURE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The payment process has not been finished successfully by your consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PENDING</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The result of the payment process has yet to be determined. Typically occurs on payment methods requiring additional checks or actions by financial service providers or your consumer. When QENTA retrieves updated information from the financial service provider, either a success or a failure is sent to your online shop. Please be aware that the state pending is only used if the request parameter <code>pendingUrl</code> is used.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For each possible result state a corresponding URL on your web server is called by the QENTA Checkout Server. These URLs are defined in the HTML form when starting the payment process. Your consumer is redirected to the corresponding URL depending on the result of the payment process.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, QENTA sends the result of the payment process to the <code>confirmUrl</code>. Therefore it is required that your production or test web server is accessible from the Internet. The integration example below is not fully functional on your local host which is typically not accessible from the Internet due to routers, firewalls and security restrictions!</p>
+</div>
+<div class="paragraph">
+<p>A graphical overview of the communication between your online shop and QPAY Checkout Page from a technical point of view is shown below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wcp/wcp_checkout_process_technical-view_neu.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="StartingThePaymentProcess"><a class="anchor" href="#StartingThePaymentProcess"></a>Starting the payment process</h3>
+<div class="paragraph">
+<p>The payment process can be initiated in your online shop by adding an HTML-form to the page you want to start the payment process from.</p>
+</div>
+<div class="paragraph">
+<p>This form consists of a request with <a href="../../request_parameters/#RequiredParameters" class="page">required</a> parameters, such as <code>customerId</code>, <code>language</code>, <code>amount</code>, <code>currency</code>, and <a href="../../request_parameters/#OptionalParameters" class="page">optional</a> parameters, e.g. <code>confirmUrl</code>, <code>orderNumber</code>, <code>customerStatement</code>. These parameters are hidden and not presented to your consumer in your online shop. For all possible request parameters please refer to <a href="../../request_parameters/" class="page">Request Parameters</a>.</p>
+</div>
+<div class="paragraph">
+<p>All parameters are sent as a POST request to the URL <code>https://api.qenta.com/page/init.php</code>.</p>
+</div>
+<div class="paragraph">
+<p>The following example can be copied into an html file. When opened in a browser, QPAY Checkout Page opens on clicking "submit". Only the payment process results will not be sent as the URLs are not valid.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;form action='https://api.qenta.com/page/init.php' method='post' name='checkout' target='_self'&gt;
+  &lt;input type='hidden' name='customerId' value='D200001' /&gt;
+  &lt;input type='hidden' name='language' value='en' /&gt;
+  &lt;input type='hidden' name='paymentType' value='SELECT' /&gt;
+  &lt;input type='hidden' name='amount' value='39.90' /&gt;
+  &lt;input type='hidden' name='currency' value='EUR' /&gt;
+  &lt;input type='hidden' name='orderDescription' value='Order 12345 6789 0' /&gt;
+  &lt;input type='hidden' name='successUrl' value='https://your-online-shop.com/return.php' /&gt;
+  &lt;input type='hidden' name='cancelUrl' value='https://your-online-shop.com/return.php' /&gt;
+  &lt;input type='hidden' name='failureUrl' value='https://your-online-shop.com/return.php' /&gt;
+  &lt;input type='hidden' name='pendingUrl' value='https://your-online-shop.com/return.php' /&gt;
+  &lt;input type='hidden' name='confirmUrl' value='https://your-online-shop.com/confirm.php' /&gt;
+  &lt;input type='hidden' name='serviceUrl' value='https://your-online-shop.com/service.html' /&gt;
+  &lt;input type='hidden' name='displayText' value='Thank you very much for your order.' /&gt;
+  &lt;input type='hidden' name='imageUrl' value='https://your-online-shop.com/logo.png' /&gt;
+  &lt;input type='hidden' name='requestFingerprintOrder' value='customerId,language,amount,currency,orderDescription,paymentType,successUrl,cancelUrl,failureUrl,pendingUrl,confirmUrl,serviceUrl,displayText,imageUrl,requestFingerprintOrder,secret' /&gt;
+  &lt;input type='hidden' name='requestFingerprint' value='C33633657B27DD42323BF46F123F06944519AA9A0BD741700790E17A057D4751D9767B3F5225033CF74547AAD16C7BDB32FF15970E5D0F640EE58931ADEE7AFC' /&gt;
+  &lt;input type='hidden' name='windowName' value='' /&gt;
+  &lt;input type='submit' name='submit' value='Start Checkout'&gt;
+&lt;/form&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A <strong>fully functional example</strong> to run on your server is available as <a href="https://github.com/qenta-cee/qcp-example-php">example code on GitHub</a>.</p>
+</div>
+<div class="paragraph">
+<p>Please configure your firewall settings for sending data from your server to api.qenta.com (212.183.46.16/28) correspondingly.</p>
+</div>
+<div class="sect3">
+<h4 id="DemoAndTestMode"><a class="anchor" href="#DemoAndTestMode"></a>Demo and test mode</h4>
+<div class="paragraph">
+<p>For data to test your integration, i.e. demo values for payment method specific values, please refer to <a href="../demo_mode/" class="page">demo mode</a> and <a href="../test_mode/" class="page">test mode</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ReceivingThePaymentProcessResult"><a class="anchor" href="#ReceivingThePaymentProcessResult"></a>Receiving the payment process result</h3>
+<div class="paragraph">
+<p>QPAY Checkout Page informs your online shop about the result of your consumers payment by calling one of the URLs you provided when starting the payment process. The call includes values which can be used for further processing.</p>
+</div>
+<div class="paragraph">
+<p>The payment process can result in one of four possible states as described above: Success, Cancel, Failure or Pending. For each state, the corresponding specific URL is called and QPAY Checkout Page submits return parameters in a POST request to the corresponding URL. Please visit <a href="../../response_parameters/" class="page">Response Parameters</a> for a detailed description of the parameters you receive which may vary depending on the payment method.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, if the optional request parameter <code>confirmUrl</code> is set, QPAY Checkout Page calls the given URL with a 30 second timeout using the same return values as for <code>successUrl</code>, <code>cancelUrl</code>, <code>failureUrl</code> or <code>pendingUrl</code>. If for any reason your server is not reachable at the moment, the confirmation can be sent again at a later time. Please contact our <a href="../../support/" class="page">support teams</a> to enable this feature.</p>
+</div>
+<div class="paragraph">
+<p>If you did not set the optional request parameter <code>confirmUrl</code> but instead the optional parameter <a href="../../request_parameters/#Confirmmail" class="page">confirmMail</a>, you receive an e-mail regarding the result of the payment. Please contact our <a href="../../contact/" class="page">sales teams</a> to enable this feature.</p>
+</div>
+<div class="paragraph">
+<p>If you set neither the <code>confirmUrl</code> nor <a href="../../request_parameters/#Confirmmail" class="page">confirmMail</a> you may not be informed about the result of the payment process if your consumer closes the browser window prematurely!</p>
+</div>
+<div class="paragraph">
+<p>Optionally you have the possibility to get an e-mail for each transaction irrespective of the parameters <code>confirmUrl</code> or <a href="../../request_parameters/#Confirmmail" class="page">confirmMail</a>. Please contact our <a href="../../contact/" class="page">sales teams</a> to enable this feature.</p>
+</div>
+<div class="paragraph">
+<p>If your consumer <strong>does not finish the payment process</strong> within a time frame of 30 minutes, we check if the payment has been successfully completed. If the result of the check is a successful payment, a success notification is sent to the URL set in the request parameter <code>confirmUrl</code>. If the payment is not successful a failure notification is sent to the same URL instead. Therefore we <strong>strongly recommend</strong> setting the <code>confirmUrl</code>!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="CheckingIfReturnedValuesAreValid"><a class="anchor" href="#CheckingIfReturnedValuesAreValid"></a>Checking if returned values are valid</h3>
+<div class="paragraph">
+<p>To check the authenticity of the return values sent from the QENTA Checkout Server to your online shop, compare the <code>responseFingerprint</code> with an hash of the return values.</p>
+</div>
+<div class="paragraph">
+<p>Create a string by concatenating all returned parameters based on the order in the return parameter <code>responseFingerprintOrder</code>. Then hash the string with an <a href="https://en.wikipedia.org/wiki/Hash-based_message_authentication_code">HMAC-SHA-512</a> algorithm using the secret as cryptographic key and compare the result with the value of the return parameter <code>responseFingerprint</code>. If both values are identical, the response is authentic, i.e. the confirmation was indeed sent by QENTA. If these values are not identical, re-check the calculation and consider that someone compromised the return values or has sent a possibly <strong>false confirmation for the payment</strong>. Therefore, do not trust these return values and do not assume that the payment was made even if it appears that way to you!</p>
+</div>
+<div class="paragraph">
+<p>In order to ensure a secure communication it is essential that you <strong>never</strong> disclose or share your secret with persons who are not involved in developing the online shop! Also, <strong>never</strong> forward the secret via unsecured communication channels e.g. mail, e-mail, fax or instant messaging. When the secret is submitted by fax make sure that the contents of the fax is disclosed only to authorized persons!</p>
+</div>
+<div class="paragraph">
+<p>If you suspect that your secret is known to unauthorized persons contact our <a href="../../support/" class="page">support teams</a> immediately to request a new secret!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="StoringThePaymentProcessResult"><a class="anchor" href="#StoringThePaymentProcessResult"></a>Storing the payment process result</h3>
+<div class="paragraph">
+<p>To ensure a persistent storage of all data relevant to the payment process of your consumers, it is strongly recommended to <strong>save all relevant data</strong> either in a file or in a database.</p>
+</div>
+<div class="sect3">
+<h4 id="PaymentRelatedData"><a class="anchor" href="#PaymentRelatedData"></a>Payment related data</h4>
+<div class="paragraph">
+<p>Please note that connection problems, technical issues on your web server or any issues at your consumer may result in a loss of session-related information regarding your consumer, e.g. the content of the shopping cart or an already generated unique order number for a specific order. Especially if the consumer successfully finished the payment process it may not be possible to correlate the session-related information regarding the <strong>order details to the successful payment</strong> of your consumer.</p>
+</div>
+<div class="paragraph">
+<p>To prevent such situations we strongly recommend that you <strong>store all session-related information</strong> during the overall payment process persistently, e.g. in a file or a database.</p>
+</div>
+<div class="paragraph">
+<p>Also use the possibility of custom parameters to pass a unique ID corresponding to a payment process to QPAY Checkout Page. All of your custom parameters are returned to your online shop as return values after the payment process has been finished.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ReturnValues"><a class="anchor" href="#ReturnValues"></a>Return values</h4>
+<div class="paragraph">
+<p>To be able to identify each payment of your consumers at a later time and to correlate them to the corresponding session and order, store all return values of QPAY Checkout Page in relation to that session and order. This is required to ensure a well-defined relation between the session data, the order of your consumer and the results of the payment process.</p>
+</div>
+<div class="paragraph">
+<p>Therefore, save all <a href="../../response_parameters/" class="page">return values</a> <strong>after the payment process</strong> or at least the returned order number you received by QPAY Checkout Page via <code>successUrl</code>, <code>cancelUrl</code>, <code>failureUrl</code>, <code>pendingUrl</code> or the <code>confirmUrl</code>. Also ensure that you can relate the values to the data you saved before starting QPAY Checkout Page.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="DisplayingThePaymentProcessResultToConsumers"><a class="anchor" href="#DisplayingThePaymentProcessResultToConsumers"></a>Displaying the payment process result to consumers</h3>
+<div class="paragraph">
+<p>At the end of each payment process, QPAY Checkout Page calls, if provided, the <code>confirmUrl</code> and then forwards your consumer to one of the URLs you defined via the request parameters <code>successUrl</code>, <code>cancelUrl</code>, <code>pendingUrl</code> or <code>failureUrl</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="BestPractices"><a class="anchor" href="#BestPractices"></a>Best Practices</h3>
+<div class="paragraph">
+<p>Before starting a payment process and in order to avoid pitfalls ensure that the following issues are fulfilled:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Save all relevant data regarding the payment process in a persistent manner, e.g. in a file or a database, including <strong>all request parameter values</strong>.</p>
+</li>
+<li>
+<p>In the required request parameter <code>orderDescription</code> set a unique ID regarding the session of your consumer. This can be a <code>sessionId</code>, an order number or a debit number.</p>
+</li>
+<li>
+<p>The response parameters are <strong>validated</strong> via the fingerprint and you are alerted to any failed validations.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="QentaCheckoutJournal"><a class="anchor" href="#QentaCheckoutJournal"></a>QENTA Checkout Journal</h3>
+<div class="paragraph">
+<p>To check your integration of QPAY Checkout Page you may use QENTA Checkout Journal as a debugging tool which gives you an overview of your transaction details when doing a checkout.</p>
+</div>
+<div class="paragraph">
+<p>Note that due to data protection regulations no test mode transactions are possible.</p>
+</div>
+<div class="paragraph">
+<p>Please enter the username and password you receive from QENTA to have access to all transactions regarding your specific <code>customerId</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">QENTA Checkout Journal</th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://portal.qenta.com/journal/" class="bare">https://portal.qenta.com/journal/</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com/contact/">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com/privacy/">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/online-guides/main/qpay/integration/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

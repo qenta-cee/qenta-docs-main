@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Storing Sensitive Payment Data in QENTA Data Storage :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/qmore/datastorage_store/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qpay/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shop_plugins/start/">Integration into Shop Systems</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qfile/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qcall/start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">QENTA Online Guides</a></li>
+    <li><a href="./">Storing Sensitive Payment Data in QENTA Data Storage</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Storing Sensitive Payment Data in QENTA Data Storage</h1>
+<div class="sect1">
+<h2 id="StoringSensitivePaymentDataInQENTADataStorage"><a class="anchor" href="#StoringSensitivePaymentDataInQENTADataStorage"></a>Storing Sensitive Payment Data in QENTA Data Storage</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="QcsDataStoragePrerequisite"><a class="anchor" href="#QcsDataStoragePrerequisite"></a>Prerequisite</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../datastorage_init/" class="page">Initialization of QENTA data storage</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="StoringSensitivePaymentData"><a class="anchor" href="#StoringSensitivePaymentData"></a>Storing sensitive payment data</h3>
+<div class="paragraph">
+<p>Before using the store operation please ensure that you include the returned JavaScript URL from the return parameter of the data storage initialization within your HTML page. We recommend to load the JavaScript at the bottom of the page to speed up the page loading time.</p>
+</div>
+<div class="paragraph">
+<p>For example, include the returned JavaScript URL in PHP by the following code fragment, where <code>$javascriptURL</code> is the URL you have to include to your HTML page for using the JavaScript based storing functions and objects.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php"> &lt;script src="&lt;?php echo $javascriptURL; ?&gt;" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then you need to create an instance of the JavaScript class WirecardCEE_DataStorage, which is defined within the previously included URL.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">var dataStorage = new WirecardCEE_DataStorage();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After this you create a new and empty JavaScript object which will be filled with the sensitive payment data:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">var paymentInformation = {};</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Depending on the payment method you add various properties to this JavaScript object, e.g. for Credit Card, Credit Card - Mail Order and Telephone Order, and Maestro SecureCode you add the following properties (the values of these properties are directly taken from your HTML form by accessing the values of the form elements via the DOM of the web browser):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">paymentInformation.pan = document.getElementById('cc_pan').value;
+paymentInformation.expirationMonth = document.getElementById('cc_expirationMonth').value;
+paymentInformation.expirationYear = document.getElementById('cc_expirationYear').value;
+paymentInformation.cardholdername = document.getElementById('cc_cardholdername').value;
+paymentInformation.cardverifycode = document.getElementById('cc_cardverifycode').value;
+paymentInformation.issueMonth = document.getElementById('cc_issueMonth').value;
+paymentInformation.issueYear = document.getElementById('cc_issueYear').value;
+paymentInformation.issueNumber = document.getElementById('cc_issueNumber').value;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After setting all properties to the paymentInformation object you only need to call a specific JavaScript function which is also available in the JavaScript file you included before:</p>
+</div>
+<div class="paragraph">
+<p><strong>Credit Card</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">dataStorage.storeCreditCardInformation(paymentInformation, callbackFunction);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Credit Card - Mail Order and Telephone Order</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">dataStorage.storeCreditCardMotoInformation(paymentInformation, callbackFunction);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Maestro SecureCode</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">dataStorage.storeMaestroInformation(paymentInformation, callbackFunction);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>callbackFunction</code> is a JavaScript function where you are able to handle the result of the storage operation.</p>
+</div>
+<div class="paragraph">
+<p>Within this callback function you are able to use the following JavasScript functions:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Function</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">getStatus()</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns 0 for a successful storage operation otherwise 1.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">getAnonymizedPaymentInformation()</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns anonymized payment information as a simple JavaScript object.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">getErrors()</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns the errors as a simple JavaScript object.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>A very simplified example of this callback function can be:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">callbackFunction = function(aResponse) {
+  // initiates the result string presented to the user
+  var s = "Response of QENTA data storage call:\n\n";
+  // checks if response status is without errors
+  if (aResponse.getStatus() == 0) {
+    // saves all anonymized payment information to a JavaScript object
+    var info = aResponse.getAnonymizedPaymentInformation();
+
+    //Response for paymentTypes: CCARD, CCARD-MOTO, MAESTRO
+    s + = "Response for paymentTypes: CCARD, CCARD-MOTO, MAESTRO\n";
+    s += "anonymousPan: " + info.anonymousPan + "\n";
+    s += "maskedPan: " + info.maskedPan + "\n";
+    s += "financialInstitution: " + info.financialInstitution + "\n";
+    s += "brand: " + info.brand + "\n";
+    s += "cardholdername: " + info.cardholdername + "\n";
+    s += "expiry: " + info.expiry + "\n";
+
+    //Response for paymentType: SEPA-DD
+    s + = "Response for paymentType: SEPA-DD\n";
+    s += "bankBic: " + info.bankBic + "\n";
+    s += "bankAccountIban: " + info.bankAccountIban + "\n";
+    s += "accountOwner: " + info.accountOwner + "\n";
+
+    //Response for paymentType: GIROPAY
+    s + = "Response for paymentType: GIROPAY\n";
+    s += "accountOwner: " + info.accountOwner + "\n";
+    s += "bankAccount: " + info.bankAccount + "\n";
+    s += "bankNumber: " + info.bankNumber + "\n";
+
+  } else {
+    // collects all occurred errors and adds them to the result string
+    var errors = aResponse.getErrors();
+    for (e in errors) {
+      s += "Error " + e + ": " + errors[e].message + " (Error Code: " + errors[e].errorCode + ")\n";
+    }
+  }
+  // presents result string to the user
+  alert(s);
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="AvailabilityOfStoredData"><a class="anchor" href="#AvailabilityOfStoredData"></a>Availability of stored data</h3>
+<div class="paragraph">
+<p>After the latest call of the store operation or a read operation the data storage for the consumer is valid for 30 minutes. If this time has been exceeded you have to initialize a new data storage for your consumer.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="StoringPaymentSpecificData"><a class="anchor" href="#StoringPaymentSpecificData"></a>Storing payment specific data</h3>
+<div class="paragraph">
+<p>To store the sensitive data of your consumer in the QENTA data storage you may use the following payment-specific JavaScript functions, which you included as JavaScript file before.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">dataStorage.storeCreditCardInformation(paymentInformation, callbackFunction);
+
+dataStorage.storeCreditCardMotoInformation(paymentInformation, callbackFunction);
+
+dataStorage.storeMaestroInformation(paymentInformation, callbackFunction);
+
+dataStorage.storeSepaDdInformation(paymentInformation, callbackFunction);
+
+dataStorage.storeGiropayInformation(paymentInformation, callbackFunction);</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ReturnValuesInCaseOfAnError"><a class="anchor" href="#ReturnValuesInCaseOfAnError"></a>Return values in case of an error</h4>
+<div class="paragraph">
+<p>If the storing did not succeed you will get parameters describing the error which you may handle in the callback JavaScript function:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of errors occurred.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error.{n}.consumerMessage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error message in localized language for your consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error.{n}.errorCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a fixed length of 5.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric error code which you should log for later use.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error.{n}.message</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error message in English.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For further details, see <a href="../error_codes/" class="page">Error Codes</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="QcsDataStorageParametersForSpecificPaymentMethods"><a class="anchor" href="#QcsDataStorageParametersForSpecificPaymentMethods"></a>Parameters for specific payment methods</h4>
+
+</div>
+<div class="sect3">
+<h4 id="QcsDataStorageParametersForPaymentMethods"><a class="anchor" href="#QcsDataStorageParametersForPaymentMethods"></a>Parameters for payment methods Credit Card, Credit Card - Mail Order and Telephone</h4>
+<div class="paragraph">
+<p>Order, and MaestroSecureCode ====</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="QcsDataStorageRequiredRequestParameters"><a class="anchor" href="#QcsDataStorageRequiredRequestParameters"></a>Required request parameters</h4>
+<div class="paragraph">
+<p>^ Parameter       ^ Data type                                 ^ Description  ^
+| pan             | Numeric with a variable length of 13 to 19. | Credit card number. |
+| expirationMonth  | Numeric with a fixed length of 2.           | Expiration month of credit card. |
+| expirationYear   | Numeric with a fixed length of 2.           | Expiration year of credit card. |</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="QcsDataStorageOptionalRequestParameters"><a class="anchor" href="#QcsDataStorageOptionalRequestParameters"></a>Optional request parameters</h4>
+<div class="paragraph">
+<p>^ Parameter       ^ Data type                                      ^ Description  ^
+| cardholdername  | Alphanumeric with a variable length of up to 30. | Name of owner of credit card. Optional/required depending on your acceptance contract with credit card company. |
+| cardverifycode  | Numeric with a variable length of 1 to 4.        | Verification code of credit card (aka CVC, CVC2, CVV or CID). Optional/required depending on your acceptance contract with credit card company. |
+| issueMonth      | Numeric with a fixed length of 2.                | Issuing month of credit card. |
+| issueYear       | Numeric with a fixed length of 2.                | Issuing year of credit card. |
+| issueNumber     | Numeric with a variable length of 1 to 3.        | Issuing number of credit card. |</p>
+</div>
+<div class="paragraph">
+<p>Code example for setting the properties within the paymentInformation JavaScript object:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">paymentInformation.pan = document.getElementById('cc_pan').value;
+paymentInformation.expirationMonth = document.getElementById('cc_expirationMonth').value;
+paymentInformation.expirationYear = document.getElementById('cc_expirationYear').value;
+paymentInformation.cardholdername = document.getElementById('cc_cardholdername').value;
+paymentInformation.cardverifycode = document.getElementById('cc_cardverifycode').value;
+paymentInformation.issueMonth = document.getElementById('cc_issueMonth').value;
+paymentInformation.issueYear = document.getElementById('cc_issueYear').value;
+paymentInformation.issueNumber = document.getElementById('cc_issueNumber').value;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="QcsDataStorageResponseParameters"><a class="anchor" href="#QcsDataStorageResponseParameters"></a>Response parameters</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">anonymousPan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a fixed length of 4.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anonymized credit card number containing only the rightmost 4 digits.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maskedPan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with special characters and a variable length of 13 to 19.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Masked credit card number: first 6 numbers followed by <code>*</code> and he last 4 numbers of the credit card.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">financialInstitution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Financial institution</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">brand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brand depending on payment method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cardholdername</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of card holder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">expiry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiry date of credit card in format MM/YYYY.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Brand</strong></p>
+</div>
+<div class="paragraph">
+<p>The parameter brand may contain one of the following values:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value of brand for Credit Cards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">American Express</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diners Club</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Discover</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JCB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mastercard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UATP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visa</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maestro SecureCode</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mastercard ID Check</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visa Secure</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="QcsStorageParametersForPaymentMethodSepaDirectDebit"><a class="anchor" href="#QcsStorageParametersForPaymentMethodSepaDirectDebit"></a>Parameters for payment method SEPA Direct Debit</h4>
+<div class="sect4">
+<h5 id="QcsDataStorageSepaRequiredRequestParameters"><a class="anchor" href="#QcsDataStorageSepaRequiredRequestParameters"></a>Required request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">accountOwner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of owner of account.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bankAccountIban</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 34 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IBAN of account. (<a href="https://en.wikipedia.org/wiki/IBAN">International Bank Account Number</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bankBic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 12 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BIC of bank. (<a href="https://en.wikipedia.org/wiki/Bank_Identifier_Code">Bank Identifier Code</a>)<br>
+Required only for Hobex</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="QcsDataStorageSepaOptionalRequestParameter"><a class="anchor" href="#QcsDataStorageSepaOptionalRequestParameter"></a>Optional request parameter</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bankName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of bank.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Code example for setting the properties within the paymentInformation JavaScript object:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">paymentInformation.bankBic = document.getElementById('sepa-dd_bankBic').value;
+paymentInformation.bankAccountIban = document.getElementById('sepa-dd_bankAccountIban').value;
+paymentInformation.accountOwner = document.getElementById('sepa-dd_accountOwner').value;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="QcsDataStorageSepaResponseParameters"><a class="anchor" href="#QcsDataStorageSepaResponseParameters"></a>Response parameters</h5>
+<div class="paragraph">
+<p>The response parameters are the same as the request parameters.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ParametersForPaymentMethodGiropay"><a class="anchor" href="#ParametersForPaymentMethodGiropay"></a>Parameters for payment method giropay</h4>
+<div class="sect4">
+<h5 id="RequiredRequestParameters"><a class="anchor" href="#RequiredRequestParameters"></a>Required request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bankAccount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Account number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bankNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with a length of 8.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank number.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="OptionalRequestParameters"><a class="anchor" href="#OptionalRequestParameters"></a>Optional request parameters</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">accountOwner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of account owner.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Code example for setting the properties within the paymentInformation JavaScript object:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-php hljs" data-lang="php">paymentInformation.accountOwner = document.getElementById('giropay_accountOwner').value;
+paymentInformation.bankAccount = document.getElementById('giropay_bankAccount').value;
+paymentInformation.bankNumber = document.getElementById('giropay_bankNumber').value;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="QcsDataStorageGiropayResponseParameters"><a class="anchor" href="#QcsDataStorageGiropayResponseParameters"></a>Response parameters</h5>
+<div class="paragraph">
+<p>The response parameters are the same as the request parameters.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="QcsDataStorageGiropayNextStep"><a class="anchor" href="#QcsDataStorageGiropayNextStep"></a>Next step</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../datastorage_read/" class="page">Reading stored payment data from QENTA data storage</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com/contact/">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com/privacy/">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/online-guides/main/qmore/datastorage_store/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

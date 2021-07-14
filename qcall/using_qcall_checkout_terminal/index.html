@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Using QCALL Checkout Terminal :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/qcall/using_qcall_checkout_terminal/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://qenta-cee.at/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">QENTA Online Guides</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../start/">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../news/start/">What&#8217;s New?</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qpay/start/">QPAY Checkout Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qmore/start/">QMORE Checkout Seamless</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../back-end_operations/start/">Back-end Operations</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shop_plugins/start/">Integration into Shop Systems</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/start/">Integration of Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Card Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/creditcard/start/">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/3dsecure2/start/">3D Secure 2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ccard_moto/start/">Mail and Telephone Order</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/maestro/start/">Maestro SecureCode</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bank Transfer</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/eps/start/">eps-Überweisung</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/giropay/start/">giropay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/ideal/start/">iDEAL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/p24/start/">Przelewy24</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sofort/start/">Sofort.</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Alternative Payments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/invoice/start/">Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/invoice/payolution/">payolution</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../payment_methods/installment/start/">Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../payment_methods/installment/payolution/">payolution</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paypal/start/">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/paysafecard/start/">paysafecard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Direct Debit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../payment_methods/sepa_direct_debit/start/">SEPA Direct Debit</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../qfile/start/">QFILE Checkout Automated</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../start/">QCALL Checkout Terminal</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../pmc/start/">QPC Payment Center</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../how_to/start/">How to &#8230;&#8203;</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../glossary/">Glossary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QENTA Online Guides</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../">QENTA Online Guides</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../start/" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">QENTA Online Guides</a></li>
+    <li><a href="./">Using QCALL Checkout Terminal</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Using QCALL Checkout Terminal</h1>
+<div class="sect1">
+<h2 id="UsingQcallCheckoutTerminal"><a class="anchor" href="#UsingQcallCheckoutTerminal"></a>Using QCALL Checkout Terminal</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following chapters describe how to use QCALL Checkout Terminal for Credit Card, SEPA Direct Debit and recurring payments.</p>
+</div>
+<div class="sect2">
+<h3 id="GeneralInformation"><a class="anchor" href="#GeneralInformation"></a>General information</h3>
+<div class="paragraph">
+<p>The following general fields are available for entering consumer related order details:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field name</th>
+<th class="tableblock halign-left valign-top">Optional or required</th>
+<th class="tableblock halign-left valign-top">Maximum field length</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Company</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric, variable length of up to 60 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of company ordering the relevant items (products).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First and last name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric, variable length of up to 20 characters for the first name and 25 characters for the last name.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consumer&#8217;s first and last name.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric, variable length of up to 100 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consumer&#8217;s address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order reference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with up to 128 characters, differs depending on the payment method used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique order reference ID sent from merchant to financial service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric, variable length of up to 255 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional data relating to order, e.g. invoice number or purchase number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric, variable length of up to 10 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment to be effected by consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric, fixed length of 3 characters, or numeric with a fixed length of 3 numbers.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency code of amount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment method</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selection field.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment method used for the transaction: Credit Card, SEPA Direct Debit or recurring payment.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Depending on your specific requirements and the configuration settings, the number of fields and the field length and characteristics may differ. +If the maximum character length is exceeded, any additional characters are ignored.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="LoggingIn"><a class="anchor" href="#LoggingIn"></a>Logging in</h3>
+<div class="paragraph">
+<p>The following steps illustrate how to log in to the QCALL Checkout Terminal interface.</p>
+</div>
+<div class="sect3">
+<h4 id="Step1StartingUpYourBrowser"><a class="anchor" href="#Step1StartingUpYourBrowser"></a>Step 1: Starting up your browser</h4>
+
+</div>
+<div class="sect3">
+<h4 id="Step2AccessingYourLogin"><a class="anchor" href="#Step2AccessingYourLogin"></a>Step 2: Accessing your login</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Open <a href="https://portal.qenta.com/terminal/" class="bare">https://portal.qenta.com/terminal/</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step3TheLoginSectionOpens"><a class="anchor" href="#Step3TheLoginSectionOpens"></a>Step 3: The login section opens</h4>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_1_log_in.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Step4EnteringUsernameAndPassword"><a class="anchor" href="#Step4EnteringUsernameAndPassword"></a>Step 4: Entering username and password</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter your username and password &#8594; click "sign on".</p>
+</li>
+<li>
+<p>When the login was successful, a summary of your login data are displayed &#8594; to proceed click "next".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_2_log_in_data.png" alt="image"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+During the first login you will be prompted to change your password. The login can only be completed after the password has been successfully changed. If the same user has already logged in before, it is not necessary to change the password.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="CompletingAPaymentWithCreditCard"><a class="anchor" href="#CompletingAPaymentWithCreditCard"></a>Completing a payment with Credit Card</h3>
+<div class="paragraph">
+<p>Follow these steps to carry out a payment using a credit card.</p>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalStep1"><a class="anchor" href="#CheckoutTerminalStep1"></a>Step 1: Entering order details</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Complete the fields &#8594; select payment method "Credit Card".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_3_order_details.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To enter the payment details &#8594; click "Next"</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalStep2"><a class="anchor" href="#CheckoutTerminalStep2"></a>Step 2: Entering payment details</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter your consumer&#8217;s credit card details: credit card number, expiration date and card security code (3 or 4 digit number on the back of the card) &#8594; click "Next".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_4_a_enter_payment_details.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the payment has been completed successfully, the message "Transaction approved" appears in the window "Order confirmation".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_5_order_confirmation.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>At the same time a unique order number is created automatically.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_6_order_number.png" alt="image"></span> is the unique order number in the present example.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalStep3"><a class="anchor" href="#CheckoutTerminalStep3"></a>Step 3: Selecting next action</h4>
+<div class="paragraph">
+<p>To proceed, choose between the following options: <span class="image"><img src="/_images/wct/wct_en_7_print_order_confirmation.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_10_order_confirmation_printed.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>or <span class="image"><img src="/_images/wct/wct_en_8_new_order_same_details.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>or <span class="image"><img src="/_images/wct/wct_en_9_enter_new_order_details.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalStep4"><a class="anchor" href="#CheckoutTerminalStep4"></a>Step 4: Selecting next action in case of error</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If the payment has not been completed successfully, an error message is displayed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_14_error_message.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>To continue, choose <span class="image"><img src="/_images/wct/wct_en_12_retry_order.png" alt="image"></span> or <span class="image"><img src="/wct/wct_en_13_enter_new_order_details.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="GeneralInformationOnCreditCardPayments"><a class="anchor" href="#GeneralInformationOnCreditCardPayments"></a>General information on credit card payments</h4>
+<div class="paragraph">
+<p>If the credit card payment has been successfully processed, an approval for the payment amount is displayed in the QPC Payment Center. Please note that completed payments are not automatically deposited via QCALL Checkout Terminal. In order to receive the outstanding amounts the approved amounts need to be deposited in the QPC Payment Center. At this point the relevant financial service providers are notified that the corresponding amounts are to be transferred to your account.</p>
+</div>
+<div class="paragraph">
+<p>These steps may also be automated, i.e. QENTA carries out the deposit of approved payments. There are two configuration options for this:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Daily fully automated deposit (capture) of all payments: All payments are deposited once during the night. In order to enable this feature please contact our <a href="../../contact/" class="page">sales teams</a>.</p>
+</li>
+<li>
+<p>Immediate capture: After effecting a payment, this payment is available immediately as a capture. In order to enable this feature (<code>autoDeposit</code>) please contact our <a href="../../contact/" class="page">sales teams</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Not deposited (uncaptured) approvals will expire after 7-14 calendar days. The exact deadline depends on the regulations provided by each financial service provider. After exceeding the individual deadline these payments can no longer be submitted or received. Before an order is delivered, it is essential to verify that the corresponding transaction exists and has been deposited in the QPC Payment Center.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="CompletingAPaymentWithSepaDirectDebit"><a class="anchor" href="#CompletingAPaymentWithSepaDirectDebit"></a>Completing a payment with SEPA direct debit</h3>
+<div class="paragraph">
+<p>Follow these steps to carry out a payment using SEPA Direct Debit.</p>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalDirectDebitStep1"><a class="anchor" href="#CheckoutTerminalDirectDebitStep1"></a>Step 1: Entering order details</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Complete the fields &#8594; select payment method "SEPA Direct Debit".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_15_sepa_order_details.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To enter the payment details &#8594; click "Next"</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalDirectDebitStep2"><a class="anchor" href="#CheckoutTerminalDirectDebitStep2"></a>Step 2: Entering payment details</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter your consumer&#8217;s bank details: account owner, IBAN, BIC, mandate reference, mandate signature date and due date &#8594; click "Next".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_16_sepa_payment_details.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the payment has been completed successfully, the message "Transaction approved" appears in the window that opens "Order confirmation".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_17_a_sepa_transaction_approved.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>At the same time a unique order number is created automatically.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_19_sepa_order_number.png" alt="image"></span> is the unique order number in the present example.</p>
+</div>
+<div class="sect4">
+<h5 id="CheckoutTerminalDirectDebitStep3"><a class="anchor" href="#CheckoutTerminalDirectDebitStep3"></a>Step 3: Selecting next action</h5>
+<div class="paragraph">
+<p>To proceed, choose between the following options: <span class="image"><img src="/_images/wct/wct_en_7_print_order_confirmation.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_18_a_sepa_order_confirm_printed.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>or <span class="image"><img src="/_images/wct/wct_en_8_new_order_same_details.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>or <span class="image"><img src="/_images/wct/wct_en_9_enter_new_order_details.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalDirectDebitStep4"><a class="anchor" href="#CheckoutTerminalDirectDebitStep4"></a>Step 4: Selecting next action in case of error</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If the payment has not been completed successfully, an error message is displayed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_21_sepa_error_message.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>To continue, choose <span class="image"><img src="/_images/wct/wct_en_12_retry_order.png" alt="image"></span> or <span class="image"><img src="/wct/wct_en_13_enter_new_order_details.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="EffectingARecurringPayment"><a class="anchor" href="#EffectingARecurringPayment"></a>Effecting a recurring payment</h3>
+<div class="paragraph">
+<p>Follow these steps to effect a recurring payment.</p>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalRecurringStep1"><a class="anchor" href="#CheckoutTerminalRecurringStep1"></a>Step 1: Entering order details</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Complete the fields &#8594; select payment method "Recurring payment".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_21_recur_order_details.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To enter the payment details &#8594; click "Next"</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalRecurringStep2"><a class="anchor" href="#CheckoutTerminalRecurringStep2"></a>Step 2: Entering payment details</h4>
+<div class="paragraph">
+<p>A window opens where you are to enter recurring payment details:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_21_recur_enter_payment_details_parameters.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Source order number:</strong> = original order number. Enter the order number to which the recurring payment refers to.<br></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To comply with credit card policies, there are two more input fields:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Periodic Type:</strong> Select the periodic type of recurring payments.<br>
+It may be set to 3 different values:</p>
+</li>
+<li>
+<p>//Consumer Initiated Payment (ci)://</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For recurring payments on a non-regular basis, but always initiated by consumer, the consumer does not need to re-enter card details, but the credit card company will not decline because of missing CVV/CVC.</p>
+</li>
+<li>
+<p>For e.g. one-click checkout (ordering items with the same credit card as before).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>//Unscheduled Recurring Payment (ucof)://</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Unscheduled Credential on File.</p>
+</li>
+<li>
+<p>Set periodicType to ucof to use consumer credit card data from a previous order for a transaction (fixed or variable amount) that does not occur regularly or at a scheduled date and is initiated without consumer interaction.</p>
+</li>
+<li>
+<p>The cardholder must have provided consent for the merchant to initiate one or more future transactions.</p>
+</li>
+<li>
+<p>For e.g. pre-paid account auto-top-up.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>//Scheduled Recurring Payment (recurring)://</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Payments that occur repeatedly on a regular basis.</p>
+</li>
+<li>
+<p>For e.g. subscriptions or installments.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Merchant tokenization:</strong> Activate the Merchant tokenization checkbox at the bottom of the window if you intend to reuse the consumer&#8217;s credit card details. \\ You may either store the credit card details or the order number. If you save the order number, the credit card details for recurring payments will be retrieved from the order number.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#8594; Click "Next".</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A window opens and shows a summary of the source order data &#8594; click "Next".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_24_recur_summary_payment_data.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the payment has been completed successfully, the message "Transaction approved" appears in the window "Order confirmation".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_25_recur_transaction_approved.png" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>At the same time a unique order number is issued automatically.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_26_recur_order_number.png" alt="image"></span> is the unique order number in the present example.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalRecurringStep3"><a class="anchor" href="#CheckoutTerminalRecurringStep3"></a>Step 3: Selecting next action</h4>
+<div class="paragraph">
+<p>To proceed, choose between the following options: <span class="image"><img src="/_images/wct/wct_en_7_print_order_confirmation.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_27_recur_order_confirm_printed.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>or <span class="image"><img src="/_images/wct/wct_en_8_new_order_same_details.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>or <span class="image"><img src="/_images/wct/wct_en_9_enter_new_order_details.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CheckoutTerminalRecurringStep4"><a class="anchor" href="#CheckoutTerminalRecurringStep4"></a>Step 4: Selecting next action in case of error</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If the payment has not been completed successfully, an error message is displayed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/_images/wct/wct_en_28_recur_error.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>To continue, choose <span class="image"><img src="/_images/wct/wct_en_12_retry_order.png" alt="image"></span> or <span class="image"><img src="/wct/wct_en_13_enter_new_order_details.png" alt="image"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Generally, payment for the source order number must not be older than 400 days for credit card payments.
+If the order is older than 400 days, the error message "Card number missing" is displayed. If the expiration date of the credit card of the stored source order was exceeded, the error message "Expiration date is invalid" is displayed. In both error cases you have to obtain the new credit card details from your consumer and initiate a new order since a recurring payment may not be carried out.</p>
+</div>
+<div class="paragraph">
+<p>There are currently no restrictions on payments using SEPA Direct Debit procedures.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt=""
+                data-src="/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" uk-img=""
+                src="https://qenta-cee.at/wp-content/uploads/2020/10/RZ-Logo-QENTA-CMYK-invertiert.svg" width="120"></a>
+          </div>
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2020 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/">Unternehmen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/haendler-login">Händler-Login</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/loesungen">Lösungen</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com/contact/">Kontakt</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/karriere">Karriere</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/start" target="_blank">Online Guides</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/download-center">Download Center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://qenta-cee.at/impressum">Impressum</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com/privacy/">Datenschutz</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/agb">AGB</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://qenta-cee.at/dpa">DPA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/online-guides/main/qcall/using_qcall_checkout_terminal/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

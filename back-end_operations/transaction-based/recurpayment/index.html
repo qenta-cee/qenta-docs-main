@@ -63,10 +63,10 @@
     <a class="nav-link" href="../../../news/start/">What&#8217;s New?</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../../wcp/start/">QPAY Checkout Page</a>
+    <a class="nav-link" href="../../../qpay/start/">QPAY Checkout Page</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../../wcs/start/">QMORE Checkout Seamless</a>
+    <a class="nav-link" href="../../../qmore/start/">QMORE Checkout Seamless</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../start/">Back-end Operations</a>
@@ -159,10 +159,10 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../../wca/start/">QFILE Checkout Automated</a>
+    <a class="nav-link" href="../../../qfile/start/">QFILE Checkout Automated</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../../wct/start/">QCALL Checkout Terminal</a>
+    <a class="nav-link" href="../../../qcall/start/">QCALL Checkout Terminal</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../../pmc/start/">QPC Payment Center</a>
@@ -224,13 +224,13 @@
 <p>The operation recurPayment uses the payment information available from a previous order, the so-called source order, to create a new order and a new payment attempt.</p>
 </div>
 <div class="paragraph">
-<p>recurPayment is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> and <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a>. You can either call this operation automatically from the back-end of your online shop or manually from your web interface which you have implemented for administration purposes.</p>
+<p>recurPayment is one of the <a href="../start/" class="page">transaction-based operations</a> (back-end operations) offered by <a href="../../../qpay/start/" class="page">QPAY Checkout Page</a> and <a href="../../../qmore/start/" class="page">QMORE Checkout Seamless</a>. You can either call this operation automatically from the back-end of your online shop or manually from your web interface which you have implemented for administration purposes.</p>
 </div>
 <div class="paragraph">
-<p>The<strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcp/start/" class="page">QPAY Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>consumerMerchantCrmId</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
+<p>The<strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../qpay/start/" class="page">QPAY Checkout Page</a> is: <code>customerId</code>, <code>shopId</code>, <code>toolkitPassword</code>, <code>secret</code>, <code>command</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
 </div>
 <div class="paragraph">
-<p>The <strong>required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../wcs/start/" class="page">QMORE Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>consumerMerchantCrmId</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
+<p>The <strong>required order</strong> of the parameter values when computing the <strong>fingerprint</strong> for <a href="../../../qmore/start/" class="page">QMORE Checkout Seamless</a> is: <code>customerId</code>, <code>shopId</code>, <code>password</code>, <code>secret</code>, <code>language</code>, <code>orderNumber</code>, <code>sourceOrderNumber</code>, <code>autoDeposit</code>, <code>orderDescription</code>, <code>amount</code>, <code>currency</code>, <code>orderReference</code>, <code>customerStatement</code>, <code>mandateId</code>, <code>mandateSignatureDate</code>, <code>creditorId</code>, <code>dueDate</code>, <code>transactionIdentifier</code>, <code>useIbanBic</code>, <code>merchantTokenizationFlag</code> and <code>periodicType</code>.</p>
 </div>
 <div class="sect2">
 <h3 id="AdditionalRequiredRequestParameters"><a class="anchor" href="#AdditionalRequiredRequestParameters"></a>Additional required request parameters</h3>
@@ -383,6 +383,185 @@ It may be set to 2 different values:</p>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Additionally if you are using the QENTA Fraud Prevention &amp; Fraud Detection the following data on the consumer can be submitted for processing.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Short description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerEmail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 256.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-mail address of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBirthDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with special characters and a fixed length of 10.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Birth date of consumer in the format YYYY-MM-DD.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerTaxIdentificationNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 32.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax identification number of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerDriversLicenseNumber</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 32.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Drivers license number of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerDriversLicenseState</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2 for US and CA, otherwise up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State which issued the drivers license of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerDriversLicenseCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country which issued the drivers license of consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingFirstName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First character has to be alphabetic, any other characters ASCII, with a variable length of up to 128.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First name of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingLastName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First character has to be alphabetic, any other characters ASCII, with a variable length of up to 128.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last name of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingAddress1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 256.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of street and optionally the house number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingAddress2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 256.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The house number if not already set in consumerBillingAddress1.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingCity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing city.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingState</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2 for US and CA, otherwise p to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing state.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing country code (<a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a>).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingZipCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Billing zip code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingPhone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 20.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Phone number of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerBillingFax</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 20.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fax number of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingFirstName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First character has to be alphabetic, any other characters ASCII, with a variable length of up to 128.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First name of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingLastName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First character has to be alphabetic, any other characters ASCII, with a variable length of up to 128.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Last name of consumer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingAddress1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 256.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of street and optionally the house number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingAddress2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 256.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The house number if not already set in consumerShippingAddress1.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingCity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping city.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingState</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2 for US and CA, otherwise a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping state.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingCountry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphabetic with a fixed length of 2.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping country code (<a href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</a>).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingZipCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters and a variable length of up to 40.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping ZIP code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingPhone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 20.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping phone number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerShippingFax</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with a variable length of up to 20.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shipping fax number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumerIpAddress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric with special characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IP address of consumer.<br>
+Note that this parameter is <strong>not</strong> part of the fingerprint.</p></td>
+</tr>
+</tbody>
+</table>
+<div id="FingerprintContinue" class="paragraph">
+<p>Continuing the fingerprint order described above, the <strong> required order</strong> of the parameter values when computing the <strong>fingerprint</strong> is: <code>consumerEmail</code>, <code>consumerMerchantCrmId</code>, <code>consumerBirthDate</code>, <code>consumerTaxIdentificationNumber</code>, <code>consumerDriversLicenseNumber</code>, <code>consumerDriversLicenseState</code>, <code>consumerDriversLicenseCountry</code>, <code>consumerBillingFirstName</code>, <code>consumerBillingLastName</code>, <code>consumerBillingAddress1</code>, <code>consumerBillingAddress2</code>, <code>consumerBillingCity</code>, <code>consumerBillingState</code>, <code>consumerBillingCountry</code>, <code>consumerBillingZipCode</code>, <code>consumerBillingPhone</code>, <code>consumerBillingFax</code>, <code>consumerShippingFirstName</code>, <code>consumerShippingLastName</code>, <code>consumerShippingAddress1</code>, <code>consumerShippingAddress2</code>, <code>consumerShippingCity</code>, <code>consumerShippingState</code>, <code>consumerShippingCountry</code>, <code>consumerShippingZipCode</code>, <code>consumerShippingPhone</code> and <code>consumerShippingFax</code>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Note that the parameter <code>consumerIpAddress</code> is <strong>not</strong> part of the fingerprint.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="PaymentFacilitatorModel"><a class="anchor" href="#PaymentFacilitatorModel"></a>Payment facilitator model</h4>
+<div class="paragraph">
+<p>When making a recurring payment e.g. in a marketplace, the <a href="../../../payment_methods/creditcard/payment_facilitator/" class="page">payment facilitator parameters</a> must be provided for the back-end operation <a href="#">recurPayment</a> using the data of the marketplace.</p>
+</div>
+<div class="paragraph">
+<p>Regarding the <strong>fingerprint calculation</strong>, the relevant payment facilitator parameters are appended to the consumer data parameters in the described order.</p>
+</div>
+</div>
 <div class="sect3">
 <h4 id="SourceOrdersBasedOnSepaDirectDebit"><a class="anchor" href="#SourceOrdersBasedOnSepaDirectDebit"></a>Source orders based on SEPA Direct Debit</h4>
 <div class="sect4">

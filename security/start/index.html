@@ -63,10 +63,10 @@
     <a class="nav-link" href="../../news/start/">What&#8217;s New?</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../wcp/start/">QPAY Checkout Page</a>
+    <a class="nav-link" href="../../qpay/start/">QPAY Checkout Page</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../wcs/start/">QMORE Checkout Seamless</a>
+    <a class="nav-link" href="../../qmore/start/">QMORE Checkout Seamless</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../back-end_operations/start/">Back-end Operations</a>
@@ -159,10 +159,10 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../wca/start/">QFILE Checkout Automated</a>
+    <a class="nav-link" href="../../qfile/start/">QFILE Checkout Automated</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../wct/start/">QCALL Checkout Terminal</a>
+    <a class="nav-link" href="../../qcall/start/">QCALL Checkout Terminal</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../pmc/start/">QPC Payment Center</a>
@@ -445,35 +445,6 @@ If you suspect that your pre-shared key is known to unauthorized persons contact
 <p>When integrating QPAY Checkout Page or QMORE Checkout Seamless into your online shop you may need to adjust the security settings of your firewall.</p>
 </div>
 <div class="paragraph">
-<p>To receive confirmation information from QENTA regarding a transaction via the <code>confirmUrl</code> you need to enable incoming communication from our following IP-addresses:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Old IP Address</th>
-<th class="tableblock halign-left valign-top">New IP Address</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">195.93.244.97</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">212.183.46.16/28</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.33:443</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">212.183.46.16/28</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.36</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">212.183.46.16/28</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
 <p>To send data or commands to QPAY Checkout Page or QMORE Checkout Seamless you need to enable outgoing communication to the following servers:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -491,24 +462,58 @@ If you suspect that your pre-shared key is known to unauthorized persons contact
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">checkout.wirecard.com</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.34:443</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">212.183.46.23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>api.qenta.com</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>212.183.46.18</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">secure.wirecard-cee.com</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.33:443</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">212.183.46.24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>checkout.wirecard.com</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>185.60.56.34:443</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>212.183.46.23</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">www.qenta.at</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.43:443</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">212.183.46.21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>secure.wirecard-cee.com</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>185.60.56.33:443</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>212.183.46.24</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">www.qenta.com</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">185.60.56.44:443</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">212.183.46.22</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>www.qenta.at</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>185.60.56.43:443</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>212.183.46.21</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>www.qenta.com</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>185.60.56.44:443</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>212.183.46.22</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>To receive confirmation information from QENTA regarding a transaction via the <code>confirmUrl</code> you need to enable incoming communication from our following IP-addresses:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Old IP Address</th>
+<th class="tableblock halign-left valign-top">New IP Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>195.93.244.97</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>212.183.46.16/28</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>185.60.56.33:443</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>212.183.46.16/28</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>185.60.56.36</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>212.183.46.16/28</code></p></td>
 </tr>
 </tbody>
 </table>
