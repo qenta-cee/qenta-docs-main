@@ -2589,7 +2589,19 @@ Payment methods <code>EPS</code> and <code>IDL</code> only allow one value, whil
 <p>With the parameter <code>imageUrl</code> you can define the URL to an image on your web server. This image will be displayed during the payment process in QPAY Checkout Page.</p>
 </div>
 <div class="paragraph">
-<p>Please be aware that the image size should have a width of 95 pixel and a height of 65 pixel and the supported image formats are gif, jpg and png.</p>
+<p>Please be aware that the image size should have a width of 95 pixel and a height of 65 pixel and the supported image formats are gif, jpg and png (recommended).</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+For security reasons we do not accept <code>.svg</code> images provided by the customer. Please use <code>.png</code> instead.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>If you are using the parameter <code>imageUrl</code> please be aware that it is necessary that there is really an image available within the given image URL. Otherwise the loading of QPAY Checkout Page will be delayed until a time-out for the missing image occurs. This would have no impact on the functionality of QPAY Checkout Page, but the consumer of your online shop has then to wait longer till the payment process really starts.</p>
@@ -2604,7 +2616,7 @@ Payment methods <code>EPS</code> and <code>IDL</code> only allow one value, whil
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-This URL has to be accessible over the internet via port 80 (for http communication) or port 443 (for https communication) and may not be hosted on a local server which cannot be accessed by the QENTA Checkout Server.
+This URL has to be accessible over the internet <code>https://</code> and must be accessible by the QENTA Checkout Servers.
 </td>
 </tr>
 </table>
