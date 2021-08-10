@@ -48,4 +48,6 @@ jobs:
         if: success() && steps.branch.outputs.name == 'redirect-test'
         run: bash scripts/redirect_renames.sh
         env:
+          BOT_USER: ${{ secrets.BOT_USER }}
+          BOT_EMAIL: ${{ secrets.BOT_EMAIL }}
           BOT_TOKEN: ${{ secrets.BOT_PAT }}

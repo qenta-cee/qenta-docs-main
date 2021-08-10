@@ -4,9 +4,13 @@
 #
 #        env:
 #          BOT_USER: ${{ secrets.BOT_USER }}
+#          BOT_EMAIL: ${{ secrets.BOT_EMAIL }}
 #          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
 
+CFG_BOT_USER=${BOT_USER}
+CFG_BOT_EMAIL=${BOT_EMAIL}
 CFG_BOT_TOKEN=${BOT_TOKEN}
+
 CFG_GH_PAGES_REPO_URI="https://github.com/qenta-cee/qenta-docs-main.git"
 CFG_CONTENT_REPO_URI="https://${CFG_BOT_TOKEN}@github.com/qenta-cee/qenta-docs-content.git"
 CFG_REPO_BRANCH='gh-pages_test'
@@ -74,6 +78,8 @@ function create_redirect_files() {
 function publish() {
   (
     cd ${CFG_GH_PAGES_WORKSPACE}
+    git config user.name "${CFG_BOT_USER}"
+    git config user.email "${CFG_BOT_EMAIL}"
     git add . && \
     git commit -m "CI: add redirects" && \
     git push
