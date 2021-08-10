@@ -27,7 +27,7 @@ function get_raw_renames() {
 }
 
 function get_html_path() {
-  sed 's,.\+/modules/ROOT/pages/\(.*\).adoc,\1/,' <<< ${1}
+  sed 's,.\+/modules/ROOT/pages/\(.*\).adoc,\1/index.html,' <<< ${1}
 }
 
 function create_meta_refresh() {
@@ -65,7 +65,7 @@ function create_redirect_files() {
     NEW_PATH_ADOC=${arr_git_output[2]}
     NEW_PATH_HTML=$(get_html_path ${NEW_PATH_ADOC})
 
-    META_TAG=$(create_meta_refresh ${NEW_PATH_HTML})
+    META_TAG=$(create_meta_refresh ${NEW_PATH_HTML/\/index.html//})
 
     write_to_html "${META_TAG}" "${OLD_PATH_HTML}"
     
