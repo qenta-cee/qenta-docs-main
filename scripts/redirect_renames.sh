@@ -11,7 +11,7 @@ CFG_BOT_USER=${BOT_USER}
 CFG_BOT_EMAIL=${BOT_EMAIL}
 CFG_BOT_TOKEN=${BOT_TOKEN}
 
-CFG_GH_PAGES_REPO_URI="https://github.com/qenta-cee/qenta-docs-main.git"
+CFG_GH_PAGES_REPO_URI="https://${CFG_BOT_TOKEN}@github.com/qenta-cee/qenta-docs-main.git"
 CFG_CONTENT_REPO_URI="https://${CFG_BOT_TOKEN}@github.com/qenta-cee/qenta-docs-content.git"
 CFG_REPO_BRANCH='gh-pages_test'
 
