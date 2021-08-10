@@ -6,16 +6,18 @@
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 CFG_GITHUB_TOKEN=${GITHUB_TOKEN}
-CFG_REPO_URI="https://${CFG_GITHUB_TOKEN}@github.com/qenta-cee/qenta-docs-main.git"
+CFG_GH-PAGES_REPO_URI="https://${CFG_GITHUB_TOKEN}@github.com/qenta-cee/qenta-docs-main.git"
+CFG_CONTENT_REPO_URI="https://${CFG_GITHUB_TOKEN}@github.com/qenta-cee/qenta-docs-content.git"
 CFG_REPO_BRANCH='gh-pages_test'
 
-CFG_WORKSPACE="$(mktemp -d)"
+CFG_GH-PAGES_WORKSPACE="$(mktemp -d)"
 
-GITHUB_WORKSPACE="."
+CFG_CONTENT_WORKSPACE="$(mktemp -d)"
 
 function get_raw_renames() {
   (
-    cd ${GITHUB_WORKSPACE}
+    cd ${CFG_CONTENT_WORKSPACE}
+    git clone ${CFG_CONTENT_REPO_URI}
     git log --name-status | grep ^R | grep '.adoc$' | grep -v '/partials/' | sed 's/[ \t]\+/;/g'
   )
 }
@@ -34,7 +36,7 @@ function create_meta_refresh() {
 
 function write_to_html {
   local META_TAG=${1}
-  local FILE_PATH=${CFG_WORKSPACE}/${2}
+  local FILE_PATH=${CFG_GH-PAGES_WORKSPACE}/${2}
   local DIR_TREE=$(dirname ${FILE_PATH})
   mkdir -p ${DIR_TREE}
   echo "${META_TAG}" > "${FILE_PATH}"
@@ -42,9 +44,9 @@ function write_to_html {
 
 function create_workspace() {
   (
-    mkdir -p ${CFG_WORKSPACE}
-    cd ${CFG_WORKSPACE}
-    git clone --branch ${CFG_REPO_BRANCH} ${CFG_REPO_URI} .
+    mkdir -p ${CFG_GH-PAGES_WORKSPACE}
+    cd ${CFG_GH-PAGES_WORKSPACE}
+    git clone --branch ${CFG_REPO_BRANCH} ${CFG_GH-PAGES_REPO_URI} .
   )
 }
 
@@ -71,7 +73,7 @@ function create_redirect_files() {
 
 function publish() {
   (
-    cd ${CFG_WORKSPACE}
+    cd ${CFG_GH-PAGES_WORKSPACE}
     git add . && \
     git commit -m "CI: add redirects" && \
     git push
@@ -88,4 +90,4 @@ else
   echo "No renames found."
 fi
 
-#rm -rf "${CFG_WORKSPACE}"
+#rm -rf "${CFG_GH-PAGES_WORKSPACE}"
