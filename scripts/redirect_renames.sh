@@ -3,15 +3,15 @@
 # Token with rights to main repo must be passed from CI 
 #
 #        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          BOT_USER: ${{ secrets.BOT_USER }}
+#          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
 
-CFG_GITHUB_TOKEN=${GITHUB_TOKEN}
-CFG_GH_PAGES_REPO_URI="https://${CFG_GITHUB_TOKEN}@github.com/qenta-cee/qenta-docs-main.git"
-CFG_CONTENT_REPO_URI="https://${CFG_GITHUB_TOKEN}@github.com/qenta-cee/qenta-docs-content.git"
+CFG_BOT_TOKEN=${BOT_TOKEN}
+CFG_GH_PAGES_REPO_URI="https://github.com/qenta-cee/qenta-docs-main.git"
+CFG_CONTENT_REPO_URI="https://${CFG_BOT_TOKEN}@github.com/qenta-cee/qenta-docs-content.git"
 CFG_REPO_BRANCH='gh-pages_test'
 
 CFG_GH_PAGES_WORKSPACE="$(mktemp -d)"
-
 CFG_CONTENT_WORKSPACE="$(mktemp -d)"
 
 function get_raw_renames() {
@@ -89,5 +89,3 @@ if [[ ${NUM_REDIRECTS} > 0 ]]; then
 else
   echo "No renames found."
 fi
-
-#rm -rf "${CFG_GH_PAGES_WORKSPACE}"

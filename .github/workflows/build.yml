@@ -48,4 +48,4 @@ jobs:
         if: success() && steps.branch.outputs.name == 'redirect-test'
         run: bash scripts/redirect_renames.sh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BOT_TOKEN: ${{ secrets.BOT_PAT }}
