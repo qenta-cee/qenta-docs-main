@@ -13,7 +13,7 @@ CFG_BOT_TOKEN=${BOT_TOKEN}
 
 CFG_GH_PAGES_REPO_URI="https://${CFG_BOT_TOKEN}@github.com/qenta-cee/qenta-docs-main.git"
 CFG_CONTENT_REPO_URI="https://${CFG_BOT_TOKEN}@github.com/qenta-cee/qenta-docs-content.git"
-CFG_REPO_BRANCH='gh-pages_test'
+CFG_REPO_BRANCH='gh-pages'
 
 CFG_GH_PAGES_WORKSPACE="$(mktemp -d)"
 CFG_CONTENT_WORKSPACE="$(mktemp -d)"
