@@ -17,7 +17,7 @@ CFG_CONTENT_WORKSPACE="$(mktemp -d)"
 function get_raw_renames() {
   (
     cd ${CFG_CONTENT_WORKSPACE}
-    git clone ${CFG_CONTENT_REPO_URI}
+    git clone ${CFG_CONTENT_REPO_URI} .
     git log --name-status | grep ^R | grep '.adoc$' | grep -v '/partials/' | sed 's/[ \t]\+/;/g'
   )
 }
