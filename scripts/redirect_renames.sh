@@ -27,7 +27,7 @@ function get_raw_renames() {
 }
 
 function get_html_path() {
-  sed 's,.\+/modules/ROOT/pages/\(.*\).adoc,\1/index.html,' <<< ${1}
+  sed 's,.\+/modules/ROOT/pages/\(.*\).adoc,\1/,' <<< ${1}
 }
 
 function create_meta_refresh() {
