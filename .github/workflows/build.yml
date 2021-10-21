@@ -1,6 +1,7 @@
 name: Build
 
 on:
+  push:
   repository_dispatch:
     types: [content-update]
 
