@@ -12,7 +12,6 @@ antora.build:
 # antora.run: @ Serves documentation output (on port 8051)
 antora.run:
 	docker-compose run --service-ports antora http-server build/site -c-1
-
 # antora.watch: @ Watches for documentation changes and rebuilds (to build/site)
 antora.watch:
 	docker-compose run -u $$(id -u) -T antora onchange \

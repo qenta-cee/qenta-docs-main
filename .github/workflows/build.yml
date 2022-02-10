@@ -44,15 +44,15 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: build/site
-          keep_history: true
+          keep_history: false
           fqdn: ${{ secrets.FQDN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Set Redirects
-        id: set-redirects
-        if: success() && steps.branch.outputs.name == 'master'
-        run: bash scripts/redirect_renames.sh
-        env:
-          BOT_USER: ${{ secrets.BOT_USER }}
-          BOT_EMAIL: ${{ secrets.BOT_EMAIL }}
-          BOT_TOKEN: ${{ secrets.BOT_PAT }}
+      # - name: Set Redirects
+      #   id: set-redirects
+      #   if: success() && steps.branch.outputs.name == 'master'
+      #   run: bash scripts/redirect_renames.sh
+      #   env:
+      #     BOT_USER: ${{ secrets.BOT_USER }}
+      #     BOT_EMAIL: ${{ secrets.BOT_EMAIL }}
+      #     BOT_TOKEN: ${{ secrets.BOT_PAT }}
