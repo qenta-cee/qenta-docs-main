@@ -1,4 +1,4 @@
-image: node:16.16
+image: node:20.16.0
 stages: [setup, verify, deploy]
 install:
   stage: setup
