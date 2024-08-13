@@ -6,7 +6,7 @@ help:
 # antora.build: @ Builds documentation production output (to build/site)
 antora.build:
 #	docker compose run -u $$(id -u) antora --generator -h 
-	docker compose run -u $$(id -u) antora antora --generate @antora/lunr-extension --clean antora-playbook.yml
+	docker compose run -u $$(id -u) antora antora --extension @antora/lunr-extension --clean antora-playbook.yml
 #	docker compose run -u $$(id -u) antora antora --generator antora-site-generator-lunr --clean antora-playbook.yml
 #	docker-compose run -u $$(id -u) antora antora generate --clean antora-playbook.yml
 
