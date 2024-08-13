@@ -7,6 +7,6 @@ RUN yarn global add http-server@13.0.2 onchange@7.1.0
 RUN node --version
 RUN yarn --version
 RUN npx antora -v
-RUN yarn global add @antora/cli@3.0 @antora/site-generator-lunr@3.0
-#RUN yarn global add @antora/lunr-extension
+#RUN yarn global add @antora/cli@3.0 @antora/site-generator-lunr@3.0
+RUN yarn global add @antora/lunr-extension
 WORKDIR /srv/docs
