@@ -1,4 +1,4 @@
-FROM antora/antora:3.1.9
+FROM antora/antora:latest
 ENV DOCSEARCH_ENABLED=true
 ENV DOCSEARCH_ENGINE=lunr
 ENV NODE_PATH="/usr/local/lib/node_modules"
