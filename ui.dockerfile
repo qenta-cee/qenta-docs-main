@@ -1,2 +1,2 @@
-FROM node:23
+FROM node:24
 WORKDIR /srv/docs-ui
