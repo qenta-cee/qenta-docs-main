@@ -1,13 +1,17 @@
 image: node:24.04
 stages: [setup, verify, deploy]
+
+.npm_install: &npm_install
+  - npm install --quiet --no-progress --cache=.cache/npm
+  - npm ci
+
 install:
   stage: setup
   cache:
     paths:
     - .cache/npm
   script:
-  - &npm_install
-    npm install --quiet --no-progress --cache=.cache/npm
+  - *npm_install
 lint:
   stage: verify
   cache: &pull_cache
