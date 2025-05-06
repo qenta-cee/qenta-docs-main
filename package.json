@@ -14,9 +14,6 @@
     "last 2 versions"
   ],
   "devDependencies": {
-    "@antora/cli": "3.1.9",
-    "@antora/site-generator": "3.1.9",
-    "@antora/lunr-extension": "^1.0.0-alpha.10",
     "asciidoctor.js": "^1.5.9",
     "autoprefixer": "~9.7",
     "browser-pack-flat": "~3.4",

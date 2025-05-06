@@ -3,7 +3,6 @@ stages: [setup, verify, deploy]
 
 .npm_install: &npm_install
   - npm install --quiet --no-progress --cache=.cache/npm
-  - npm ci
 
 install:
   stage: setup
