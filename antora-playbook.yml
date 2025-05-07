@@ -14,7 +14,8 @@ runtime:
   cache_dir: ./build/cache
 ui:
   bundle:
-    url: ./build/ui-bundle.zip
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
   supplemental_files: ./ui-customizations/supplemental_ui
 urls:
   html_extension_style: indexify
