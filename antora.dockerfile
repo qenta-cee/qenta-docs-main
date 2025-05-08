@@ -1,13 +1,15 @@
 FROM antora/antora:latest
-ENV DOCSEARCH_ENABLED=true
-ENV DOCSEARCH_ENGINE=lunr
+#ENV DOCSEARCH_ENABLED=true
+#ENV DOCSEARCH_ENGINE=lunr
 ENV NODE_PATH="/usr/local/lib/node_modules"
 ENV DOCSEARCH_INDEX_VERSION=latest
 RUN yarn global add http-server@13.0.2 onchange@7.1.0
 RUN node --version
 RUN yarn --version
 RUN npx antora -v
+RUN antora version
 RUN yarn global add @antora/lunr-extension
 RUN yarn global add @antora/cli
 RUN yarn global add @antora/site-generator
+RUN antora version
 WORKDIR /srv/docs
