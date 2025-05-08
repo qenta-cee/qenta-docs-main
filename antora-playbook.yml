@@ -16,11 +16,11 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  supplemental_files: ./ui-customizations/supplemental_ui
+  supplemental_files: ./qenta-docs-ui-customizations/supplemental_ui
 urls:
   html_extension_style: indexify
 antora:
   extensions:
   - require: '@antora/lunr-extension'
     index_latest_only: true
-    enabled: true
+    # enabled: true
