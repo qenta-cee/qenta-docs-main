@@ -1,7 +1,7 @@
 site:
   robots: allow
   start_page: online-guides::index.adoc
-  title: QENTA Online Guides
+  title: hobex Online Guides
   url: https://guides.qenta.com
 content:
   edit_url: ~
